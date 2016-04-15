@@ -1,5 +1,7 @@
 unit kys_type;
 
+{$MODE DELPHI}
+
 interface
 
 uses

@@ -1,5 +1,7 @@
 unit kys_script;
 
+{$MODE DELPHI}
+
 interface
 
 uses

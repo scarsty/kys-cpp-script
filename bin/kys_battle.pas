@@ -1,5 +1,7 @@
 unit kys_battle;
 
+{$MODE DELPHI}
+
 interface
 
 uses

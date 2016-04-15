@@ -1,5 +1,7 @@
 unit kys_engine;
 
+{$MODE DELPHI}
+
 interface
 
 uses
@@ -90,7 +92,7 @@ procedure ResizeSimpleText(initial: integer = 0);
 procedure SwitchFullscreen;
 procedure QuitConfirm;
 
-function JoyAxisMouse(interval: uint32; param: pointer): uint32;
+function JoyAxisMouse(interval: uint32; param: pointer): uint32; cdecl;
 
 function CheckBasicEvent: uint32;
 function AngleToDirection(y, x: real): integer;

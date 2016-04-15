@@ -21,6 +21,8 @@ unit kys_main;
  编译, 或译为其他语言. 但请保留本段文字.
 }
 
+{$MODE DELPHI}
+
 interface
 
 uses

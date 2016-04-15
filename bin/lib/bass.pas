@@ -13,6 +13,8 @@
 
 unit BASS;
 
+{$MODE DELPHI}
+
 interface
 
 {$IFDEF MSWINDOWS}

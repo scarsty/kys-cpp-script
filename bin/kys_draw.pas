@@ -1,5 +1,7 @@
 unit kys_draw;
 
+{$MODE DELPHI}
+
 interface
 
 uses

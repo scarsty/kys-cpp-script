@@ -1,5 +1,7 @@
 unit kys_event;
 
+{$MODE DELPHI}
+
 interface
 
 uses
