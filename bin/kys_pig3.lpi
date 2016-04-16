@@ -200,7 +200,7 @@
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <Libraries Value="lib;.;\usr\local\lib;\usr\X11R6\lib"/>
-      <OtherUnitFiles Value="lib;lib\ffmpeg"/>
+      <OtherUnitFiles Value="lib;lib\ffmpeg;lib\SDL2"/>
       <UnitOutputDirectory Value="lib\debug"/>
     </SearchPaths>
     <Parsing>

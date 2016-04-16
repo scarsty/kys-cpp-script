@@ -498,6 +498,23 @@ begin
       MAX_LOVER := 0;
       StartMusic := 0;
     end;
+    91:
+    begin
+      TitleString := 'Cool Jade';
+      versionstr := ' 溫瑞安群侠傳';
+      BEGIN_EVENT := 1;
+      BEGIN_SCENCE := 0;
+      MONEY_ID := 174;
+      COMPASS_ID := 182;
+      BEGIN_LEAVE_EVENT := 1;
+      BEGIN_NAME_IN_TALK := 8015;
+      MAX_LOVER := 0;
+      StartMusic := 0;
+        OpenPicPosition.x := 0;
+  OpenPicPosition.y := 0;
+  TitlePosition.x := OpenPicPosition.x + 470;
+  TitlePosition.y := OpenPicPosition.y + 230;
+    end;
   end;
 
   Kys_ini := TIniFile.Create(iniFilename);
