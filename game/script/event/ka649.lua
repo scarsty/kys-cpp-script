@@ -1,0 +1,7 @@
+if isUsingItem(188) == false then
+exit();
+end;
+AddItemWithoutHint(188, -1);
+Add3EventNum(-2, 0, 0, 1, $5);
+ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
+Talk("哈！這刀孔大小正適合放這把鴦刀．", 0, 1);
