@@ -2,10 +2,10 @@ if InTeam(30) == false then
 Talk("我爹爹不要我了……", 56, 0);
 exit();
 end;
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("我爹爹不要我了……", 56, 0);
 Talk("他為什么不要你呢？", 55, 1);
 Talk("他在家里關了一個人，好可憐，我就給那個人送飯吃，結果爹爹就罵我，壞爹爹，壞爹爹。", 56, 0);

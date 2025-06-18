@@ -1,6 +1,6 @@
-Add3EventNum(40, 9, 1, 0, $5);
-Add3EventNum(40, 10, 1, 0, $5);
-Add3EventNum(40, 12, 1, 0, $5);
+Add3EventNum(40, 9, 1, 0, 0);
+Add3EventNum(40, 10, 1, 0, 0);
+Add3EventNum(40, 12, 1, 0, 0);
 WalkFromTo(28, 24, 28, 19);
 WalkFromTo(28, 19, 30, 19);
 AddMorality(1);

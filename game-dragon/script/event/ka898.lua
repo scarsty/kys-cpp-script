@@ -1,5 +1,5 @@
-Add3EventNum(40, 17, 1, 0, $5);
-Add3EventNum(40, 18, 1, 0, $5);
+Add3EventNum(40, 17, 1, 0, 0);
+Add3EventNum(40, 18, 1, 0, 0);
 if InTeam(35) then
 Talk("師父！", 35, 1);
 Talk("誰是你師父了？岳某早跟你脫卻了師徒名份．", 19, 0);

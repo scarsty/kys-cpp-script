@@ -1,7 +1,7 @@
 AddMorality(2);
-Add3EventNum(60, 4, 1, 0, $5);
-Add3EventNum(60, 5, 1, 0, $5);
-Add3EventNum(60, 3, 1, 0, $5);
+Add3EventNum(60, 4, 1, 0, 0);
+Add3EventNum(60, 5, 1, 0, 0);
+Add3EventNum(60, 3, 1, 0, 0);
 WalkFromTo(20, 26, 20, 29);
 WalkFromTo(20, 29, 15, 29);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,6 +32,6 @@ DarkScene();
 ModifyEvent(-2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 LightScene();
 Talk("這姑娘真的好美啊，就是冰冰冷冷的，讓人難以接近，不知道過兒是誰，會是她的心上人么？誰這么有福氣啊……", 0, 1);
-Add3EventNum(19, 24, 0, 0, $5);
+Add3EventNum(19, 24, 0, 0, 1);
 ModifyEvent(20, 4, 1, 0, 1046, 0, 0, 6154, 6154, 6154, -2, -2, -2);
 ModifyEvent(21, 10, 1, 0, 1047, 0, 0, 6158, 6158, 6158, -2, -2, -2);

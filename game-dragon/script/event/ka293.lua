@@ -1,6 +1,6 @@
-Add3EventNum(40, 9, 3, 0, $5);
-Add3EventNum(40, 10, 3, 0, $5);
-Add3EventNum(40, 12, 3, 0, $5);
+Add3EventNum(40, 9, 3, 0, 0);
+Add3EventNum(40, 10, 3, 0, 0);
+Add3EventNum(40, 12, 3, 0, 0);
 AddMorality(-3);
 Talk("成昆，原來你在這里", 0, 1);
 Talk("你是什么人？", 18, 0);

@@ -1,7 +1,7 @@
-Add3EventNum(40, 13, 1, 0, $5);
-Add3EventNum(40, 16, 1, 0, $5);
-Add3EventNum(40, 15, 1, 0, $5);
-Add3EventNum(40, 14, 1, 0, $5);
+Add3EventNum(40, 13, 1, 0, 0);
+Add3EventNum(40, 16, 1, 0, 0);
+Add3EventNum(40, 15, 1, 0, 0);
+Add3EventNum(40, 14, 1, 0, 0);
 Talk("薛神醫，你好。", 0, 1);
 Talk("哼！", 45, 0);
 Talk("阿朱姑娘好。", 247, 1);

@@ -1,6 +1,6 @@
 AddMorality(-1);
-Add3EventNum(61, 19, 1, 0, $5);
-Add3EventNum(61, 18, 1, 0, $5);
+Add3EventNum(61, 19, 1, 0, 0);
+Add3EventNum(61, 18, 1, 0, 0);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 SubMapViewFromTo(20, 14, 15, 11);
 Talk("俠客島使者拜會長樂幫石幫主。請接賞善罰惡令。", 41, 0);

@@ -3,6 +3,6 @@ if InTeam(38) == false then
 exit();
 end;
 ModifyEvent(-2, -2, 1, 0, 415, 0, 0, -2, -2, -2, -2, -2, -2);
-Add3EventNum(-2, 4, 0, 0, $5);
-Add3EventNum(-2, 5, 0, 0, $5);
-Add3EventNum(-2, 6, 0, 0, $5);
+Add3EventNum(-2, 4, 0, 0, 1);
+Add3EventNum(-2, 5, 0, 0, 1);
+Add3EventNum(-2, 6, 0, 0, 1);

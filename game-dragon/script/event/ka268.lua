@@ -1,8 +1,8 @@
 DarkScene();
 AddMorality(5);
-Add3EventNum(40, 9, 1, 0, $5);
-Add3EventNum(40, 10, 1, 0, $5);
-Add3EventNum(40, 12, 1, 0, $5);
+Add3EventNum(40, 9, 1, 0, 0);
+Add3EventNum(40, 10, 1, 0, 0);
+Add3EventNum(40, 12, 1, 0, 0);
 OpenSubMap(72);
 ModifyEvent(33, 2, 1, 0, 1062, 0, 0, -2, -2, -2, -2, -2, -2);
 ModifyEvent(34, 0, 1, 0, 1066, 0, 0, -2, -2, -2, -2, -2, -2);

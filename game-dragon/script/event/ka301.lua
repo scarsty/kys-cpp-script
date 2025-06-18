@@ -109,10 +109,10 @@ exit();
 end;
 if CheckSubMapPic(-2, 37, 2286) then
 AddMorality(3);
-Add3EventNum(40, 13, 1, 0, $5);
-Add3EventNum(40, 16, 1, 0, $5);
-Add3EventNum(40, 15, 1, 0, $5);
-Add3EventNum(40, 14, 1, 0, $5);
+Add3EventNum(40, 13, 1, 0, 0);
+Add3EventNum(40, 16, 1, 0, 0);
+Add3EventNum(40, 15, 1, 0, 0);
+Add3EventNum(40, 14, 1, 0, 0);
 DarkScene();
 ModifyEvent(-2, 37, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
 ModifyEvent(-2, 16, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);

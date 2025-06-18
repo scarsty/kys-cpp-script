@@ -8,4 +8,4 @@ end;
 AddItemWithoutHint(174, -300);
 Talk("好，一手交錢，一手交貨。", 236, 0);
 AddItem(53, 1);
-Add3EventNum(-2, 45, 2, 2, $5);
+Add3EventNum(-2, 45, 2, 2, 0);

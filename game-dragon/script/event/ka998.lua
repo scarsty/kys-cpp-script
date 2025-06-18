@@ -7,7 +7,7 @@ exit();
 end;
 LightScene();
 Talk("八個牙鹿！！我們的精兵的，還有！再戰的干活！", 266, 0);
-Add3EventNum(-2, 3, 1, 0, $5);
+Add3EventNum(-2, 3, 1, 0, 0);
 LeaveTeam(50);
 LeaveTeam(92);
 LeaveTeam(91);

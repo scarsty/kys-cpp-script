@@ -1,8 +1,8 @@
 AddMorality(1);
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 SubMapViewFromTo(21, 32, 14, 32);
 SubMapViewFromTo(14, 32, 14, 40);
 Talk("克兒，克兒，你怎么啦？", 60, 0);

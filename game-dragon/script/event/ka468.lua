@@ -1,9 +1,9 @@
 DarkScene();
 AddMorality(2);
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 LightScene();
 SubMapViewFromTo(34, 20, 30, 21);

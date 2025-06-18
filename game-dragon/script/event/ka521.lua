@@ -1,9 +1,9 @@
 DarkScene();
 AddMorality(1);
-Add3EventNum(40, 13, 1, 0, $5);
-Add3EventNum(40, 16, 1, 0, $5);
-Add3EventNum(40, 15, 1, 0, $5);
-Add3EventNum(40, 14, 1, 0, $5);
+Add3EventNum(40, 13, 1, 0, 0);
+Add3EventNum(40, 16, 1, 0, 0);
+Add3EventNum(40, 15, 1, 0, 0);
+Add3EventNum(40, 14, 1, 0, 0);
 LightScene();
 WalkFromTo(34, 38, 39, 38);
 Talk("你們是什么人？抓我干什么？", 53, 0);

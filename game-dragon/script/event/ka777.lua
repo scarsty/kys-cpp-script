@@ -2,8 +2,8 @@ if InTeam(35) == false then
 Talk("治一人，殺一人。這是為了維護生態平衡。", 28, 0);
 exit();
 end;
-Add3EventNum(40, 17, 1, 0, $5);
-Add3EventNum(40, 18, 1, 0, $5);
+Add3EventNum(40, 17, 1, 0, 0);
+Add3EventNum(40, 18, 1, 0, 0);
 Talk("閣下想必就是令狐公子吧？", 28, 0);
 Talk("正是在下。", 35, 1);
 Talk("令狐公子，有人托我給你看病，你伸手過來，老夫摸摸你的脈象。", 28, 0);

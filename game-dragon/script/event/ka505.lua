@@ -1,7 +1,7 @@
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("晚輩參見裘幫主", 0, 1);
 Talk("你是誰，來此何干？", 67, 0);
 Talk("是西域白駝山主人歐陽先生叫我來的，他說來了您自然知道。", 0, 1);

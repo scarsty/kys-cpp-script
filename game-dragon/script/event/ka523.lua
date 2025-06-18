@@ -1,8 +1,8 @@
 AddMorality(1);
-Add3EventNum(40, 13, 1, 0, $5);
-Add3EventNum(40, 16, 1, 0, $5);
-Add3EventNum(40, 15, 1, 0, $5);
-Add3EventNum(40, 14, 1, 0, $5);
+Add3EventNum(40, 13, 1, 0, 0);
+Add3EventNum(40, 16, 1, 0, 0);
+Add3EventNum(40, 15, 1, 0, 0);
+Add3EventNum(40, 14, 1, 0, 0);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 SubMapViewFromTo(30, 44, 30, 24);
 Talk("吐蕃國晚輩鳩摩智，參見前輩大師。有常無常，雙樹枯榮，南北西東，非假非空。", 103, 0);

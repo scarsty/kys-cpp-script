@@ -1,7 +1,7 @@
 AddMorality(2);
-Add3EventNum(60, 8, 1, 0, $5);
-Add3EventNum(60, 9, 1, 0, $5);
-Add3EventNum(60, 7, 1, 0, $5);
+Add3EventNum(60, 8, 1, 0, 0);
+Add3EventNum(60, 9, 1, 0, 0);
+Add3EventNum(60, 7, 1, 0, 0);
 Talk("你就是臭名昭著的張召重嗎？", 0, 1);
 Talk("你是何人？", 80, 0);
 Talk("我是紅花會的朋友，想和你商量點事。", 0, 1);

@@ -1,8 +1,8 @@
 AddMorality(-1);
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("克兒、克兒，你怎么啦？", 60, 0);
 Talk("我，啊，我的腿，叔叔，你殺了我吧，我好痛苦啊……", 61, 0);
 Talk("歐陽前輩，令侄怎么了？", 0, 1);

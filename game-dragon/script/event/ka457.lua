@@ -1,9 +1,9 @@
 Talk("這位少俠，你帶我一起回中原好嗎？", 55, 0);
 if AskJoin () then
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("好啊，我們一起走吧。", 247, 1);
 Talk("靖兒，記得，闖蕩江湖，最要緊的就是要有俠義之心。", 130, 0);
 Talk("徒兒記下了", 55, 0);

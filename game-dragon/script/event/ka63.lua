@@ -29,8 +29,8 @@ end;
 LightScene();
 Talk("這回不橫了吧？還不把書拿來。", 0, 1);
 if HaveItemBool(228) then
-Add3EventNum(1, 10, 1, 0, $5);
-Add3EventNum(1, 7, 1, 0, $5);
+Add3EventNum(1, 10, 1, 0, 0);
+Add3EventNum(1, 7, 1, 0, 0);
 Talk("又是半部《四十二章經》？這下我正好可以湊成一部了……", 0, 1);
 AddItem(229, 1);
 AddItemWithoutHint(228, -1);

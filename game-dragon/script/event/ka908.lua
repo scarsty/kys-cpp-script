@@ -2,8 +2,8 @@ if InTeam(35) == false then
 exit();
 end;
 DarkScene();
-Add3EventNum(40, 17, 1, 0, $5);
-Add3EventNum(40, 18, 1, 0, $5);
+Add3EventNum(40, 17, 1, 0, 0);
+Add3EventNum(40, 18, 1, 0, 0);
 ModifyEvent(-2, 12, 0, 0, 0, 0, 0, 7156, 7156, 7156, -2, -2, -2);
 ModifyEvent(-2, 13, 0, 0, 0, 0, 0, 7142, 7142, 7142, -2, -2, -2);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);

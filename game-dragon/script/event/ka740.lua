@@ -1,6 +1,6 @@
 DarkScene();
-Add3EventNum(40, 17, 1, 0, $5);
-Add3EventNum(40, 18, 1, 0, $5);
+Add3EventNum(40, 17, 1, 0, 0);
+Add3EventNum(40, 18, 1, 0, 0);
 LightScene();
 SubMapViewFromTo(22, 26, 24, 17);
 Talk("賈老二，你看旁邊桌上那妞，身材要得，臉蛋更是要得。", 200, 0);

@@ -1,6 +1,6 @@
-Add3EventNum(60, 8, 1, 0, $5);
-Add3EventNum(60, 9, 1, 0, $5);
-Add3EventNum(60, 7, 1, 0, $5);
+Add3EventNum(60, 8, 1, 0, 0);
+Add3EventNum(60, 9, 1, 0, 0);
+Add3EventNum(60, 7, 1, 0, 0);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 WalkFromTo(24, 39, 24, 32);
 Talk("此書乃我回教圣物，決不允許外人拿走。", 74, 0);

@@ -1,8 +1,8 @@
 AddMorality(5);
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("參見丘真人。", 0, 1);
 Talk("哦，你就是義救南帝北丐，劍敗西毒鐵掌的少年英雄吧。", 68, 0);
 Talk("丘真人過獎。在下今日此來，向道長請教一件事。", 0, 1);

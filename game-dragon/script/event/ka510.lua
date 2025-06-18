@@ -1,8 +1,8 @@
 AddMorality(-3);
-Add3EventNum(61, 0, 1, 0, $5);
-Add3EventNum(61, 8, 1, 0, $5);
-Add3EventNum(61, 17, 1, 0, $5);
-Add3EventNum(61, 16, 1, 0, $5);
+Add3EventNum(61, 0, 1, 0, 0);
+Add3EventNum(61, 8, 1, 0, 0);
+Add3EventNum(61, 17, 1, 0, 0);
+Add3EventNum(61, 16, 1, 0, 0);
 Talk("什么人，擅闖重陽宮！", 68, 0);
 Talk("擅闖又如何？我還要拿東西呢！", 245, 1);
 Talk("大膽狂徒，接招。", 128, 0);

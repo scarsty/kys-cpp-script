@@ -1,8 +1,8 @@
 if isUsingItem(203) == false then
 exit();
 end;
-Add3EventNum(61, 19, 1, 0, $5);
-Add3EventNum(61, 18, 1, 0, $5);
+Add3EventNum(61, 19, 1, 0, 0);
+Add3EventNum(61, 18, 1, 0, 0);
 AddItemWithoutHint(203, -1);
 ModifyEvent(-2, -2, 1, 0, 376, 0, 0, -2, -2, -2, -2, -2, -2);
 Talk("這，這不是玄冰碧火酒嗎？閣下是……", 85, 0);

@@ -1,5 +1,5 @@
-Add3EventNum(61, 19, 1, 0, $5);
-Add3EventNum(61, 18, 1, 0, $5);
+Add3EventNum(61, 19, 1, 0, 0);
+Add3EventNum(61, 18, 1, 0, 0);
 SubMapViewFromTo(28, 24, 28, 17);
 Talk("俠客島賞善罰惡使者，前來拜見雪山派掌門！", 41, 0);
 Talk("尊駕二位便是俠客島的賞善罰惡使者嗎？", 43, 0);
