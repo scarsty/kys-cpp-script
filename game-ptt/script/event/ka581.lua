@@ -10,5 +10,5 @@ AddMaxMP(49, 1000);
 AddMaxHP(49, 1000);
 AddAttack(49, 80);
 AddSpeed(49, 20);
-SetMPType(49,2);
+SetMPType(49, 2);
 Join(49);

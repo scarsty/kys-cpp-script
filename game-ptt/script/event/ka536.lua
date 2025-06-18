@@ -35,7 +35,7 @@ AddMaxMP(49, 999);
 AddMaxHP(49, 999);
 AddAttack(49, 40);
 AddSpeed(49, 30);
-SetMPType(49,2);
+SetMPType(49, 2);
 OldLearnMagic(49, 29, 0);
 AddItem(40, 1);
 AddItem(48, 1);
