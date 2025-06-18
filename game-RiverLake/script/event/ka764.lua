@@ -3,4 +3,3 @@ DarkScene();
 OldSetScenePosition(48, 30);
 LightScene();
 Talk("哈哈，竟然出來了．真是福大命大啊．", 0, 1);
-exit();

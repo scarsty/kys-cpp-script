@@ -17,8 +17,7 @@ ModifyEvent(-2, -2, -2, -2, 676, -2, -2, -2, -2, -2, 0, -2, -2);
 instruct_50e(21, 0, 33, 199, 2, 56, 0);
 instruct_50e(20, 0, 96, 0, 0, 0, 0);
 instruct_50e(4, 0, 4, 0, 3, 0, 0);
-if CheckRoleSexual(256) == false then goto label0 end;
-    instruct_50e(21, 0, 33, 199, 2, 54, 0);
-    instruct_50e(43, 0, 194, 28, 0, 0, 0);
-::label0::
-exit();
+if CheckRoleSexual(256) == false then goto label130 end;
+instruct_50e(21, 0, 33, 199, 2, 54, 0);
+instruct_50e(43, 0, 194, 28, 0, 0, 0);
+::label130::

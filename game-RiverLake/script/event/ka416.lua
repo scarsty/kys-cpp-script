@@ -33,4 +33,3 @@ ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 SubMapViewFromTo(24, 31, 25, 41);
-exit();

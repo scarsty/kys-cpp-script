@@ -21,9 +21,8 @@ instruct_50e(32, 0, 0, 2, 0, 0, 0);
 Talk("別哭，我怕了你，這就去。", 0, 0);
 ModifyEvent(-2, -2, 0, -2, -2, -2, -1, 0, 0, 0, 0, -2, -2);
 instruct_50e(43, 0, 194, 20, 0, 0, 0);
-if InTeam(14) == false then goto label0 end;
-    instruct_50e(43, 0, 812, 0, 0, 0, 0);
+if InTeam(14) == false then goto label151 end;
+instruct_50e(43, 0, 812, 0, 0, 0, 0);
 exit();
-::label0::
-    ModifyEvent(-2, 40, 0, -2, -2, -2, -1, 0, 0, 0, 0, -2, -2);
-exit();
+::label151::
+ModifyEvent(-2, 40, 0, -2, -2, -2, -1, 0, 0, 0, 0, -2, -2);

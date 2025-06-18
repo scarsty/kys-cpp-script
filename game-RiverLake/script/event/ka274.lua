@@ -7,4 +7,3 @@ Talk("門開了，我們進去分頭找．", 119, 0);
 DarkScene();
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
-exit();

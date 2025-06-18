@@ -8,8 +8,7 @@ Talk("在洛陽．", 0, 1);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(23, 5, 1, -2, 716, 0, 0, 7984, 7984, 7984, 0, -2, -2);
-Add3EventNum(23, 2, 1, 0, 0)
+Add3EventNum(23, 2, 1, 0, 0);
 LightScene();
 AddMorality(-1);
 Talk("他跑的可真夠快的．", 0, 0);
-exit();

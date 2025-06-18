@@ -9,23 +9,22 @@ Talk("（汗）師叔愿意叫就叫吧．", 45, 0);
 Talk("小花啊，你怎么會來星宿派", 0, 1);
 Talk("幾日前聽師父說珍瓏棋局的事，便想來拜見師叔．既然見到了，那師侄告辭了．", 45, 0);
 Talk("＜這小子的醫術一定很強，不如把他叫上，路上要是有個頭痛腦熱的也好有個照應＞", 0, 1);
-if AskJoin () == true then goto label0 end;
-    Talk("你有事就走吧．", 0, 1);
-    Talk("那就告辭了．", 45, 0);
-    DarkScene();
-    ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    LightScene();
-    exit();
-::label0::
-    Talk("你有要事？", 0, 1);
-    Talk("聽師叔的意思是要我加入？", 45, 0);
-    if TeamIsFull() == false then goto label1 end;
-        Talk("可是師叔的隊伍滿了，我無法加入．", 45, 0);
-        exit();
-::label1::
-        Talk("好啊．", 45, 0);
-        DarkScene();
-        ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-        LightScene();
-        Join(45);
+if AskJoin () then goto label55 end;
+Talk("你有事就走吧．", 0, 1);
+Talk("那就告辭了．", 45, 0);
+DarkScene();
+ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+LightScene();
 exit();
+::label55::
+Talk("你有要事？", 0, 1);
+Talk("聽師叔的意思是要我加入？", 45, 0);
+if TeamIsFull() == false then goto label99 end;
+Talk("可是師叔的隊伍滿了，我無法加入．", 45, 0);
+exit();
+::label99::
+Talk("好啊．", 45, 0);
+DarkScene();
+ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+LightScene();
+Join(45);

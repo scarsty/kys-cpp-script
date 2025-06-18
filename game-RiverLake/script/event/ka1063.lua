@@ -1,7 +1,6 @@
 Talk("徒孫參見太師父．", 0, 1);
 Talk("嗯．．．你要好好練功啊．", 5, 0);
-Add3EventNum(-2, 40, 0, 0, 26)
-Add3EventNum(-2, 41, 0, 0, 26)
-Add3EventNum(-2, 42, 0, 0, 0)
+Add3EventNum(-2, 40, 0, 0, 1);
+Add3EventNum(-2, 41, 0, 0, 1);
+Add3EventNum(-2, 42, 0, 0, 1);
 ModifyEvent(-2, -2, -2, -2, 1089, -2, -2, -2, -2, -2, -2, -2, -2);
-exit();

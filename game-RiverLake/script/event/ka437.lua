@@ -16,4 +16,3 @@ ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddItem(169, 1);
-exit();

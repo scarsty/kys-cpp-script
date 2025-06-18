@@ -48,4 +48,3 @@ ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(16, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OpenSubMap(4);
 LightScene();
-exit();

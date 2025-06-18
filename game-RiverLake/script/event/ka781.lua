@@ -86,4 +86,3 @@ Talk("算了，賢弟，不用勸我了．我走了，保重．", 50, 0);
 DarkScene();
 ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
-exit();

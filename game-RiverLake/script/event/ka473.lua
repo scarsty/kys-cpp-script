@@ -5,4 +5,3 @@ SetSubMapLayerData(44, 1, 23, 33, 0);
 SetSubMapLayerData(44, 1, 23, 32, 1474);
 SetSubMapLayerData(44, 1, 22, 34, 1468);
 SetSubMapLayerData(44, 1, 22, 32, 1472);
-exit();

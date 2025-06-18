@@ -12,25 +12,24 @@ instruct_50e(3, 0, 0, 9, 2, 0, 0);
 instruct_50e(3, 0, 0, 10, 3, 0, 0);
 instruct_50e(3, 0, 3, 8, 4, 2, 0);
 instruct_50e(4, 0, 2, 8, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label0 end;
-    instruct_50e(3, 0, 1, 10, 3, 1, 0);
-::label0::
-    instruct_50e(4, 0, 2, 8, 1, 0, 0);
-    if CheckRoleSexual(256) == false then goto label1 end;
-        instruct_50e(3, 0, 0, 9, 2, 1, 0);
-::label1::
-        instruct_50e(4, 0, 2, 8, 2, 0, 0);
-        if CheckRoleSexual(256) == false then goto label2 end;
-            instruct_50e(3, 0, 0, 10, 3, 1, 0);
-::label2::
-            instruct_50e(4, 0, 2, 8, 3, 0, 0);
-            if CheckRoleSexual(256) == false then goto label3 end;
-                instruct_50e(3, 0, 1, 9, 2, 1, 0);
-::label3::
-                instruct_50e(21, 11, 0, 4, 9, 9, 0);
-                instruct_50e(21, 11, 0, 4, 10, 10, 0);
-                instruct_50e(23, 13, 0, 3, 2, 3, -1);
-                instruct_50e(23, 29, 0, 3, 9, 10, 4);
-                instruct_50e(43, 0, 185, 80, 205, 0, 0);
-                instruct_50e(43, 0, 155, 0, 0, 0, 0);
-exit();
+if CheckRoleSexual(256) == false then goto label112 end;
+instruct_50e(3, 0, 1, 10, 3, 1, 0);
+::label112::
+instruct_50e(4, 0, 2, 8, 1, 0, 0);
+if CheckRoleSexual(256) == false then goto label132 end;
+instruct_50e(3, 0, 0, 9, 2, 1, 0);
+::label132::
+instruct_50e(4, 0, 2, 8, 2, 0, 0);
+if CheckRoleSexual(256) == false then goto label152 end;
+instruct_50e(3, 0, 0, 10, 3, 1, 0);
+::label152::
+instruct_50e(4, 0, 2, 8, 3, 0, 0);
+if CheckRoleSexual(256) == false then goto label172 end;
+instruct_50e(3, 0, 1, 9, 2, 1, 0);
+::label172::
+instruct_50e(21, 11, 0, 4, 9, 9, 0);
+instruct_50e(21, 11, 0, 4, 10, 10, 0);
+instruct_50e(23, 13, 0, 3, 2, 3, -1);
+instruct_50e(23, 29, 0, 3, 9, 10, 4);
+instruct_50e(43, 0, 185, 80, 205, 0, 0);
+instruct_50e(43, 0, 155, 0, 0, 0, 0);

@@ -23,11 +23,10 @@ Talk("多謝大師相助．", 124, 1);
 Talk("大師，那我們這就告辭了．", 0, 1);
 ModifyEvent(-2, -2, 1, -2, 616, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(-2, 21, 0, -2, 0, 0, 617, 0, 0, 0, 0, -2, -2);
-if TeamIsFull() == false then goto label0 end;
-    DarkScene();
-    ModifyEvent(-2, 26, 1, -2, 631, 0, 0, 6296, 6296, 6296, 0, -2, -2);
-    LightScene();
-    exit();
-::label0::
-    Join(98);
+if TeamIsFull() == false then goto label169 end;
+DarkScene();
+ModifyEvent(-2, 26, 1, -2, 631, 0, 0, 6296, 6296, 6296, 0, -2, -2);
+LightScene();
 exit();
+::label169::
+Join(98);

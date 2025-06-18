@@ -12,4 +12,3 @@ SetSubMapLayerData(59, 2, 34, 29, 0);
 SetSubMapLayerData(59, 1, 34, 30, 0);
 SetSubMapLayerData(59, 2, 34, 31, 0);
 ModifyEvent(26, 2, 1, -2, 339, 0, 0, 5892, 5892, 5892, 0, -2, -2);
-exit();

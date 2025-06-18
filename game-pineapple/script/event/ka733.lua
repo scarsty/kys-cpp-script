@@ -1,144 +1,139 @@
 instruct_50e(26, 0, 0, 10590, 29, 0, 0);
 instruct_50e(22, 1, 0, 194, 5, 1, 0);
 instruct_50e(4, 0, 2, 1, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label0 end;
+if CheckRoleSexual(256) == false then goto label24 end;
 exit();
-::label0::
-    Talk("來，來，來。來看看有什麼需要的，我這應有盡有", 259, 0);
-    instruct_50e(5, 0, 0, 0, 0, 0, 0);
-::label1::
-    instruct_50e(3, 0, 2, 6, 5, 100, 0);
-    instruct_50e(3, 0, 0, 6, 6, 2000, 0);
-    instruct_50e(1, 3, 0, 500, 5, 6, 0);
-    instruct_50e(3, 0, 0, 5, 5, 1, 0);
-    instruct_50e(4, 0, 0, 5, 10, 0, 0);
-    if CheckRoleSexual(256) == true then goto label1 end;
-        instruct_50e(1, 0, 0, 50, 0, 3, 0);
-        instruct_50e(1, 0, 0, 50, 1, 7, 0);
-        instruct_50e(1, 0, 0, 50, 2, 11, 0);
-        instruct_50e(1, 0, 0, 50, 3, 13, 0);
-        instruct_50e(1, 0, 0, 50, 4, 16, 0);
-        instruct_50e(38, 0, 5, 55, 0, 0, 0);
-        instruct_50e(3, 0, 2, 55, 55, 3, 0);
-        instruct_50e(3, 0, 0, 55, 55, 21, 0);
-        instruct_50e(38, 0, 2, 56, 0, 0, 0);
-        instruct_50e(3, 0, 2, 56, 56, 4, 0);
-        instruct_50e(3, 0, 0, 56, 56, 41, 0);
-        instruct_50e(1, 0, 0, 50, 7, 59, 0);
-        instruct_50e(38, 0, 7, 58, 0, 0, 0);
-        instruct_50e(3, 0, 2, 58, 58, 2, 0);
-        instruct_50e(3, 0, 0, 58, 58, 78, 0);
-        instruct_50e(17, 1, 1, 50, 88, 70, 0);
-        instruct_50e(17, 1, 1, 51, 88, 71, 0);
-        instruct_50e(17, 1, 1, 52, 88, 72, 0);
-        instruct_50e(17, 1, 1, 53, 88, 73, 0);
-        instruct_50e(17, 1, 1, 54, 88, 74, 0);
-        instruct_50e(17, 1, 1, 55, 88, 75, 0);
-        instruct_50e(17, 1, 1, 56, 88, 76, 0);
-        instruct_50e(17, 1, 1, 57, 88, 77, 0);
-        instruct_50e(17, 1, 1, 58, 88, 78, 0);
-        if InTeam(10) == false then goto label2 end;
-            instruct_50e(3, 0, 3, 70, 70, 2, 0);
-            instruct_50e(3, 0, 3, 71, 71, 2, 0);
-            instruct_50e(3, 0, 3, 72, 72, 2, 0);
-            instruct_50e(3, 0, 3, 73, 73, 2, 0);
-            instruct_50e(3, 0, 3, 74, 74, 2, 0);
-::label2::
-::label3::
-::label5::
-            instruct_50e(2, 11, 0, 50, 20, 21, 0);
-            instruct_50e(2, 11, 0, 70, 20, 24, 0);
-            instruct_50e(17, 1, 1, 21, 84, 22, 0);
-            instruct_50e(3, 0, 0, 20, 20, 1, 0);
-            instruct_50e(4, 0, 2, 22, 0, 0, 0);
-            if CheckRoleSexual(256) == true then goto label3 end;
-                instruct_50e(4, 0, 5, 20, 9, 0, 0);
-                if CheckRoleSexual(256) == true then goto label4 end;
-                    instruct_50e(1, 11, 0, 100, 23, 21, 0);
-                    instruct_50e(1, 11, 0, 120, 23, 24, 0);
-                    instruct_50e(3, 0, 0, 23, 23, 1, 0);
-                    instruct_50e(1, 1, 0, 100, 23, -1, 0);
-                    instruct_50e(1, 1, 0, 120, 23, -1, 0);
-                    instruct_50e(4, 0, 0, 20, 9, 0, 0);
-                    if CheckRoleSexual(256) == true then goto label5 end;
-::label4::
-::label7::
-                        instruct_50e(2, 11, 0, 100, 7, 8, 0);
-                        instruct_50e(4, 0, 2, 8, -1, 0, 0);
-                        if CheckRoleSexual(256) == true then goto label6 end;
-                            instruct_50e(3, 0, 2, 14, 7, 100, 0);
-                            instruct_50e(3, 0, 0, 14, 14, 2000, 0);
-                            instruct_50e(2, 11, 0, 120, 7, 16, 0);
-                            instruct_50e(32, 0, 14, 5, 0, 0, 0);
-                            instruct_50e(27, 1, 1, 8, 100, 0, 0);
-                            instruct_50e(32, 0, 14, 2, 0, 0, 0);
-                            instruct_50e(10, 100, 17, 0, 0, 0, 0);
-                            instruct_50e(0, 18, 13, 0, 0, 0, 0);
-                            instruct_50e(3, 11, 1, 18, 18, 17, 0);
-                            instruct_50e(12, 1, 1000, 18, 0, 0, 0);
-                            instruct_50e(8, 0, 6, 800, 0, 0, 0);
-                            instruct_50e(9, 1, 1200, 800, 16, 0, 0);
-                            instruct_50e(32, 0, 14, 3, 0, 0, 0);
-                            instruct_50e(11, 1400, 1200, 1000, 0, 0, 0);
-                            instruct_50e(32, 0, 14, 2, 0, 0, 0);
-                            instruct_50e(11, 100, 1400, 1200, 0, 0, 0);
-                            instruct_50e(3, 0, 0, 7, 7, 1, 0);
-                            instruct_50e(4, 0, 0, 7, 9, 0, 0);
-                            if CheckRoleSexual(256) == true then goto label7 end;
-::label6::
-                                instruct_50e(4, 0, 0, 7, 1, 0, 0);
-                                if CheckRoleSexual(256) == false then goto label8 end;
-                                    Talk("靠，我的貨都被你買光了", 259, 0);
+::label24::
+Talk("來，來，來。來看看有什麼需要的，我這應有盡有", 259, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+::label83::
+instruct_50e(3, 0, 2, 6, 5, 100, 0);
+instruct_50e(3, 0, 0, 6, 6, 2000, 0);
+instruct_50e(1, 3, 0, 500, 5, 6, 0);
+instruct_50e(3, 0, 0, 5, 5, 1, 0);
+instruct_50e(4, 0, 0, 5, 10, 0, 0);
+if CheckRoleSexual(256) then goto label83 end;
+instruct_50e(1, 0, 0, 50, 0, 3, 0);
+instruct_50e(1, 0, 0, 50, 1, 7, 0);
+instruct_50e(1, 0, 0, 50, 2, 11, 0);
+instruct_50e(1, 0, 0, 50, 3, 13, 0);
+instruct_50e(1, 0, 0, 50, 4, 16, 0);
+instruct_50e(38, 0, 5, 55, 0, 0, 0);
+instruct_50e(3, 0, 2, 55, 55, 3, 0);
+instruct_50e(3, 0, 0, 55, 55, 21, 0);
+instruct_50e(38, 0, 2, 56, 0, 0, 0);
+instruct_50e(3, 0, 2, 56, 56, 4, 0);
+instruct_50e(3, 0, 0, 56, 56, 41, 0);
+instruct_50e(1, 0, 0, 50, 7, 59, 0);
+instruct_50e(38, 0, 7, 58, 0, 0, 0);
+instruct_50e(3, 0, 2, 58, 58, 2, 0);
+instruct_50e(3, 0, 0, 58, 58, 78, 0);
+instruct_50e(17, 1, 1, 50, 88, 70, 0);
+instruct_50e(17, 1, 1, 51, 88, 71, 0);
+instruct_50e(17, 1, 1, 52, 88, 72, 0);
+instruct_50e(17, 1, 1, 53, 88, 73, 0);
+instruct_50e(17, 1, 1, 54, 88, 74, 0);
+instruct_50e(17, 1, 1, 55, 88, 75, 0);
+instruct_50e(17, 1, 1, 56, 88, 76, 0);
+instruct_50e(17, 1, 1, 57, 88, 77, 0);
+instruct_50e(17, 1, 1, 58, 88, 78, 0);
+if InTeam(10) == false then goto label279 end;
+instruct_50e(3, 0, 3, 70, 70, 2, 0);
+instruct_50e(3, 0, 3, 71, 71, 2, 0);
+instruct_50e(3, 0, 3, 72, 72, 2, 0);
+instruct_50e(3, 0, 3, 73, 73, 2, 0);
+instruct_50e(3, 0, 3, 74, 74, 2, 0);
+::label279::
+instruct_50e(2, 11, 0, 50, 20, 21, 0);
+instruct_50e(2, 11, 0, 70, 20, 24, 0);
+instruct_50e(17, 1, 1, 21, 84, 22, 0);
+instruct_50e(3, 0, 0, 20, 20, 1, 0);
+instruct_50e(4, 0, 2, 22, 0, 0, 0);
+if CheckRoleSexual(256) then goto label279 end;
+instruct_50e(4, 0, 5, 20, 9, 0, 0);
+if CheckRoleSexual(256) then goto label375 end;
+instruct_50e(1, 11, 0, 100, 23, 21, 0);
+instruct_50e(1, 11, 0, 120, 23, 24, 0);
+instruct_50e(3, 0, 0, 23, 23, 1, 0);
+instruct_50e(1, 1, 0, 100, 23, -1, 0);
+instruct_50e(1, 1, 0, 120, 23, -1, 0);
+instruct_50e(4, 0, 0, 20, 9, 0, 0);
+if CheckRoleSexual(256) then goto label279 end;
+::label375::
+instruct_50e(2, 11, 0, 100, 7, 8, 0);
+instruct_50e(4, 0, 2, 8, -1, 0, 0);
+if CheckRoleSexual(256) then goto label447 end;
+instruct_50e(3, 0, 2, 14, 7, 100, 0);
+instruct_50e(3, 0, 0, 14, 14, 2000, 0);
+instruct_50e(2, 11, 0, 120, 7, 16, 0);
+instruct_50e(32, 0, 14, 5, 0, 0, 0);
+instruct_50e(27, 1, 1, 8, 100, 0, 0);
+instruct_50e(32, 0, 14, 2, 0, 0, 0);
+instruct_50e(10, 100, 17, 0, 0, 0, 0);
+instruct_50e(0, 18, 13, 0, 0, 0, 0);
+instruct_50e(3, 11, 1, 18, 18, 17, 0);
+instruct_50e(12, 1, 1000, 18, 0, 0, 0);
+instruct_50e(8, 0, 6, 800, 0, 0, 0);
+instruct_50e(9, 1, 1200, 800, 16, 0, 0);
+instruct_50e(32, 0, 14, 3, 0, 0, 0);
+instruct_50e(11, 1400, 1200, 1000, 0, 0, 0);
+instruct_50e(32, 0, 14, 2, 0, 0, 0);
+instruct_50e(11, 100, 1400, 1200, 0, 0, 0);
+instruct_50e(3, 0, 0, 7, 7, 1, 0);
+instruct_50e(4, 0, 0, 7, 9, 0, 0);
+if CheckRoleSexual(256) then goto label375 end;
+::label447::
+instruct_50e(4, 0, 0, 7, 1, 0, 0);
+if CheckRoleSexual(256) == false then goto label607 end;
+Talk("靠，我的貨都被你買光了", 259, 0);
 exit();
-::label8::
-                                    instruct_50e(3, 0, 0, 9, 7, 0, 0);
-                                    instruct_50e(3, 0, 2, 9, 9, 18, 0);
-                                    instruct_50e(3, 0, 0, 9, 9, 10, 0);
-                                    instruct_50e(34, 8, 100, 5, 150, 9, 0);
-                                    instruct_50e(3, 0, 0, 9, 7, 1, 0);
-                                    instruct_50e(0, 10, 0, 0, 0, 1, 0);
-                                    instruct_50e(39, 1, 7, 500, 10, 105, 10);
-                                    instruct_50e(4, 0, 0, 10, 1, 0, 0);
-                                    if CheckRoleSexual(256) == true then goto label9 end;
-                                        instruct_50e(43, 0, 176, 24, 0, 0, 0);
-                                        instruct_50e(4, 0, 1, 10032, 0, 0, 0);
-                                        if CheckRoleSexual(256) == true then goto label10 end;
-                                            instruct_50e(4, 0, 5, 10032, 2000, 0, 0);
-                                            if CheckRoleSexual(256) == true then goto label11 end;
-                                                instruct_50e(3, 0, 1, 10, 10, 1, 0);
-                                                instruct_50e(2, 11, 0, 100, 10, 11, 0);
-                                                instruct_50e(17, 1, 1, 11, 84, 10033, 0);
-                                                instruct_50e(4, 1, 5, 10032, 10033, 0, 0);
-                                                if CheckRoleSexual(266) == true then goto label12 end;
-                                                    instruct_50e(2, 11, 0, 120, 10, 12, 0);
-                                                    instruct_50e(3, 1, 2, 12, 12, 10032, 0);
-                                                    instruct_50e(4, 0, 0, 12, 0, 0, 0);
-                                                    if CheckRoleSexual(256) == true then goto label13 end;
-                                                        instruct_50e(32, 0, 12, 1, 0, 0, 0);
-                                                        if CheckEnoughMoney(0) == true then goto label14 end;
-::label13::
-                                                            Talk("沒錢快滾", 259, 0);
+::label607::
+instruct_50e(3, 0, 0, 9, 7, 0, 0);
+instruct_50e(3, 0, 2, 9, 9, 18, 0);
+instruct_50e(3, 0, 0, 9, 9, 10, 0);
+instruct_50e(34, 8, 100, 5, 150, 9, 0);
+instruct_50e(3, 0, 0, 9, 7, 1, 0);
+instruct_50e(0, 10, 0, 0, 0, 1, 0);
+instruct_50e(39, 1, 7, 500, 10, 105, 10);
+instruct_50e(4, 0, 0, 10, 1, 0, 0);
+if CheckRoleSexual(256) then goto label682 end;
+instruct_50e(43, 0, 176, 24, 0, 0, 0);
+instruct_50e(4, 0, 1, 10032, 0, 0, 0);
+if CheckRoleSexual(256) then goto label702 end;
+instruct_50e(4, 0, 5, 10032, 2000, 0, 0);
+if CheckRoleSexual(256) then goto label714 end;
+instruct_50e(3, 0, 1, 10, 10, 1, 0);
+instruct_50e(2, 11, 0, 100, 10, 11, 0);
+instruct_50e(17, 1, 1, 11, 84, 10033, 0);
+instruct_50e(4, 1, 5, 10032, 10033, 0, 0);
+if CheckRoleSexual(266) then goto label714 end;
+instruct_50e(2, 11, 0, 120, 10, 12, 0);
+instruct_50e(3, 1, 2, 12, 12, 10032, 0);
+instruct_50e(4, 0, 0, 12, 0, 0, 0);
+if CheckRoleSexual(256) then goto label778 end;
+instruct_50e(32, 0, 12, 1, 0, 0, 0);
+if CheckEnoughMoney(0) then goto label790 end;
+::label778::
+Talk("沒錢快滾", 259, 0);
 exit();
-::label14::
-                                                            instruct_50e(2, 11, 0, 100, 10, 11, 0);
-                                                            instruct_50e(2, 11, 0, 120, 10, 12, 0);
-                                                            instruct_50e(3, 1, 2, 12, 12, 10032, 0);
-                                                            instruct_50e(0, 13, 0, 0, 0, 0, 0);
-                                                            instruct_50e(3, 3, 1, 13, 13, 12, 0);
-                                                            instruct_50e(32, 0, 13, 2, 0, 0, 0);
-                                                            AddItemWithoutHint(342, 0);
-                                                            Talk("你買了我的東西，保證絕不後悔", 259, 0);
-                                                            instruct_50e(43, 6, 817, 11, 10032, 0, 0);
-                                                            instruct_50e(17, 1, 1, 11, 84, 19, 0);
-                                                            instruct_50e(3, 1, 1, 19, 19, 10032, 0);
-                                                            instruct_50e(16, 101, 1, 11, 84, 19, 0);
+::label790::
+instruct_50e(2, 11, 0, 100, 10, 11, 0);
+instruct_50e(2, 11, 0, 120, 10, 12, 0);
+instruct_50e(3, 1, 2, 12, 12, 10032, 0);
+instruct_50e(0, 13, 0, 0, 0, 0, 0);
+instruct_50e(3, 3, 1, 13, 13, 12, 0);
+instruct_50e(32, 0, 13, 2, 0, 0, 0);
+AddItemWithoutHint(342, 0);
+Talk("你買了我的東西，保證絕不後悔", 259, 0);
+instruct_50e(43, 6, 817, 11, 10032, 0, 0);
+instruct_50e(17, 1, 1, 11, 84, 19, 0);
+instruct_50e(3, 1, 1, 19, 19, 10032, 0);
+instruct_50e(16, 101, 1, 11, 84, 19, 0);
 exit();
-::label9::
+::label682::
 exit();
-::label11::
-::label12::
-                                                            Talk("（不是被你說服，是被你嚇服的說）", 259, 0);
+::label714::
+Talk("沒那么多貨", 259, 0);
 exit();
-::label10::
-                                                            Talk("沒那么多貨", 259, 0);
-exit();
+::label702::
+Talk("輸入錯誤", 259, 0);

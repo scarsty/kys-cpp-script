@@ -21,21 +21,20 @@ Talk("北色！", 187, 5);
 Talk("（汗！）喂，你們找我到底有什么事？", 0, 0);
 Talk("小子，剛才的事你這會兒就忘了？", 29, 1);
 Talk("哦，原來是來報仇的，你們一起上吧！", 0, 0);
-if TryBattle(111) == true then goto label0 end;
-    Dead();
-    exit();
-::label0::
-    ModifyEvent(23, 2, 0, -2, 0, 0, 0, 0, 0, 0, -2, -2, -2);
-    ModifyEvent(-2, 35, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 36, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 37, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 38, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 39, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 40, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 41, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    Add3EventNum(60, 23, 0, 0, 26)
-    Add3EventNum(60, 24, 0, 0, 0)
-    LightScene();
-    Talk("什么Ｆ４啊，跑得倒是蠻快的！", 0, 1);
-    AddMorality(1);
+if TryBattle(111) then goto label170 end;
+Dead();
 exit();
+::label170::
+ModifyEvent(23, 2, 0, -2, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 35, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 36, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 37, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 38, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 39, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 40, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 41, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+Add3EventNum(60, 23, 0, 0, 1);
+Add3EventNum(60, 24, 0, 0, 1);
+LightScene();
+Talk("什么Ｆ４啊，跑得倒是蠻快的！", 0, 1);
+AddMorality(1);

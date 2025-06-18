@@ -4,4 +4,3 @@ ChangeSubMapPic(-2, 0, 994, 990);
 LightScene();
 ModifyEvent(-2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 5, -2, -2, -1, -1, 597, -1, -1, -1, -2, -2, -2);
-exit();

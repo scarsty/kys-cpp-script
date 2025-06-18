@@ -1,8 +1,7 @@
 Talk("是否休息？", 0, 3);
-if AskRest() == true then goto  label0 end;
-    exit();
-::label0::
-    DarkScene();
-    Rest();
-    LightScene();
+if AskRest() then goto  label4 end;
 exit();
+::label4::
+DarkScene();
+Rest();
+LightScene();

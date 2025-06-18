@@ -5,4 +5,3 @@ DarkScene();
 PlayAnimation(-1, 5000, 5000);
 LightScene();
 AddItem(134, 1);
-exit();

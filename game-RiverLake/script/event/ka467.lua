@@ -11,4 +11,3 @@ ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(46, 24);
 LightScene();
 Talk("別人跟什么人相愛關那兩個人什么事？真不明白，人家礙著你了嗎？", 0, 0);
-exit();

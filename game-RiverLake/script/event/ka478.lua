@@ -5,4 +5,3 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(68, 1, 17, 24, 1832);
 SetSubMapLayerData(68, 1, 18, 24, 0);
 SetSubMapLayerData(68, 1, 19, 24, 1836);
-exit();

@@ -8,4 +8,3 @@ ModifyEvent(-2, 6, 1, -2, 622, 623, 0, 6276, 6276, 6276, 0, -2, -2);
 OldSetScenePosition(48, 25);
 LightScene();
 Talk("怎么樣？服務還滿意嗎？", 93, 1);
-exit();

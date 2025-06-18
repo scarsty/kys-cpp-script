@@ -7,7 +7,6 @@ DarkScene();
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(23, 3, 1, -2, 712, 0, 0, 7972, 7972, 7972, 0, -2, -2);
-Add3EventNum(23, 2, 1, 0, 0)
+Add3EventNum(23, 2, 1, 0, 0);
 LightScene();
 AddMorality(-1);
-exit();

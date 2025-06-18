@@ -28,4 +28,3 @@ DarkScene();
 ModifyEvent(48, 21, 1, -2, 819, 0, 0, 2610, 2610, 2610, 0, -2, -2);
 OldSetScenePosition(30, 52);
 LightScene();
-exit();

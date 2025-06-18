@@ -10,4 +10,3 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, 50, 34);
 Talk("神雕俠你怎么這么傻啊？竟然跳下去．", 0, 0);
 SetSubMapLayerData(18, 1, 44, 30, 0);
 SetSubMapLayerData(18, 1, 44, 31, 0);
-exit();

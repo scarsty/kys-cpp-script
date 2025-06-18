@@ -13,15 +13,14 @@ instruct_50e(16, 5, 2, 13, 50, 10, 0);
 instruct_50e(26, 0, 0, 10590, 29, 1000, 0);
 instruct_50e(17, 1, 2, 1000, 20, 1001, 0);
 instruct_50e(4, 0, 5, 1001, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label0 end;
-    instruct_50e(16, 1, 2, 13, 48, 0, 0);
-    instruct_50e(16, 1, 2, 13, 50, 0, 0);
-    instruct_50e(16, 5, 2, 13, 28, 9, 0);
-    instruct_50e(16, 5, 2, 13, 30, 10, 0);
-::label0::
-    instruct_50e(16, 1, 2, 13, 44, 0, 0);
-    instruct_50e(16, 1, 2, 13, 46, 0, 0);
-    instruct_50e(32, 0, 13, 1, 0, 0, 0);
-    ModifyEvent(-2, 189, -2, -2, -2, -2, 155, 0, 0, 0, 0, -2, -2);
-    instruct_50e(43, 0, 156, 0, 0, 0, 0);
-exit();
+if CheckRoleSexual(256) == false then goto label126 end;
+instruct_50e(16, 1, 2, 13, 48, 0, 0);
+instruct_50e(16, 1, 2, 13, 50, 0, 0);
+instruct_50e(16, 5, 2, 13, 28, 9, 0);
+instruct_50e(16, 5, 2, 13, 30, 10, 0);
+::label126::
+instruct_50e(16, 1, 2, 13, 44, 0, 0);
+instruct_50e(16, 1, 2, 13, 46, 0, 0);
+instruct_50e(32, 0, 13, 1, 0, 0, 0);
+ModifyEvent(-2, 189, -2, -2, -2, -2, 155, 0, 0, 0, 0, -2, -2);
+instruct_50e(43, 0, 156, 0, 0, 0, 0);

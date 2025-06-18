@@ -16,14 +16,13 @@ instruct_50e(43, 0, 183, 84, 0, 12, 3);
 instruct_50e(43, 0, 183, 77, 0, 12, 3);
 instruct_50e(43, 0, 198, 0, 0, 0, 0);
 instruct_50e(32, 0, 3, 1, 0, 0, 0);
-if TryBattle(0) == true then goto label0 end;
-    instruct_50e(43, 0, 199, 1, 0, 0, 0);
-    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+if TryBattle(0) then goto label135 end;
+instruct_50e(43, 0, 199, 1, 0, 0, 0);
+instruct_50e(43, 0, 157, 50, 0, 0, 0);
 exit();
-::label0::
-    ModifyEvent(-2, 8, 1, -2, -1, -2, -2, 8908, 8908, 8908, 0, 40, 17);
-    LightScene();
-    instruct_50e(43, 0, 181, 0, 0, 0, 0);
-    instruct_50e(43, 0, 180, 0, 0, 0, 0);
-    instruct_50e(43, 0, 664, 0, 0, 0, 0);
-exit();
+::label135::
+ModifyEvent(-2, 8, 1, -2, -1, -2, -2, 8908, 8908, 8908, 0, 40, 17);
+LightScene();
+instruct_50e(43, 0, 181, 0, 0, 0, 0);
+instruct_50e(43, 0, 180, 0, 0, 0, 0);
+instruct_50e(43, 0, 664, 0, 0, 0, 0);

@@ -19,12 +19,11 @@ Talk("鐘山有仙人", 274, 0);
 instruct_50e(32, 0, 0, 2, 0, 0, 0);
 Talk("了解", 0, 0);
 ModifyEvent(-2, -2, -2, -2, 754, -2, -2, -2, -2, -2, 0, -2, -2);
-if InTeam(4) == true then goto label0 end;
-    OpenSubMap(54);
-    instruct_50e(43, 0, 194, 25, 0, 0, 0);
-    instruct_50e(21, 0, 33, 199, 2, 54, 0);
+if InTeam(4) then goto label138 end;
+OpenSubMap(54);
+instruct_50e(43, 0, 194, 25, 0, 0, 0);
+instruct_50e(21, 0, 33, 199, 2, 54, 0);
 exit();
-::label0::
-    instruct_50e(43, 0, 651, 0, 0, 0, 0);
-    instruct_50e(43, 0, 194, 26, 0, 0, 0);
-exit();
+::label138::
+instruct_50e(43, 0, 651, 0, 0, 0, 0);
+instruct_50e(43, 0, 194, 26, 0, 0, 0);

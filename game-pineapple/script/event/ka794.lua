@@ -1,22 +1,21 @@
 instruct_50e(19, 0, 0, 0, 0, 0, 0);
 instruct_50e(3, 0, 1, 0, 0, 420, 0);
-Talk("不會不會，當然不會，好好安葬了他吧。（還是你的命比較重要）", 228, 0);
+Talk("真是有緣，又見到少俠了。在下在此的私事已了，不知少俠是否有空，一起吃頓便飯", 228, 0);
 instruct_50e(32, 0, 0, 2, 0, 0, 0);
-Talk("真是有緣，又見到少俠了。在下在此的私事已了，不知少俠是否有空，一起吃頓便飯", 0, 0);
-::label0::
+Talk("兄臺客氣了，卻之不恭", 0, 0);
+::label74::
 instruct_50e(19, 1, 1, 2, 0, 0, 0);
 instruct_50e(16, 1, 0, 2, 38, 0, 0);
 instruct_50e(16, 1, 0, 2, 40, 0, 0);
 instruct_50e(3, 0, 0, 1, 1, 1, 0);
 instruct_50e(4, 0, 0, 1, 6, 0, 0);
-if CheckRoleSexual(256) == true then goto label0 end;
-    DarkScene();
-    Rest();
-    LightScene();
-    Talk("兄臺客氣了，卻之不恭", 228, 0);
-    instruct_50e(32, 0, 0, 2, 0, 0, 0);
-    Talk("在下有事要去鄴城一趟，如果有緣相聚，一定與少俠深談。告辭", 0, 0);
-    DarkScene();
-    ModifyEvent(-2, -2, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
-    LightScene();
-exit();
+if CheckRoleSexual(256) then goto label74 end;
+DarkScene();
+Rest();
+LightScene();
+Talk("在下告辭了，有緣再見", 228, 0);
+instruct_50e(32, 0, 0, 2, 0, 0, 0);
+Talk("請", 0, 0);
+DarkScene();
+ModifyEvent(-2, -2, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+LightScene();

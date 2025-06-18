@@ -16,4 +16,3 @@ ModifyEvent(20, 0, 1, -2, 641, 0, 0, 6154, 6154, 6154, 0, -2, -2);
 LightScene();
 Talk("又成全了一對．真開心．", 0, 1);
 AddMorality(3);
-exit();

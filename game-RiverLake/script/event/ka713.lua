@@ -10,7 +10,6 @@ Talk("田伯光這個笨蛋！！", 187, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(23, 4, 1, -2, 714, 0, 0, 6414, 6414, 6414, 0, -2, -2);
-Add3EventNum(23, 2, 1, 0, 0)
+Add3EventNum(23, 2, 1, 0, 0);
 LightScene();
 AddMorality(-1);
-exit();

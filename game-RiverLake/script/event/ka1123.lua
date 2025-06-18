@@ -16,14 +16,13 @@ Talk("又有小子要亂闖梅莊嗎？", 31, 0);
 DarkScene();
 ModifyEvent(-2, 28, 1, -2, 0, 0, 0, 7044, 7044, 7044, 0, -2, -2);
 LightScene();
-if TryBattle(229) == true then goto label0 end;
-    Dead();
-    exit();
-::label0::
-    ModifyEvent(-2, 25, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 9, 1, -2, 1124, 0, 0, 6062, 6062, 6062, 0, -2, -2);
-    ModifyEvent(-2, 10, 1, -2, 1124, 0, 0, 6046, 6046, 6046, 0, -2, -2);
-    SetSubMapLayerData(55, 1, 21, 34, 0);
-    LightScene();
+if TryBattle(229) then goto label120 end;
+Dead();
 exit();
+::label120::
+ModifyEvent(-2, 25, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 9, 1, -2, 1124, 0, 0, 6062, 6062, 6062, 0, -2, -2);
+ModifyEvent(-2, 10, 1, -2, 1124, 0, 0, 6046, 6046, 6046, 0, -2, -2);
+SetSubMapLayerData(55, 1, 21, 34, 0);
+LightScene();

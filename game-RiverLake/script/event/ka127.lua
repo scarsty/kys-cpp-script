@@ -6,12 +6,11 @@ Talk("其實大家有什么話應該坐下來談，何必弄得打來打去的�
 Talk("好，你讓她交出我們五毒教的鎮教之寶藥王神篇我們就放過她．", 87, 0);
 Talk("藥王神篇？聽這名就是人家毒手藥王的，跟你們五毒教有什么關系．", 0, 0);
 Talk("這個．．．少廢話，不交出來就送你去見閻王爺！", 87, 0);
-if TryBattle(11) == true then goto label0 end;
-    Dead();
-    exit();
-::label0::
-    ModifyEvent(-2, 2, 1, -2, 128, 0, 0, -2, -2, -2, 0, -2, -2);
-    ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    LightScene();
+if TryBattle(11) then goto label40 end;
+Dead();
 exit();
+::label40::
+ModifyEvent(-2, 2, 1, -2, 128, 0, 0, -2, -2, -2, 0, -2, -2);
+ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+LightScene();

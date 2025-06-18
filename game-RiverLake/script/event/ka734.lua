@@ -21,4 +21,3 @@ OldSetScenePosition(15, 35);
 LightScene();
 Talk("這五毒教女子好像對夏雪宜產生了感情．毒龍洞，不如我也到大理附近去找找看．", 0, 1);
 OpenSubMap(67);
-exit();

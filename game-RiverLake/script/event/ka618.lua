@@ -10,41 +10,40 @@ Talk("甚麼劉貴妃？劉貴妃早死了，我是瑛姑．段皇爺，你沒�
 Talk("阿彌陀佛！段皇爺已死，老衲一燈．施主想報仇盡管直接來找老衲就好，跟我的徒弟無關，請施主不要為難我的徒弟．阿彌陀佛．", 65, 0);
 Talk("滿口”阿彌陀佛”，裝得大慈大悲的樣子，那當時你怎么不救我的孩兒？一燈，今天我就要為我的孩兒報仇！", 66, 0);
 Talk("是否出手阻止？", 0, 3);
-if AskRest() == true then goto  label0 end;
-    DarkScene();
-    ModifyEvent(-2, 0, 1, -2, 0, 0, 0, 6156, 6156, 6156, 0, 22, 19);
-    ModifyEvent(-2, 23, 1, -2, 619, 0, 0, 6226, 6226, 6226, 0, -2, -2);
-    LightScene();
-    Talk("．．．．．．我報仇了？．．．．．．我報仇了？．．．．．．", 66, 0);
-    DarkScene();
-    ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 18, 18);
-    LightScene();
-    if InTeam(98) == false then goto label1 end;
-        Talk("一燈大師救我性命，他遇難時你竟然不出手相救，算我看錯你了！", 124, 1);
-        LeaveTeam(98);
-::label1::
-        ModifyEvent(-2, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-        AddMorality(-3);
-        exit();
-::label0::
-        Talk("前輩，請別動手！", 0, 1);
-        WalkFromTo(23, 19, 20, 19);
-        Talk("小姑娘的傷治好了？", 66, 0);
-        Talk("我的傷沒治好你敢前來找大師尋仇嗎？", 124, 1);
-        Talk("小姑娘話中有話啊！", 66, 0);
-        Talk("郭襄，跟她多說什么？前輩！我是不會讓你傷害一燈大師的！", 0, 0);
-        Talk("郭襄？原來女施主是郭大俠的千金．郭大俠近來可好啊？", 65, 0);
-        Talk("原來你們都是一伙的，難怪要阻止我報仇！小子，看招", 66, 0);
-        if TryBattle(89) == true then goto label2 end;
-            Dead();
-            exit();
-::label2::
-            LightScene();
-            Talk("．．．．．．上天怎么這樣對我．．．．．．", 66, 0);
-            DarkScene();
-            ModifyEvent(-2, 0, 1, -2, 620, 0, 0, 6150, 6150, 6150, 0, 18, 18);
-            ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-            LightScene();
-            OldSetScenePosition(19, 18);
-            AddMorality(-3);
+if AskRest() then goto  label80 end;
+DarkScene();
+ModifyEvent(-2, 0, 1, -2, 0, 0, 0, 6156, 6156, 6156, 0, 22, 19);
+ModifyEvent(-2, 23, 1, -2, 619, 0, 0, 6226, 6226, 6226, 0, -2, -2);
+LightScene();
+Talk("．．．．．．我報仇了？．．．．．．我報仇了？．．．．．．", 66, 0);
+DarkScene();
+ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 18, 18);
+LightScene();
+if InTeam(98) == false then goto label139 end;
+Talk("一燈大師救我性命，他遇難時你竟然不出手相救，算我看錯你了！", 124, 1);
+LeaveTeam(98);
+::label139::
+ModifyEvent(-2, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+AddMorality(-3);
 exit();
+::label80::
+Talk("前輩，請別動手！", 0, 1);
+WalkFromTo(23, 19, 20, 19);
+Talk("小姑娘的傷治好了？", 66, 0);
+Talk("我的傷沒治好你敢前來找大師尋仇嗎？", 124, 1);
+Talk("小姑娘話中有話啊！", 66, 0);
+Talk("郭襄，跟她多說什么？前輩！我是不會讓你傷害一燈大師的！", 0, 0);
+Talk("郭襄？原來女施主是郭大俠的千金．郭大俠近來可好啊？", 65, 0);
+Talk("原來你們都是一伙的，難怪要阻止我報仇！小子，看招", 66, 0);
+if TryBattle(89) then goto label214 end;
+Dead();
+exit();
+::label214::
+LightScene();
+Talk("．．．．．．上天怎么這樣對我．．．．．．", 66, 0);
+DarkScene();
+ModifyEvent(-2, 0, 1, -2, 620, 0, 0, 6150, 6150, 6150, 0, 18, 18);
+ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+LightScene();
+OldSetScenePosition(19, 18);
+AddMorality(-3);

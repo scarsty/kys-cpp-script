@@ -12,4 +12,3 @@ ModifyEvent(18, 8, 1, -2, 0, 0, 0, 8590, 8590, 8590, 0, -2, -2);
 ModifyEvent(18, 9, 1, -2, 0, 0, 0, 8588, 8588, 8588, 0, -2, -2);
 LightScene();
 AddMorality(-1);
-exit();

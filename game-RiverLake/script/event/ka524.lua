@@ -14,4 +14,3 @@ ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 SubMapViewFromTo(14, 39, 19, 41);
-exit();

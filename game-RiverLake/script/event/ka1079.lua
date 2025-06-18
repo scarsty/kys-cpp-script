@@ -21,8 +21,7 @@ Talk("師叔．．．", 0, 1);
 Talk("放心吧，以后不會再想了．", 249, 0);
 Talk("師叔．．．", 0, 1);
 ModifyEvent(-2, -2, -2, -2, 1080, 0, 0, -2, -2, -2, 0, -2, -2);
-Add3EventNum(-2, 40, 0, 0, 26)
-Add3EventNum(-2, 41, 0, 0, 26)
-Add3EventNum(-2, 42, 0, 0, 0)
+Add3EventNum(-2, 40, 0, 0, 1);
+Add3EventNum(-2, 41, 0, 0, 1);
+Add3EventNum(-2, 42, 0, 0, 1);
 AddMorality(1);
-exit();

@@ -13,4 +13,3 @@ ModifyEvent(-2, -2, -2, -2, 815, 0, 0, 8722, 8722, 8722, 0, -2, -2);
 AddAttack(60, 100);
 OldSetScenePosition(28, 46);
 LightScene();
-exit();

@@ -22,4 +22,3 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OpenSubMap(38);
 LightScene();
 Talk("什么嗎？就讓我自己去送死？", 0, 0);
-exit();

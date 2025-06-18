@@ -9,4 +9,3 @@ DarkScene();
 LightScene();
 Talk("今天就到這里吧．", 205, 0);
 ModifyEvent(-2, 24, 0, -2, 0, 0, 957, 0, 0, 0, 0, -2, -2);
-exit();

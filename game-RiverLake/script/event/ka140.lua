@@ -6,19 +6,18 @@ Talk("如今看來死的真是不怎么體面．他二人素來交好，卻在�
 Talk("喂！你們幾個搶了苗大俠的東西，還不還回來．", 0, 0);
 Talk("寶藏位置已經找到，藏寶圖還有什么用．", 62, 0);
 Talk("那你們就別想出去了．", 0, 0);
-if TryBattle(12) == true then goto label0 end;
-    Dead();
-    exit();
-::label0::
-    ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    LightScene();
-    Talk("金輪法王不愧武功高強，逃跑都跑得比別人快的多．", 0, 0);
-    SubMapViewFromTo(28, 17, 37, 17);
-    Talk("苗大俠說的機關在這．", 0, 0);
-    DarkScene();
-    ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-    ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 7746, 7746, 7746, 0, -2, -2);
-    ModifyEvent(24, 0, 1, -2, 141, 0, 0, -2, -2, -2, 0, -2, -2);
-    LightScene();
-    Talk("你們一輩子陪著寶藏吧．", 0, 0);
+if TryBattle(12) then goto label41 end;
+Dead();
 exit();
+::label41::
+ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+LightScene();
+Talk("金輪法王不愧武功高強，逃跑都跑得比別人快的多．", 0, 0);
+SubMapViewFromTo(28, 17, 37, 17);
+Talk("苗大俠說的機關在這．", 0, 0);
+DarkScene();
+ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 7746, 7746, 7746, 0, -2, -2);
+ModifyEvent(24, 0, 1, -2, 141, 0, 0, -2, -2, -2, 0, -2, -2);
+LightScene();
+Talk("你們一輩子陪著寶藏吧．", 0, 0);

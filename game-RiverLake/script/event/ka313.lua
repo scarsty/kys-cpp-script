@@ -15,4 +15,3 @@ DarkScene();
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 ModifyEvent(46, 6, 1, -2, 314, 0, 0, 8252, 8252, 8252, 0, -2, -2);
-exit();

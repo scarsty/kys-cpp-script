@@ -13,13 +13,12 @@ instruct_50e(43, 0, 184, 6, 0, 10, 0);
 instruct_50e(43, 0, 183, 91, 0, 12, 3);
 instruct_50e(43, 0, 198, 0, 0, 0, 0);
 instruct_50e(32, 0, 3, 1, 0, 0, 0);
-if TryBattle(0) == true then goto label0 end;
-    instruct_50e(43, 0, 199, 1, 0, 0, 0);
-    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+if TryBattle(0) then goto label114 end;
+instruct_50e(43, 0, 199, 1, 0, 0, 0);
+instruct_50e(43, 0, 157, 50, 0, 0, 0);
 exit();
-::label0::
-    LightScene();
-    instruct_50e(43, 0, 181, 0, 0, 0, 0);
-    instruct_50e(43, 0, 180, 0, 0, 0, 0);
-    instruct_50e(43, 0, 660, 0, 0, 0, 0);
-exit();
+::label114::
+LightScene();
+instruct_50e(43, 0, 181, 0, 0, 0, 0);
+instruct_50e(43, 0, 180, 0, 0, 0, 0);
+instruct_50e(43, 0, 660, 0, 0, 0, 0);
