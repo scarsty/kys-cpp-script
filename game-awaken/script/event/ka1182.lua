@@ -1,0 +1,18 @@
+Talk("小子  今天想學什么", 222, 0);
+Talk("不了  今天我想休息一下", 0, 1);
+Talk("累了嗎  那你就休息吧", 222, 0);
+ModifyEvent(-2, -2, 1, 0, 0, 0, 0, -2, -2, -2, -2, -2, -2);
+ModifyEvent(118, 18, 0, 18, 628, -2, -2, -2, -2, -2, -2, -2, -2);
+WalkFromTo(7, 21, 9, 21);
+WalkFromTo(9, 21, 9, 20);
+DarkScene();
+ModifyEvent(118, 19, 1, 19, -2, -2, 2, 5326, 5326, 5326, -2, -2, 2);
+LightScene();
+SubMapViewFromTo(9, 20, 10, 26);
+Talk("新來的 起來換牢房了。", 144, 5);
+DarkScene();
+PlayMusic(12);
+OldSetScenePosition(17, 21);
+LightScene();
+Talk("真巧  那不就是..........", 0, 4);
+ModifyEvent(118, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2);

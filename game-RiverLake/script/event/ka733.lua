@@ -1,0 +1,27 @@
+SubMapViewFromTo(41, 21, 36, 16);
+Talk("原來如此．", 195, 1);
+PlayAnimation(12, 8596, 8610);
+ModifyEvent(37, 12, 1, -2, 0, 0, 0, 8596, 8596, 8596, 0, -2, -2);
+Talk("啊！", 195, 1);
+Talk("兄臺，我來幫你！", 0, 1);
+if TryBattle(119) == true then goto label0 end;
+    Dead();
+    exit();
+::label0::
+    ModifyEvent(-2, 11, 1, -2, 726, 0, 0, 6818, 6818, 6818, 0, -2, -2);
+    ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    OldSetScenePosition(37, 19);
+    LightScene();
+    Talk("啊！剛才那條蛇有毒！", 195, 0);
+    Talk("這．．．這如何是好？", 0, 1);
+    Talk("他中的蛇毒非一般解藥可解需我五毒教秘制解藥才行！", 25, 0);
+    DarkScene();
+    ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 15, 0, -2, 0, 0, 734, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 13, 1, -2, 0, 0, 0, 6804, 6804, 6804, 0, -2, -2);
+    ModifyEvent(-2, 14, 1, -2, 0, 0, 0, 8612, 8612, 8612, 0, -2, -2);
+    LightScene();
+    Talk("剛才那個女子是誰？看衣著應該是五毒教的．", 0, 1);
+    AddMorality(3);
+exit();

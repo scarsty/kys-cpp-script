@@ -1,0 +1,18 @@
+SubMapViewFromTo(30, 17, 36, 17);
+SubMapViewFromTo(36, 17, 36, 35);
+Talk("這丫頭不錯，少主一定喜歡。", 224, 4);
+Talk("你們是什么人，快放開我。", 90, 0);
+DarkScene();
+ModifyEvent(-2, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 1, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 2, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 3, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 4, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(-2, 7, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+OldSetScenePosition(38, 36);
+LeaveTeam(90);
+LightScene();
+Talk("應該是是歐陽克那淫賊的人快追", 0, 4);
+Talk("場景開啟白駝山莊（141,432）", 0, 3);
+OpenSubMap(69);
+ModifyEvent(99, 11, 0, 11, 0, 0, -1, 0, 0, 0, -2, -2, -2);

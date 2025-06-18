@@ -1,0 +1,54 @@
+if isUsingItem(198) == true then goto label0 end;
+    exit();
+::label0::
+    Talk("老仙息怒．其實晚輩是一心仰慕老仙大名，想拜老仙為師，每天只要能看上老仙一眼，晚輩就心滿意足了．", 0, 1);
+    if CheckRoleMorality(0, 0, 40) == true then goto label1 end;
+        Talk("真是活得不耐煩了．膽敢戲耍本仙．", 46, 0);
+        Talk("啊！", 0, 1);
+        ZeroAllMP();
+        if TryBattle(171) == true then goto label2 end;
+            Dead();
+            exit();
+::label2::
+            Talk("小子，有兩下子嗎．", 46, 0);
+            ZeroAllMP();
+            if TryBattle(172) == true then goto label3 end;
+                Dead();
+                exit();
+::label3::
+                ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+                ZeroAllMP();
+                LightScene();
+                Talk("娘啊，想拜師，原來是一群膿包．", 0, 1);
+                AddMorality(-2);
+                exit();
+::label1::
+                Talk("恩，見你的根骨不錯，就收下你了．", 46, 0);
+                Talk("多謝老仙．．．啊，不，師父．星宿老仙，法力無邊．", 0, 1);
+                AddItemWithoutHint(198, -1);
+                AddItem(51, 1);
+                AddItem(38, 10);
+                instruct_50e(17, 0, 0, 0, 100, 1, 0);
+                instruct_50e(3, 0, 0, 1, 1, 1, 0);
+                instruct_50e(16, 100, 0, 0, 100, 1, 0);
+                instruct_50e(17, 0, 0, 320, 38, 2, 0);
+                instruct_50e(17, 0, 0, 0, 94, 3, 0);
+                instruct_50e(3, 1, 0, 2, 2, 3, 0);
+                instruct_50e(16, 100, 0, 0, 94, 2, 0);
+                ModifyEvent(-2, -2, -2, -2, 883, 915, 0, -2, -2, -2, 0, -2, -2);
+                ModifyEvent(-2, 15, 1, -2, 913, 0, 0, 6368, 6368, 6368, 0, -2, -2);
+exit();

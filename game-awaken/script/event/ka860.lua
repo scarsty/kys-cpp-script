@@ -1,0 +1,21 @@
+if InTeam(143) == false then
+Talk("抱歉隊伍中沒有小蒼龍的話是沒法進行游戲的。", 0, 3);
+exit();
+end;
+DarkScene();
+ModifyEvent(87, 16, 0, 16, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+LightScene();
+Talk("陳總舵主你堅持一下，馬上到了。", 245, 5);
+Talk("........................", 101, 0);
+DarkScene();
+OldSetScenePosition(8, 22);
+PlayMusic(25);
+LightScene();
+Talk("數日后陳近南傷重死去。", 0, 3);
+Talk("英雄 一路走好........", 244, 5);
+Talk("江少俠 我們得到消息。為了對付前丐幫幫主喬峰，在聚賢莊將舉辦英雄大會。", 193, 1);
+Talk("喬大哥.........我得馬上動身。", 245, 5);
+DarkScene();
+ModifyEvent(54, 24, 0, 0, 0, 0, 566, 0, 0, 0, -2, -2, -2);
+ModifyEvent(54, 25, 0, 0, 0, 0, 566, 0, 0, 0, -2, -2, -2);
+OldSetScenePosition(27, 52);

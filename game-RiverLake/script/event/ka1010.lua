@@ -1,0 +1,14 @@
+Talk("大師兄，剛才．．．", 0, 1);
+Talk("快，再記幾招泰山派的劍法如果還是打不過他我們就再來學．", 35, 0);
+Talk("哦．", 0, 1);
+DarkScene();
+LightScene();
+SetRoleMagic(35, 0, 36, 600);
+AddAttack(35, 10);
+AddAttack(0, 10);
+Talk("我們出去吧，太久恐怕田伯光要起疑心．", 35, 0);
+DarkScene();
+ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+ModifyEvent(-2, 4, 1, -2, 1011, 0, 0, 8814, 8814, 8814, 0, -2, -2);
+LightScene();
+exit();

@@ -1,0 +1,41 @@
+instruct_50e(3, 0, 2, 1, 28928, 9, 0);
+instruct_50e(3, 0, 0, 1, 1, 3142, 0);
+instruct_50e(3, 0, 0, 2, 1, 1, 0);
+instruct_50e(0, 3, 0, 0, 0, 0, 0);
+instruct_50e(8, 1, 1, 8000, 0, 0, 0);
+instruct_50e(0, 10075, 320, 0, 0, 0, 0);
+instruct_50e(10, 8000, 10074, 0, 0, 0, 0);
+instruct_50e(3, 0, 2, 10074, 10074, 9, 0);
+instruct_50e(3, 0, 0, 10074, 10074, 10, 0);
+instruct_50e(3, 0, 0, 10077, 10074, 0, 0);
+instruct_50e(3, 1, 1, 10075, 10075, 10074, 0);
+instruct_50e(3, 0, 3, 10075, 10075, 2, 0);
+instruct_50e(3, 0, 1, 10076, 10075, 5, 0);
+::label0::
+instruct_50e(3, 0, 2, 4, 3, 50, 0);
+instruct_50e(3, 0, 0, 4, 4, 1000, 0);
+instruct_50e(32, 0, 4, 4, 0, 0, 0);
+instruct_50e(8, 1, 2, 1000, 0, 0, 0);
+instruct_50e(1, 3, 0, 100, 3, 4, 0);
+instruct_50e(3, 0, 0, 2, 2, 1, 0);
+instruct_50e(3, 0, 0, 3, 3, 1, 0);
+instruct_50e(4, 0, 0, 3, 8, 0, 0);
+if CheckRoleSexual(256) == true then goto label0 end;
+    instruct_50e(38, 0, 8, 5, 0, 0, 0);
+    instruct_50e(3, 0, 0, 5, 5, 1, 0);
+    instruct_50e(3, 0, 0, 6, 5, 28, 0);
+    instruct_50e(32, 0, 6, 1, 0, 0, 0);
+    PlayMusic(0);
+::label1::
+    instruct_50e(34, 5, 10076, 2, 10077, 28, 0);
+    instruct_50e(33, 1, 8000, 10075, 7, 1797, 0);
+    instruct_50e(34, 0, 90, 33, 120, 154, 0);
+    instruct_50e(39, 0, 8, 100, 10, 95, 38);
+    instruct_50e(4, 0, 0, 10, 1, 0, 0);
+    if CheckRoleSexual(256) == true then goto label1 end;
+        instruct_50e(0, 7, 2, 0, 0, 0, 0);
+        instruct_50e(4, 1, 2, 10, 5, 0, 0);
+        if CheckRoleSexual(256) == false then goto label2 end;
+            instruct_50e(0, 7, 1, 0, 0, 0, 0);
+::label2::
+exit();

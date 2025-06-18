@@ -1,0 +1,24 @@
+DarkScene();
+ModifyEvent(133, 8, 1, 8, 0, 0, 0, 7240, 7240, 7240, -2, -2, -2);
+ModifyEvent(133, 19, 1, 19, 0, 0, 0, 6870, 6870, 6870, -2, -2, -2);
+ModifyEvent(133, 10, 1, 10, 0, 0, 0, 7970, 7970, 7970, -2, -2, -2);
+ModifyEvent(133, 20, 0, 20, 0, 0, -1, 0, 0, 0, -2, -2, -2);
+LightScene();
+PlayMusic(7);
+SubMapViewFromTo(28, 8, 12, 9);
+Talk("歐陽鋒！ 你還沒走？", 55, 0);
+Talk("走？我現在抓你回去。", 60, 4);
+Talk("恩？？？", 0, 1);
+if TryBattle(306) then
+end;
+OldSetScenePosition(18, 11);
+PlayMusic(7);
+LightScene();
+Talk("你們快走，我拖住他。", 0, 5);
+Talk("跟我來", 56, 0);
+DarkScene();
+ModifyEvent(133, 8, 0, 8, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(133, 10, 0, 10, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(133, 19, 0, 19, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(75, 39, 0, 39, 0, 0, 488, 0, 0, 0, -2, -2, -2);
+LightScene();

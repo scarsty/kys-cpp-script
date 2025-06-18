@@ -1,0 +1,10 @@
+ModifyEvent(-2, -2, 1, 0, 0, 0, 0, 2492, 2492, 2492, -2, -2, -2);
+AddItem(0, 10);
+AddItem(1, 3);
+AddItem(2, 1);
+AddItem(3, 10);
+AddItem(4, 3);
+AddItem(5, 2);
+AddItem(6, 1);
+AddItem(10, 3);
+AddItem(209, 50);

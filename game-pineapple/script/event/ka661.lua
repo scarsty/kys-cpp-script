@@ -1,0 +1,62 @@
+instruct_50e(19, 0, 0, 0, 0, 0, 0);
+instruct_50e(3, 0, 1, 0, 0, 420, 0);
+Talk("事實證明，沒有法師助陣，勝率很低！", 91, 0);
+Talk("程昱快出來幫忙", 79, 0);
+DarkScene();
+ModifyEvent(45, 10, 0, -2, -2, -2, -2, 9062, 9062, 9062, 0, -2, -2);
+LightScene();
+instruct_50e(32, 0, 0, 2, 0, 0, 0);
+Talk("兩個打一個還不夠，還叫一個？", 0, 0);
+Talk("不好意思，來晚了", 78, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(19, 0, 0, 4, 0, 0, 0);
+instruct_50e(17, 1, 0, 4, 20, 20, 0);
+instruct_50e(17, 1, 0, 4, 30, 4, 0);
+instruct_50e(0, 18, 1, 0, 0, 0, 0);
+instruct_50e(0, 3, 95, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 15, 0, 2, 0);
+instruct_50e(43, 0, 184, 10, 0, 6, 0);
+instruct_50e(43, 0, 183, 91, 0, 12, 3);
+instruct_50e(43, 0, 183, 79, 0, 12, 3);
+instruct_50e(43, 0, 183, 78, 0, 12, 3);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    ModifyEvent(45, 10, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(45, 9, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+exit();
+::label0::
+    ModifyEvent(45, 8, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(45, 10, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(45, 9, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+    instruct_50e(5, 0, 0, 0, 0, 0, 0);
+::label2::
+    instruct_50e(22, 2, 45, 5, 4, 6, 0);
+    instruct_50e(4, 0, 2, 6, 431, 0, 0);
+    if CheckRoleSexual(256) == true then goto label1 end;
+        instruct_50e(3, 0, 0, 5, 5, 1, 0);
+        instruct_50e(4, 0, 0, 5, 7, 0, 0);
+        if CheckRoleSexual(256) == true then goto label2 end;
+::label1::
+            instruct_50e(32, 0, 5, 2, 0, 0, 0);
+            ModifyEvent(45, -2, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+            instruct_50e(5, 0, 0, 0, 0, 0, 0);
+::label4::
+            instruct_50e(22, 2, 36, 5, 4, 6, 0);
+            instruct_50e(4, 0, 2, 6, 411, 0, 0);
+            if CheckRoleSexual(256) == true then goto label3 end;
+                instruct_50e(3, 0, 0, 5, 5, 1, 0);
+                instruct_50e(4, 0, 0, 5, 7, 0, 0);
+                if CheckRoleSexual(256) == true then goto label4 end;
+::label3::
+                    instruct_50e(32, 0, 5, 2, 0, 0, 0);
+                    ModifyEvent(36, -2, 1, -2, -2, -2, -2, 2354, 2354, 2354, 0, -2, -2);
+                    ModifyEvent(36, 8, 1, -2, 662, -2, -2, 8908, 8908, 8908, 0, -2, -2);
+                    instruct_50e(43, 0, 194, 31, 0, 0, 0);
+exit();

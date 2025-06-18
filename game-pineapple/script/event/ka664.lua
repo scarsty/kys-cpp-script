@@ -1,0 +1,69 @@
+instruct_50e(19, 0, 0, 0, 0, 0, 0);
+instruct_50e(3, 0, 1, 0, 0, 420, 0);
+Talk("你太可惡了，傷了人家善良的心", 83, 0);
+Talk("誰能幫我換算一下，三國志里面的90折合這里的多少？", 84, 0);
+Talk("上天啊，為什么啊，為什么你會把我一代鬼才賈詡和這兩個莽漢分到一組呢？", 77, 0);
+instruct_50e(32, 0, 0, 2, 0, 0, 0);
+Talk("為什么又是三個一起上？？", 0, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(19, 0, 0, 4, 0, 0, 0);
+instruct_50e(17, 1, 0, 4, 20, 20, 0);
+instruct_50e(17, 1, 0, 4, 30, 4, 0);
+instruct_50e(0, 18, 1, 0, 0, 0, 0);
+instruct_50e(0, 3, 98, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 15, 0, 3, 0);
+instruct_50e(43, 0, 184, 14, 0, 3, 0);
+instruct_50e(43, 0, 184, 12, 0, 3, 0);
+instruct_50e(43, 0, 183, 83, 0, 12, 3);
+instruct_50e(43, 0, 183, 84, 0, 12, 3);
+instruct_50e(43, 0, 183, 77, 0, 12, 3);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    ModifyEvent(-2, 8, 0, -2, -1, -2, -2, 0, 0, 0, 0, 40, 17);
+    LightScene();
+    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+exit();
+::label0::
+    ModifyEvent(-2, 8, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 9, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 10, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+    instruct_50e(5, 0, 0, 0, 0, 0, 0);
+    instruct_50e(26, 0, 0, 10590, 29, 0, 0);
+    instruct_50e(0, 1, 58, 0, 0, 0, 0);
+    instruct_50e(26, 0, 0, 10588, 29, 2, 0);
+    instruct_50e(26, 0, 0, 10586, 29, 3, 0);
+::label1::
+::label2::
+::label5::
+    instruct_50e(38, 0, 8, 5, 0, 0, 0);
+    instruct_50e(22, 3, 0, 5, 4, 40, 0);
+    instruct_50e(4, 0, 2, 40, 411, 0, 0);
+    if CheckRoleSexual(256) == true then goto label1 end;
+        instruct_50e(22, 3, 0, 5, 5, 40, 0);
+        instruct_50e(4, 0, 2, 40, 412, 0, 0);
+        if CheckRoleSexual(256) == true then goto label2 end;
+            instruct_50e(4, 0, 2, 40, 0, 0, 0);
+            instruct_50e(4, 0, 4, 5, 4, 0, 0);
+            if CheckRoleSexual(256) == false then goto label3 end;
+                instruct_50e(3, 0, 1, 15, 5, 4, 0);
+::label3::
+                instruct_50e(4, 0, 0, 5, 4, 0, 0);
+                if CheckRoleSexual(256) == false then goto label4 end;
+                    instruct_50e(3, 0, 0, 15, 5, 4, 0);
+::label4::
+                    instruct_50e(22, 3, 1, 15, 5, 40, 0);
+                    instruct_50e(4, 0, 2, 40, 0, 0, 0);
+                    if CheckRoleSexual(256) == true then goto label5 end;
+                        instruct_50e(32, 0, 5, 2, 0, 0, 0);
+                        ModifyEvent(-2, 0, 0, -2, -2, -2, 444, 0, 0, 0, 0, -2, -2);
+                        instruct_50e(21, 19, 1, 15, 0, 0, 0);
+                        instruct_50e(21, 19, 1, 15, 5, 0, 0);
+                        instruct_50e(21, 19, 1, 15, 6, 0, 0);
+                        instruct_50e(21, 19, 1, 15, 7, 0, 0);
+                        instruct_50e(43, 0, 194, 33, 0, 0, 0);
+exit();

@@ -1,0 +1,63 @@
+if InTeam(11) == true then goto label0 end;
+    ModifyEvent(-2, -2, -2, -2, -1, -1, -1, 0, 0, 0, 0, -2, -2);
+exit();
+::label0::
+    DarkScene();
+    LightScene();
+    instruct_50e(19, 0, 0, 0, 0, 0, 0);
+    instruct_50e(3, 0, 1, 0, 0, 420, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("這里是哪里，我怎么感覺自己迷路了？", 0, 0);
+    Talk("話也不能這么理解，不是迷路，而是走錯了方向", 11, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("那為什么不早說", 0, 0);
+    Talk("你不問我怎么知道要說？", 11, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("（百無一用是書生，懶的理你）那我們還不趕快回頭", 0, 0);
+    Talk("堅決不可以", 11, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("現在我，問你為什么不可以", 0, 0);
+    Talk("（早就該問了）因為陸遜已經追上來了", 11, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("……", 0, 0);
+    Talk("（求你趕快問我怎么辦？主動說出的辦法不值錢，但是不說，陸遜殺過來我也要倒霉，說or不說，這是一個問題）", 11, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("請先生救救我吧", 0, 0);
+    Talk("（長舒口氣）其實不難，我早先學過一套陣法，用到這里很合適，只需如此如此…", 11, 0);
+    DarkScene();
+    instruct_50e(5, 0, 0, 0, 0, 0, 0);
+    instruct_50e(26, 0, 0, 10590, 29, 0, 0);
+    instruct_50e(0, 21, 60, 0, 0, 0, 0);
+    instruct_50e(3, 0, 0, 1, 0, 1, 0);
+    instruct_50e(26, 0, 0, 10588, 29, 2, 0);
+    instruct_50e(26, 0, 0, 10586, 29, 3, 0);
+    instruct_50e(24, 1101, 0, 3, 2, 3, 4);
+::label1::
+::label2::
+    instruct_50e(38, 0, 8, 5, 0, 0, 0);
+    instruct_50e(4, 1, 2, 5, 4, 0, 0);
+    if CheckRoleSexual(256) == true then goto label1 end;
+        instruct_50e(22, 3, 0, 5, 5, 40, 0);
+        instruct_50e(4, 0, 2, 40, 0, 0, 0);
+        if CheckRoleSexual(256) == true then goto label2 end;
+            instruct_50e(4, 0, 4, 5, 4, 0, 0);
+            if CheckRoleSexual(256) == false then goto label3 end;
+                instruct_50e(3, 0, 1, 15, 5, 4, 0);
+::label3::
+                instruct_50e(4, 0, 0, 5, 4, 0, 0);
+                if CheckRoleSexual(256) == false then goto label4 end;
+                    instruct_50e(3, 0, 0, 15, 5, 4, 0);
+::label4::
+                    instruct_50e(32, 0, 5, 2, 0, 0, 0);
+                    ModifyEvent(-2, 0, 0, -2, -2, -2, -2, 0, 0, 0, 0, -2, -2);
+                    instruct_50e(21, 19, 1, 15, 0, 0, 0);
+                    instruct_50e(21, 19, 1, 15, 5, 0, 0);
+                    instruct_50e(21, 19, 1, 15, 6, 0, 0);
+                    instruct_50e(21, 19, 1, 15, 7, 0, 0);
+                    instruct_50e(22, 11, 0, 4, 4, 6, 0);
+                    instruct_50e(3, 0, 0, 6, 6, 1, 0);
+                    instruct_50e(21, 11, 0, 4, 4, 6, 0);
+                    LightScene();
+                    Talk("陣法已經布好了，公子這邊請吧", 11, 0);
+                    ModifyEvent(-2, -2, -2, -2, -2, -2, -1, -2, -2, -2, 0, 2, -2);
+exit();

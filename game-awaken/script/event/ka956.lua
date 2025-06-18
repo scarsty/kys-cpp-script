@@ -1,0 +1,11 @@
+Talk("狄師兄丁大俠已經沒事了。", 0, 5);
+DarkScene();
+LightScene();
+Talk("....丁大哥..真幸福......雖說不能相見，可也能一直在一起了。", 37, 0);
+Join(37);
+DarkScene();
+ModifyEvent(94, 9, 0, 9, -1, -2, -2, -1, -1, -1, -2, -2, -2);
+LightScene();
+OpenSubMap(121);
+OpenSubMap(59);
+Talk("場景開啟衡山后山（354,371）", 0, 2);

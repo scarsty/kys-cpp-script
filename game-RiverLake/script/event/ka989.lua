@@ -1,0 +1,31 @@
+if HaveItemBool(80) == false then goto label0 end;
+    if InTeam(77) == false then goto label1 end;
+        DarkScene();
+        LightScene();
+        Talk("師弟，我們今天就住在嵩山上，明天一早再回華山．", 206, 1);
+        Talk("是，二師兄．", 0, 1);
+        DarkScene();
+        OldSetScenePosition(34, 14);
+        LightScene();
+        Talk("早點休息，明天還要趕路．", 0, 1);
+        DarkScene();
+        Rest();
+        SetTowards(3);
+        LightScene();
+        Talk("＜昨晚吃了什么，怎么肚子這么痛？＞", 0, 1);
+        Talk("＜咦？二師兄哪去了？難道也去了茅房？＞", 0, 1);
+        DarkScene();
+        LightScene();
+        Talk("＜天亮了．＞咦，二師兄，您醒了？", 0, 1);
+        Talk("恩，你醒的也很早啊．", 206, 1);
+        Talk("昨天半夜起夜，怎么見你不在床上？也肚子不舒服嗎？", 0, 1);
+        Talk("恩．．．這個．．．是啊，昨天不知道吃了什么，肚子不舒服．", 206, 1);
+        Talk("看來這嵩山的飯菜真的不怎么樣啊．", 0, 1);
+        Talk("是啊，我們回去向師父報告吧．", 206, 1);
+        ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(57, 1, -2, -2, 990, -2, -2, -2, -2, -2, -2, -2, -2);
+        exit();
+::label0::
+::label1::
+exit();

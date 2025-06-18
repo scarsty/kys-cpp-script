@@ -1,0 +1,43 @@
+Talk("五圣爭斗要開始了，少俠要參加嗎。獎品是增強寵物體質的靈藥", 201, 0);
+if CheckRoleAttack(94, 180, 999) == false then
+Talk("抱歉 你的寵物太弱了，不夠資格參加。", 201, 4);
+exit();
+end;
+if AskBattle() == false then
+Talk("先看看小青狀態好不好。小心點，死了就不能復活了。", 0, 5);
+exit();
+end;
+SetRoleMagic(637, 0, 126, 900);
+AddMaxHP(637, 450);
+AddMaxMP(637, 120);
+AddAttack(637, 75);
+AddSpeed(637, 45);
+SetRoleMagic(638, 0, 126, 900);
+AddMaxHP(638, 500);
+AddMaxMP(638, 500);
+AddAttack(638, 75);
+AddSpeed(638, 45);
+SetRoleMagic(639, 0, 120, 600);
+AddMaxHP(639, 450);
+AddMaxMP(639, 120);
+AddAttack(639, 75);
+AddSpeed(639, 45);
+SetRoleMagic(640, 0, 75, 500);
+AddMaxHP(640, 450);
+AddMaxMP(640, 120);
+AddAttack(640, 75);
+AddSpeed(640, 45);
+if TryBattle(291) == false then
+LightScene();
+Talk("小青蛇 死了", 0, 3);
+LeaveTeam(94);
+ModifyEvent(37, 0, 1, 0, 841, 0, 0, -2, -2, -2, -2, -2, -2);
+exit();
+end;
+LightScene();
+Talk("恭喜恭喜，獎品請收好。", 201, 0);
+SetRoleMagic(94, 0, 127, 900);
+AddMaxHP(94, 500);
+AddAttack(94, 50);
+AddSpeed(94, 30);
+ModifyEvent(37, 0, 1, 0, 841, 0, 0, -2, -2, -2, -2, -2, -2);

@@ -1,0 +1,24 @@
+DarkScene();
+ModifyEvent(-2, -2, -2, -2, -2, -2, -1, 0, 0, 0, 0, -2, -2);
+LightScene();
+Talk("我暈（我上哪里認識這個朝代的字啊）", 4, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(43, 0, 804, 542, 5, 0, 0);
+LightScene();
+instruct_50e(4, 0, 4, 126, 5, 0, 0);
+if CheckRoleSexual(256) == true then goto label0 end;
+    instruct_50e(19, 0, 0, 0, 0, 0, 0);
+    instruct_50e(3, 0, 1, 0, 0, 420, 0);
+    Talk("快找吧", 4, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("怎么看起來都一樣，到底哪張是那個書呆子要的模擬題啊？", 0, 0);
+    ModifyEvent(-2, 22, -2, -2, 833, -2, -1, -2, -2, -2, 0, -2, -2);
+exit();
+::label0::
+    instruct_50e(19, 0, 0, 0, 0, 0, 0);
+    instruct_50e(3, 0, 1, 0, 0, 420, 0);
+    Talk("快走，來人了", 4, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("這幾張應該就是他要的勞什子模擬題了吧", 0, 0);
+    ModifyEvent(-2, 22, -2, -2, 834, -2, -1, -2, -2, -2, 0, -2, -2);
+exit();

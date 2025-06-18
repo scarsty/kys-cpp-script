@@ -1,0 +1,23 @@
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(0, 3, 177, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 25, 0, 10, 0);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    OldSetScenePosition(49, 31);
+exit();
+::label0::
+    ModifyEvent(-2, 9, 0, -2, -1, -1, -1, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 12, 0, -2, -1, -1, -1, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 11, 0, -2, -1, -1, -1, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+    instruct_50e(43, 0, 185, 100, -1, 0, 0);
+    AddItem(121, 1);
+    instruct_50e(19, 0, 0, 0, 0, 0, 0);
+    instruct_50e(3, 0, 1, 0, 0, 420, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("看起來很殘破，有地圖，有路線，莫非是藏寶圖。看指示應該就在這附近", 0, 0);
+exit();

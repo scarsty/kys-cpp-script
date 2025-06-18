@@ -1,0 +1,25 @@
+instruct_50e(19, 0, 0, 0, 0, 0, 0);
+instruct_50e(3, 0, 1, 0, 0, 420, 0);
+instruct_50e(32, 0, 0, 2, 0, 0, 0);
+Talk("為什么又是你？", 0, 0);
+Talk("本來該是張遼的戲份，結果他突然升級成了男二號了。我就要多跑一次龍套！", 91, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(19, 0, 0, 4, 0, 0, 0);
+instruct_50e(17, 1, 0, 4, 20, 20, 0);
+instruct_50e(17, 1, 0, 4, 30, 4, 0);
+instruct_50e(0, 18, 1, 0, 0, 0, 0);
+instruct_50e(0, 3, 93, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 6, 0, 10, 0);
+instruct_50e(43, 0, 183, 91, 0, 12, 3);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+exit();
+::label0::
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+    instruct_50e(43, 0, 660, 0, 0, 0, 0);
+exit();

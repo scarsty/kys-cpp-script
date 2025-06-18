@@ -1,0 +1,28 @@
+instruct_50e(19, 0, 0, 0, 0, 0, 0);
+instruct_50e(3, 0, 1, 0, 0, 420, 0);
+Talk("又見面了，請多關照", 74, 0);
+instruct_50e(32, 0, 0, 2, 0, 0, 0);
+Talk("可算有一個有禮貌的", 0, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(19, 0, 0, 4, 0, 0, 0);
+instruct_50e(17, 1, 0, 4, 20, 20, 0);
+instruct_50e(17, 1, 0, 4, 30, 4, 0);
+instruct_50e(0, 18, 1, 0, 0, 0, 0);
+instruct_50e(0, 3, 102, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 13, 0, 3, 0);
+instruct_50e(43, 0, 184, 12, 0, 4, 0);
+instruct_50e(43, 0, 183, 74, 0, 12, 3);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    LightScene();
+    instruct_50e(43, 0, 157, 50, 0, 0, 0);
+exit();
+::label0::
+    ModifyEvent(-2, -2, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 15, 1, -2, 670, -2, -2, 9102, 9102, 9102, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+exit();

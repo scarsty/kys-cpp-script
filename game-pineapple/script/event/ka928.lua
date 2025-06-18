@@ -1,0 +1,26 @@
+if isUsingItem(46) == false then goto label0 end;
+    DarkScene();
+    instruct_50e(8, 0, 2848, 15000, 0, 0, 0);
+    instruct_50e(43, 0, 902, 1, 46, 0, 0);
+    instruct_50e(16, 0, 1, 46, 82, 1, 0);
+    LightScene();
+    AddItemWithoutHint(46, -1);
+    Talk("毒靈珠", 206, 0);
+    Talk("相公……", 22, 0);
+    Talk("娘子……", 206, 0);
+    Talk("樹上的鳥兒成雙對……", 22, 0);
+    Talk("綠水青山帶笑顏……", 206, 0);
+    Talk("你我好比鴛鴦鳥……", 22, 0);
+    instruct_50e(19, 0, 0, 0, 0, 0, 0);
+    instruct_50e(3, 0, 1, 0, 0, 420, 0);
+    instruct_50e(32, 0, 0, 2, 0, 0, 0);
+    Talk("夫妻雙雙把家還……", 0, 0);
+    DarkScene();
+    ModifyEvent(-2, 15, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 12, 0, -2, -1, -2, -2, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(0, 31, -2, -2, 992, -2, -1, -1, -1, -1, -2, -2, -2);
+    LightScene();
+    AddItem(46, 1);
+    Talk("都死了，又玩殉情，瓊瑤劇害人不淺，人都死了，我還是撤吧", 265, 0);
+::label0::
+exit();

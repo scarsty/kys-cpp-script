@@ -1,0 +1,24 @@
+DarkScene();
+ModifyEvent(140, 12, 0, 12, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+PlayMusic(24);
+OldSetScenePosition(17, 12);
+SetTowards(0);
+LightScene();
+Talk(".....這是什么？....哇塞好大的屁股", 0, 5);
+Talk("啊~~~~~~~~~~~~~~~~~~~~~~", 276, 0);
+Talk("小心！是雪怪！", 37, 0);
+if TryBattle(5) == false then
+Dead();
+exit();
+end;
+ModifyEvent(140, 22, 0, 22, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+LightScene();
+Talk("叫什么叫大驚小怪的，不就是雪怪嘛。", 0, 1);
+Talk("........................", 276, 0);
+Talk("姓花的 你過來 我解開你的穴道，你給我走前面。", 0, 5);
+Talk("........................", 52, 0);
+DarkScene();
+ModifyEvent(140, 14, 0, 14, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+ModifyEvent(140, 15, 0, 15, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+Join(52);
+LightScene();

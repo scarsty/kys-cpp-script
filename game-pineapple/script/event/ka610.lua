@@ -1,0 +1,23 @@
+Talk("擅入虎牢關者死！", 100, 0);
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(19, 0, 0, 4, 0, 0, 0);
+instruct_50e(17, 1, 0, 4, 20, 20, 0);
+instruct_50e(17, 1, 0, 4, 30, 4, 0);
+instruct_50e(0, 17, 200, 0, 0, 0, 0);
+instruct_50e(0, 18, 1, 0, 0, 0, 0);
+instruct_50e(0, 3, 5, 0, 0, 0, 0);
+instruct_50e(43, 0, 184, 0, 0, 8, 0);
+instruct_50e(43, 0, 184, 1, 0, 4, 0);
+instruct_50e(43, 0, 184, 2, 0, 6, 0);
+instruct_50e(43, 0, 198, 0, 0, 0, 0);
+instruct_50e(32, 0, 3, 1, 0, 0, 0);
+if TryBattle(0) == true then goto label0 end;
+    instruct_50e(43, 0, 199, 1, 0, 0, 0);
+    instruct_50e(43, 0, 157, 0, 0, 0, 0);
+exit();
+::label0::
+    ModifyEvent(-2, -2, 0, -2, -1, -1, -1, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    instruct_50e(43, 0, 181, 0, 0, 0, 0);
+    instruct_50e(43, 0, 180, 0, 0, 0, 0);
+exit();

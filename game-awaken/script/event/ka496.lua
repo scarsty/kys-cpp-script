@@ -1,0 +1,22 @@
+AddMorality(5);
+DarkScene();
+ModifyEvent(-2, 25, 0, 0, 0, 0, 0, 8218, 8218, 8218, -2, -2, -2);
+ModifyEvent(-2, 26, 0, 0, 0, 0, 0, 8206, 8206, 8206, -2, -2, -2);
+LightScene();
+SetRoleMagic(60, 1, 104, 900);
+Talk("哈哈，在你身上就好！", 60, 0);
+Talk("鋒兄，此行不虛啊。", 67, 0);
+Talk("又是你們兩個，看招！", 245, 1);
+Talk("臭小子，今日讓你嘗嘗我的蛇陣的厲害！", 60, 0);
+AddMorality(3);
+if TryBattle(176) == false then
+Dead();
+exit();
+end;
+ModifyEvent(-2, 27, 1, 0, 498, 0, 0, 7102, 7102, 7102, -2, -2, -2);
+LightScene();
+Talk("著！", 129, 0);
+Talk("啊--重、重陽真人，你沒死？不好，快撤！", 60, 0);
+LightScene();
+Talk("師，師父，您真的還活著？", 68, 0);
+ModifyEvent(-2, 0, 1, 0, 497, 0, 0, -2, -2, -2, -2, -2, -2);

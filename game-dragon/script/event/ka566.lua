@@ -1,0 +1,66 @@
+AddMorality(5);
+ModifyEvent(-2, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+SubMapViewFromTo(43, 30, 29, 27);
+Talk("薛神醫，請您一定要治好這位姑娘。", 50, 0);
+Talk("哼！", 45, 0);
+Talk("喬大哥……", 104, 0);
+Talk("各位既已和喬某喝過了這絕交酒，咱們從前的交情就一筆勾銷。哪一個先來決一死戰！", 50, 0);
+WalkFromTo(43, 30, 29, 30);
+WalkFromTo(29, 30, 29, 28);
+Talk("尊駕何人？要取喬某性命，盡管來吧！", 50, 0);
+Talk("喬兄誤會了。我深信喬兄為人，大丈夫光明磊落，那些殺人放火的勾當，絕非喬兄所為。我今日來此，誓要與喬兄并肩作戰！", 0, 1);
+Talk("哈哈哈……今日，相交多年的好友都跟喬某喝了這絕交酒，沒想到一位素昧平生的小兄弟卻愿與我共患難。好兄弟，就讓你我二人聯手抗敵，看看他們都有些什么本領！", 50, 0);
+if TryBattle(192) == false then
+Dead();
+exit();
+end;
+LightScene();
+if TryBattle(193) == false then
+Dead();
+exit();
+end;
+LightScene();
+if TryBattle(194) == false then
+Dead();
+exit();
+end;
+LightScene();
+if TryBattle(195) == false then
+Dead();
+exit();
+end;
+LightScene();
+if TryBattle(196) == false then
+Dead();
+exit();
+end;
+LightScene();
+Talk("＜今日眾人是都沖著我來的，怎能讓這個小兄弟跟著我無辜受牽連……＞，小兄弟，多謝你了，接招！", 50, 0);
+Talk("啊，喬兄，你……", 0, 1);
+DarkScene();
+ModifyEvent(-2, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(54, 0, 1, 0, 567, 0, 0, 6416, 6416, 6416, -2, -2, -2);
+ModifyEvent(54, 32, 1, 0, 567, 0, 0, 6084, 6084, 6084, -2, -2, -2);
+OldSetScenePosition(11, 42);
+LightScene();
+PlayAnimation(-1, 6014, 6024);
+ModifyEvent(-2, 31, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2, -2);
+Talk("啊……我這是在哪里啊？啊……想起來了……喬幫主……喬幫主用他最后的內力把我送出了聚賢莊，那他呢？", 244, 1);

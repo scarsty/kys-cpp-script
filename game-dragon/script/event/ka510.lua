@@ -1,0 +1,51 @@
+AddMorality(-3);
+Add3EventNum(61, 0, 1, 0, $5);
+Add3EventNum(61, 8, 1, 0, $5);
+Add3EventNum(61, 17, 1, 0, $5);
+Add3EventNum(61, 16, 1, 0, $5);
+Talk("什么人，擅闖重陽宮！", 68, 0);
+Talk("擅闖又如何？我還要拿東西呢！", 245, 1);
+Talk("大膽狂徒，接招。", 128, 0);
+if TryBattle(187) == false then
+Dead();
+exit();
+end;
+ModifyEvent(-2, 28, 0, 0, 0, 0, 0, 8230, 8230, 8230, -2, -2, -2);
+LightScene();
+Talk("馬鈺，丘處機，你們幾個臭牛鼻子，連這小子都對付不了，哈哈，我來了。", 64, 0);
+if TryBattle(183) == false then
+Dead();
+exit();
+end;
+ModifyEvent(-2, 29, 0, 0, 0, 0, 0, 6124, 6124, 6124, -2, -2, -2);
+ModifyEvent(-2, 30, 0, 0, 0, 0, 0, 8238, 8238, 8238, -2, -2, -2);
+LightScene();
+Talk("老頑童，你功夫不行啊", 57, 0);
+Talk("老頑童莫慌，我們來助你", 69, 0);
+if TryBattle(184) == false then
+Dead();
+exit();
+end;
+ModifyEvent(-2, 27, 0, 0, 0, 0, 0, 7102, 7102, 7102, -2, -2, -2);
+LightScene();
+Talk("何人敢在我重陽宮中撒野！", 129, 0);
+Talk("師父，您還活著？", 123, 0);
+Talk("師兄，真的是你，太好了……", 64, 0);
+Talk("重陽真人，久違了", 57, 0);
+Talk("重陽真人，你可是連老叫化都瞞過啦", 69, 0);
+Talk("貧道詐死，讓各位擔心了。現在我們大家聯手，對付這惡賊！", 129, 0);
+if TryBattle(185) == false then
+Dead();
+exit();
+end;
+LightScene();
+Talk("真是長江后浪推前浪，看來我們真是老了！", 129, 0);
+DarkScene();
+ModifyEvent(-2, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+ModifyEvent(-2, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+LightScene();
+AddItem(148, 1);
+AddItem(84, 1);
+ModifyEvent(-2, 0, 1, 0, 228, 0, 0, -2, -2, -2, -2, -2, -2);

@@ -1,0 +1,125 @@
+instruct_50e(5, 0, 0, 0, 0, 0, 0);
+instruct_50e(0, 4, 704, 0, 0, 0, 0);
+instruct_50e(3, 0, 1, 42, 4, 420, 0);
+instruct_50e(27, 1, 0, 4, 500, 0, 0);
+instruct_50e(17, 1, 0, 4, 18, 14, 0);
+instruct_50e(17, 1, 0, 4, 30, 3, 0);
+instruct_50e(4, 0, 5, 3, 30, 0, 0);
+if CheckRoleSexual(256) == false then goto label0 end;
+    instruct_50e(0, 3, 30, 0, 0, 0, 0);
+::label0::
+    instruct_50e(3, 1, 1, 14, 3, 14, 0);
+    instruct_50e(4, 0, 1, 14, 0, 0, 0);
+    if CheckRoleSexual(256) == false then goto label1 end;
+        instruct_50e(32, 0, 42, 2, 0, 0, 0);
+        Talk("點數不足。", 0, 0);
+exit();
+::label1::
+::label3::
+        instruct_50e(3, 0, 2, 40, 33, 2, 0);
+        instruct_50e(3, 0, 0, 40, 40, 126, 0);
+        instruct_50e(17, 3, 0, 4, 40, 41, 0);
+        instruct_50e(4, 0, 2, 41, 0, 0, 0);
+        if CheckRoleSexual(256) == true then goto label2 end;
+            instruct_50e(1, 3, 0, 100, 33, 41, 0);
+            instruct_50e(3, 2, 0, 33, 33, 1, 0);
+            instruct_50e(4, 0, 0, 33, 10, 0, 0);
+            if CheckRoleSexual(256) == true then goto label3 end;
+::label2::
+::label4::
+                instruct_50e(3, 2, 2, 1, 0, 10, 0);
+                instruct_50e(3, 2, 0, 1, 1, 2000, 0);
+                instruct_50e(2, 11, 0, 100, 0, 2, 0);
+                instruct_50e(27, 1, 3, 2, 900, 0, 0);
+                instruct_50e(0, 32, 10, 0, 0, 0, 0);
+                instruct_50e(10, 900, 31, 0, 0, 0, 0);
+                instruct_50e(3, 1, 1, 32, 32, 31, 0);
+                instruct_50e(12, 1, 915, 32, 0, 0, 0);
+                instruct_50e(17, 1, 3, 2, 14, 30, 0);
+                instruct_50e(3, 0, 0, 30, 30, 27, 0);
+                instruct_50e(8, 1, 30, 925, 0, 0, 0);
+                instruct_50e(11, 945, 900, 915, 0, 0, 0);
+                instruct_50e(32, 0, 1, 2, 0, 0, 0);
+                instruct_50e(11, 800, 945, 925, 0, 0, 0);
+                instruct_50e(1, 11, 0, 200, 0, 1, 0);
+                instruct_50e(3, 2, 0, 0, 0, 1, 0);
+                instruct_50e(4, 1, 0, 0, 33, 0, 0);
+                if CheckRoleSexual(256) == true then goto label4 end;
+                    instruct_50e(8, 0, 5, 700, 0, 0, 0);
+                    instruct_50e(8, 0, 6, 725, 0, 0, 0);
+                    instruct_50e(9, 1, 750, 725, 14, 0, 0);
+                    instruct_50e(11, 800, 700, 750, 0, 0, 0);
+                    instruct_50e(34, 0, 20, 5, 60, 62, 0);
+                    instruct_50e(41, 4, 1, 22, 64, 42, 0);
+                    instruct_50e(34, 0, 20, 70, 60, 45, 0);
+                    instruct_50e(33, 0, 800, 27, 75, 1797, 0);
+                    instruct_50e(3, 0, 0, 15, 33, 0, 0);
+                    instruct_50e(3, 2, 0, 5, 15, 0, 0);
+                    instruct_50e(3, 2, 2, 5, 5, 18, 0);
+                    instruct_50e(3, 2, 0, 5, 5, 10, 0);
+                    instruct_50e(34, 8, 100, 5, 90, 5, 0);
+                    instruct_50e(34, 8, 195, 5, 28, 5, 0);
+                    instruct_50e(39, 1, 15, 200, 10, 105, 10);
+                    instruct_50e(4, 0, 0, 10, 1, 0, 0);
+                    if CheckRoleSexual(256) == true then goto label5 end;
+                        instruct_50e(3, 2, 1, 10, 10, 1, 0);
+                        instruct_50e(2, 11, 0, 100, 10, 6, 0);
+::label7::
+                        instruct_50e(3, 2, 2, 8, 9, 2, 0);
+                        instruct_50e(3, 2, 0, 8, 8, 126, 0);
+                        instruct_50e(17, 11, 0, 4, 8, 7, 0);
+                        instruct_50e(4, 1, 2, 7, 6, 0, 0);
+                        if CheckRoleSexual(256) == true then goto label6 end;
+                            instruct_50e(3, 2, 0, 9, 9, 1, 0);
+                            instruct_50e(4, 0, 0, 9, 10, 0, 0);
+                            if CheckRoleSexual(256) == true then goto label7 end;
+::label9::
+                                instruct_50e(3, 0, 2, 11, 12, 2, 0);
+                                instruct_50e(3, 0, 0, 11, 11, 126, 0);
+                                instruct_50e(17, 111, 0, 4, 11, 13, 0);
+                                instruct_50e(3, 0, 0, 12, 12, 1, 0);
+                                instruct_50e(4, 10, 4, 12, 10, 0, 0);
+                                if CheckRoleSexual(256) == true then goto label8 end;
+                                    instruct_50e(4, 10, 3, 13, 0, 0, 0);
+                                    if CheckRoleSexual(256) == true then goto label9 end;
+                                        instruct_50e(16, 111, 0, 4, 11, 6, 0);
+                                        instruct_50e(17, 1, 0, 4, 18, 15, 0);
+                                        instruct_50e(3, 0, 0, 15, 15, 1, 0);
+                                        instruct_50e(16, 101, 0, 4, 18, 15, 0);
+                                        instruct_50e(34, 0, 125, 77, 60, 62, 0);
+                                        instruct_50e(41, 4, 1, 127, 136, 42, 0);
+                                        instruct_50e(8, 0, 2, 525, 0, 0, 0);
+                                        instruct_50e(27, 1, 3, 6, 550, 0, 0);
+                                        instruct_50e(11, 575, 500, 525, 0, 0, 0);
+                                        instruct_50e(11, 600, 575, 550, 0, 0, 0);
+                                        instruct_50e(0, 35, 320, 0, 0, 0, 0);
+                                        instruct_50e(10, 600, 34, 0, 0, 0, 0);
+                                        instruct_50e(3, 0, 2, 34, 34, 9, 0);
+                                        instruct_50e(3, 0, 0, 34, 34, 10, 0);
+                                        instruct_50e(3, 1, 1, 35, 35, 34, 0);
+                                        instruct_50e(3, 0, 3, 35, 35, 2, 0);
+                                        instruct_50e(36, 1, 600, 35, 30, 1797, 0);
+exit();
+::label8::
+                                        instruct_50e(32, 0, 42, 2, 0, 0, 0);
+                                        Talk("無法學習。", 0, 0);
+exit();
+::label6::
+                                        instruct_50e(3, 2, 0, 8, 8, 20, 0);
+                                        instruct_50e(17, 11, 0, 4, 8, 7, 0);
+                                        instruct_50e(4, 0, 4, 7, 900, 0, 0);
+                                        if CheckRoleSexual(256) == true then goto label10 end;
+                                            instruct_50e(3, 2, 0, 7, 7, 100, 0);
+                                            instruct_50e(16, 111, 0, 4, 8, 7, 0);
+                                            instruct_50e(17, 1, 0, 4, 18, 15, 0);
+                                            instruct_50e(3, 0, 0, 15, 15, 1, 0);
+                                            instruct_50e(16, 101, 0, 4, 18, 15, 0);
+                                            instruct_50e(32, 0, 42, 2, 0, 0, 0);
+                                            Talk("升級成功。", 0, 0);
+exit();
+::label10::
+                                            instruct_50e(32, 0, 42, 2, 0, 0, 0);
+                                            Talk("已經滿級了", 0, 0);
+exit();
+::label5::
+exit();

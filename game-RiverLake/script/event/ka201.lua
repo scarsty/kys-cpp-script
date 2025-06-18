@@ -1,0 +1,36 @@
+Talk("原來是你抓了段譽．", 0, 0);
+Talk("你放心吧，我是不會傷害他的，只要他同意拜我為師，我不但放了他，還會把我會的全教給他．", 44, 0);
+Talk("世上哪有你這樣收徒弟的．", 0, 0);
+Talk("我岳老二辦事哪容你這小鬼搗亂？", 44, 0);
+if AskBattle() == true then goto label0 end;
+    Talk("前輩別生氣嗎，其實我的意思是段譽不識好歹，不如你把他放了，收我為徒啊．", 0, 0);
+    Talk("你？我岳老二收徒是要看資質的我看看你的后腦不錯，卻是很想我，比段譽那個小子還像，那為師就把生平絕學全教給你．", 44, 0);
+    DarkScene();
+    LightScene();
+    SetRoleMagic(0, 0, 90, 900);
+    SetRoleMagic(0, 1, 0, 0);
+    SetRoleMagic(0, 2, 0, 0);
+    SetRoleMagic(0, 3, 0, 0);
+    SetRoleMagic(0, 4, 0, 0);
+    SetRoleMagic(0, 5, 0, 0);
+    SetRoleMagic(0, 6, 0, 0);
+    SetRoleMagic(0, 7, 0, 0);
+    SetRoleMagic(0, 8, 0, 0);
+    SetRoleMagic(0, 9, 0, 0);
+    Talk("哈哈，我終于收到了一個好徒弟，以后四小惡人排名我岳老二的徒弟一定會排在第一的．", 44, 0);
+    DarkScene();
+    ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    SetSubMapLayerData(-2, 1, 48, 17, 0);
+    LightScene();
+    exit();
+::label0::
+    Talk("岳老二？沒聽說過，我只聽說過岳老三．", 0, 0);
+    if TryBattle(21) == true then goto label1 end;
+        Dead();
+        exit();
+::label1::
+        ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        SetSubMapLayerData(-2, 1, 48, 17, 0);
+        LightScene();
+        Talk("我當是多了不起呢，原來草包一個．", 0, 0);
+exit();

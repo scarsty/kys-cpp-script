@@ -1,0 +1,48 @@
+instruct_50e(3, 0, 0, 0, 28930, 0, 0);
+instruct_50e(4, 0, 2, 28930, 0, 0, 0);
+if CheckRoleSexual(256) == false then goto label0 end;
+    instruct_50e(26, 0, 0, 10590, 29, 0, 0);
+::label0::
+    instruct_50e(0, 21, 60, 0, 0, 0, 0);
+    instruct_50e(4, 0, 2, 28929, -1, 0, 0);
+    if CheckRoleSexual(256) == true then goto label1 end;
+::label2::
+::label3::
+::label4::
+::label5::
+::label6::
+        instruct_50e(38, 0, 40, 1, 0, 0, 0);
+        instruct_50e(3, 0, 0, 1, 1, 10, 0);
+        instruct_50e(38, 0, 40, 2, 0, 0, 0);
+        instruct_50e(3, 0, 0, 2, 2, 10, 0);
+        instruct_50e(24, 1101, 0, 1, 1, 2, 3);
+        instruct_50e(4, 0, 3, 3, 0, 0, 0);
+        if CheckRoleSexual(256) == true then goto label2 end;
+            instruct_50e(24, 13, 0, 0, 1, 2, 3);
+            instruct_50e(4, 1, 2, 3, 28931, 0, 0);
+            if CheckRoleSexual(256) == true then goto label3 end;
+                instruct_50e(24, 1101, 0, 3, 1, 2, 3);
+                instruct_50e(4, 0, 3, 3, -1, 0, 0);
+                if CheckRoleSexual(256) == true then goto label4 end;
+                    instruct_50e(22, 3, 0, 21, 9, 10, 0);
+                    instruct_50e(22, 3, 0, 21, 10, 11, 0);
+                    instruct_50e(23, 13, 0, 3, 10, 11, -1);
+                    instruct_50e(26, 0, 0, 10588, 29, 12, 0);
+                    instruct_50e(26, 0, 0, 10586, 29, 13, 0);
+                    instruct_50e(4, 1, 2, 1, 12, 0, 0);
+                    if CheckRoleSexual(256) == true then goto label5 end;
+                        instruct_50e(21, 27, 0, 21, 9, 1, 3);
+                        instruct_50e(21, 27, 0, 21, 10, 2, 3);
+                        instruct_50e(21, 11, 0, 21, 4, 28929, 0);
+                        instruct_50e(23, 11101, 0, 3, 1, 2, 21);
+                        instruct_50e(3, 0, 0, 21, 21, 1, 0);
+                        instruct_50e(4, 1, 0, 21, 28928, 0, 0);
+                        if CheckRoleSexual(256) == true then goto label6 end;
+exit();
+::label1::
+::label7::
+                            instruct_50e(21, 3, 0, 21, 4, -1, 0);
+                            instruct_50e(3, 0, 0, 21, 21, 1, 0);
+                            instruct_50e(4, 1, 0, 21, 28928, 0, 0);
+                            if CheckRoleSexual(256) == true then goto label7 end;
+exit();

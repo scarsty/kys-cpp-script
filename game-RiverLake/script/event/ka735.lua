@@ -1,0 +1,46 @@
+AddMorality(2);
+SubMapViewFromTo(24, 21, 19, 17);
+Talk("你說你只拿金蛇劍的，怎么連金蛇錐和秘籍也拿？", 25, 1);
+Talk("．．．．．．", 195, 0);
+Talk("快把金蛇錐和秘籍放回去！", 25, 1);
+Talk("．．．．．．", 195, 0);
+Talk("幫夏雪宜請按”Ｙ”幫五毒教女子按”Ｎ”", 0, 3);
+if AskRest() == true then goto  label0 end;
+    Talk("兄臺，你這樣做恐怕有些不應該吧？", 0, 1);
+    if TryBattle(122) == true then goto label1 end;
+        Dead();
+        exit();
+::label1::
+        ModifyEvent(-2, 0, 1, -2, 736, 0, 0, 4734, 4734, 4734, 0, -2, -2);
+        ModifyEvent(-2, 1, 1, -2, 737, 0, 0, 3498, 3498, 3498, 0, -2, -2);
+        ModifyEvent(-2, 2, 1, -2, 738, 0, 0, 2606, 2606, 2606, 0, -2, -2);
+        ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        OldSetScenePosition(19, 17);
+        SetTowards(3);
+        LightScene();
+        Talk("多謝這位小哥，我才能保住教中寶物不失．", 25, 1);
+        Talk("哪里，只是舉手之勞而已．", 0, 0);
+        Talk("小哥有時間到五毒教坐坐．", 25, 1);
+        DarkScene();
+        ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(37, 5, 1, -2, 739, 0, 0, 6804, 6804, 6804, 0, -2, -2);
+        LightScene();
+        exit();
+::label0::
+        Talk("兄臺，我來幫你．", 0, 1);
+        if TryBattle(121) == true then goto label2 end;
+            Dead();
+            exit();
+::label2::
+            ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+            ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+            ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+            ModifyEvent(16, 9, 0, -2, 0, 0, 741, 0, 0, 0, 0, -2, -2);
+            ModifyEvent(16, 10, 0, -2, 0, 0, 741, 0, 0, 0, 0, -2, -2);
+            ModifyEvent(16, 11, 1, -2, 0, 0, 0, 8594, 8594, 8594, 0, -2, -2);
+            ModifyEvent(16, 12, 1, -2, 0, 0, 0, 8616, 8616, 8616, 0, -2, -2);
+            OldSetScenePosition(19, 17);
+            LightScene();
+            Talk("怎么現在人都這樣，我幫他他卻跑了！", 0, 1);
+exit();
