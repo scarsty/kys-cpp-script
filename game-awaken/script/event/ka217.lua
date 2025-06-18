@@ -18,5 +18,5 @@ Talk("不知楊兄今後有何打算？", 0, 1);
 Talk("我要去尋找我的姑姑，咱們后會有期。", 58, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-Add3EventNum(19, 24, 0, 0, $5);
+Add3EventNum(19, 24, 0, 0, 1);
 LightScene();

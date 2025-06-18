@@ -79,7 +79,7 @@ AddMaxMP(19, 1000);
 AddAttack(19, 200);
 AddSpeed(19, 200);
 SetRoleMagic(19, 0, 48, 900);
-SetMPType(19,0);
+SetMPType(19, 0);
 if TryBattle(33) == false then
 Dead();
 exit();

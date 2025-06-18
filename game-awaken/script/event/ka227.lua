@@ -1,7 +1,7 @@
 DarkScene();
-Add3EventNum(60, 4, 1, 0, $5);
-Add3EventNum(60, 5, 1, 0, $5);
-Add3EventNum(60, 3, 1, 0, $5);
+Add3EventNum(60, 4, 1, 0, 0);
+Add3EventNum(60, 5, 1, 0, 0);
+Add3EventNum(60, 3, 1, 0, 0);
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 ModifyEvent(-2, 1, 0, 0, 0, 0, 0, 6116, 6116, 6116, -2, -2, -2);
 ModifyEvent(-2, 2, 0, 0, 0, 0, 0, 6116, 6116, 6116, -2, -2, -2);

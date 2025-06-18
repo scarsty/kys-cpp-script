@@ -1,6 +1,6 @@
 DarkScene();
-Add3EventNum(40, 17, 1, 0, $5);
-Add3EventNum(40, 18, 1, 0, $5);
+Add3EventNum(40, 17, 1, 0, 0);
+Add3EventNum(40, 18, 1, 0, 0);
 LightScene();
 Talk("坐吧 我這里有點藥 給 今天我請客，給兩為少俠接風。", 36, 4);
 Talk("這位兄臺客氣了（有人請吃飯 爽哦）", 247, 0);

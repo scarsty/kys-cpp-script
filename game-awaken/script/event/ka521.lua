@@ -1,9 +1,9 @@
 DarkScene();
 AddMorality(1);
-Add3EventNum(40, 13, 1, 0, $5);
-Add3EventNum(40, 16, 1, 0, $5);
-Add3EventNum(40, 15, 1, 0, $5);
-Add3EventNum(40, 14, 1, 0, $5);
+Add3EventNum(40, 13, 1, 0, 0);
+Add3EventNum(40, 16, 1, 0, 0);
+Add3EventNum(40, 15, 1, 0, 0);
+Add3EventNum(40, 14, 1, 0, 0);
 LightScene();
 Talk("嘿嘿嘿，在我云中鶴面前逃的了嗎。", 100, 4);
 if TryBattle(191) == false then

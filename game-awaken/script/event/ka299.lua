@@ -1,8 +1,8 @@
 DarkScene();
 AddMorality(-3);
-Add3EventNum(40, 9, 1, 0, $5);
-Add3EventNum(40, 10, 1, 0, $5);
-Add3EventNum(40, 12, 1, 0, $5);
+Add3EventNum(40, 9, 1, 0, 0);
+Add3EventNum(40, 10, 1, 0, 0);
+Add3EventNum(40, 12, 1, 0, 0);
 LightScene();
 Talk("沒想到明教還留下你們兩個余孽", 7, 0);
 Talk("廢話少說，血債血償", 13, 0);

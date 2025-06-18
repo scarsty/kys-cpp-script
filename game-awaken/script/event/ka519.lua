@@ -56,7 +56,7 @@ OldLearnMagic(53, 85, 0);
 AddSpeed(53, 90);
 AddAttack(53, 30);
 AddIQ(53, 33);
-SetMPType(53,2);
+SetMPType(53, 2);
 AddSpeed(90, 30);
 Join(53);
 ModifyEvent(-2, 26, 0, 26, 0, 0, 0, 0, 0, 0, -2, -2, -2);

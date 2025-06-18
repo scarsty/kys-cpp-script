@@ -1,7 +1,7 @@
 AddMorality(2);
-Add3EventNum(60, 8, 1, 0, $5);
-Add3EventNum(60, 9, 1, 0, $5);
-Add3EventNum(60, 7, 1, 0, $5);
+Add3EventNum(60, 8, 1, 0, 0);
+Add3EventNum(60, 9, 1, 0, 0);
+Add3EventNum(60, 7, 1, 0, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 ModifyEvent(-2, 0, 0, 0, 0, 0, 0, 7034, 7034, 7034, -2, -2, -2);

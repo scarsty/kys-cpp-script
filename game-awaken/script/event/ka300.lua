@@ -1,8 +1,8 @@
 DarkScene();
 AddMorality(-9);
-Add3EventNum(40, 9, 1, 0, $5);
-Add3EventNum(40, 10, 1, 0, $5);
-Add3EventNum(40, 12, 1, 0, $5);
+Add3EventNum(40, 9, 1, 0, 0);
+Add3EventNum(40, 10, 1, 0, 0);
+Add3EventNum(40, 12, 1, 0, 0);
 OpenSubMap(4);
 LightScene();
 WalkFromTo(46, 28, 39, 28);

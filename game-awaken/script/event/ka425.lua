@@ -1,6 +1,6 @@
 AddMorality(-1);
-Add3EventNum(61, 19, 1, 0, $5);
-Add3EventNum(61, 18, 1, 0, $5);
+Add3EventNum(61, 19, 1, 0, 0);
+Add3EventNum(61, 18, 1, 0, 0);
 Talk("貝大夫為何愁眉苦臉？", 0, 1);
 Talk("幫主不見了，二使已經來過了，唉", 85, 0);
 Talk("莫非貝大夫接下了賞善罰惡令？", 0, 1);
