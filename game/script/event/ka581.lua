@@ -11,5 +11,5 @@ AddMaxHP(49, 200);
 AddAttack(49, 30);
 AddSpeed(49, 20);
 OldLearnMagic(49, 15, 0);
-SetMPType(49,2);
+SetMPType(49, 2);
 Join(49);

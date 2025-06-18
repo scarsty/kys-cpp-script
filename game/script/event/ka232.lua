@@ -8,6 +8,6 @@ ModifyEvent(-2, 14, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 15, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 16, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 LightScene();
-Add3EventNum(27, 0, 0, 0, $5);
+Add3EventNum(27, 0, 0, 0, 1);
 AddMorality(3);
 AddFame(1);

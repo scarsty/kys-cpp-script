@@ -36,7 +36,7 @@ AddMaxHP(49, 200);
 AddAttack(49, 30);
 AddSpeed(49, 20);
 OldLearnMagic(49, 15, 0);
-SetMPType(49,2);
+SetMPType(49, 2);
 Join(49);
 ModifyEvent(28, 0, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(28, 1, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);

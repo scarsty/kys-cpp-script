@@ -3,4 +3,4 @@ exit();
 end;
 AddItemWithoutHint(186, -1);
 Talk("我知道還有幾個古墓可以挖掘．一個是在猴掌山．", 74, 0);
-Add3EventNum(-2, 1, 0, 1, $5);
+Add3EventNum(-2, 1, 0, 1, 0);
