@@ -1,0 +1,1 @@
+copy D:\kys-all\UPedit\Code\release\UPEdit.exe . /y
