@@ -1,139 +1,118 @@
-instruct_50e(38, 0, 150, 200, 0, 0, 0);
-instruct_50e(4, 0, 2, 200, 1, 0, 0);
-if CheckRoleSexual(256) then goto label16 end;
+x[200] = math.random(150);        --instruct_50e(38, 0, 150, 200, 0, 0, 0);
+if x[200] ~= 1 then
 exit();
-::label16::
-instruct_50e(17, 0, 0, 0, 30, 4, 0);
-instruct_50e(3, 0, 2, 4, 4, 2, 0);
-instruct_50e(38, 0, 200, 400, 0, 0, 0);
-instruct_50e(3, 1, 1, 400, 400, 4, 0);
-instruct_50e(4, 0, 4, 400, 149, 0, 0);
-if CheckRoleSexual(256) == false then goto label63 end;
-if TryBattle(207) then goto label68 end;
+end;
+x[4] = GetRole(0, "Level");        --instruct_50e(17, 0, 0, 0, 30, 4, 0);
+x[4] = x[4] * 2;        --instruct_50e(3, 0, 2, 4, 4, 2, 0);
+x[400] = math.random(200);        --instruct_50e(38, 0, 200, 400, 0, 0, 0);
+x[400] = x[400] - x[4];        --instruct_50e(3, 1, 1, 400, 400, 4, 0);
+if x[400] >= 149 then
+if TryBattle(207) == false then
 Dead();
 exit();
-::label68::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 1, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 1;        --instruct_50e(3, 0, 0, 50, 50, 1, 0);
+AddItem(174, x[50]);
 exit();
-::label63::
-instruct_50e(4, 0, 4, 400, 108, 0, 0);
-if CheckRoleSexual(256) == false then goto label117 end;
-if TryBattle(208) then goto label122 end;
+end;
+if x[400] >= 108 then
+if TryBattle(208) == false then
 Dead();
 exit();
-::label122::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 100, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 100;        --instruct_50e(3, 0, 0, 50, 50, 100, 0);
+AddItem(174, x[50]);
 exit();
-::label117::
-instruct_50e(4, 0, 4, 400, 76, 0, 0);
-if CheckRoleSexual(256) == false then goto label171 end;
-if TryBattle(209) then goto label176 end;
+end;
+if x[400] >= 76 then
+if TryBattle(209) == false then
 Dead();
 exit();
-::label176::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 200, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 200;        --instruct_50e(3, 0, 0, 50, 50, 200, 0);
+AddItem(174, x[50]);
 exit();
-::label171::
-instruct_50e(4, 0, 4, 400, 51, 0, 0);
-if CheckRoleSexual(256) == false then goto label225 end;
-if TryBattle(210) then goto label230 end;
+end;
+if x[400] >= 51 then
+if TryBattle(210) == false then
 Dead();
 exit();
-::label230::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 300, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 300;        --instruct_50e(3, 0, 0, 50, 50, 300, 0);
+AddItem(174, x[50]);
 exit();
-::label225::
-instruct_50e(4, 0, 4, 400, 32, 0, 0);
-if CheckRoleSexual(256) == false then goto label279 end;
-if TryBattle(211) then goto label284 end;
+end;
+if x[400] >= 32 then
+if TryBattle(211) == false then
 Dead();
 exit();
-::label284::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 400, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 400;        --instruct_50e(3, 0, 0, 50, 50, 400, 0);
+AddItem(174, x[50]);
 exit();
-::label279::
-instruct_50e(4, 0, 4, 400, 19, 0, 0);
-if CheckRoleSexual(256) == false then goto label333 end;
-if TryBattle(212) then goto label338 end;
+end;
+if x[400] >= 19 then
+if TryBattle(212) == false then
 Dead();
 exit();
-::label338::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 500, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 500;        --instruct_50e(3, 0, 0, 50, 50, 500, 0);
+AddItem(174, x[50]);
 exit();
-::label333::
-instruct_50e(4, 0, 4, 400, 10, 0, 0);
-if CheckRoleSexual(256) == false then goto label387 end;
-if TryBattle(213) then goto label392 end;
+end;
+if x[400] >= 10 then
+if TryBattle(213) == false then
 Dead();
 exit();
-::label392::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 600, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 600;        --instruct_50e(3, 0, 0, 50, 50, 600, 0);
+AddItem(174, x[50]);
 exit();
-::label387::
-instruct_50e(4, 0, 4, 400, 5, 0, 0);
-if CheckRoleSexual(256) == false then goto label441 end;
-if TryBattle(214) then goto label446 end;
+end;
+if x[400] >= 5 then
+if TryBattle(214) == false then
 Dead();
 exit();
-::label446::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 700, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 700;        --instruct_50e(3, 0, 0, 50, 50, 700, 0);
+AddItem(174, x[50]);
 exit();
-::label441::
-instruct_50e(4, 0, 4, 400, 2, 0, 0);
-if CheckRoleSexual(256) == false then goto label495 end;
-if TryBattle(215) then goto label500 end;
+end;
+if x[400] >= 2 then
+if TryBattle(215) == false then
 Dead();
 exit();
-::label500::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 800, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 800;        --instruct_50e(3, 0, 0, 50, 50, 800, 0);
+AddItem(174, x[50]);
 exit();
-::label495::
-instruct_50e(4, 0, 4, 400, 1, 0, 0);
-if CheckRoleSexual(256) == false then goto label549 end;
-if TryBattle(216) then goto label554 end;
+end;
+if x[400] >= 1 then
+if TryBattle(216) == false then
 Dead();
 exit();
-::label554::
+end;
 LightScene();
-instruct_50e(38, 0, 100, 500, 0, 0, 0);
-instruct_50e(3, 0, 0, 50, 50, 900, 0);
-instruct_50e(32, 0, 50, 2, 0, 1, 0);
-AddItem(174, 20);
+x[500] = math.random(100);        --instruct_50e(38, 0, 100, 500, 0, 0, 0);
+x[50] = x[50] + 900;        --instruct_50e(3, 0, 0, 50, 50, 900, 0);
+AddItem(174, x[50]);
 exit();
-::label549::
+end;
