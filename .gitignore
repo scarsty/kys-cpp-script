@@ -23,3 +23,5 @@ sfeu16
 *.dll
 UPedit/lua.txt
 trans50/*/*/*.lua
+*.mp3
+*.wav
