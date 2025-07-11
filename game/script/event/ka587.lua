@@ -1,5 +1,5 @@
 PlayAnimation(13, 6420, 6448);
-Talk("哇！鱷魚！", 0, 1);
+Talk("哇！鱷魚！", 0, 1, 2147);
 if TryBattle(89) == false then
 Dead();
 exit();

@@ -1,4 +1,4 @@
-Talk("你還在這做什麼？", 28, 0);
+Talk("你還在這做什麼？", 28, 0, 1040);
 if CheckEventID(1, -1) == false then
 ModifyEvent(-2, 1, -2, -2, 887, -1, -1, -2, -2, -2, -2, -2, -2);
 end;
@@ -12,15 +12,15 @@ if CheckEventID(4, -1) == false then
 ModifyEvent(-2, 2, -2, -2, 890, -1, -1, -2, -2, -2, -2, -2, -2);
 end;
 if AskJoin () == false then
-Talk("沒事逛逛．", 0, 1);
+Talk("沒事逛逛．", 0, 1, 1041);
 exit();
 end;
-Talk("我已將田伯光殺了，你可以加入我了吧．", 0, 1);
+Talk("我已將田伯光殺了，你可以加入我了吧．", 0, 1, 1042);
 if TeamIsFull() then
-Talk("你的隊伍已滿，我無法加入．", 28, 0);
+Talk("你的隊伍已滿，我無法加入．", 28, 0, 175);
 exit();
 end;
-Talk("我平一指說話算話．", 28, 0);
+Talk("我平一指說話算話．", 28, 0, 1043);
 DarkScene();
 ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 LightScene();

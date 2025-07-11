@@ -1,4 +1,4 @@
-Talk("．．．．．．", 109, 0);
+Talk("．．．．．．", 109, 0, 1693);
 if InTeam(53) == false then
 exit();
 end;

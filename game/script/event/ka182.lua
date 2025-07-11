@@ -1,8 +1,8 @@
-Talk("閣下若無請帖，還請離開．", 82, 0);
+Talk("閣下若無請帖，還請離開．", 82, 0, 647);
 if AskBattle() == false then
 exit();
 end;
-Talk("說不得只好打了．", 0, 1);
+Talk("說不得只好打了．", 0, 1, 646);
 if TryBattle(27) == false then
 Dead();
 exit();

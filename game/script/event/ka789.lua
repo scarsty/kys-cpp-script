@@ -2,5 +2,5 @@ if isUsingItem(186) == false then
 exit();
 end;
 AddItemWithoutHint(186, -1);
-Talk("我知道還有幾個古墓可以挖掘．一個是在絕情谷．", 74, 0);
+Talk("我知道還有幾個古墓可以挖掘．一個是在絕情谷．", 74, 0, 2689);
 Add3EventNum(-2, 1, 0, 1, 0);

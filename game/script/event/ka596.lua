@@ -1,4 +1,4 @@
-Talk("小子，竟敢擅闖我大輪寺，找死！", 91, 0);
+Talk("小子，竟敢擅闖我大輪寺，找死！", 91, 0, 2216);
 if TryBattle(92) == false then
 Dead();
 exit();

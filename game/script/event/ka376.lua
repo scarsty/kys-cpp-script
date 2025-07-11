@@ -1,4 +1,4 @@
-Talk("看來，我是來到蜘蛛精的巢穴了．", 0, 1);
+Talk("看來，我是來到蜘蛛精的巢穴了．", 0, 1, 1253);
 if TryBattle(61) == false then
 Dead();
 exit();

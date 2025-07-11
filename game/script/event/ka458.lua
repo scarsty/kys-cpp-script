@@ -1,8 +1,8 @@
 if CheckRoleMorality(0, 50, 100) then
-Talk("最近江湖上對你的風評還挺不錯的，希望你繼續保持下去.", 68, 0);
+Talk("最近江湖上對你的風評還挺不錯的，希望你繼續保持下去.", 68, 0, 1645);
 end;
 exit();
-Talk("你這作惡多端的小子，老道饒不了你．", 68, 0);
+Talk("你這作惡多端的小子，老道饒不了你．", 68, 0, 1644);
 if TryBattle(75) == false then
 LightScene();
 exit();

@@ -1,5 +1,3 @@
---function oldevent_692()
-    --instruct_51();   --  51(33):问软体娃娃
     --newtalk("這是黑帝斯，封面模特是中山靖王劉勝。",114,0);
     --newtalk("在戰鬥時，用wasd控制方向，ijkm表示裝備的4個武學。其中j是輕擊，威力較小，所有武功都能用。i為重擊，會連續打出幾個攻擊，一般只適用於面攻擊。k為遠程，一般只能用於綫攻擊。m為閃身并在路徑上多次攻擊。",114,0);
     newtalk("你已勝"..getitemcountinbag(198).."場，負"..getitemcountinbag(199).."場。",114,0);
@@ -18,5 +16,3 @@
         additemwithouthint(199, 1);
     end
     autosave()
---end
-

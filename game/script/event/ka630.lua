@@ -1,4 +1,4 @@
-Talk("小子，你居然還敢再來，找死．", 91, 0);
+Talk("小子，你居然還敢再來，找死．", 91, 0, 2403);
 if TryBattle(99) == false then
 Dead();
 exit();

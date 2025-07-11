@@ -1,9 +1,9 @@
-Talk("王姑娘妳好．", 0, 1);
+Talk("王姑娘妳好．", 0, 1, 1738);
 if InTeam(53) == false then
 exit();
 end;
-Talk("神仙姊姊．．．神仙姊姊．．．", 53, 1);
-Talk("．．．．．．", 109, 0);
+Talk("神仙姊姊．．．神仙姊姊．．．", 53, 1, 1739);
+Talk("．．．．．．", 109, 0, 1740);
 if InTeam(53) == false then
 exit();
 end;
