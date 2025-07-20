@@ -26,6 +26,7 @@ if a==0 then
 	rest();
 	if trybattle(b) then
 		talk(0, '……', -2, 0);
+		setrolepro(407,0, 92);
 	else
 		talk(0, '這人開掛的吧……', -2, 0);
 	end;
@@ -62,6 +63,7 @@ if a== 2 then
 	rest();
 	if trybattle(b) then
 		talk(455, '是兄弟就來砍我！', -2, 1);
+		instruct_33(0, 409, 1);
 	else
 		
 	end;

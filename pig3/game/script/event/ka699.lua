@@ -10,11 +10,21 @@ instruct_50(43, 0, 351, 3446, 2, 0, 0);
 instruct_50(4, 0, 2, 28931, 1, 0, 0);
 if CheckJumpFlag() == true then goto label0 end;
 Talk(416, "蕭大哥，且慢動手！", -2, 0, 0, 0);
-a=getrolepro(0,64);--判断主角第二项武功是否属拳掌类。
+
+	pos =64
+	for i = 63, 72 do
+		k = getrolepro(0,i);
+		if k==1 or k==36 or k==66 or k== 91 then
+			pos = i
+			break
+		end
+	end
+
+a=getrolepro(0,pos);--判断主角初始武功是否属拳掌类。
 b=getmagicpro(a,12);
 if b==1 then--是的话改为10级般若掌
 	Talk(415, "（蕭大哥武功如此強，我如何抵擋得過？啊對了，我記得少林方證大師上次說過，降龍十八掌是至剛至陽威力無雙的掌法，天下掌法少有能敵，但少林七十二絕技有一門般若掌，招式以化力見長，說不定能擋一擋，我記得師父說過般若掌的原理是……嗯，加上見過幾個少林僧使過，不得已，搏一搏吧。）", -2, 0, 0, 0);
-	putrolepro(332,0,64);
+	putrolepro(332,0,pos);
 	putrolepro(900,0,74);
 end
 if TryBattle(70) == true then goto label1 end;

@@ -68,7 +68,15 @@ if CheckJumpFlag() == true then goto label0 end;
             Talk(412, "爺爺？莫非張真人來此，與兩位爺爺有關？", -2, 1, 0, 0);
             Talk(280, "不錯。兩位聖人歸天前，自覺不久於人世，便將這套武功傳給了老頭兒我。現在看來，是時候了。老頭兒便將它物歸原主，為你壯行吧。", -2, 0, 0, 0);
             Talk(0, "爺爺……爺爺……謝過張真人。", -2, 1, 0, 0);
-            instruct_50(16, 0, 0, 0, 128, 115, 0);
+
+            for i = 63, 72 do
+                k = getrolepro(0,i);
+                if k==1 or k==36 or k==66 or k== 91 then
+                    setrolepro(115, 0, i)
+                    break
+                end
+            end
+            --instruct_50(16, 0, 0, 0, 128, 115, 0);
 ::label2::
             DarkScene();
             ModifyEvent(15, 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, -2);

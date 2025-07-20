@@ -157,7 +157,9 @@ if CheckJumpFlag() == true then goto label0 end;
         instruct_50(16, 0, 0, 0, 84, 8000, 0);
         instruct_50(16, 0, 0, 0, 82, 8000, 0);
         instruct_50(16, 0, 0, 0, 80, 2, 0);
-        instruct_50(16, 0, 0, 0, 184, 126, 0);
+        if getrolepro(0,13)>=0 then  --负值为特殊人物
+            instruct_50(16, 0, 0, 0, 184, 126, 0);
+        end
         instruct_50(16, 0, 0, 0, 192, 999, 0);
         SetScenePosition2(23, 25);
         SetRoleFace(3);

@@ -25,3 +25,6 @@ UPedit/lua.txt
 trans50/*/*/*.lua
 *.mp3
 *.wav
+trans50/event
+trans50/event50
+trans50/event50r
