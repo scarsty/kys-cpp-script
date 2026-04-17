@@ -1,0 +1,14 @@
+Talk("這位客官，您要在小店休息一晚嗎？只需20兩銀子。", 111, 0);
+if (!AskRest())
+{
+    exit();
+}
+if (!CheckEnoughMoney(20))
+{
+    Talk("客官，我們這是小本生意，概不賒帳。", 111, 0);
+}
+AddItemWithoutHint(174, -20);
+DarkScene();
+Rest();
+LightScene();
+Talk("客官，昨晚的泰式按摩還舒服嗎？您可要再來光顧小店哦。", 111, 0);
