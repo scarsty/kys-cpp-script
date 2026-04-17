@@ -1,10 +1,11 @@
 
 n=0;
-for i=144,157 do
-if (HaveItemBool(i))
+for (i=144; i<=157; i++)
 {
-    n = n + 1;
-}
+    if (HaveItemBool(i))
+    {
+        n++;
+    }
 }
 if (n < 14)
 {
