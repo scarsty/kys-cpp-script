@@ -4,10 +4,11 @@ Talk("．．．．．．", 27, 0);
 Talk("你以為不說話就行了嗎？", 214, 1);
 Talk("大膽狂徒，竟敢如此跟教主說話，看來是不想獲了．", 88, 0);
 Talk("二位大俠，我來幫你．", 0, 1);
-if TryBattle(234) then goto label31 end;
-Dead();
-exit();
-label31:
+if (!(TryBattle(234)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(14, 26);
@@ -18,10 +19,11 @@ ModifyEvent(-2, 46, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 47, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("保護東方教主！", 34, 0);
-if TryBattle(235) then goto label117 end;
-Dead();
-exit();
-label117:
+if (!(TryBattle(235)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

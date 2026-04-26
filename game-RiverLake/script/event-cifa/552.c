@@ -1,8 +1,9 @@
 Talk("鏢銀五千兩送到西夏．運達后兩成傭金．", 78, 0);
 Talk("是否接鏢？", 0, 3);
-if AskRest() then goto  label9 end;
-exit();
-label9:
+if (!(AskRest()))
+{
+    exit();
+}
 AddItem(174, 5000);
 Talk("祝你一路順風！", 78, 0);
 ModifyEvent(-2, 30, -2, -2, 553, 0, 0, -2, -2, -2, 0, -2, -2);

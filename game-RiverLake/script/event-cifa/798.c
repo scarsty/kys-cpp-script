@@ -1,7 +1,8 @@
-if HaveItemBool(44) then goto label0 end;
-Talk("我應該擺個什么樣的陣呢？", 63, 0);
-exit();
-label0:
+if (!(HaveItemBool(44)))
+{
+    Talk("我應該擺個什么樣的陣呢？", 63, 0);
+    exit();
+}
 Talk("少俠，我在門外所布的土陣實在太也拙劣，殊難擋得住那赤練仙子．若是給她沖進屋來，你就拿這塊帕子給她罷．", 63, 0);
 AddItem(184, 1);
 Talk("千萬別讓我表妹知道．", 63, 0);

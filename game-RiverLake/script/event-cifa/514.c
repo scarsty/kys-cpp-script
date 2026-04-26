@@ -1,9 +1,10 @@
 Talk("二位掌門，我是來救你們的", 0, 1);
 Talk("想殺我二人還不那么容易．", 7, 0);
-if TryBattle(73) then goto label10 end;
-Dead();
-exit();
-label10:
+if (!(TryBattle(73)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

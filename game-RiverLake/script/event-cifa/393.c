@@ -1,20 +1,47 @@
-if HaveItemBool(144) then goto label0 end;
-if HaveItemBool(145) then goto label0 end;
-if HaveItemBool(146) then goto label0 end;
-if HaveItemBool(147) then goto label0 end;
-if HaveItemBool(148) then goto label0 end;
-if HaveItemBool(149) then goto label0 end;
-if HaveItemBool(150) then goto label0 end;
-if HaveItemBool(151) then goto label0 end;
-if HaveItemBool(152) then goto label0 end;
-if HaveItemBool(153) then goto label0 end;
-if HaveItemBool(154) then goto label0 end;
-if HaveItemBool(155) then goto label0 end;
-if HaveItemBool(156) then goto label0 end;
-if HaveItemBool(157) then goto label0 end;
-Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
-exit();
-label0:
+if (!(HaveItemBool(144)))
+{
+    if (!(HaveItemBool(145)))
+    {
+        if (!(HaveItemBool(146)))
+        {
+            if (!(HaveItemBool(147)))
+            {
+                if (!(HaveItemBool(148)))
+                {
+                    if (!(HaveItemBool(149)))
+                    {
+                        if (!(HaveItemBool(150)))
+                        {
+                            if (!(HaveItemBool(151)))
+                            {
+                                if (!(HaveItemBool(152)))
+                                {
+                                    if (!(HaveItemBool(153)))
+                                    {
+                                        if (!(HaveItemBool(154)))
+                                        {
+                                            if (!(HaveItemBool(155)))
+                                            {
+                                                if (!(HaveItemBool(156)))
+                                                {
+                                                    if (!(HaveItemBool(157)))
+                                                    {
+                                                        Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
+                                                        exit();
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
 Talk("先生怎么會一個人住在島上？", 0, 0);
 Talk("我在這里等你啊．", 54, 0);

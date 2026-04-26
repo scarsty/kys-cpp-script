@@ -1,13 +1,15 @@
 Talk("這位客觀，再往前走就是豺狼谷了，里面有很多豺狼，走夜路不安全，不如在本店休息一夜再行上路？本店每晚收費３００兩．", 219, 0);
 Talk("是否住宿？", 0, 3);
-if AskRest() then goto  label9 end;
-Talk("不了，我還要趕路．", 0, 1);
-exit();
-label9:
-if CheckEnoughMoney(300) then goto label20 end;
-Talk("對不起，您的錢好像不夠．", 219, 0);
-exit();
-label20:
+if (!(AskRest()))
+{
+    Talk("不了，我還要趕路．", 0, 1);
+    exit();
+}
+if (!(CheckEnoughMoney(300)))
+{
+    Talk("對不起，您的錢好像不夠．", 219, 0);
+    exit();
+}
 Talk("好啊，我正想休息一宿呢！", 0, 1);
 AddItemWithoutHint(174, -300);
 DarkScene();
@@ -47,41 +49,43 @@ ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("是否要作弄一下那兩個人？", 0, 3);
-if AskRest() == false then goto  label283 end;
-OldSetScenePosition(47, 47);
-SetTowards(2);
-Talk("床上有包東西？", 0, 1);
-AddItem(174, 200);
-Talk("再在床上撒泡尿，嘻嘻．", 0, 1);
-OldSetScenePosition(42, 49);
-SetTowards(1);
-DarkScene();
-ModifyEvent(-2, 8, 1, -2, 0, 0, 0, 5188, 5188, 5188, 0, -2, -2);
-ModifyEvent(-2, 9, 1, -2, 0, 0, 0, 5190, 5190, 5190, 0, -2, -2);
-LightScene();
-SubMapViewFromTo(42, 49, 48, 49);
-Talk("明天一定要給那個小妮子點顏色看看．", 82, 0);
-Talk("啊，被窩中濕漉漉的是甚么啊，好臭，姬師兄，你這么懶，在被窩中拉尿？", 82, 1);
-Talk("甚么拉尿？哪里來的臭貓子到這兒拉尿．", 82, 0);
-Talk("貓兒拉尿哪有這樣多？", 82, 1);
-Talk("咦，奇怪．．．．．．哎，銀子呢？", 82, 0);
-Talk("店伴兒，店伴兒，你們這里是黑店不是？半夜三更偷客人銀子？", 82, 1);
-Talk("走，我們找店家說理去．", 82, 0);
-DarkScene();
-ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-Talk("＜嘻嘻．＞", 0, 0);
-label283:
+if (AskRest())
+{
+    OldSetScenePosition(47, 47);
+    SetTowards(2);
+    Talk("床上有包東西？", 0, 1);
+    AddItem(174, 200);
+    Talk("再在床上撒泡尿，嘻嘻．", 0, 1);
+    OldSetScenePosition(42, 49);
+    SetTowards(1);
+    DarkScene();
+    ModifyEvent(-2, 8, 1, -2, 0, 0, 0, 5188, 5188, 5188, 0, -2, -2);
+    ModifyEvent(-2, 9, 1, -2, 0, 0, 0, 5190, 5190, 5190, 0, -2, -2);
+    LightScene();
+    SubMapViewFromTo(42, 49, 48, 49);
+    Talk("明天一定要給那個小妮子點顏色看看．", 82, 0);
+    Talk("啊，被窩中濕漉漉的是甚么啊，好臭，姬師兄，你這么懶，在被窩中拉尿？", 82, 1);
+    Talk("甚么拉尿？哪里來的臭貓子到這兒拉尿．", 82, 0);
+    Talk("貓兒拉尿哪有這樣多？", 82, 1);
+    Talk("咦，奇怪．．．．．．哎，銀子呢？", 82, 0);
+    Talk("店伴兒，店伴兒，你們這里是黑店不是？半夜三更偷客人銀子？", 82, 1);
+    Talk("走，我們找店家說理去．", 82, 0);
+    DarkScene();
+    ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    Talk("＜嘻嘻．＞", 0, 0);
+}
 SubMapViewFromTo(48, 49, 42, 49);
 DarkScene();
 LightScene();
 Talk("一覺醒來感覺真的很不錯．", 0, 1);
 Talk("＜我是否應該去幫幫那女子呢？＞", 0, 1);
-if AskRest() == false then goto  label445 end;
-Talk("＜路見不平，拔刀相助．＞", 0, 1);
-ModifyEvent(-2, 3, 0, -2, 0, 0, 796, 0, 0, 0, 0, -2, -2);
-AddMorality(3);
-exit();
-label445:
+if (AskRest())
+{
+    Talk("＜路見不平，拔刀相助．＞", 0, 1);
+    ModifyEvent(-2, 3, 0, -2, 0, 0, 796, 0, 0, 0, 0, -2, -2);
+    AddMorality(3);
+    exit();
+}
 Talk("算了，有很多事還沒做呢．", 0, 1);

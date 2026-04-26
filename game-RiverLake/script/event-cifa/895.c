@@ -5,17 +5,19 @@ ModifyEvent(-2, 2, 1, -2, 897, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 898, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 LightScene();
 Talk("什么人這么大膽，竟敢闖進靈鷲宮．", 177, 1);
-if TryBattle(178) then goto label65 end;
-Dead();
-exit();
-label65:
+if (!(TryBattle(178)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 4, 1, -2, 0, 0, 0, 8786, 8786, 8786, 0, -2, -2);
 LightScene();
 Talk("哪來的毛頭小子，擅闖我靈鷲宮不說，還打傷我的宮女", 115, 1);
-if TryBattle(179) then goto label96 end;
-Dead();
-exit();
-label96:
+if (!(TryBattle(179)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("你．．．你的內功是逍遙派的！", 115, 1);
 Talk("不錯，無崖子前輩收我為關門弟子，還將功力傳給了我", 0, 0);
@@ -40,10 +42,11 @@ Talk("哼，你是來．．．", 115, 1);
 Talk("師姐，我就是來看看你有沒有死啊．", 137, 0);
 Talk("大家同門一場，就不能和和睦睦的嗎？", 0, 0);
 Talk("師姐，這是你養的小白臉嗎", 137, 0);
-if TryBattle(180) then goto label225 end;
-Dead();
-exit();
-label225:
+if (!(TryBattle(180)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("哼，師姐，不錯啊，把養的小白臉的武功練得比你都高", 137, 0);
 Talk("李秋水，你看他右手上戴的是什么？", 115, 1);

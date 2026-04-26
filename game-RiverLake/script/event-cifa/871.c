@@ -1,11 +1,13 @@
-if isUsingItem(198) then goto label0 end;
-exit();
-label0:
+if (!(isUsingItem(198)))
+{
+    exit();
+}
 Talk("玄慈大師，晚輩一心仰慕少林，想拜大師為師，不知大師肯不肯收我為徒？", 0, 1);
-if CheckRoleMorality(0, 70, 100) then goto label11 end;
-Talk("先學做人，再求學問．阿彌陀佛！", 70, 0);
-exit();
-label11:
+if (!(CheckRoleMorality(0, 70, 100)))
+{
+    Talk("先學做人，再求學問．阿彌陀佛！", 70, 0);
+    exit();
+}
 Talk("阿彌陀佛，少俠既然一心向佛，我又怎么能反對呢．", 70, 0);
 Talk("大師的意思是．．．是肯收我為徒？", 0, 1);
 Talk("阿彌陀佛！但可惜由于游戲限制，不能給你剃度，只能收你為俗家弟子了．", 70, 0);

@@ -43,26 +43,27 @@ Talk("喂，臭和尚，什么借不借的你這分明是搶嗎．", 0, 1);
 Talk("小僧說借其實是給你們莫大面子，不要讓小僧動手．", 116, 0);
 Talk("神照經讓我放到了它應該在的地方了，不在我這里．", 37, 4);
 Talk("那就休怪小僧無情了．", 116, 0);
-if TryBattle(15) then goto label292 end;
-LightScene();
-Talk("我們打不過他，快跑．", 0, 1);
-Talk("想跑？先留下神照經再說．", 116, 0);
-Talk("＜那邊來了大批的侍衛，最好趁亂能逃出去．＞快來啊，這個和尚是朝廷欽犯，抓住的重重有賞．", 0, 1);
-Talk("糟了，這么多的侍衛也得打一陣子．", 116, 0);
-Talk("狄云，我們快走．", 0, 0);
-DarkScene();
-ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 22, 1, -2, 178, 0, 0, 8254, 8254, 8254, 0, -2, -2);
-SetSubMapLayerData(-2, 1, 23, 38, 2064);
-SetSubMapLayerData(-2, 1, 23, 39, 2064);
-SetSubMapLayerData(-2, 1, 15, 32, 3676);
-SetSubMapLayerData(-2, 1, 13, 24, 3676);
-OldSetScenePosition(43, 42);
-SetTowards(2);
-LightScene();
-exit();
-label292:
+if (!(TryBattle(15)))
+{
+    LightScene();
+    Talk("我們打不過他，快跑．", 0, 1);
+    Talk("想跑？先留下神照經再說．", 116, 0);
+    Talk("＜那邊來了大批的侍衛，最好趁亂能逃出去．＞快來啊，這個和尚是朝廷欽犯，抓住的重重有賞．", 0, 1);
+    Talk("糟了，這么多的侍衛也得打一陣子．", 116, 0);
+    Talk("狄云，我們快走．", 0, 0);
+    DarkScene();
+    ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 22, 1, -2, 178, 0, 0, 8254, 8254, 8254, 0, -2, -2);
+    SetSubMapLayerData(-2, 1, 23, 38, 2064);
+    SetSubMapLayerData(-2, 1, 23, 39, 2064);
+    SetSubMapLayerData(-2, 1, 15, 32, 3676);
+    SetSubMapLayerData(-2, 1, 13, 24, 3676);
+    OldSetScenePosition(43, 42);
+    SetTowards(2);
+    LightScene();
+    exit();
+}
 ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddItem(139, 1);

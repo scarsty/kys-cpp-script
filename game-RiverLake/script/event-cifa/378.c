@@ -1,6 +1,7 @@
-if InTeam(98) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(98)))
+{
+    exit();
+}
 Talk("這黑水潭似乎是有人特別布局過，但卻也難不倒我．", 124, 1);
 DarkScene();
 ChangeSubMapPic(-2, 0, 994, 990);

@@ -7,8 +7,9 @@ Talk("其實我也知道，我女兒任性得很．．．", 56, 0);
 Talk("大小武，就是這個人欺負我你們還不快給我報仇！", 149, 0);
 Talk("我們一起上．", 154, 0);
 Talk("好！", 155, 5);
-if TryBattle(27) == false then goto label44 end;
-label44:
+if (TryBattle(27))
+{
+}
 ModifyEvent(-2, 4, -2, -2, 253, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(-2, 5, 1, -2, 254, 0, 0, 8226, 8226, 8226, 0, -2, -2);
 LightScene();

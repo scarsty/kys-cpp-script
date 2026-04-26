@@ -1,6 +1,7 @@
-if isUsingItem(166) then goto label0 end;
-exit();
-label0:
+if (!(isUsingItem(166)))
+{
+    exit();
+}
 AddItemWithoutHint(166, -1);
 ModifyEvent(49, 2, 1, -2, 130, 0, 0, -2, -2, -2, 0, -2, -2);
 DarkScene();

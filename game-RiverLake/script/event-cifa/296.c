@@ -1,6 +1,7 @@
-if InTeam(92) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(92)))
+{
+    exit();
+}
 Talk("我走不動了，要歇歇．", 111, 0);
 Talk("真拿你沒辦法．", 0, 0);
 DarkScene();
@@ -24,10 +25,11 @@ Talk("小子，你說什么？", 86, 0);
 Talk("我這位朋友說你們青城派自掌門以下沒一個好人，想教訓教訓你們．", 111, 0);
 Talk("格老子的，是你說的嗎！", 86, 0);
 Talk("．．．．．．", 0, 0);
-if TryBattle(36) then goto label140 end;
-Dead();
-exit();
-label140:
+if (!(TryBattle(36)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 24, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -35,8 +37,9 @@ ModifyEvent(-2, 25, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("小鬼頭，就是會闖禍，快走", 0, 0);
 Talk("在京城鬧事，給我抓住他．", 75, 0);
-if TryBattle(37) == false then goto label218 end;
-label218:
+if (TryBattle(37))
+{
+}
 ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("小寶！＜糟了，小寶被張召重抓住＞", 0, 0);

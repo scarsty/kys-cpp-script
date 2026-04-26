@@ -9,8 +9,9 @@ Talk("南蕩！", 167, 4);
 Talk("北色！", 187, 5);
 Talk("對！我們就是Ｆ４組合！", 187, 1);
 Talk("廢話少說，動手吧！", 126, 0);
-if TryBattle(114) then goto label64 end;
-label64:
+if (!(TryBattle(114)))
+{
+}
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetTowards(1);
 LightScene();

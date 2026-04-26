@@ -5,27 +5,30 @@ ModifyEvent(-2, 19, 1, -2, 0, 0, 0, 5366, 5366, 5366, 0, -2, -2);
 LightScene();
 SubMapViewFromTo(17, 16, 19, 12);
 Talk("（小聲）最近藏經閣的管理越來越不規范了，怎么在拳掌部會放上”法華經”和”雜阿含經”？", 118, 1);
-if InTeam(51) then goto label57 end;
-if HaveItemBool(121) == false then goto label61 end;
-Talk("喂！你是什么人？敢來少林寺偷去經書？", 0, 0);
-if TryBattle(166) then goto label71 end;
-Dead();
-exit();
-label71:
-ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-AddItem(107, 1);
-Talk("＜人沒抓到，反而得了本秘籍，也不錯．＞", 0, 1);
-exit();
-label61:
-Talk("＜原來不光我一個來藏經閣”觀光”的．＞", 0, 1);
-DarkScene();
-ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label57:
+if (!(InTeam(51)))
+{
+    if (HaveItemBool(121))
+    {
+        Talk("喂！你是什么人？敢來少林寺偷去經書？", 0, 0);
+        if (!(TryBattle(166)))
+        {
+            Dead();
+            exit();
+        }
+        ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        LightScene();
+        AddItem(107, 1);
+        Talk("＜人沒抓到，反而得了本秘籍，也不錯．＞", 0, 1);
+        exit();
+    }
+    Talk("＜原來不光我一個來藏經閣”觀光”的．＞", 0, 1);
+    DarkScene();
+    ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 Talk("爹．．．你．．．你沒死．．．？", 51, 0);
 DarkScene();
 OldSetScenePosition(20, 13);

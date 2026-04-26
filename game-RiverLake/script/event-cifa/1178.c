@@ -1,14 +1,17 @@
-if isUsingItem(199) then goto label0 end;
-exit();
-label0:
-if InTeam(322) == false then goto label6 end;
-Talk("你已經雇用一個保鏢了，不需要第二個了吧？", 250, 0);
-exit();
-label6:
-if TeamIsFull() == false then goto label18 end;
-Talk("雇用保鏢前要在隊伍留個空位置．", 250, 0);
-exit();
-label18:
+if (!(isUsingItem(199)))
+{
+    exit();
+}
+if (InTeam(322))
+{
+    Talk("你已經雇用一個保鏢了，不需要第二個了吧？", 250, 0);
+    exit();
+}
+if (TeamIsFull())
+{
+    Talk("雇用保鏢前要在隊伍留個空位置．", 250, 0);
+    exit();
+}
 AddItemWithoutHint(199, -1);
 Talk("銀票我收下了，這個人以后就專門負責保護你了．", 250, 0);
 instruct_50e(17, 0, 0, 321, 34, 1, 0);

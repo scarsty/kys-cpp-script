@@ -1,15 +1,17 @@
-if HaveItemBool(153) == false then goto label0 end;
-exit();
-label0:
+if (HaveItemBool(153))
+{
+    exit();
+}
 instruct_50e(38, 0, 100, 1, 0, 0, 0);
 instruct_50e(4, 0, 0, 1, 25, 0, 0);
-if CheckRoleSexual(256) then goto label22 end;
-ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 25, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 26, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 27, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
-exit();
-label22:
+if (!(CheckRoleSexual(256)))
+{
+    ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 25, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 26, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 27, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
+    exit();
+}
 DarkScene();
 ModifyEvent(-2, 4, 1, -2, 0, 0, 0, 6068, 6068, 6068, 0, -2, -2);
 ModifyEvent(-2, 5, 1, -2, 0, 0, 0, 5190, 5190, 5190, 0, -2, -2);
@@ -18,55 +20,60 @@ LightScene();
 SubMapViewFromTo(39, 38, 45, 38);
 Talk("怎么？咱哥倆見小妮子長得漂亮，看你一眼還不行啊？", 82, 1);
 Talk("幫女子按”Ｙ”幫男子按”Ｎ”", 0, 1);
-if AskRest() then goto  label144 end;
-AddMorality(-2);
-Talk("就是，長得好不就是給我們看的嗎，要不就躲在家里別出來．", 0, 0);
-WalkFromTo(39, 38, 44, 38);
-Talk("淫賊！今天我就替武林除害！", 125, 1);
-if TryBattle(141) then goto label167 end;
-Dead();
-exit();
-label167:
-ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-AddItem(44, 1);
-Talk("小子，那本五毒秘傳是咱哥倆的，快還給我！", 82, 1);
-if AskRest() then goto  label201 end;
-Talk("拜托，你以為我是傻子，說給你就給你啊！", 0, 0);
-Talk("臭小子，找死！", 82, 1);
-if TryBattle(142) then goto label215 end;
-Dead();
-exit();
-label215:
-ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-Talk("想搶我的書，沒門！", 0, 1);
-AddMorality(-1);
-DarkScene();
-ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 5396, 5396, 5396, 0, -2, -2);
-SetTowards(2);
-LightScene();
-Talk("那個小賤人偷走的五毒秘傳原來被你搶去了，快交出來", 126, 0);
-if TryBattle(143) then goto label303 end;
-Dead();
-exit();
-label303:
-ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label201:
-Talk("哦，那給你們吧．", 0, 0);
-AddItemWithoutHint(44, -1);
-Talk("算你識相，我們走！", 82, 1);
-DarkScene();
-ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label144:
+if (!(AskRest()))
+{
+    AddMorality(-2);
+    Talk("就是，長得好不就是給我們看的嗎，要不就躲在家里別出來．", 0, 0);
+    WalkFromTo(39, 38, 44, 38);
+    Talk("淫賊！今天我就替武林除害！", 125, 1);
+    if (!(TryBattle(141)))
+    {
+        Dead();
+        exit();
+    }
+    ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    AddItem(44, 1);
+    Talk("小子，那本五毒秘傳是咱哥倆的，快還給我！", 82, 1);
+    if (!(AskRest()))
+    {
+        Talk("拜托，你以為我是傻子，說給你就給你啊！", 0, 0);
+        Talk("臭小子，找死！", 82, 1);
+        if (!(TryBattle(142)))
+        {
+            Dead();
+            exit();
+        }
+        ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        LightScene();
+        Talk("想搶我的書，沒門！", 0, 1);
+        AddMorality(-1);
+        DarkScene();
+        ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 5396, 5396, 5396, 0, -2, -2);
+        SetTowards(2);
+        LightScene();
+        Talk("那個小賤人偷走的五毒秘傳原來被你搶去了，快交出來", 126, 0);
+        if (!(TryBattle(143)))
+        {
+            Dead();
+            exit();
+        }
+        ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        LightScene();
+        exit();
+    }
+    Talk("哦，那給你們吧．", 0, 0);
+    AddItemWithoutHint(44, -1);
+    Talk("算你識相，我們走！", 82, 1);
+    DarkScene();
+    ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 AddMorality(2);
 Talk("姑娘別怕，我來幫你！", 0, 0);
 Talk("．．．．．．", 125, 1);

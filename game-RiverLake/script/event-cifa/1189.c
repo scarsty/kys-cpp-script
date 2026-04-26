@@ -1,6 +1,7 @@
-if InTeam(323) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(323)))
+{
+    exit();
+}
 DarkScene();
 ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 7074, 7074, 7074, 0, -2, -2);
 ModifyEvent(-2, 23, 1, -2, 0, 0, 0, 6796, 6796, 6796, 0, -2, -2);
@@ -16,10 +17,11 @@ Talk("小子，你竟敢冒充我五毒教的人，真是不知死活．", 87, 0
 Talk("哈哈，我只是說五毒教的圣姑是我的姑姑而已，合適冒充五毒教的人了？", 216, 1);
 Talk("侮辱圣姑，更是死罪．", 87, 0);
 Talk("光天化日盡讓聚眾滋事，看本小姐教訓你們．", 215, 1);
-if TryBattle(240) then goto label147 end;
-Dead();
-exit();
-label147:
+if (!(TryBattle(240)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 7072, 7072, 7072, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

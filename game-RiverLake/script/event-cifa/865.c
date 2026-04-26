@@ -27,10 +27,11 @@ OldSetScenePosition(17, 18);
 SetTowards(1);
 LightScene();
 Talk("又一個血刀淫賊！", 107, 1);
-if TryBattle(167) then goto label176 end;
-Dead();
-exit();
-label176:
+if (!(TryBattle(167)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

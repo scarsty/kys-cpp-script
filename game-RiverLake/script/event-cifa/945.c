@@ -1,7 +1,8 @@
-if HaveItemBool(121) then goto label0 end;
-Talk("阿彌陀佛", 96, 0);
-exit();
-label0:
+if (!(HaveItemBool(121)))
+{
+    Talk("阿彌陀佛", 96, 0);
+    exit();
+}
 Talk("唉，這胡僧得的是天竺怪病，為中土所無，看來難以治好．可憐！阿彌陀佛", 96, 0);
 Talk("師兄，這碗飯你送到那邊小屋中去，給一位師父吃，他生了病，起不了身．", 96, 0);
 Talk("哦．", 0, 1);

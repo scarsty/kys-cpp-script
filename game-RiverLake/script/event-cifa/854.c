@@ -1,6 +1,7 @@
-if HaveItemBool(194) then goto label0 end;
-exit();
-label0:
+if (!(HaveItemBool(194)))
+{
+    exit();
+}
 DarkScene();
 ModifyEvent(-2, 28, 1, -2, 0, 0, 0, 5150, 5150, 5150, 0, -2, -2);
 ModifyEvent(-2, 29, 1, -2, 0, 0, 0, 5142, 5142, 5142, 0, -2, -2);
@@ -17,16 +18,17 @@ LightScene();
 AddItemWithoutHint(194, -1);
 Talk("可惜可惜，這么快酒就沒了", 42, 4);
 Talk("＜這倆人忒小氣，明明被上各自背著一個酒葫蘆卻不肯把酒拿出來喝！我是否要要求他們把自己的酒拿出來呢？＞", 0, 1);
-if AskRest() then goto  label93 end;
-Talk("小弟今天身上帶的酒不多，今日就到這吧，改日小弟一定多帶酒請二位大哥喝．", 0, 1);
-Talk("也只能如此了，告辭．", 41, 0);
-DarkScene();
-ModifyEvent(-2, 27, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 29, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label93:
+if (!(AskRest()))
+{
+    Talk("小弟今天身上帶的酒不多，今日就到這吧，改日小弟一定多帶酒請二位大哥喝．", 0, 1);
+    Talk("也只能如此了，告辭．", 41, 0);
+    DarkScene();
+    ModifyEvent(-2, 27, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 29, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 Talk("這位大哥，你葫蘆里的酒不知道味道如何，不如拿出來讓小弟嘗嘗？", 0, 1);
 Talk("不行不行，這里面裝的不是酒．", 42, 4);
 Talk("你怎如此小氣，剛才明明聽你說這里是酒，但今天不能喝了，難道里面的酒價值萬金？", 0, 1);
@@ -52,10 +54,11 @@ DarkScene();
 ModifyEvent(-2, 27, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 29, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-if HaveItemBool(41) then goto label298 end;
-Dead();
-exit();
-label298:
+if (!(HaveItemBool(41)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("啊！！！", 0, 1);
 DarkScene();

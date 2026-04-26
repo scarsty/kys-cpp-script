@@ -9,21 +9,23 @@ PlayAnimation(16, 8284, 8296);
 ModifyEvent(57, 16, 1, -2, 0, 0, 0, 8284, 8284, 8284, 0, -2, -2);
 Talk("你既然這樣恨我，為何還要把我從溫家救出來？", 195, 0);
 Talk("我是不會讓你這么輕易就死了的．", 25, 0);
-if CheckRoleMorality(0, 20, 80) then goto label86 end;
-Talk("＜這是他們五毒教的事我還是不要管為好！況且這件事也沒誰對誰錯．＞", 0, 1);
-DarkScene();
-ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-OldSetScenePosition(50, 38);
-LightScene();
-exit();
-label86:
+if (!(CheckRoleMorality(0, 20, 80)))
+{
+    Talk("＜這是他們五毒教的事我還是不要管為好！況且這件事也沒誰對誰錯．＞", 0, 1);
+    DarkScene();
+    ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    OldSetScenePosition(50, 38);
+    LightScene();
+    exit();
+}
 Talk("夏兄，我來救你！", 0, 1);
-if TryBattle(124) then goto label155 end;
-Dead();
-exit();
-label155:
+if (!(TryBattle(124)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

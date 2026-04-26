@@ -4,10 +4,11 @@ PlayAnimation(12, 8596, 8610);
 ModifyEvent(37, 12, 1, -2, 0, 0, 0, 8596, 8596, 8596, 0, -2, -2);
 Talk("啊！", 195, 1);
 Talk("兄臺，我來幫你！", 0, 1);
-if TryBattle(119) then goto label41 end;
-Dead();
-exit();
-label41:
+if (!(TryBattle(119)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 11, 1, -2, 726, 0, 0, 6818, 6818, 6818, 0, -2, -2);
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(37, 19);

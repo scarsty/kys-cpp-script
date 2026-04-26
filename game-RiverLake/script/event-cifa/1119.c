@@ -1,6 +1,7 @@
-if isUsingItem(186) then goto label0 end;
-exit();
-label0:
+if (!(isUsingItem(186)))
+{
+    exit();
+}
 Talk("師父，我終于找到黑玉斷續膏了！", 0, 1);
 DarkScene();
 ModifyEvent(-2, 8, 1, -2, 1120, 0, -2, 5390, 5390, 5390, -2, 15, 34);

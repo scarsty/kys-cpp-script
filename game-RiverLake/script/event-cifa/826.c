@@ -13,8 +13,9 @@ Talk("你不用編故事騙我了．", 165, 0);
 Talk("哇，你也太不講道理了．", 0, 1);
 Talk("我不講道理？好，那我今天就跟你講講道理．", 165, 0);
 Talk("還以為是什么，原來是想動手．", 0, 1);
-if TryBattle(157) == false then goto label75 end;
-label75:
+if (TryBattle(157))
+{
+}
 LightScene();
 Talk("汪嘯風一劍直刺，沒想到卻是向水笙刺去．．．", 0, 3);
 Talk("水笙，你沒事吧？", 0, 1);

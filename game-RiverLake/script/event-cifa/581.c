@@ -1,10 +1,12 @@
-if InTeam(2) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(2)))
+{
+    exit();
+}
 Talk("藥方：甘草、羌活、麥冬、白術、熟地黃（Ｙ／Ｎ）", 2, 0);
-if AskRest() then goto  label11 end;
-exit();
-label11:
+if (!(AskRest()))
+{
+    exit();
+}
 instruct_50e(6, 9, 10, 1, 8, 7, 0);
 Talk("原料好像不夠！", 0, 0);
 exit();

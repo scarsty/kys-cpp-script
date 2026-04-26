@@ -1,6 +1,7 @@
-if isUsingItem(198) then goto label0 end;
-exit();
-label0:
+if (!(isUsingItem(198)))
+{
+    exit();
+}
 Talk("岳掌門，其實在下一直對您跟華山抱有向往，晚輩懇請岳掌門收晚輩為徒．", 0, 1);
 Talk("想做華山弟子，首先要看你的為人．", 19, 0);
 Talk("恩，你的為人相對來說還是不錯的，既然這樣我就收下你了．", 19, 0);

@@ -1,12 +1,14 @@
-if InTeam(36) then goto label0 end;
-Talk("哼！廢話少說，要殺要剮隨你．", 24, 0);
-exit();
-label0:
+if (!(InTeam(36)))
+{
+    Talk("哼！廢話少說，要殺要剮隨你．", 24, 0);
+    exit();
+}
 Talk("余滄海，來受死吧，今天我要你青城派在武林中消失．", 36, 1);
-if TryBattle(50) then goto label15 end;
-Dead();
-exit();
-label15:
+if (!(TryBattle(50)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 0, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 1, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);

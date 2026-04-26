@@ -5,10 +5,11 @@ Talk("幾個小賊我還不放在眼里．", 27, 4);
 Talk("原來剛剛的是假冒的，石清夫婦不是東方教主的對手．．．", 213, 1);
 Talk("又來了一個，剛剛欺負我的也有他．", 27, 0);
 Talk("乖，別怕，讓我來給你報仇", 27, 4);
-if TryBattle(236) then goto label36 end;
-Dead();
-exit();
-label36:
+if (!(TryBattle(236)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 48, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 49, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 50, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -33,10 +34,11 @@ LightScene();
 SubMapViewFromTo(18, 38, 19, 37);
 Talk("你．．．", 0, 1);
 Talk("多虧你，我才能順利收回黑木崖，但．．．哼．．．哼．．．", 26, 1);
-if TryBattle(237) then goto label235 end;
-Dead();
-exit();
-label235:
+if (!(TryBattle(237)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("我們都不是你的對手，看來任某這個教主的位置只好讓給你了．", 26, 1);
 Talk("教主？", 0, 0);

@@ -1,10 +1,12 @@
-if InTeam(16) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(16)))
+{
+    exit();
+}
 Talk("用甘草、半夏、當歸、防風熟地黃可以配出六陽正氣丹", 16, 0);
-if AskRest() then goto  label11 end;
-exit();
-label11:
+if (!(AskRest()))
+{
+    exit();
+}
 instruct_50e(6, 0, 10, 3, 7, 7, 0);
 Talk("原料好像不夠！", 0, 0);
 exit();

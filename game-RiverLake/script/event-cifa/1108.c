@@ -1,10 +1,12 @@
-if HaveItemBool(76) then goto label0 end;
-exit();
-label0:
+if (!(HaveItemBool(76)))
+{
+    exit();
+}
 Talk("是否住宿？", 0, 3);
-if AskRest() then goto  label9 end;
-exit();
-label9:
+if (!(AskRest()))
+{
+    exit();
+}
 DarkScene();
 Rest();
 LightScene();

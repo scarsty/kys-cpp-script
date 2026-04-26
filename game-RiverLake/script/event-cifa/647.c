@@ -9,18 +9,19 @@ Talk("你跟一燈有仇，既然一燈受傷，你怎么不去親自殺他啊",
 Talk("實話跟你說，我去了，但是被一個不知名的小子打敗了而那個小子就是你前些日子打敗的那個．", 66, 0);
 Talk("是他啊，他的武功根本無法跟我比．好，我這就去殺了一燈．", 67, 0);
 Talk("是否阻止裘千仞？", 0, 3);
-if AskRest() then goto  label101 end;
-DarkScene();
-ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(47, 0, 1, -2, 619, 0, 0, 6226, 6226, 6226, 0, 18, 18);
-ModifyEvent(47, 22, 0, -2, 0, 0, 648, 0, 0, 0, 0, -2, -2);
-LightScene();
-AddMorality(-1);
-OldSetScenePosition(28, 56);
-exit();
-label101:
+if (!(AskRest()))
+{
+    DarkScene();
+    ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(47, 0, 1, -2, 619, 0, 0, 6226, 6226, 6226, 0, 18, 18);
+    ModifyEvent(47, 22, 0, -2, 0, 0, 648, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    AddMorality(-1);
+    OldSetScenePosition(28, 56);
+    exit();
+}
 WalkFromTo(23, 30, 23, 19);
 Talk("你們的陰謀被我識破了！", 0, 1);
 Talk("手下敗將，想找死嗎？呵呵呵呵．．．", 67, 0);
@@ -28,10 +29,11 @@ Talk("啊！？是你？還我兒子的命來！", 66, 0);
 Talk("甚麼兒子不兒子？你兒子喪命，跟我有甚相干？", 67, 0);
 Talk("哼，那晚上我沒瞧見你面貌，可記得你的笑聲．你再笑一下！笑啊，笑啊！", 66, 0);
 Talk("裘千仞，看招！", 0, 1);
-if TryBattle(88) then goto label223 end;
-Dead();
-exit();
-label223:
+if (!(TryBattle(88)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

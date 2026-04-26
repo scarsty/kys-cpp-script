@@ -15,10 +15,11 @@ Talk("住手！！！", 0, 0);
 OldSetScenePosition(49, 43);
 SetTowards(3);
 Talk("你們大白天的竟敢吃人，真是該死．看小爺怎么教訓你", 0, 0);
-if TryBattle(66) then goto label113 end;
-Dead();
-exit();
-label113:
+if (!(TryBattle(66)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetTowards(0);

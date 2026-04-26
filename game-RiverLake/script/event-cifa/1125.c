@@ -5,10 +5,11 @@ ModifyEvent(-2, 5, 1, -2, 0, 0, 0, 6058, 6058, 6058, 0, -2, -2);
 ModifyEvent(-2, 6, 1, -2, 0, 0, 0, 6064, 6064, 6064, 0, -2, -2);
 ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 6070, 6070, 6070, 0, -2, -2);
 LightScene();
-if TryBattle(231) then goto label75 end;
-Dead();
-exit();
-label75:
+if (!(TryBattle(231)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

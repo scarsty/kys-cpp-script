@@ -1,7 +1,8 @@
-if InTeam(81) then goto label0 end;
-Talk("．．．．．．", 165, 0);
-exit();
-label0:
+if (!(InTeam(81)))
+{
+    Talk("．．．．．．", 165, 0);
+    exit();
+}
 Talk("表哥．", 106, 1);
 Talk("表妹．", 165, 0);
 Talk("多謝這位大哥把我表妹帶回來．", 165, 0);

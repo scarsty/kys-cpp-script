@@ -22,115 +22,122 @@ LightScene();
 Talk("＜哎呀！游氏雙雄竟然為了兩件兵器而自刎，真是太傻了！＞", 0, 1);
 Talk("喬峰逼死游氏雙雄，大家一起上，為游氏雙雄報仇！", 4, 1);
 Talk("幫助喬峰請按”Ｙ”幫助眾人請按”Ｎ”", 0, 1);
-if AskRest() then goto  label129 end;
-AddMorality(-5);
-Talk("喬峰！你這契丹狗！虧我上次與你喝酒還跟你稱兄道弟沒想到你竟然逼死游氏雙雄看我今天替天行道！", 0, 1);
-DarkScene();
-OldSetScenePosition(22, 30);
-LightScene();
-Talk("是你？好！喬某跟你喝一杯絕情酒，然后決一死戰！", 50, 0);
-Talk("在下雖不濟，但也不肖跟你這契丹狗喝酒．廢話少說，受死吧！", 0, 1);
-Talk("（無奈）呵呵，想不到我喬峰今日一戰，竟然一個朋友都沒有了．既然如此，動手吧！", 50, 0);
-if TryBattle(84) then goto label163 end;
-Dead();
-exit();
-label163:
-LightScene();
-Talk("鼎鼎大名的喬幫主想不到今日會死在我一個無名小卒手中吧？", 0, 1);
-Talk("！！！", 117, 0);
-DarkScene();
-ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 5296, 5296, 5296, 0, -2, -2);
-LightScene();
-if TryBattle(85) then goto label202 end;
-Dead();
-exit();
-label202:
-ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-Talk("＜那個黑衣人是誰？＞喬峰，這回看你往哪跑！", 0, 1);
-Talk("要殺就動手吧！", 50, 0);
-Talk("是否殺了喬峰？", 0, 3);
-if AskRest() then goto  label242 end;
-Talk("．．．你走吧．．．", 0, 1);
-Talk("．．．．．．", 50, 0);
-DarkScene();
-ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(52, 11, 1, -2, 862, 0, 0, 6120, 6120, 6120, 0, -2, -2);
-SetTowards(3);
-LightScene();
-Talk("你怎么放走喬峰這狗賊？", 79, 0);
-if TryBattle(86) then goto label310 end;
-Dead();
-exit();
-label310:
-ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label242:
-AddMorality(-3);
-DarkScene();
-ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-SetTowards(3);
-LightScene();
-Talk("多謝少俠襄助，今日才能除去喬峰這狗賊！", 79, 0);
-Talk("喬峰乃蠻族狗賊，人人得而誅之！", 0, 1);
-Talk("少俠后會有期！", 79, 0);
-DarkScene();
-ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label129:
+if (!(AskRest()))
+{
+    AddMorality(-5);
+    Talk("喬峰！你這契丹狗！虧我上次與你喝酒還跟你稱兄道弟沒想到你竟然逼死游氏雙雄看我今天替天行道！", 0, 1);
+    DarkScene();
+    OldSetScenePosition(22, 30);
+    LightScene();
+    Talk("是你？好！喬某跟你喝一杯絕情酒，然后決一死戰！", 50, 0);
+    Talk("在下雖不濟，但也不肖跟你這契丹狗喝酒．廢話少說，受死吧！", 0, 1);
+    Talk("（無奈）呵呵，想不到我喬峰今日一戰，竟然一個朋友都沒有了．既然如此，動手吧！", 50, 0);
+    if (!(TryBattle(84)))
+    {
+        Dead();
+        exit();
+    }
+    LightScene();
+    Talk("鼎鼎大名的喬幫主想不到今日會死在我一個無名小卒手中吧？", 0, 1);
+    Talk("！！！", 117, 0);
+    DarkScene();
+    ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 5296, 5296, 5296, 0, -2, -2);
+    LightScene();
+    if (!(TryBattle(85)))
+    {
+        Dead();
+        exit();
+    }
+    ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    Talk("＜那個黑衣人是誰？＞喬峰，這回看你往哪跑！", 0, 1);
+    Talk("要殺就動手吧！", 50, 0);
+    Talk("是否殺了喬峰？", 0, 3);
+    if (!(AskRest()))
+    {
+        Talk("．．．你走吧．．．", 0, 1);
+        Talk("．．．．．．", 50, 0);
+        DarkScene();
+        ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(52, 11, 1, -2, 862, 0, 0, 6120, 6120, 6120, 0, -2, -2);
+        SetTowards(3);
+        LightScene();
+        Talk("你怎么放走喬峰這狗賊？", 79, 0);
+        if (!(TryBattle(86)))
+        {
+            Dead();
+            exit();
+        }
+        ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+        LightScene();
+        exit();
+    }
+    AddMorality(-3);
+    DarkScene();
+    ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    SetTowards(3);
+    LightScene();
+    Talk("多謝少俠襄助，今日才能除去喬峰這狗賊！", 79, 0);
+    Talk("喬峰乃蠻族狗賊，人人得而誅之！", 0, 1);
+    Talk("少俠后會有期！", 79, 0);
+    DarkScene();
+    ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 AddMorality(3);
 OldSetScenePosition(22, 28);
 SetTowards(3);
 Talk("喬幫主，我來幫你退敵！", 0, 1);
-if TryBattle(86) then goto label916 end;
-Dead();
-exit();
-label916:
+if (!(TryBattle(86)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("我們這些人怎么會輸呢！再上！", 79, 0);
-if TryBattle(86) then goto label932 end;
-Dead();
-exit();
-label932:
+if (!(TryBattle(86)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

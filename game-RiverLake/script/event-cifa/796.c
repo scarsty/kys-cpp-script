@@ -25,10 +25,11 @@ WalkFromTo(36, 38, 36, 10);
 WalkFromTo(36, 10, 39, 10);
 SetTowards(3);
 Talk("光天化日之下是個大男人欺負一個女子，你們也太不要臉了．", 0, 1);
-if TryBattle(144) then goto label194 end;
-Dead();
-exit();
-label194:
+if (!(TryBattle(144)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

@@ -1,6 +1,7 @@
-if InTeam(49) then goto label0 end;
-exit();
-label0:
+if (!(InTeam(49)))
+{
+    exit();
+}
 DarkScene();
 LightScene();
 Talk("回到少林了．師叔，多謝你啊．", 49, 0);

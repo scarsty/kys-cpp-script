@@ -1,6 +1,7 @@
-if isUsingItem(194) then goto label0 end;
-exit();
-label0:
+if (!(isUsingItem(194)))
+{
+    exit();
+}
 Talk("我請你喝酒啊．", 0, 0);
 AddItemWithoutHint(194, -1);
 Talk("好！喝！哎？你．．．不是馬老四？", 93, 0);

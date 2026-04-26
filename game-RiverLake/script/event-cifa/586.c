@@ -1,7 +1,8 @@
 Talk("用當歸、茯苓、生地黃、熟地黃、防風可以配出天心解毒丹！", 0, 0);
-if AskRest() then goto  label4 end;
-exit();
-label4:
+if (!(AskRest()))
+{
+    exit();
+}
 instruct_50e(3, 4, 5, 6, 7, 7, 0);
 Talk("原料好像不夠！", 0, 0);
 exit();

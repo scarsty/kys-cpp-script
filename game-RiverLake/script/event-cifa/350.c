@@ -8,10 +8,11 @@ Talk("你將他殺了？", 0, 1);
 Talk("誰叫他不說出”辟邪劍譜”的下落．", 24, 0);
 Talk("你好狠毒的心．", 0, 1);
 Talk("你這麼想見他，我就送你去．", 24, 0);
-if TryBattle(49) then goto label50 end;
-Dead();
-exit();
-label50:
+if (!(TryBattle(49)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("看來閻王爺不收留我．", 0, 1);
 Talk("哼！廢話少說，要殺要剮隨你．", 24, 0);

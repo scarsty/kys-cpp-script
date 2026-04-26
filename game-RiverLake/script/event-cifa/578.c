@@ -1,7 +1,8 @@
 Talk("用半夏、麥冬、瓜蔞、當歸生地黃可以配出玉靈散！", 0, 0);
-if AskRest() then goto  label4 end;
-exit();
-label4:
+if (!(AskRest()))
+{
+    exit();
+}
 instruct_50e(0, 1, 2, 3, 4, 7, 0);
 Talk("原料好像不夠！", 0, 0);
 exit();

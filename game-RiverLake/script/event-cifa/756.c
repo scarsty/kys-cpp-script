@@ -1,6 +1,7 @@
-if HaveItemBool(76) == false then goto label0 end;
-ModifyEvent(19, 25, 0, -2, 0, 0, 1111, 0, 0, 0, 0, -2, -2);
-label0:
+if (HaveItemBool(76))
+{
+    ModifyEvent(19, 25, 0, -2, 0, 0, 1111, 0, 0, 0, 0, -2, -2);
+}
 ModifyEvent(19, 0, -2, -2, -2, 0, -2, -2, -2, -2, -2, -2, -2);
 ModifyEvent(54, 30, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(22, 2, 0, -2, 0, 0, 757, 0, 0, 0, 0, -2, -2);
@@ -23,10 +24,11 @@ AddSpeed(64, -109);
 OldSetScenePosition(20, 24);
 SetTowards(3);
 LightScene();
-if TryBattle(131) then goto label220 end;
-Dead();
-LightScene();
-label220:
+if (!(TryBattle(131)))
+{
+    Dead();
+    LightScene();
+}
 LightScene();
 Talk("看針！", 59, 0);
 Talk("玉蜂針好生厲害，我們快走", 62, 4);

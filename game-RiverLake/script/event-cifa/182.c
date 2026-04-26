@@ -39,10 +39,11 @@ Talk("那又怎樣？你認為你能活過今天？", 147, 0);
 Talk("萬圭一把粉末揚了過來", 0, 3);
 ZeroAllMP();
 Talk("啊，這是什么粉末？", 0, 0);
-if TryBattle(17) then goto label214 end;
-Dead();
-exit();
-label214:
+if (!(TryBattle(17)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 24, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

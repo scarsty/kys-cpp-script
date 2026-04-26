@@ -107,15 +107,17 @@ DarkScene();
 ModifyEvent(-2, 6, 1, -2, 0, 0, 0, 6226, 6226, 6226, 0, 18, 29);
 LightScene();
 Talk("玄難師叔！", 0, 0);
-if TryBattle(172) == false then goto label703 end;
-label703:
+if (TryBattle(172))
+{
+}
 ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("師叔，我來幫你．", 49, 1);
-if TryBattle(175) then goto label731 end;
-Dead();
-exit();
-label731:
+if (!(TryBattle(175)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -136,9 +138,10 @@ Talk("聰辯先生呢？", 0, 0);
 Talk("唉，一言難盡啊．", 49, 1);
 Talk("＜算了，他不愿意說就不說了．＞", 0, 0);
 ModifyEvent(28, 13, -2, -2, 896, 0, 0, -2, -2, -2, 0, -2, -2);
-if HaveItemBool(189) == false then goto label941 end;
-ModifyEvent(28, 13, -2, -2, 960, 0, 0, -2, -2, -2, 0, -2, -2);
-label941:
+if (HaveItemBool(189))
+{
+    ModifyEvent(28, 13, -2, -2, 960, 0, 0, -2, -2, -2, 0, -2, -2);
+}
 ModifyEvent(28, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(35, 0, -2, -2, -2, 0, 0, -2, -2, -2, 0, -2, -2);
 Talk("師叔，我想．．．我想先走一步．", 49, 1);

@@ -9,10 +9,11 @@ DarkScene();
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("你們既然這么喜歡寶藏，那就永遠陪著寶藏吧！", 0, 0);
-if TryBattle(130) then goto label59 end;
-Dead();
-exit();
-label59:
+if (!(TryBattle(130)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 SubMapViewFromTo(28, 17, 37, 17);
 Talk("苗大俠說的機關在這．", 0, 0);

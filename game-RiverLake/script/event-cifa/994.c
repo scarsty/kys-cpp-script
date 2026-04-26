@@ -1,6 +1,7 @@
-if HaveItemBool(80) then goto label0 end;
-exit();
-label0:
+if (!(HaveItemBool(80)))
+{
+    exit();
+}
 Talk("！！！", 0, 1);
 DarkScene();
 ModifyEvent(-2, 18, 1, -2, 0, 0, 0, 5722, 5722, 5722, 0, -2, -2);

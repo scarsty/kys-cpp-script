@@ -18,10 +18,11 @@ Talk("你們這么多人欺負一個不會武功的人是不是太不要臉了",
 WalkFromTo(20, 27, 20, 23);
 WalkFromTo(20, 23, 20, 21);
 Talk("你是誰家娃娃，到這兒來干什么？", 146, 0);
-if TryBattle(19) then goto label102 end;
-Dead();
-exit();
-label102:
+if (!(TryBattle(19)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("想不到我竟會敗在一個小娃娃手里！", 146, 0);
 Talk("段公子，我受令尊所托帶你回去．", 0, 0);

@@ -1,13 +1,15 @@
 Talk("你是什么人，竟敢闖我的燕子塢．", 51, 0);
 Talk("公子，是我們不小心讓他進來的．", 179, 0);
-if TryBattle(163) then goto label10 end;
-Dead();
-exit();
-label10:
+if (!(TryBattle(163)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("想不到這位少俠武功如此之高，就讓我慕容復來會會你", 51, 0);
-if TryBattle(164) == false then goto label26 end;
-label26:
+if (TryBattle(164))
+{
+}
 LightScene();
 Talk("慕容公子果然名不虛傳．", 0, 1);
 Talk("慕容復今日得見少俠十分榮幸，在下這就讓人準備一桌酒菜，請少俠同飲．", 51, 0);

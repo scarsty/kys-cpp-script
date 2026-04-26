@@ -1,11 +1,13 @@
-if HaveItemBool(80) then goto label0 end;
-exit();
-label0:
+if (!(HaveItemBool(80)))
+{
+    exit();
+}
 instruct_50e(17, 0, 0, 320, 36, 1, 0);
 instruct_50e(4, 0, 4, 1, 2, 0, 0);
-if CheckRoleSexual(256) then goto label22 end;
-exit();
-label22:
+if (!(CheckRoleSexual(256)))
+{
+    exit();
+}
 DarkScene();
 ModifyEvent(-2, 2, 1, -2, 0, 0, 0, 5182, 5182, 5182, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 0, 0, 0, 5180, 5180, 5180, 0, -2, -2);
@@ -16,16 +18,17 @@ Talk("（聲音很小，聽不清楚）．．．．．．", 185, 4);
 SubMapViewFromTo(41, 33, 48, 36);
 Talk("＜他二人是誰？陌生的面孔卻穿著華山派的服裝？難道又是人物造型不夠了？＞", 0, 1);
 Talk("是否上去打招呼？", 0, 3);
-if AskRest() then goto  label91 end;
-Talk("＜對了，一定是沒新造型用了，就用我華山派的造型．還是給大師兄送飯要緊．＞", 0, 1);
-DarkScene();
-ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
-ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label91:
+if (!(AskRest()))
+{
+    Talk("＜對了，一定是沒新造型用了，就用我華山派的造型．還是給大師兄送飯要緊．＞", 0, 1);
+    DarkScene();
+    ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
+    ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 Talk("請問您二位是．．．？", 0, 1);
 ModifyEvent(-2, 2, 1, -2, 0, 0, 0, 5178, 5178, 5178, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 0, 0, 0, 5178, 5178, 5178, 0, -2, -2);
@@ -36,16 +39,17 @@ Talk("你是岳不群的徒弟嗎？", 185, 1);
 Talk("不錯，請問二位前輩是．．．", 0, 1);
 Talk("我們是你師叔啊．", 176, 0);
 Talk("師叔？沒聽師父提過啊．", 0, 1);
-if CheckRoleMorality(0, 0, 60) then goto label232 end;
-Talk("沒聽說過就算了，不過向你透露一下，你馬上就會聽說我們了．", 176, 0);
-DarkScene();
-ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
-ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-exit();
-label232:
+if (!(CheckRoleMorality(0, 0, 60)))
+{
+    Talk("沒聽說過就算了，不過向你透露一下，你馬上就會聽說我們了．", 176, 0);
+    DarkScene();
+    ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
+    ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    exit();
+}
 Talk("看來你還是不太相信我們啊看好了．", 176, 0);
 DarkScene();
 LightScene();
@@ -53,18 +57,19 @@ Talk("這是我華山派的招式啊．", 0, 1);
 Talk("這下你相信了吧？", 176, 0);
 Talk("晚輩拜見二位師叔．", 0, 1);
 Talk("那你想學嗎？", 176, 1);
-if AskRest() then goto  label334 end;
-Talk("還是不麻煩師叔了．我還有事要做．", 0, 1);
-Talk("呵呵．．．", 176, 0);
-DarkScene();
-ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
-ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
-LightScene();
-AddMorality(2);
-exit();
-label334:
+if (!(AskRest()))
+{
+    Talk("還是不麻煩師叔了．我還有事要做．", 0, 1);
+    Talk("呵呵．．．", 176, 0);
+    DarkScene();
+    ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(81, 1, 1, -2, 1002, 0, 0, 7656, 7656, 7656, 0, -2, -2);
+    ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+    LightScene();
+    AddMorality(2);
+    exit();
+}
 Talk("好啊，那就多謝師叔了．", 0, 1);
 Talk("．．．．．．你還是改不了到處教人劍法的毛病．", 185, 4);
 Talk("可是我已經答應師侄了．", 176, 0);

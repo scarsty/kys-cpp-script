@@ -3,10 +3,11 @@ Talk("靖哥哥，是西毒歐陽鋒！", 56, 0);
 Talk("陰魂不散！", 60, 1);
 Talk("前輩，怎么辦？", 0, 1);
 Talk("你去纏住他們，我先去找武穆遺書．", 60, 1);
-if TryBattle(151) then goto label25 end;
-Dead();
-exit();
-label25:
+if (!(TryBattle(151)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("你的武功不錯啊．", 60, 1);

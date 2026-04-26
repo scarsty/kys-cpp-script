@@ -20,36 +20,40 @@ Talk("哦？小兄弟你也想取一只玉杯嗎？", 123, 0);
 Talk("他媽的，小毛孩子也想取玉杯，沒問問你老子同意不？", 84, 0);
 Talk("這個你不用擔心，出門時我問過你爺爺了，他同意．", 0, 0);
 Talk("你．．．你敢罵我！", 84, 0);
-if TryBattle(6) then goto label112 end;
-Dead();
-exit();
-label112:
+if (!(TryBattle(6)))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("小兄弟，今日在天下英雄之前大大的露了一下臉，當真是聳動武林．但不知那位愿意跟怎么小英雄爭奪這只玉杯？", 123, 0);
 Talk("我來！", 94, 0);
-if TryBattle(7) then goto label148 end;
-Dead();
-exit();
-label148:
+if (!(TryBattle(7)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("小兄弟的武功真是高強，這個玉杯理應小兄弟所有．", 123, 0);
 AddItem(163, 1);
 Talk("大家一起上，誰搶到玉杯算誰的．", 81, 0);
-if TryBattle(8) then goto label173 end;
-Dead();
-exit();
-label173:
+if (!(TryBattle(8)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("＜糟了，這么多人打我一個恐怕要吃虧，鳳天南那個老家伙也跑了．＞", 0, 0);
 Talk("說過不見不散，怎么我沒來你自己玩上了．還得我幫你吧．", 73, 0);
 Talk("袁姑娘，我還以為你不會來了呢．這位一身白的大哥是你的朋友？", 0, 0);
 Talk("在下胡斐，路上袁姑娘跟我說了你的事，胡某對小兄弟的為人甚是欽佩，特來與小兄弟一見．", 1, 0);
 Talk("點子來幫手了，大家上啊！", 81, 0);
-if TryBattle(9) then goto label209 end;
-Dead();
-exit();
-label209:
+if (!(TryBattle(9)))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("既然大家都不是這位小兄弟的對手，那么大家不如爭奪其他的杯子如何，日后等練好了武功再與小兄弟比試也不遲啊．", 123, 0);
 Talk("小兄弟，不如我們快走吧，以防遲則生變．", 1, 0);
