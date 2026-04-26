@@ -1,0 +1,7 @@
+if (!isUsingItem(186))
+{
+    exit();
+}
+AddItemWithoutHint(186, -1);
+Talk("藏有很多硝石的山洞中，還藏有兩個神秘寶箱，但都需要鑰匙去開．其中一個是鐵鑰匙．", 74, 0, 2693);
+Add3EventNum(-2, 1, 0, 1, 0);
