@@ -1,8 +1,8 @@
-if (!(isUsingItem(174)))
+﻿if (!isUsingItem(174))
 {
     exit();
 }
-if (!(CheckEnoughMoney(2000)))
+if (!CheckEnoughMoney(2000))
 {
     Talk("你的錢好像不夠啊！", 93, 1);
     exit();

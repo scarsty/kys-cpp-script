@@ -1,4 +1,4 @@
-if (!(isUsingItem(195)))
+﻿if (!isUsingItem(195))
 {
     exit();
 }
@@ -17,7 +17,7 @@ if (InTeam(51))
             {
                 ModifyEvent(16, 5, 1, -2, 54, 0, 0, 6312, 6312, 6312, 0, -2, -2);
                 Talk("你竟然想挖我父親的墳墓？枉我對你如手足！", 51, 0);
-                if (!(TryBattle(165)))
+                if (!TryBattle(165))
                 {
                     Dead();
                     exit();
@@ -36,7 +36,7 @@ if (InTeam(51))
         }
     }
     Talk("你竟然想挖我父親的墳墓？枉我對你如手足！", 51, 0);
-    if (!(TryBattle(165)))
+    if (!TryBattle(165))
     {
         Dead();
         exit();

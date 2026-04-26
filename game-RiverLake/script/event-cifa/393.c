@@ -1,30 +1,30 @@
-if (!(HaveItemBool(144)))
+﻿if (!HaveItemBool(144))
 {
-    if (!(HaveItemBool(145)))
+    if (!HaveItemBool(145))
     {
-        if (!(HaveItemBool(146)))
+        if (!HaveItemBool(146))
         {
-            if (!(HaveItemBool(147)))
+            if (!HaveItemBool(147))
             {
-                if (!(HaveItemBool(148)))
+                if (!HaveItemBool(148))
                 {
-                    if (!(HaveItemBool(149)))
+                    if (!HaveItemBool(149))
                     {
-                        if (!(HaveItemBool(150)))
+                        if (!HaveItemBool(150))
                         {
-                            if (!(HaveItemBool(151)))
+                            if (!HaveItemBool(151))
                             {
-                                if (!(HaveItemBool(152)))
+                                if (!HaveItemBool(152))
                                 {
-                                    if (!(HaveItemBool(153)))
+                                    if (!HaveItemBool(153))
                                     {
-                                        if (!(HaveItemBool(154)))
+                                        if (!HaveItemBool(154))
                                         {
-                                            if (!(HaveItemBool(155)))
+                                            if (!HaveItemBool(155))
                                             {
-                                                if (!(HaveItemBool(156)))
+                                                if (!HaveItemBool(156))
                                                 {
-                                                    if (!(HaveItemBool(157)))
+                                                    if (!HaveItemBool(157))
                                                     {
                                                         Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
                                                         exit();

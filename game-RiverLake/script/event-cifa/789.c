@@ -1,4 +1,4 @@
-if (HaveItemBool(126))
+﻿if (HaveItemBool(126))
 {
     if (HaveItemBool(125))
     {
@@ -7,7 +7,7 @@ if (HaveItemBool(126))
             if (HaveItemBool(123))
             {
                 Talk("用一把玄天斬換你的龍吟劍鳳鳴劍、紫云劍和紅霞劍你換不換？", 227, 1);
-                if (!(AskRest()))
+                if (!AskRest())
                 {
                     Talk("我用四把劍換你一把我當然不敢了．", 0, 1);
                     exit();

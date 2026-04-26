@@ -1,9 +1,9 @@
-if (!(InTeam(28)))
+﻿if (!InTeam(28))
 {
     exit();
 }
 Talk("用麥冬、當歸、茯苓、甘草羌活可以配出鎮心理氣丸！", 28, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

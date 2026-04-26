@@ -1,5 +1,5 @@
-Talk("師父！", 48, 0);
-if (!(AskJoin ()))
+﻿Talk("師父！", 48, 0);
+if (!AskJoin())
 {
     Talk("徒兒乖！", 0, 1);
     exit();

@@ -1,11 +1,11 @@
-Talk("！！！", 0, 0);
+﻿Talk("！！！", 0, 0);
 SubMapViewFromTo(25, 48, 25, 36);
 Talk("一只大雕與一條大蛇打斗，真是難得一見啊．", 0, 1);
 WalkFromTo(25, 48, 25, 38);
 Talk("幫雕請按”Ｙ”幫蛇請按”Ｎ”", 0, 1);
-if (!(AskRest()))
+if (!AskRest())
 {
-    if (!(TryBattle(118)))
+    if (!TryBattle(118))
     {
         Dead();
         exit();
@@ -17,7 +17,7 @@ if (!(AskRest()))
     AddMorality(1);
     exit();
 }
-if (!(TryBattle(116)))
+if (!TryBattle(116))
 {
     Dead();
     exit();

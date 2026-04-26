@@ -1,5 +1,5 @@
-Talk("什么人膽敢亂闖星宿海？", 92, 0);
-if (!(TryBattle(170)))
+﻿Talk("什么人膽敢亂闖星宿海？", 92, 0);
+if (!TryBattle(170))
 {
     Dead();
     exit();

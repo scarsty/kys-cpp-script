@@ -1,4 +1,4 @@
-if (!(HaveItemBool(121)))
+﻿if (!HaveItemBool(121))
 {
     Talk("阿彌陀佛", 96, 0);
     exit();
@@ -7,7 +7,7 @@ if (CheckRoleMorality(0, 85, 100))
 {
     instruct_50e(17, 0, 0, 0, 86, 1, 0);
     instruct_50e(4, 0, 1, 1, 200, 0, 0);
-    if (!(CheckRoleSexual(256)))
+    if (!CheckRoleSexual(256))
     {
         Talk("不錯，看你的修為是可以修習更高一層的武學的時候了", 96, 0);
         AddItem(117, 1);

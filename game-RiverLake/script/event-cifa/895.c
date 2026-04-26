@@ -1,11 +1,11 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 1, -2, 897, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 898, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 LightScene();
 Talk("什么人這么大膽，竟敢闖進靈鷲宮．", 177, 1);
-if (!(TryBattle(178)))
+if (!TryBattle(178))
 {
     Dead();
     exit();
@@ -13,7 +13,7 @@ if (!(TryBattle(178)))
 ModifyEvent(-2, 4, 1, -2, 0, 0, 0, 8786, 8786, 8786, 0, -2, -2);
 LightScene();
 Talk("哪來的毛頭小子，擅闖我靈鷲宮不說，還打傷我的宮女", 115, 1);
-if (!(TryBattle(179)))
+if (!TryBattle(179))
 {
     Dead();
     exit();
@@ -42,7 +42,7 @@ Talk("哼，你是來．．．", 115, 1);
 Talk("師姐，我就是來看看你有沒有死啊．", 137, 0);
 Talk("大家同門一場，就不能和和睦睦的嗎？", 0, 0);
 Talk("師姐，這是你養的小白臉嗎", 137, 0);
-if (!(TryBattle(180)))
+if (!TryBattle(180))
 {
     Dead();
     exit();

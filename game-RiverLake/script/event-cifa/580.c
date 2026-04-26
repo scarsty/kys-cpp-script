@@ -1,9 +1,9 @@
-if (!(InTeam(16)))
+﻿if (!InTeam(16))
 {
     exit();
 }
 Talk("用甘草、半夏、當歸、防風熟地黃可以配出六陽正氣丹", 16, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

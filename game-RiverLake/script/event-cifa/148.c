@@ -1,6 +1,6 @@
-if (CheckRoleMorality(0, 55, 100))
+﻿if (CheckRoleMorality(0, 55, 100))
 {
-    if (!(HaveItemBool(74)))
+    if (!HaveItemBool(74))
     {
         Talk("這位小兄弟，平時注意要多鍛煉啊！這本劍譜送給你，這可是武林中令人聞風喪膽的躺尸劍法啊！", 133, 0);
         AddItem(74, 1);

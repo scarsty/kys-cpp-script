@@ -1,9 +1,9 @@
-if (!(InTeam(45)))
+﻿if (!InTeam(45))
 {
     exit();
 }
 Talk("用麥冬、當歸、甘草、羌活熟地黃可以配出生生造化丹", 124, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

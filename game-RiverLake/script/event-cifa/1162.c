@@ -1,4 +1,4 @@
-if (!(isUsingItem(171)))
+﻿if (!isUsingItem(171))
 {
     exit();
 }

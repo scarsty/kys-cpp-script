@@ -1,4 +1,4 @@
-if (!(InTeam(81)))
+﻿if (!InTeam(81))
 {
     Talk("．．．．．．", 165, 0);
     exit();

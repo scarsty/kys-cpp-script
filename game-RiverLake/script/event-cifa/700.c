@@ -1,7 +1,7 @@
-SubMapViewFromTo(47, 11, 38, 7);
+﻿SubMapViewFromTo(47, 11, 38, 7);
 Talk("你們以為用兩個假墳就能騙過我嗎？今天我就給我丈夫報仇！", 15, 1);
 Talk("是否幫胡青牛夫婦？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     AddMorality(-1);
     Talk("＜金花婆婆太厲害了，我打不過她！還是少管閑事為好！＞", 0, 1);
@@ -17,7 +17,7 @@ OldSetScenePosition(38, 7);
 SetTowards(1);
 Talk("喂，光天化日之下殺人，還有王法嗎？", 0, 1);
 Talk("找死！", 15, 1);
-if (!(TryBattle(109)))
+if (!TryBattle(109))
 {
     Dead();
     exit();

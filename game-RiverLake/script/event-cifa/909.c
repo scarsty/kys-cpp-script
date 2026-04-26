@@ -1,11 +1,11 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 1, -2, 910, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 911, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 LightScene();
 Talk("什么人這么大膽，竟敢闖進靈鷲宮．", 177, 1);
-if (!(TryBattle(178)))
+if (!TryBattle(178))
 {
     Dead();
     exit();

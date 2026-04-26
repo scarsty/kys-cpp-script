@@ -1,4 +1,4 @@
-Talk("落——花——流——水——", 190, 1);
+﻿Talk("落——花——流——水——", 190, 1);
 Talk("落——花——流——水——", 107, 0);
 Talk("落——花——流——水——", 191, 5);
 Talk("落——花——流——水——", 192, 4);
@@ -27,7 +27,7 @@ OldSetScenePosition(17, 18);
 SetTowards(1);
 LightScene();
 Talk("又一個血刀淫賊！", 107, 1);
-if (!(TryBattle(167)))
+if (!TryBattle(167))
 {
     Dead();
     exit();

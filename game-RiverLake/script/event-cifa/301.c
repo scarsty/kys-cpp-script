@@ -1,12 +1,12 @@
-ModifyEvent(3, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(3, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("站住！皇宮豈容你亂闖！", 92, 0);
-if (!(AskBattle()))
+if (!AskBattle())
 {
     exit();
 }
 if (TeamIsFull())
 {
-    if (!(TryBattle(38)))
+    if (!TryBattle(38))
     {
         Dead();
         exit();
@@ -22,7 +22,7 @@ if (TeamIsFull())
 }
 if (HaveItemBool(150))
 {
-    if (!(TryBattle(38)))
+    if (!TryBattle(38))
     {
         Dead();
         exit();
@@ -37,7 +37,7 @@ if (HaveItemBool(150))
     exit();
 }
 Talk("我來幫你！", 120, 0);
-if (!(TryBattle(39)))
+if (!TryBattle(39))
 {
     Dead();
     exit();

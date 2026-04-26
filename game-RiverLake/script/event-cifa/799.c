@@ -1,4 +1,4 @@
-if (!(HaveItemBool(184)))
+﻿if (!HaveItemBool(184))
 {
     Talk("不行，我不能拋下她們二人不管．", 0, 1);
     WalkFromTo(16, 16, 16, 14);
@@ -63,7 +63,7 @@ ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 8444, 8444, 8444, 0, -2, -2);
 LightScene();
 Talk("＜原來李莫愁一直沒走遠．看來這次真的得動手了．＞", 0, 4);
 ZeroAllMP();
-if (!(TryBattle(145)))
+if (!TryBattle(145))
 {
     Dead();
     exit();

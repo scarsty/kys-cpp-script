@@ -1,4 +1,4 @@
-if (!(HaveItemBool(120)))
+﻿if (!HaveItemBool(120))
 {
     exit();
 }
@@ -8,7 +8,7 @@ LightScene();
 Talk("站住！", 212, 0);
 Talk("又是你．．．", 0, 1);
 Talk("這次我不會輸了．", 212, 0);
-if (!(TryBattle(220)))
+if (!TryBattle(220))
 {
     LightScene();
     Talk("看來武當派的弟子也不怎么樣啊．", 212, 0);

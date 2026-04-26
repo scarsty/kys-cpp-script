@@ -1,4 +1,4 @@
-Talk("我們要的東西帶來了嗎？", 210, 0);
+﻿Talk("我們要的東西帶來了嗎？", 210, 0);
 Talk("師弟，我就知道你不會棄我不顧的．", 209, 0);
 Talk("是否交出武當九陽功", 0, 3);
 if (AskRest())
@@ -20,14 +20,14 @@ if (AskRest())
     AddAttack(0, -5);
     exit();
 }
-if (!(AskBattle()))
+if (!AskBattle())
 {
     Talk("我這就回去拿．", 0, 1);
     exit();
 }
 Talk("東西？當然沒帶．", 0, 1);
 Talk("看來你真是不到黃河心不死啊．", 211, 4);
-if (!(TryBattle(218)))
+if (!TryBattle(218))
 {
     Dead();
     exit();

@@ -1,4 +1,4 @@
-if (!(CheckRoleMorality(0, 0, 35)))
+﻿if (!CheckRoleMorality(0, 0, 35))
 {
     Talk("不知師父什么時候能收我為正式弟子？", 0, 1);
     Talk("你現在還不是時候．", 72, 0);

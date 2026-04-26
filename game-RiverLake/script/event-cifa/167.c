@@ -1,4 +1,4 @@
-SetSubMapLayerData(16, 1, 15, 20, 2270);
+﻿SetSubMapLayerData(16, 1, 15, 20, 2270);
 SetSubMapLayerData(16, 1, 14, 20, 0);
 SetSubMapLayerData(16, 1, 13, 20, 2266);
 Talk("狄云．", 0, 1);
@@ -43,7 +43,7 @@ Talk("喂，臭和尚，什么借不借的你這分明是搶嗎．", 0, 1);
 Talk("小僧說借其實是給你們莫大面子，不要讓小僧動手．", 116, 0);
 Talk("神照經讓我放到了它應該在的地方了，不在我這里．", 37, 4);
 Talk("那就休怪小僧無情了．", 116, 0);
-if (!(TryBattle(15)))
+if (!TryBattle(15))
 {
     LightScene();
     Talk("我們打不過他，快跑．", 0, 1);

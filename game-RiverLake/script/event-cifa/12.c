@@ -1,11 +1,11 @@
-Talk("公子近來可好．", 2, 0);
-if (!(AskJoin ()))
+﻿Talk("公子近來可好．", 2, 0);
+if (!AskJoin())
 {
     Talk("還好．閑著無事來看看你．", 0, 1);
     exit();
 }
 Talk("程姑娘終日呆在藥王莊不感到無聊嗎？不如隨我出去逛逛！", 0, 0);
-if (!(CheckRoleMorality(0, 0, 100)))
+if (!CheckRoleMorality(0, 0, 100))
 {
     Talk("不了，我還要研究師父生前所傳授的藥方．", 2, 0);
     exit();

@@ -1,6 +1,6 @@
-Talk("段譽！", 0, 0);
+﻿Talk("段譽！", 0, 0);
 Talk("我動不了．．．", 53, 0);
-if (!(TryBattle(22)))
+if (!TryBattle(22))
 {
     Dead();
     exit();

@@ -1,10 +1,10 @@
-if (!(HaveItemBool(76)))
+﻿if (!HaveItemBool(76))
 {
     Talk("看什么看，全真教可是你亂闖亂看的地方？", 142, 0);
     exit();
 }
 Talk("師兄你好．", 0, 1);
-if (!(CheckRoleMorality(0, 0, 70)))
+if (!CheckRoleMorality(0, 0, 70))
 {
     Talk("本身蠻好，你一來，就不好了．", 142, 0);
     Talk("師兄這話從何說起？", 0, 1);

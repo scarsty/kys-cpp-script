@@ -1,5 +1,5 @@
-Talk("大膽小賊，受死吧．", 92, 0);
-if (!(TryBattle(14)))
+﻿Talk("大膽小賊，受死吧．", 92, 0);
+if (!TryBattle(14))
 {
     Dead();
     exit();

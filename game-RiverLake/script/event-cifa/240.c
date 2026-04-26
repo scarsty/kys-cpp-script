@@ -1,8 +1,8 @@
-if (!(isUsingItem(174)))
+﻿if (!isUsingItem(174))
 {
     exit();
 }
-if (!(CheckEnoughMoney(3500)))
+if (!CheckEnoughMoney(3500))
 {
     Talk("哦，他一共欠我三千五百兩這是欠條．", 226, 0);
     exit();

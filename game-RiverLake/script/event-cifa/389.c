@@ -1,11 +1,11 @@
-Talk("想要比試嗎？", 59, 0);
-if (!(AskBattle()))
+﻿Talk("想要比試嗎？", 59, 0);
+if (!AskBattle())
 {
     Talk("別扯了．我見過神雕俠的武功，我跟他根本沒法比．等我練好一點的吧．", 0, 0);
     exit();
 }
 Talk("那在下只好向二位請教．", 0, 0);
-if (!(TryBattle(56)))
+if (!TryBattle(56))
 {
     LightScene();
     Talk("在下學藝不精，他日定當再次求教．", 0, 0);

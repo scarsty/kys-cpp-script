@@ -1,6 +1,6 @@
-SubMapViewFromTo(44, 26, 41, 20);
+﻿SubMapViewFromTo(44, 26, 41, 20);
 Talk("魔頭！你竟然污我清白！", 6, 0);
-if (!(TryBattle(72)))
+if (!TryBattle(72))
 {
     Dead();
     exit();

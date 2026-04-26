@@ -1,4 +1,4 @@
-WalkFromTo(14, 33, 34, 33);
+﻿WalkFromTo(14, 33, 34, 33);
 SubMapViewFromTo(34, 33, 42, 33);
 Talk("主公，這段延慶不懷好意，主公當以社稷為重，請急速去請天龍寺的眾高僧到來．", 203, 1);
 Talk("我大理段氏自身之事，卻要到大宋境內來了斷，嘿嘿，可笑啊可笑．", 194, 1);
@@ -31,28 +31,28 @@ LightScene();
 Talk("小兄弟，好久不見．這里沒你什么事，你還是快走吧！", 194, 1);
 Talk("王爺這話也把我太小看了．既然讓我遇上了這事我怎么能不管呢．", 0, 0);
 Talk("我岳老二這徒弟不聽話，讓我來先殺了他，然后再找一個．", 44, 0);
-if (!(TryBattle(135)))
+if (!TryBattle(135))
 {
     Dead();
     exit();
 }
 LightScene();
 Talk("老三，你今天沒吃飯嗎？讓我來幫你！", 167, 0);
-if (!(TryBattle(136)))
+if (!TryBattle(136))
 {
     Dead();
     exit();
 }
 LightScene();
 Talk("你們兩個都夠笨的，讓開，讓我來對付他！", 166, 0);
-if (!(TryBattle(137)))
+if (!TryBattle(137))
 {
     Dead();
     exit();
 }
 LightScene();
 Talk("葉二娘，看來你也不是這小子的對手啊，還是我們一起來吧！", 167, 0);
-if (!(TryBattle(138)))
+if (!TryBattle(138))
 {
     Dead();
     exit();
@@ -73,7 +73,7 @@ LightScene();
 Talk("大哥，你終于來了．", 0, 1);
 Talk("老大，他便是丐幫的前任幫主喬峰，你的好徒弟追魂杖譚青，就是死在這惡徒的手下．", 167, 0);
 Talk("閣下和我何仇，既殺吾徒，又來壞我大事．", 114, 0);
-if (!(TryBattle(140)))
+if (!TryBattle(140))
 {
     Dead();
     exit();

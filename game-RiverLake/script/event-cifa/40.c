@@ -1,11 +1,11 @@
-Talk("兄弟來此有事嗎？", 1, 0);
-if (!(AskJoin ()))
+﻿Talk("兄弟來此有事嗎？", 1, 0);
+if (!AskJoin())
 {
     Talk("路過，來看看胡大哥．", 0, 1);
     exit();
 }
 Talk("小弟有事相求，請胡大哥幫忙．", 0, 1);
-if (!(CheckRoleMorality(0, 60, 100)))
+if (!CheckRoleMorality(0, 60, 100))
 {
     Talk("小兄弟，劍不正，心則邪．切記．", 1, 0);
     exit();

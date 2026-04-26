@@ -1,8 +1,8 @@
-if (!(isUsingItem(174)))
+﻿if (!isUsingItem(174))
 {
     exit();
 }
-if (!(CheckEnoughMoney(5000)))
+if (!CheckEnoughMoney(5000))
 {
     Talk("衙門上下幾十人，要想都打點到了，少說也得五千兩．", 147, 0);
     exit();

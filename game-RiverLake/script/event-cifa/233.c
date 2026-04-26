@@ -1,4 +1,4 @@
-if (CheckRoleMorality(0, 80, 100))
+﻿if (CheckRoleMorality(0, 80, 100))
 {
     Talk("段公子別來無恙？", 0, 1);
     Talk("托福，托福．自從上次大哥救了我我還沒好好感謝大哥呢，我畫了六幅畫，送給大哥，當作紀念！", 53, 0);
@@ -9,7 +9,7 @@ if (CheckRoleMorality(0, 80, 100))
 if (InTeam(76))
 {
     Talk("王姑娘你好啊，不知王姑娘跟這位大哥要去哪里，可否帶在下一個．", 53, 0);
-    if (!(AskJoin ()))
+    if (!AskJoin())
     {
         Talk("段公子，我也很想帶你一起可是怕王爺不讓，我看還是以后吧．", 0, 1);
         exit();

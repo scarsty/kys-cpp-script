@@ -1,7 +1,7 @@
-if (InTeam(92))
+﻿if (InTeam(92))
 {
     Talk("．．．．．．", 158, 1);
-    if (!(AskJoin ()))
+    if (!AskJoin())
     {
         Talk("．．．．．．", 0, 0);
         exit();

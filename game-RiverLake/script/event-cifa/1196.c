@@ -1,11 +1,11 @@
-Talk("客觀，本店每晚收費５００兩．您住店嗎？", 219, 0);
+﻿Talk("客觀，本店每晚收費５００兩．您住店嗎？", 219, 0);
 Talk("是否住宿？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("不了，我還要趕路．", 0, 1);
     exit();
 }
-if (!(CheckEnoughMoney(500)))
+if (!CheckEnoughMoney(500))
 {
     Talk("對不起，您的錢好像不夠．", 219, 0);
     exit();

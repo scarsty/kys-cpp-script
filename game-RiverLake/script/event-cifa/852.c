@@ -1,4 +1,4 @@
-if (!(CheckRoleMorality(0, 60, 100)))
+﻿if (!CheckRoleMorality(0, 60, 100))
 {
     exit();
 }
@@ -18,7 +18,7 @@ OldSetScenePosition(13, 15);
 SetTowards(3);
 LightScene();
 Talk("喂，你們怎么兩個欺負一個", 0, 4);
-if (!(TryBattle(162)))
+if (!TryBattle(162))
 {
     Dead();
     exit();
@@ -29,7 +29,7 @@ OldSetScenePosition(13, 16);
 SetTowards(0);
 LightScene();
 Talk("這位前輩，你的傷怎么樣？我來給你包好了傷口．", 0, 5);
-if (!(CheckRoleMorality(0, 85, 100)))
+if (!CheckRoleMorality(0, 85, 100))
 {
     Talk("不．．．不用了多謝．．．", 231, 4);
     Talk("前輩．．．＜他死了．＞", 0, 5);

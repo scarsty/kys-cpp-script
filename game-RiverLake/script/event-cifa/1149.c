@@ -1,6 +1,6 @@
-instruct_50e(20, 0, 177, 1, 0, 0, 0);
+﻿instruct_50e(20, 0, 177, 1, 0, 0, 0);
 instruct_50e(4, 0, 2, 1, 8, 0, 0);
-if (!(CheckRoleSexual(256)))
+if (!CheckRoleSexual(256))
 {
     Talk("還沒找齊八本四十二章經嗎", 71, 0);
     exit();

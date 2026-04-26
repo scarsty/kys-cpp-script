@@ -1,4 +1,4 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 17, 1, -2, 0, 0, 0, 6052, 6052, 6052, 0, -2, -2);
 ModifyEvent(-2, 18, 1, -2, 0, 0, 0, 5268, 5268, 5268, 0, -2, -2);
 ModifyEvent(-2, 19, 1, -2, 0, 0, 0, 6268, 6268, 6268, 0, -2, -2);
@@ -36,7 +36,7 @@ SetSubMapLayerData(-2, 1, 28, 25, 1528);
 SetSubMapLayerData(-2, 1, 29, 25, 1530);
 SetSubMapLayerData(-2, 1, 27, 24, 0);
 SetSubMapLayerData(-2, 1, 29, 24, 0);
-if (!(InTeam(98)))
+if (!InTeam(98))
 {
     Talk("你不管我自己就走了？", 124, 0);
 }

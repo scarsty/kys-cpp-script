@@ -1,4 +1,4 @@
-if (HaveItemBool(154))
+﻿if (HaveItemBool(154))
 {
     Talk("幫主手里拿的可是在俠客島得到的天書？", 129, 0);
     Talk("是啊．你怎么知道的？", 0, 0);
@@ -7,7 +7,7 @@ if (HaveItemBool(154))
     Talk("我從被逐出俠客島的那日起就發誓一定要得到天書．", 129, 0);
     Talk("難道你想強搶不成？", 0, 0);
     Talk("算你這次說對了．", 129, 0);
-    if (!(TryBattle(64)))
+    if (!TryBattle(64))
     {
         Dead();
         exit();

@@ -1,11 +1,11 @@
-if (!(HaveItemBool(120)))
+﻿if (!HaveItemBool(120))
 {
     Talk("武當山風景秀麗，武當派絕學甚多．", 249, 0);
     exit();
 }
 instruct_50e(38, 0, 100, 1, 0, 0, 0);
 instruct_50e(4, 0, 0, 1, 30, 0, 0);
-if (!(CheckRoleSexual(256)))
+if (!CheckRoleSexual(256))
 {
     Talk("．．．．．．", 249, 0);
     Talk("＜成天在這里耍酷．．．＞", 0, 1);

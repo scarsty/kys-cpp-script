@@ -1,7 +1,7 @@
-if (HaveItemBool(137))
+﻿if (HaveItemBool(137))
 {
     Talk("＜我是否應該把打狗棒歸還給丐幫呢？＞", 0, 1);
-    if (!(AskRest()))
+    if (!AskRest())
     {
         Talk("＜算了，還是自己留著用吧！＞", 0, 1);
         AddMorality(-2);

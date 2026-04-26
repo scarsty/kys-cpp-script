@@ -1,4 +1,4 @@
-if (HaveItemBool(108))
+﻿if (HaveItemBool(108))
 {
     Talk("施主怎么會有我段家的一陽指？", 113, 0);
     Talk("這是晚輩在一個高人處得到的！", 0, 1);
@@ -6,7 +6,7 @@ if (HaveItemBool(108))
     if (CheckRoleMorality(0, 95, 100))
     {
         Talk("來！讓我指點你一下！", 113, 0);
-        if (!(TryBattle(108)))
+        if (!TryBattle(108))
         {
             LightScene();
             Talk("你剛才的所用的這招應該這樣．．．這招應該這樣．．．你試試！", 113, 0);

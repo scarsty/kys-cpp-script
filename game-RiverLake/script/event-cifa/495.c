@@ -1,6 +1,6 @@
-Talk("你竟敢闖我的崆峒派！", 8, 0);
+﻿Talk("你竟敢闖我的崆峒派！", 8, 0);
 Talk("實不相瞞，在下聽說崆峒派的”七傷拳”非常厲害，所以想借拳譜看看！", 0, 1);
-if (!(TryBattle(71)))
+if (!TryBattle(71))
 {
     Dead();
     exit();
@@ -13,7 +13,7 @@ if (HaveItemBool(52))
     exit();
 }
 Talk("是否要搶”七傷拳”拳譜？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("別害怕，我只是跟你開個玩笑而已．", 0, 0);
     exit();

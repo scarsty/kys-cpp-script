@@ -1,9 +1,9 @@
-if (!(InTeam(98)))
+﻿if (!InTeam(98))
 {
     exit();
 }
 Talk("用茯苓、防風、白術、當歸熟地黃可以配出九花玉露丸", 124, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

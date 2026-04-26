@@ -1,9 +1,9 @@
-if (!(isUsingItem(194)))
+﻿if (!isUsingItem(194))
 {
     exit();
 }
 AddItemWithoutHint(194, -1);
-if (!(InTeam(98)))
+if (!InTeam(98))
 {
     Talk("酒．．．酒．．．好喝．．．", 93, 0);
     exit();

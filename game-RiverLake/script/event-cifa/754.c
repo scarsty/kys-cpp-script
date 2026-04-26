@@ -1,11 +1,11 @@
-Talk("歡迎來到龍門客棧，客官要住店嗎？每晚３００兩．", 219, 0);
+﻿Talk("歡迎來到龍門客棧，客官要住店嗎？每晚３００兩．", 219, 0);
 Talk("是否住宿？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("不了，我還要趕路．", 0, 1);
     exit();
 }
-if (!(CheckEnoughMoney(300)))
+if (!CheckEnoughMoney(300))
 {
     Talk("對不起，您的錢好像不夠．", 219, 0);
     exit();

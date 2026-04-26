@@ -1,4 +1,4 @@
-if (!(HaveItemBool(51)))
+﻿if (!HaveItemBool(51))
 {
     Talk("星宿老仙，法力無邊．", 92, 0);
     exit();

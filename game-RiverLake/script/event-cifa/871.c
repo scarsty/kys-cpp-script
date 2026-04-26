@@ -1,9 +1,9 @@
-if (!(isUsingItem(198)))
+﻿if (!isUsingItem(198))
 {
     exit();
 }
 Talk("玄慈大師，晚輩一心仰慕少林，想拜大師為師，不知大師肯不肯收我為徒？", 0, 1);
-if (!(CheckRoleMorality(0, 70, 100)))
+if (!CheckRoleMorality(0, 70, 100))
 {
     Talk("先學做人，再求學問．阿彌陀佛！", 70, 0);
     exit();

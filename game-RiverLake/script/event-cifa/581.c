@@ -1,9 +1,9 @@
-if (!(InTeam(2)))
+﻿if (!InTeam(2))
 {
     exit();
 }
 Talk("藥方：甘草、羌活、麥冬、白術、熟地黃（Ｙ／Ｎ）", 2, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

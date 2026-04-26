@@ -1,9 +1,9 @@
-if (!(InTeam(17)))
+﻿if (!InTeam(17))
 {
     exit();
 }
 Talk("用防風、白術、甘草、羌活熟地黃可以配出九轉熊蛇丸", 17, 0);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

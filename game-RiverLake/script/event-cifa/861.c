@@ -1,16 +1,16 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 19, 1, -2, 0, 0, 0, 5366, 5366, 5366, 0, -2, -2);
 LightScene();
 SubMapViewFromTo(17, 16, 19, 12);
 Talk("（小聲）最近藏經閣的管理越來越不規范了，怎么在拳掌部會放上”法華經”和”雜阿含經”？", 118, 1);
-if (!(InTeam(51)))
+if (!InTeam(51))
 {
     if (HaveItemBool(121))
     {
         Talk("喂！你是什么人？敢來少林寺偷去經書？", 0, 0);
-        if (!(TryBattle(166)))
+        if (!TryBattle(166))
         {
             Dead();
             exit();

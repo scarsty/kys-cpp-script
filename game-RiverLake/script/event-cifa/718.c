@@ -1,9 +1,9 @@
-if (!(isUsingItem(195)))
+﻿if (!isUsingItem(195))
 {
     exit();
 }
 Talk("怎么會有狼！！", 0, 1);
-if (!(TryBattle(115)))
+if (!TryBattle(115))
 {
     Dead();
     exit();
@@ -17,7 +17,7 @@ ModifyEvent(-2, 3, 1, -2, -2, 0, 0, 6698, 6698, 6698, 0, -2, -2);
 LightScene();
 PlayAnimation(-1, 6702, 6702);
 AddItem(130, 1);
-if (!(HaveItemBool(86)))
+if (!HaveItemBool(86))
 {
     AddMorality(-5);
 }

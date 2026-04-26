@@ -1,5 +1,5 @@
-Talk("膽敢擅闖官府．", 92, 0);
-if (!(TryBattle(14)))
+﻿Talk("膽敢擅闖官府．", 92, 0);
+if (!TryBattle(14))
 {
     Dead();
     exit();

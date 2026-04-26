@@ -1,4 +1,4 @@
-if (HaveItemBool(80))
+﻿if (HaveItemBool(80))
 {
     Talk("在下華山派新進弟子，特來向天門師叔請安．", 0, 1);
     Talk("師父在里面，請進吧．", 85, 0);
@@ -8,13 +8,13 @@ if (HaveItemBool(80))
     exit();
 }
 Talk("泰山派豈容你亂闖．還不速速離去．", 85, 0);
-if (!(AskBattle()))
+if (!AskBattle())
 {
     Talk("離去就離去，說話那么沖干什么．", 0, 1);
     exit();
 }
 Talk("泰山派？說話不要那么沖好不好．", 0, 1);
-if (!(TryBattle(201)))
+if (!TryBattle(201))
 {
     Dead();
     exit();

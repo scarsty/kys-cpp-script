@@ -1,4 +1,4 @@
-if (!(HaveItemBool(120)))
+﻿if (!HaveItemBool(120))
 {
     exit();
 }
@@ -10,7 +10,7 @@ Talk("．．．．．．光天化日下想搶劫嗎？", 0, 1);
 Talk("你是武當派的吧？我注意你很久了．", 212, 0);
 Talk("不錯，我是武當派的．怎么樣？", 0, 1);
 Talk("那就好！", 212, 0);
-if (!(TryBattle(220)))
+if (!TryBattle(220))
 {
     LightScene();
     Talk("看來武當派的弟子也不怎么樣啊．", 212, 0);

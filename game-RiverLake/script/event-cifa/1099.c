@@ -1,8 +1,8 @@
-if (!(HaveItemBool(198)))
+﻿if (!HaveItemBool(198))
 {
     exit();
 }
-if (!(CheckRoleMorality(0, 60, 100)))
+if (!CheckRoleMorality(0, 60, 100))
 {
     exit();
 }
@@ -11,7 +11,7 @@ ModifyEvent(-2, 31, 1, -2, 0, 0, 0, 6114, 6114, 6114, 0, -2, -2);
 LightScene();
 Talk("哇！這還有人！", 0, 1);
 Talk("被發現了嗎！", 68, 0);
-if (!(TryBattle(221)))
+if (!TryBattle(221))
 {
     LightScene();
     Talk("你年紀輕輕，武功基礎也不錯，怎么會去做官府的走狗", 68, 0);

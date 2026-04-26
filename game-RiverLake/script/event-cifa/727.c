@@ -1,5 +1,5 @@
-Talk("有蛇！！！", 0, 0);
-if (!(TryBattle(119)))
+﻿Talk("有蛇！！！", 0, 0);
+if (!TryBattle(119))
 {
     Dead();
     exit();

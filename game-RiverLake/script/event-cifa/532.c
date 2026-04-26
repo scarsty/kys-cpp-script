@@ -1,11 +1,11 @@
-if (!(HaveItemBool(121)))
+﻿if (!HaveItemBool(121))
 {
     Talk("阿彌陀佛", 18, 0);
     exit();
 }
-if (!(CheckRoleMorality(0, 41, 100)))
+if (!CheckRoleMorality(0, 41, 100))
 {
-    if (!(HaveItemBool(100)))
+    if (!HaveItemBool(100))
     {
         Talk("你身為少林弟子，卻做了許多傷天害理之事．．．", 18, 0);
         Talk("師叔恕罪，師侄知錯了！", 0, 1);

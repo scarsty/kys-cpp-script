@@ -1,11 +1,11 @@
-if (!(HaveItemBool(80)))
+﻿if (!HaveItemBool(80))
 {
     Talk("這里是華山派．", 206, 0);
     exit();
 }
 Talk("二師兄．", 0, 1);
 Talk("有事嗎？", 206, 0);
-if (!(AskJoin ()))
+if (!AskJoin())
 {
     Talk("沒事，見到您跟您打聲招呼而已．", 0, 1);
     exit();

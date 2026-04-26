@@ -1,14 +1,14 @@
-AddMorality(2);
+﻿AddMorality(2);
 SubMapViewFromTo(24, 21, 19, 17);
 Talk("你說你只拿金蛇劍的，怎么連金蛇錐和秘籍也拿？", 25, 1);
 Talk("．．．．．．", 195, 0);
 Talk("快把金蛇錐和秘籍放回去！", 25, 1);
 Talk("．．．．．．", 195, 0);
 Talk("幫夏雪宜請按”Ｙ”幫五毒教女子按”Ｎ”", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("兄臺，你這樣做恐怕有些不應該吧？", 0, 1);
-    if (!(TryBattle(122)))
+    if (!TryBattle(122))
     {
         Dead();
         exit();
@@ -31,7 +31,7 @@ if (!(AskRest()))
     exit();
 }
 Talk("兄臺，我來幫你．", 0, 1);
-if (!(TryBattle(121)))
+if (!TryBattle(121))
 {
     Dead();
     exit();

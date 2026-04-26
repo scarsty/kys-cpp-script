@@ -1,4 +1,4 @@
-SubMapViewFromTo(45, 49, 40, 51);
+﻿SubMapViewFromTo(45, 49, 40, 51);
 PlayAnimation(16, 8284, 8296);
 ModifyEvent(57, 16, 1, -2, 0, 0, 0, 8284, 8284, 8284, 0, -2, -2);
 Talk("姓夏的，你手筋腳筋被挑我好高興啊！", 25, 0);
@@ -9,7 +9,7 @@ PlayAnimation(16, 8284, 8296);
 ModifyEvent(57, 16, 1, -2, 0, 0, 0, 8284, 8284, 8284, 0, -2, -2);
 Talk("你既然這樣恨我，為何還要把我從溫家救出來？", 195, 0);
 Talk("我是不會讓你這么輕易就死了的．", 25, 0);
-if (!(CheckRoleMorality(0, 20, 80)))
+if (!CheckRoleMorality(0, 20, 80))
 {
     Talk("＜這是他們五毒教的事我還是不要管為好！況且這件事也沒誰對誰錯．＞", 0, 1);
     DarkScene();
@@ -21,7 +21,7 @@ if (!(CheckRoleMorality(0, 20, 80)))
     exit();
 }
 Talk("夏兄，我來救你！", 0, 1);
-if (!(TryBattle(124)))
+if (!TryBattle(124))
 {
     Dead();
     exit();

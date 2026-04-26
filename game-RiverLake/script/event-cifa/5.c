@@ -1,4 +1,4 @@
-if (!(HaveItemBool(167)))
+﻿if (!HaveItemBool(167))
 {
     Talk("白姑娘，你先回你奶奶身邊我有事再去找你．", 0, 0);
     LeaveTeam(119);

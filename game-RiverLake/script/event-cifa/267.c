@@ -1,5 +1,5 @@
-Talk("你是漢人，你這個強盜！", 139, 0);
-if (!(TryBattle(33)))
+﻿Talk("你是漢人，你這個強盜！", 139, 0);
+if (!TryBattle(33))
 {
     Dead();
     exit();

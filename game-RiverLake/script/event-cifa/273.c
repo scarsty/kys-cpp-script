@@ -1,4 +1,4 @@
-if (!(CheckSubMapPic(14, 5, 8302)))
+﻿if (!CheckSubMapPic(14, 5, 8302))
 {
     Talk("一", 0, 1);
     Talk("啊！有暗器！", 0, 0);
@@ -11,7 +11,7 @@ if (!(CheckSubMapPic(14, 5, 8302)))
     LightScene();
     exit();
 }
-if (!(CheckSubMapPic(14, 7, 8302)))
+if (!CheckSubMapPic(14, 7, 8302))
 {
     Talk("二", 0, 1);
     Talk("啊！有暗器！", 0, 0);
@@ -24,7 +24,7 @@ if (!(CheckSubMapPic(14, 7, 8302)))
     LightScene();
     exit();
 }
-if (!(CheckSubMapPic(14, 8, 8302)))
+if (!CheckSubMapPic(14, 8, 8302))
 {
     Talk("三", 0, 1);
     Talk("啊！有暗器！", 0, 0);
@@ -37,7 +37,7 @@ if (!(CheckSubMapPic(14, 8, 8302)))
     LightScene();
     exit();
 }
-if (!(CheckSubMapPic(14, 6, 8302)))
+if (!CheckSubMapPic(14, 6, 8302))
 {
     Talk("！！！", 0, 0);
     DarkScene();

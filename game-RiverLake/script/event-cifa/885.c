@@ -1,6 +1,6 @@
-if (HaveItemBool(189))
+﻿if (HaveItemBool(189))
 {
-    if (!(InTeam(49)))
+    if (!InTeam(49))
     {
         ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
         ModifyEvent(-2, 21, 0, -2, 0, 0, 886, 0, 0, 0, 0, -2, -2);

@@ -1,10 +1,10 @@
-SubMapViewFromTo(28, 28, 13, 28);
+﻿SubMapViewFromTo(28, 28, 13, 28);
 Talk("東方教主，我玄素莊跟貴教素無瓜葛，不知道今日把我的玉兒請來貴教做客是何用意？", 213, 1);
 Talk("．．．．．．", 27, 0);
 Talk("你以為不說話就行了嗎？", 214, 1);
 Talk("大膽狂徒，竟敢如此跟教主說話，看來是不想獲了．", 88, 0);
 Talk("二位大俠，我來幫你．", 0, 1);
-if (!(TryBattle(234)))
+if (!TryBattle(234))
 {
     Dead();
     exit();
@@ -19,7 +19,7 @@ ModifyEvent(-2, 46, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 47, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("保護東方教主！", 34, 0);
-if (!(TryBattle(235)))
+if (!TryBattle(235))
 {
     Dead();
     exit();

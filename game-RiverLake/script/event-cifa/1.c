@@ -1,4 +1,4 @@
-Talk("小寶，你先回去，我有事再去找你．", 0, 0);
+﻿Talk("小寶，你先回去，我有事再去找你．", 0, 0);
 if (HaveItemBool(150))
 {
     ModifyEvent(32, 21, 1, -2, 2, 0, 0, 8252, 8252, 8252, 0, -2, -2);
@@ -40,7 +40,7 @@ if (HaveItemBool(150))
     }
     exit();
 }
-if (!(CheckSubMapPic(46, 6, 8252)))
+if (!CheckSubMapPic(46, 6, 8252))
 {
     ModifyEvent(46, 6, 1, -2, 2, 0, 0, 8252, 8252, 8252, 0, -2, -2);
     LeaveTeam(92);

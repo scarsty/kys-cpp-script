@@ -1,9 +1,9 @@
-if (!(isUsingItem(198)))
+﻿if (!isUsingItem(198))
 {
     exit();
 }
 Talk("前輩，晚輩一心想拜您老人家為師，不知您老人家可否收下我這個徒弟？", 0, 1);
-if (!(CheckRoleMorality(0, 0, 40)))
+if (!CheckRoleMorality(0, 0, 40))
 {
     Talk("哼！就憑你，好像還不夠資格．我選血刀弟子也是有條件的．你還是快走吧，免得我動手將你殺了．", 72, 0);
     exit();

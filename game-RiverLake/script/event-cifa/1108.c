@@ -1,9 +1,9 @@
-if (!(HaveItemBool(76)))
+﻿if (!HaveItemBool(76))
 {
     exit();
 }
 Talk("是否住宿？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }

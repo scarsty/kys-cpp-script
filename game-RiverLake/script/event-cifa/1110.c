@@ -1,4 +1,4 @@
-Talk("＜都開始了嗎？我怎么動不動就起來晚．．．＞", 0, 0);
+﻿Talk("＜都開始了嗎？我怎么動不動就起來晚．．．＞", 0, 0);
 DarkScene();
 OldSetScenePosition(24, 33);
 SetTowards(1);
@@ -13,7 +13,7 @@ DarkScene();
 LightScene();
 Talk("張志光獲勝．哪一個愿意來跟張志光比試一下？", 68, 0);
 Talk("我來．", 0, 0);
-if (!(TryBattle(222)))
+if (!TryBattle(222))
 {
     LightScene();
     Talk("張志光獲勝，下面誰來向張志光挑戰？", 68, 0);
@@ -48,7 +48,7 @@ if (!(TryBattle(222)))
 }
 LightScene();
 Talk("我崔志方向你請教．", 95, 0);
-if (!(TryBattle(223)))
+if (!TryBattle(223))
 {
     LightScene();
     Talk("崔志方獲勝，下面誰來向崔志方挑戰？", 68, 0);
@@ -83,7 +83,7 @@ if (!(TryBattle(223)))
 }
 LightScene();
 Talk("我申志凡向你請教．", 95, 0);
-if (!(TryBattle(224)))
+if (!TryBattle(224))
 {
     LightScene();
     Talk("申志凡獲勝，下面誰來向申志凡方挑戰？", 68, 0);
@@ -118,7 +118,7 @@ if (!(TryBattle(224)))
 }
 LightScene();
 Talk("我王志坦向你請教．", 95, 0);
-if (!(TryBattle(225)))
+if (!TryBattle(225))
 {
     LightScene();
     Talk("王志坦獲勝，下面誰來向王志坦方挑戰？", 68, 0);
@@ -153,7 +153,7 @@ if (!(TryBattle(225)))
 }
 LightScene();
 Talk("我尹志平向你請教．", 95, 0);
-if (!(TryBattle(226)))
+if (!TryBattle(226))
 {
     LightScene();
     Talk("今年的獲勝者是尹志平．大家以后也要多多加油了．", 68, 0);

@@ -1,11 +1,11 @@
-if (!(isUsingItem(198)))
+﻿if (!isUsingItem(198))
 {
     exit();
 }
 Talk("其實晚輩一直對全真教，對長春子前輩都很崇拜，一直想有機會拜入您的門下．．", 0, 1);
 Talk("我已經很久沒收徒弟了．", 68, 0);
 Talk("請您一定答應我的請求．", 0, 1);
-if (!(CheckRoleMorality(0, 60, 100)))
+if (!CheckRoleMorality(0, 60, 100))
 {
     Talk("我全真教對收徒弟的要求很嚴格的，以你目前的行為來看，我不能收你為徒．", 68, 0);
     exit();

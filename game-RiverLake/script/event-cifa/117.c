@@ -1,8 +1,8 @@
-if (!(HaveItemBool(174)))
+﻿if (!HaveItemBool(174))
 {
     exit();
 }
-if (!(CheckEnoughMoney(100)))
+if (!CheckEnoughMoney(100))
 {
     Talk("這么點錢就想讓我說嗎？", 93, 0);
     exit();

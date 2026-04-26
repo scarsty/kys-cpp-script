@@ -1,11 +1,11 @@
-Talk("站住！皇宮豈容你亂闖！", 92, 0);
-if (!(AskBattle()))
+﻿Talk("站住！皇宮豈容你亂闖！", 92, 0);
+if (!AskBattle())
 {
     exit();
 }
 if (TeamIsFull())
 {
-    if (!(TryBattle(38)))
+    if (!TryBattle(38))
     {
         Dead();
         exit();
@@ -20,7 +20,7 @@ if (TeamIsFull())
     exit();
 }
 Talk("我來幫你！", 120, 0);
-if (!(TryBattle(39)))
+if (!TryBattle(39))
 {
     Dead();
     exit();

@@ -1,5 +1,5 @@
-Talk("少俠好．", 144, 0);
-if (!(AskJoin ()))
+﻿Talk("少俠好．", 144, 0);
+if (!AskJoin())
 {
     Talk("白姑娘好．", 0, 0);
     exit();

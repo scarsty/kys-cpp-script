@@ -1,11 +1,11 @@
-Talk("找姑娘里面請．", 92, 0);
-if (!(AskBattle()))
+﻿Talk("找姑娘里面請．", 92, 0);
+if (!AskBattle())
 {
     exit();
 }
 Talk("我要找莊家的人．", 0, 0);
 Talk("臭小子，找死！", 92, 0);
-if (!(TryBattle(35)))
+if (!TryBattle(35))
 {
     Dead();
     exit();

@@ -1,4 +1,4 @@
-if (!(HaveItemBool(121)))
+﻿if (!HaveItemBool(121))
 {
     Talk("阿彌陀佛", 96, 0);
     exit();

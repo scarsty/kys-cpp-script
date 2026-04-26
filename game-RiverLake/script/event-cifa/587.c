@@ -1,4 +1,4 @@
-ModifyEvent(54, 33, 0, -2, 0, 0, 1230, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(54, 33, 0, -2, 0, 0, 1230, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("怎么這么多人？", 0, 1);
@@ -22,7 +22,7 @@ LightScene();
 Talk("＜哎呀！游氏雙雄竟然為了兩件兵器而自刎，真是太傻了！＞", 0, 1);
 Talk("喬峰逼死游氏雙雄，大家一起上，為游氏雙雄報仇！", 4, 1);
 Talk("幫助喬峰請按”Ｙ”幫助眾人請按”Ｎ”", 0, 1);
-if (!(AskRest()))
+if (!AskRest())
 {
     AddMorality(-5);
     Talk("喬峰！你這契丹狗！虧我上次與你喝酒還跟你稱兄道弟沒想到你竟然逼死游氏雙雄看我今天替天行道！", 0, 1);
@@ -32,7 +32,7 @@ if (!(AskRest()))
     Talk("是你？好！喬某跟你喝一杯絕情酒，然后決一死戰！", 50, 0);
     Talk("在下雖不濟，但也不肖跟你這契丹狗喝酒．廢話少說，受死吧！", 0, 1);
     Talk("（無奈）呵呵，想不到我喬峰今日一戰，竟然一個朋友都沒有了．既然如此，動手吧！", 50, 0);
-    if (!(TryBattle(84)))
+    if (!TryBattle(84))
     {
         Dead();
         exit();
@@ -43,7 +43,7 @@ if (!(AskRest()))
     DarkScene();
     ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 5296, 5296, 5296, 0, -2, -2);
     LightScene();
-    if (!(TryBattle(85)))
+    if (!TryBattle(85))
     {
         Dead();
         exit();
@@ -53,7 +53,7 @@ if (!(AskRest()))
     Talk("＜那個黑衣人是誰？＞喬峰，這回看你往哪跑！", 0, 1);
     Talk("要殺就動手吧！", 50, 0);
     Talk("是否殺了喬峰？", 0, 3);
-    if (!(AskRest()))
+    if (!AskRest())
     {
         Talk("．．．你走吧．．．", 0, 1);
         Talk("．．．．．．", 50, 0);
@@ -64,7 +64,7 @@ if (!(AskRest()))
         SetTowards(3);
         LightScene();
         Talk("你怎么放走喬峰這狗賊？", 79, 0);
-        if (!(TryBattle(86)))
+        if (!TryBattle(86))
         {
             Dead();
             exit();
@@ -126,14 +126,14 @@ AddMorality(3);
 OldSetScenePosition(22, 28);
 SetTowards(3);
 Talk("喬幫主，我來幫你退敵！", 0, 1);
-if (!(TryBattle(86)))
+if (!TryBattle(86))
 {
     Dead();
     exit();
 }
 LightScene();
 Talk("我們這些人怎么會輸呢！再上！", 79, 0);
-if (!(TryBattle(86)))
+if (!TryBattle(86))
 {
     Dead();
     exit();

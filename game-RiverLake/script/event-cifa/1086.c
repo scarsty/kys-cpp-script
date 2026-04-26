@@ -1,4 +1,4 @@
-if (!(CheckSubMapPic(43, 4, 5380)))
+﻿if (!CheckSubMapPic(43, 4, 5380))
 {
     Talk("．．．．．．", 0, 1);
     Talk("太師父不在．．．", 0, 1);

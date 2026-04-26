@@ -1,6 +1,6 @@
-instruct_50e(17, 0, 0, 320, 36, 1, 0);
+﻿instruct_50e(17, 0, 0, 320, 36, 1, 0);
 instruct_50e(4, 0, 3, 1, 2, 0, 0);
-if (!(CheckRoleSexual(256)))
+if (!CheckRoleSexual(256))
 {
     Talk("你先回晉陽，等我有時間的時候再去找你．", 0, 1);
     LeaveTeam(324);

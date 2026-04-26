@@ -1,9 +1,9 @@
-if (!(HaveItemBool(121)))
+﻿if (!HaveItemBool(121))
 {
     Talk("掃地亦是修身．阿彌陀佛．", 110, 0);
     exit();
 }
-if (!(CheckRoleMorality(0, 98, 100)))
+if (!CheckRoleMorality(0, 98, 100))
 {
     Talk("掃地亦是修身．阿彌陀佛．", 110, 0);
     exit();

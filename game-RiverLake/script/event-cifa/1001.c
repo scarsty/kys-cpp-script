@@ -1,10 +1,10 @@
-if (!(HaveItemBool(80)))
+﻿if (!HaveItemBool(80))
 {
     exit();
 }
 instruct_50e(17, 0, 0, 320, 36, 1, 0);
 instruct_50e(4, 0, 4, 1, 2, 0, 0);
-if (!(CheckRoleSexual(256)))
+if (!CheckRoleSexual(256))
 {
     exit();
 }
@@ -18,7 +18,7 @@ Talk("（聲音很小，聽不清楚）．．．．．．", 185, 4);
 SubMapViewFromTo(41, 33, 48, 36);
 Talk("＜他二人是誰？陌生的面孔卻穿著華山派的服裝？難道又是人物造型不夠了？＞", 0, 1);
 Talk("是否上去打招呼？", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("＜對了，一定是沒新造型用了，就用我華山派的造型．還是給大師兄送飯要緊．＞", 0, 1);
     DarkScene();
@@ -39,7 +39,7 @@ Talk("你是岳不群的徒弟嗎？", 185, 1);
 Talk("不錯，請問二位前輩是．．．", 0, 1);
 Talk("我們是你師叔啊．", 176, 0);
 Talk("師叔？沒聽師父提過啊．", 0, 1);
-if (!(CheckRoleMorality(0, 0, 60)))
+if (!CheckRoleMorality(0, 0, 60))
 {
     Talk("沒聽說過就算了，不過向你透露一下，你馬上就會聽說我們了．", 176, 0);
     DarkScene();
@@ -57,7 +57,7 @@ Talk("這是我華山派的招式啊．", 0, 1);
 Talk("這下你相信了吧？", 176, 0);
 Talk("晚輩拜見二位師叔．", 0, 1);
 Talk("那你想學嗎？", 176, 1);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("還是不麻煩師叔了．我還有事要做．", 0, 1);
     Talk("呵呵．．．", 176, 0);

@@ -1,7 +1,7 @@
-Talk("真是活得不耐煩了．", 46, 0);
+﻿Talk("真是活得不耐煩了．", 46, 0);
 Talk("啊！", 0, 1);
 ZeroAllMP();
-if (!(TryBattle(171)))
+if (!TryBattle(171))
 {
     Dead();
     exit();
@@ -9,7 +9,7 @@ if (!(TryBattle(171)))
 LightScene();
 Talk("小子，有兩下子嗎．", 46, 0);
 ZeroAllMP();
-if (!(TryBattle(172)))
+if (!TryBattle(172))
 {
     Dead();
     exit();

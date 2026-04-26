@@ -1,5 +1,5 @@
-Talk("大哥一向可好？", 111, 0);
-if (!(AskJoin ()))
+﻿Talk("大哥一向可好？", 111, 0);
+if (!AskJoin())
 {
     Talk("還好．", 0, 0);
     exit();
@@ -15,7 +15,7 @@ DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Join(92);
-if (!(CheckSubMapPic(46, 6, 8252)))
+if (!CheckSubMapPic(46, 6, 8252))
 {
     AddItem(174, 50);
 }

@@ -1,4 +1,4 @@
-if (!(InTeam(73)))
+﻿if (!InTeam(73))
 {
     exit();
 }
@@ -11,7 +11,7 @@ WalkFromTo(46, 36, 46, 28);
 WalkFromTo(46, 28, 45, 28);
 Talk("鳳天南，我終于找到你了．", 73, 1);
 Talk("．．．．．．", 4, 0);
-if (!(TryBattle(243)))
+if (!TryBattle(243))
 {
     Dead();
     exit();

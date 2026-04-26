@@ -1,4 +1,4 @@
-ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("店家，店家，拿酒來！", 47, 0);
 Talk("咦？怎么大師兄他們也在這", 0, 1);
@@ -60,7 +60,7 @@ Talk("那我也不回去．", 47, 0);
 Talk("你不走也得走！", 92, 1);
 Talk("＜不行，不能神木王鼎可是個好東西，要是得到，無論是自己用還是還給老仙都有好處的．＞", 0, 1);
 Talk("幫阿紫請按”Ｙ”幫四位師兄請按”Ｎ”", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     Talk("幾位師兄，我來幫你們．", 0, 1);
     DarkScene();
@@ -75,7 +75,7 @@ if (!(AskRest()))
     {
         Talk("師父，你們怎么能這么多人欺負一個呢．", 48, 1);
         LeaveTeam(48);
-        if (!(TryBattle(184)))
+        if (!TryBattle(184))
         {
             Dead();
             exit();
@@ -102,7 +102,7 @@ if (!(AskRest()))
         }
         Talk("這是我得到的，我會親自還給師父的．", 0, 1);
         Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-        if (!(TryBattle(185)))
+        if (!TryBattle(185))
         {
             Dead();
             exit();
@@ -116,7 +116,7 @@ if (!(AskRest()))
         exit();
     }
     Talk("怎么又多了一個？", 47, 0);
-    if (!(TryBattle(186)))
+    if (!TryBattle(186))
     {
         Dead();
         exit();
@@ -143,7 +143,7 @@ if (!(AskRest()))
     }
     Talk("這是我得到的，我會親自還給師父的．", 0, 1);
     Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-    if (!(TryBattle(185)))
+    if (!TryBattle(185))
     {
         Dead();
         exit();
@@ -166,7 +166,7 @@ ModifyEvent(9, 15, 1, -2, 0, 0, 0, 6372, 6372, 6372, 0, 10, 36);
 OldSetScenePosition(11, 36);
 LightScene();
 Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-if (!(TryBattle(187)))
+if (!TryBattle(187))
 {
     Dead();
     exit();
@@ -179,7 +179,7 @@ LightScene();
 Talk("算你們跑得快．", 0, 1);
 Talk("好了，我也走了．", 47, 0);
 Talk("是否搶阿紫手中的神木王鼎", 0, 3);
-if (!(AskRest()))
+if (!AskRest())
 {
     exit();
 }
@@ -190,7 +190,7 @@ if (InTeam(48))
     Talk("師父啊，就讓她走吧．", 48, 1);
     Talk("你想跟師父作對？", 0, 1);
     LeaveTeam(48);
-    if (!(TryBattle(188)))
+    if (!TryBattle(188))
     {
         Dead();
         exit();

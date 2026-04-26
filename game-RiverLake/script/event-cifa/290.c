@@ -1,8 +1,8 @@
-if (!(isUsingItem(174)))
+﻿if (!isUsingItem(174))
 {
     exit();
 }
-if (!(CheckEnoughMoney(10)))
+if (!CheckEnoughMoney(10))
 {
     exit();
 }

@@ -1,4 +1,4 @@
-ModifyEvent(23, 2, 1, -2, 706, 0, 0, 8584, 8584, 8584, 0, -2, -2);
+﻿ModifyEvent(23, 2, 1, -2, 706, 0, 0, 8584, 8584, 8584, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SubMapViewFromTo(54, 30, 48, 30);
 Talk("．．．．．．", 126, 0);
@@ -14,7 +14,7 @@ ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(49, 30);
 LightScene();
 Talk("．．．．．．", 126, 0);
-if (!(AskBattle()))
+if (!AskBattle())
 {
     Talk("這位道姑前輩您好，小弟只是經過此地，根本不認識剛才那個人，你要殺那個人往北跑了．．．", 0, 1);
     Talk("．．．．．．", 126, 0);
@@ -26,7 +26,7 @@ if (!(AskBattle()))
     AddMorality(-5);
     exit();
 }
-if (!(TryBattle(113)))
+if (!TryBattle(113))
 {
     Dead();
     exit();

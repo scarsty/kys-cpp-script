@@ -1,4 +1,4 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(68, 3, 1, -2, 0, 0, 0, 5284, 5284, 5284, 0, -2, -2);
 ModifyEvent(68, 4, 1, -2, 0, 0, 0, 5408, 5408, 5408, 0, -2, -2);
@@ -15,7 +15,7 @@ Talk("住手！！！", 0, 0);
 OldSetScenePosition(49, 43);
 SetTowards(3);
 Talk("你們大白天的竟敢吃人，真是該死．看小爺怎么教訓你", 0, 0);
-if (!(TryBattle(66)))
+if (!TryBattle(66))
 {
     Dead();
     exit();

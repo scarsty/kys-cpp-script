@@ -1,4 +1,4 @@
-if (!(CheckSubMapPic(43, 4, 5380)))
+﻿if (!CheckSubMapPic(43, 4, 5380))
 {
     exit();
 }

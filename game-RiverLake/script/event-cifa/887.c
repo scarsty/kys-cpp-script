@@ -1,4 +1,4 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -113,7 +113,7 @@ if (TryBattle(172))
 ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("師叔，我來幫你．", 49, 1);
-if (!(TryBattle(175)))
+if (!TryBattle(175))
 {
     Dead();
     exit();

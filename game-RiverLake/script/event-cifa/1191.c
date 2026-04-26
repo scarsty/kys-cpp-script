@@ -1,4 +1,4 @@
-if (!(AskJoin ()))
+﻿if (!AskJoin())
 {
     Talk("．．．．．．", 0, 1);
     exit();

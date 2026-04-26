@@ -1,7 +1,7 @@
-if (InTeam(92))
+﻿if (InTeam(92))
 {
     Talk("你想帶著小寶去哪啊？不要把我家小寶教壞了！", 157, 0);
-    if (!(AskJoin ()))
+    if (!AskJoin())
     {
         Talk("放心吧，我不跟你家小寶學壞就不錯了！", 0, 1);
         exit();

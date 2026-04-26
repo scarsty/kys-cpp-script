@@ -1,8 +1,8 @@
-if (!(HaveItemBool(120)))
+﻿if (!HaveItemBool(120))
 {
     exit();
 }
-if (!(InTeam(230)))
+if (!InTeam(230))
 {
     exit();
 }
@@ -21,7 +21,7 @@ WalkFromTo(49, 24, 49, 30);
 WalkFromTo(49, 30, 46, 30);
 Talk("．．．．．．", 0, 1);
 Talk("正好拿來練功．", 210, 0);
-if (!(TryBattle(218)))
+if (!TryBattle(218))
 {
     ModifyEvent(-2, 11, 1, -2, 0, 0, 0, 6744, 6744, 6744, 0, -2, -2);
     ModifyEvent(-2, 12, 1, -2, 0, 0, 0, 6744, 6744, 6744, 0, -2, -2);

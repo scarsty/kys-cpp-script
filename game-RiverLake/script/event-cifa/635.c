@@ -1,4 +1,4 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 8334, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 8, 1, -2, 0, 0, 0, 8546, 8546, 8546, 0, -2, -2);
@@ -13,12 +13,12 @@ ModifyEvent(-2, 8, 1, -2, 0, 0, 0, 8546, 8546, 8546, 0, -2, -2);
 Talk("師叔祖，我來幫你！", 0, 1);
 WalkFromTo(46, 43, 42, 43);
 WalkFromTo(42, 43, 42, 41);
-if (!(TryBattle(91)))
+if (!TryBattle(91))
 {
     ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
     LightScene();
     Talk("混蛋小子！放跑了老頑童，就由你來給我失去的妻子抵命！", 57, 0);
-    if (!(HaveItemBool(94)))
+    if (!HaveItemBool(94))
     {
         if (InTeam(98))
         {

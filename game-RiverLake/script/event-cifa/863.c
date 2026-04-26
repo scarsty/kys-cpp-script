@@ -1,8 +1,8 @@
-if (!(HaveItemBool(98)))
+﻿if (!HaveItemBool(98))
 {
     exit();
 }
-if (!(CheckRoleMorality(0, 0, 10)))
+if (!CheckRoleMorality(0, 0, 10))
 {
     exit();
 }

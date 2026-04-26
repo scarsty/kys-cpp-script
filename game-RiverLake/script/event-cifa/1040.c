@@ -1,5 +1,5 @@
-Talk("不知死活的東西．", 21, 0);
-if (!(TryBattle(206)))
+﻿Talk("不知死活的東西．", 21, 0);
+if (!TryBattle(206))
 {
     Dead();
     exit();

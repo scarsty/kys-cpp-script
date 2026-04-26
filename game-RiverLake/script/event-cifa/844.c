@@ -1,4 +1,4 @@
-if (!(CheckFemaleInTeam()))
+﻿if (!CheckFemaleInTeam())
 {
     Talk("沒事快滾！", 72, 0);
     exit();

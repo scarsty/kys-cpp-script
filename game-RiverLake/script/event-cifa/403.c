@@ -1,11 +1,11 @@
-Talk("怎么樣？準備好了嗎？", 54, 0);
-if (!(AskBattle()))
+﻿Talk("怎么樣？準備好了嗎？", 54, 0);
+if (!AskBattle())
 {
     Talk("等一下．", 0, 0);
     exit();
 }
 Talk("好，來吧．", 0, 0);
-if (!(TryBattle(58)))
+if (!TryBattle(58))
 {
     LightScene();
     Talk("不行．還需要修煉啊．", 54, 0);

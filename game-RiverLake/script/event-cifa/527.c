@@ -1,4 +1,4 @@
-ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 1, -2, 0, 0, 0, 5306, 5306, 5306, 0, -2, -2);
 ModifyEvent(-2, 2, 1, -2, 0, 0, 0, 5306, 5306, 5306, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 0, 0, 0, 5306, 5306, 5306, 0, -2, -2);
@@ -17,9 +17,9 @@ DarkScene();
 OldSetScenePosition(28, 21);
 SetTowards(1);
 LightScene();
-if (!(TryBattle(75)))
+if (!TryBattle(75))
 {
-    if (!(InTeam(107)))
+    if (!InTeam(107))
     {
         Dead();
         exit();

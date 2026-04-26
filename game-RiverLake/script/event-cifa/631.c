@@ -1,4 +1,4 @@
-if (!(AskJoin ()))
+﻿if (!AskJoin())
 {
     exit();
 }

@@ -1,5 +1,5 @@
-Talk("是否住宿？", 0, 3);
-if (!(AskRest()))
+﻿Talk("是否住宿？", 0, 3);
+if (!AskRest())
 {
     exit();
 }

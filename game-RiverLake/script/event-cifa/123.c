@@ -1,4 +1,4 @@
-if (!(HaveItemBool(173)))
+﻿if (!HaveItemBool(173))
 {
     Talk("什麼味道這樣香濃，我頭好昏，啊！難道這紅樹叢有毒 ．．．．．．", 0, 0);
     PlayAnimation(-1, 5974, 5992);

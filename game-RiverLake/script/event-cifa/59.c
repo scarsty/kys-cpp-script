@@ -1,4 +1,4 @@
-if (!(HaveItemBool(49)))
+﻿if (!HaveItemBool(49))
 {
     Talk("．．．．．．＜我答應虛竹幫他找兩位師叔的．＞", 0, 1);
     exit();
