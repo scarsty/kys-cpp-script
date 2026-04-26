@@ -1,0 +1,1 @@
+OldSetScenePosition(36, 43);
