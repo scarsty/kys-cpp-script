@@ -1,8 +1,9 @@
-if HaveItemBool(198) then goto label0 end;
-Talk("感謝你下載我制作的”再戰江湖”．", 189, 0);
-ModifyEvent(-2, -2, -2, -2, 1148, 0, 0, -2, -2, -2, 0, -2, -2);
-exit();
-label0:
+﻿if (!HaveItemBool(198))
+{
+    Talk("感謝你下載我制作的再戰江湖．", 189, 0);
+    ModifyEvent(-2, -2, -2, -2, 1148, 0, 0, -2, -2, -2, 0, -2, -2);
+    exit();
+}
 Talk("年輕人，歡迎你的到來．", 189, 0);
 Talk("你是誰？你認識我？", 0, 1);
 Talk("鄙人姓南宮，單名一個夢字", 189, 0);
@@ -27,56 +28,61 @@ LightScene();
 Talk("．．．．．．這樣．．．然后這樣．．．", 0, 1);
 instruct_50e(17, 0, 0, 0, 144, 250, 0);
 instruct_50e(4, 0, 1, 250, 0, 0, 0);
-if CheckRoleSexual(256) then goto label128 end;
-Talk("完全不行．．．可能是會的東西太雜了．", 0, 1);
-Talk("唉！好可惜，就差一點．", 189, 0);
-DarkScene();
-ModifyEvent(-2, -2, 0, -2, -1, -1, -1, -1, -1, -1, -1, -2, -2);
-LightScene();
-exit();
-label128:
-instruct_50e(0, 1, 8, 0, 0, 0, 0);
+if (!CheckRoleSexual(256))
+{
+    Talk("完全不行．．．可能是會的東西太雜了．", 0, 1);
+    Talk("唉！好可惜，就差一點．", 189, 0);
+    DarkScene();
+    ModifyEvent(-2, -2, 0, -2, -1, -1, -1, -1, -1, -1, -1, -2, -2);
+    LightScene();
+    exit();
+}instruct_50e(0, 1, 8, 0, 0, 0, 0);
 instruct_50e(0, 2, 2, 0, 0, 0, 0);
 instruct_50e(17, 10, 0, 0, 1, 2000, 0);
-label229:
-instruct_50e(16, 110, 3, 1, 2, 2000, 0);
-instruct_50e(3, 0, 0, 1, 1, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(17, 10, 0, 0, 1, 2000, 0);
-instruct_50e(4, 0, 2, 2000, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label229 end;
+do
+{
+    instruct_50e(16, 110, 3, 1, 2, 2000, 0);
+    instruct_50e(3, 0, 0, 1, 1, 2, 0);
+    instruct_50e(3, 0, 0, 2, 2, 2, 0);
+    instruct_50e(17, 10, 0, 0, 1, 2000, 0);
+    instruct_50e(4, 0, 2, 2000, 0, 0, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(0, 3, 1, 0, 0, 0, 0);
 instruct_50e(0, 4, 100, 0, 0, 0, 0);
-label289:
-instruct_50e(17, 10, 0, 0, 4, 5, 0);
-instruct_50e(1, 11, 0, 400, 3, 5, 0);
-instruct_50e(3, 0, 0, 3, 3, 1, 0);
-instruct_50e(3, 0, 0, 4, 4, 2, 0);
-instruct_50e(4, 0, 0, 3, 5, 0, 0);
-if CheckRoleSexual(256) then goto label289 end;
+do
+{
+    instruct_50e(17, 10, 0, 0, 4, 5, 0);
+    instruct_50e(1, 11, 0, 400, 3, 5, 0);
+    instruct_50e(3, 0, 0, 3, 3, 1, 0);
+    instruct_50e(3, 0, 0, 4, 4, 2, 0);
+    instruct_50e(4, 0, 0, 3, 5, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(2, 0, 0, 400, 1, 8, 0);
 instruct_50e(0, 6, 1, 0, 0, 0, 0);
 instruct_50e(0, 7, 2, 0, 0, 0, 0);
-label369:
-instruct_50e(2, 1, 0, 400, 7, 9, 0);
-instruct_50e(4, 1, 0, 8, 9, 0, 0);
-if CheckRoleSexual(256) == false then goto label333 end;
-instruct_50e(3, 0, 0, 8, 9, 0, 0);
-instruct_50e(3, 0, 0, 6, 7, 0, 0);
-label333:
-instruct_50e(3, 0, 0, 7, 7, 1, 0);
-instruct_50e(4, 0, 0, 7, 5, 0, 0);
-if CheckRoleSexual(256) then goto label369 end;
+do
+{
+    instruct_50e(2, 1, 0, 400, 7, 9, 0);
+    instruct_50e(4, 1, 0, 8, 9, 0, 0);
+    if (CheckRoleSexual(256))
+    {
+        instruct_50e(3, 0, 0, 8, 9, 0, 0);
+        instruct_50e(3, 0, 0, 6, 7, 0, 0);
+    }
+    instruct_50e(3, 0, 0, 7, 7, 1, 0);
+    instruct_50e(4, 0, 0, 7, 5, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(16, 100, 3, 1, 24, 6, 0);
 instruct_50e(0, 10, 36, 0, 0, 0, 0);
 instruct_50e(0, 11, 1, 0, 0, 0, 0);
-label437:
-instruct_50e(3, 1, 2, 101, 8, 11, 0);
-instruct_50e(16, 110, 3, 1, 10, 101, 0);
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-instruct_50e(3, 0, 0, 11, 11, 1, 0);
-instruct_50e(4, 0, 0, 11, 11, 0, 0);
-if CheckRoleSexual(256) then goto label437 end;
+do
+{
+    instruct_50e(3, 1, 2, 101, 8, 11, 0);
+    instruct_50e(16, 110, 3, 1, 10, 101, 0);
+    instruct_50e(3, 0, 0, 10, 10, 2, 0);
+    instruct_50e(3, 0, 0, 11, 11, 1, 0);
+    instruct_50e(4, 0, 0, 11, 11, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(17, 0, 0, 0, 82, 12, 0);
 instruct_50e(3, 0, 3, 12, 12, 800, 0);
 instruct_50e(16, 100, 3, 1, 56, 12, 0);
@@ -115,8 +121,7 @@ instruct_50e(17, 0, 0, 0, 86, 13, 0);
 instruct_50e(3, 0, 3, 13, 13, 100, 0);
 instruct_50e(16, 100, 3, 1, 92, 13, 0);
 instruct_50e(16, 100, 3, 1, 94, 13, 0);
-OldLearnMagic(0, 1, 0);
-Talk("恭喜你，你終于領悟到武學的真諦了．那么，我的任務也就完成了．有機會再見．", 189, 0);
+OldLearnMagic(0, 1, 0);Talk("恭喜你，你終于領悟到武學的真諦了．那么，我的任務也就完成了．有機會再見．", 189, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, -1, -1, -1, -1, -1, -1, -1, -2, -2);
 LightScene();

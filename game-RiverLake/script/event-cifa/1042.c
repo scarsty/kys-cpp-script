@@ -1,45 +1,50 @@
-instruct_50e(0, 1, 8, 0, 0, 0, 0);
+﻿instruct_50e(0, 1, 8, 0, 0, 0, 0);
 instruct_50e(0, 2, 2, 0, 0, 0, 0);
 instruct_50e(17, 10, 0, 0, 1, 2000, 0);
-label64:
-instruct_50e(16, 110, 3, 1, 2, 2000, 0);
-instruct_50e(3, 0, 0, 1, 1, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(17, 10, 0, 0, 1, 2000, 0);
-instruct_50e(4, 0, 2, 2000, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label64 end;
+do
+{
+    instruct_50e(16, 110, 3, 1, 2, 2000, 0);
+    instruct_50e(3, 0, 0, 1, 1, 2, 0);
+    instruct_50e(3, 0, 0, 2, 2, 2, 0);
+    instruct_50e(17, 10, 0, 0, 1, 2000, 0);
+    instruct_50e(4, 0, 2, 2000, 0, 0, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(0, 3, 1, 0, 0, 0, 0);
 instruct_50e(0, 4, 100, 0, 0, 0, 0);
-label124:
-instruct_50e(17, 10, 0, 0, 4, 5, 0);
-instruct_50e(1, 11, 0, 400, 3, 5, 0);
-instruct_50e(3, 0, 0, 3, 3, 1, 0);
-instruct_50e(3, 0, 0, 4, 4, 2, 0);
-instruct_50e(4, 0, 0, 3, 5, 0, 0);
-if CheckRoleSexual(256) then goto label124 end;
+do
+{
+    instruct_50e(17, 10, 0, 0, 4, 5, 0);
+    instruct_50e(1, 11, 0, 400, 3, 5, 0);
+    instruct_50e(3, 0, 0, 3, 3, 1, 0);
+    instruct_50e(3, 0, 0, 4, 4, 2, 0);
+    instruct_50e(4, 0, 0, 3, 5, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(2, 0, 0, 400, 1, 8, 0);
 instruct_50e(0, 6, 1, 0, 0, 0, 0);
 instruct_50e(0, 7, 2, 0, 0, 0, 0);
-label204:
-instruct_50e(2, 1, 0, 400, 7, 9, 0);
-instruct_50e(4, 1, 0, 8, 9, 0, 0);
-if CheckRoleSexual(256) == false then goto label168 end;
-instruct_50e(3, 0, 0, 8, 9, 0, 0);
-instruct_50e(3, 0, 0, 6, 7, 0, 0);
-label168:
-instruct_50e(3, 0, 0, 7, 7, 1, 0);
-instruct_50e(4, 0, 0, 7, 5, 0, 0);
-if CheckRoleSexual(256) then goto label204 end;
+do
+{
+    instruct_50e(2, 1, 0, 400, 7, 9, 0);
+    instruct_50e(4, 1, 0, 8, 9, 0, 0);
+    if (CheckRoleSexual(256))
+    {
+        instruct_50e(3, 0, 0, 8, 9, 0, 0);
+        instruct_50e(3, 0, 0, 6, 7, 0, 0);
+    }
+    instruct_50e(3, 0, 0, 7, 7, 1, 0);
+    instruct_50e(4, 0, 0, 7, 5, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(16, 100, 3, 1, 24, 6, 0);
 instruct_50e(0, 10, 36, 0, 0, 0, 0);
 instruct_50e(0, 11, 1, 0, 0, 0, 0);
-label272:
-instruct_50e(3, 1, 2, 101, 8, 11, 0);
-instruct_50e(16, 110, 3, 1, 10, 101, 0);
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-instruct_50e(3, 0, 0, 11, 11, 1, 0);
-instruct_50e(4, 0, 0, 11, 11, 0, 0);
-if CheckRoleSexual(256) then goto label272 end;
+do
+{
+    instruct_50e(3, 1, 2, 101, 8, 11, 0);
+    instruct_50e(16, 110, 3, 1, 10, 101, 0);
+    instruct_50e(3, 0, 0, 10, 10, 2, 0);
+    instruct_50e(3, 0, 0, 11, 11, 1, 0);
+    instruct_50e(4, 0, 0, 11, 11, 0, 0);
+} while (CheckRoleSexual(256));
 instruct_50e(17, 0, 0, 0, 82, 12, 0);
 instruct_50e(3, 0, 3, 12, 12, 800, 0);
 instruct_50e(16, 100, 3, 1, 56, 12, 0);

@@ -1,23 +1,26 @@
-instruct_50e(0, 10, 126, 0, 0, 0, 0);
-label50:
-instruct_50e(4, 0, 5, 10, 144, 0, 0);
-if CheckRoleSexual(256) == false then goto label16 end;
-Talk("星宿老仙，法力無邊．", 92, 0);
-exit();
-label16:
-instruct_50e(17, 10, 0, 0, 10, 1, 0);
-instruct_50e(4, 0, 2, 1, 5, 0, 0);
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-if CheckRoleSexual(256) == false then goto label50 end;
+﻿instruct_50e(0, 10, 126, 0, 0, 0, 0);
+do
+{
+    instruct_50e(4, 0, 5, 10, 144, 0, 0);
+    if (CheckRoleSexual(256))
+    {
+        Talk("星宿老仙，法力無邊．", 92, 0);
+        exit();
+    }
+    instruct_50e(17, 10, 0, 0, 10, 1, 0);
+    instruct_50e(4, 0, 2, 1, 5, 0, 0);
+    instruct_50e(3, 0, 0, 10, 10, 2, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(3, 0, 0, 10, 10, 18, 0);
 instruct_50e(17, 10, 0, 0, 10, 30, 0);
 instruct_50e(4, 0, 4, 30, 600, 0, 0);
-if CheckRoleSexual(256) then goto label78 end;
-Talk("．．．．．．", 92, 0);
-Talk("做什么，愁眉苦臉的？", 0, 1);
-Talk("唉！可惜你現在幫不了我．", 92, 0);
-exit();
-label78:
+if (!CheckRoleSexual(256))
+{
+    Talk("．．．．．．", 92, 0);
+    Talk("做什么，愁眉苦臉的？", 0, 1);
+    Talk("唉！可惜你現在幫不了我．", 92, 0);
+    exit();
+}
 Talk("．．．．．．", 92, 0);
 Talk("做什么，愁眉苦臉的？", 0, 1);
 Talk("噓！！", 92, 0);
@@ -34,10 +37,11 @@ instruct_50e(3, 0, 0, 1, 1, 50, 0);
 instruct_50e(16, 100, 0, 0, 40, 1, 0);
 Talk("啊！你竟然用毒藥！", 0, 1);
 Talk("只有死人才能不說出去．", 92, 0);
-if TryBattle(183) then goto label190 end;
-Dead();
-exit();
-label190:
+if (!TryBattle(183))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("神木王鼎？阿紫？會在哪呢找到交給老仙一定會有賞．", 0, 1);

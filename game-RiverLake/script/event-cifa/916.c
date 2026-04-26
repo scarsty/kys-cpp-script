@@ -1,19 +1,21 @@
-Talk("哼！你竟敢回來？", 46, 0);
+﻿Talk("哼！你竟敢回來？", 46, 0);
 Talk("怎么了？師父？", 0, 1);
 Talk("你竟敢幫阿紫那個叛徒！", 46, 0);
 Talk("啊！", 0, 1);
 ZeroAllMP();
-if TryBattle(171) then goto label22 end;
-Dead();
-exit();
-label22:
+if (!TryBattle(171))
+{
+    Dead();
+    exit();
+}
 LightScene();
 Talk("沒想到你偷偷將武功練得這么好．", 46, 0);
 ZeroAllMP();
-if TryBattle(172) then goto label39 end;
-Dead();
-exit();
-label39:
+if (!TryBattle(172))
+{
+    Dead();
+    exit();
+}
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -36,32 +38,36 @@ AddItemWithoutHint(51, -1);
 AddItem(198, 1);
 instruct_50e(17, 0, 0, 0, 122, 1, 0);
 instruct_50e(4, 0, 2, 1, 51, 0, 0);
-if CheckRoleSexual(256) == false then goto label292 end;
-instruct_50e(16, 0, 0, 0, 122, -1, 0);
-label292:
+if (CheckRoleSexual(256))
+{
+    instruct_50e(16, 0, 0, 0, 122, -1, 0);
+}
 instruct_50e(0, 10, 126, 0, 0, 0, 0);
-label477:
-instruct_50e(17, 10, 0, 0, 10, 1, 0);
-instruct_50e(4, 0, 2, 1, 5, 0, 0);
-if CheckRoleSexual(256) == false then goto label330 end;
-instruct_50e(3, 0, 0, 2, 10, 0, 0);
-instruct_50e(3, 0, 0, 3, 10, 0, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 5, 2, 20, 0);
-instruct_50e(3, 0, 0, 6, 3, 20, 0);
-label448:
-instruct_50e(17, 10, 0, 0, 2, 4, 0);
-instruct_50e(16, 110, 0, 0, 3, 4, 0);
-instruct_50e(17, 10, 0, 0, 5, 7, 0);
-instruct_50e(16, 110, 0, 0, 6, 7, 0);
-instruct_50e(3, 0, 0, 3, 3, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 6, 6, 2, 0);
-instruct_50e(3, 0, 0, 5, 5, 2, 0);
-instruct_50e(4, 0, 4, 2, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label448 end;
-instruct_50e(16, 10, 0, 0, 3, 0, 0);
-label330:
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-instruct_50e(4, 0, 4, 10, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label477 end;
+do
+{
+    instruct_50e(17, 10, 0, 0, 10, 1, 0);
+    instruct_50e(4, 0, 2, 1, 5, 0, 0);
+    if (CheckRoleSexual(256))
+    {
+        instruct_50e(3, 0, 0, 2, 10, 0, 0);
+        instruct_50e(3, 0, 0, 3, 10, 0, 0);
+        instruct_50e(3, 0, 0, 2, 2, 2, 0);
+        instruct_50e(3, 0, 0, 5, 2, 20, 0);
+        instruct_50e(3, 0, 0, 6, 3, 20, 0);
+        do
+        {
+            instruct_50e(17, 10, 0, 0, 2, 4, 0);
+            instruct_50e(16, 110, 0, 0, 3, 4, 0);
+            instruct_50e(17, 10, 0, 0, 5, 7, 0);
+            instruct_50e(16, 110, 0, 0, 6, 7, 0);
+            instruct_50e(3, 0, 0, 3, 3, 2, 0);
+            instruct_50e(3, 0, 0, 2, 2, 2, 0);
+            instruct_50e(3, 0, 0, 6, 6, 2, 0);
+            instruct_50e(3, 0, 0, 5, 5, 2, 0);
+            instruct_50e(4, 0, 4, 2, 146, 0, 0);
+        } while (!CheckRoleSexual(256));
+        instruct_50e(16, 10, 0, 0, 3, 0, 0);
+    }
+    instruct_50e(3, 0, 0, 10, 10, 2, 0);
+    instruct_50e(4, 0, 4, 10, 146, 0, 0);
+} while (!CheckRoleSexual(256));

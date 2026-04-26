@@ -1,6 +1,7 @@
-if InTeam(323) then goto label0 end;
-exit();
-label0:
+﻿if (!InTeam(323))
+{
+    exit();
+}
 DarkScene();
 ModifyEvent(-2, 33, 1, -2, 0, 0, 0, 6268, 6268, 6268, 0, -2, -2);
 ModifyEvent(-2, 34, 1, -2, 0, 0, 0, 7076, 7076, 7076, 0, -2, -2);
@@ -39,15 +40,16 @@ instruct_50e(1, 10, 0, 100, 5, 4, 0);
 instruct_50e(1, 10, 0, 100, 6, 5, 0);
 instruct_50e(1, 10, 0, 100, 7, 6, 0);
 instruct_50e(0, 10, 1, 0, 0, 0, 0);
-label338:
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(16, 1, 0, 30, 34, 1, 0);
-instruct_50e(16, 1, 0, 30, 82, 0, 0);
-instruct_50e(16, 1, 0, 30, 42, 0, 0);
-instruct_50e(16, 1, 0, 30, 40, 100, 0);
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label338 end;
+do
+{
+    instruct_50e(2, 1, 0, 100, 10, 30, 0);
+    instruct_50e(16, 1, 0, 30, 34, 1, 0);
+    instruct_50e(16, 1, 0, 30, 82, 0, 0);
+    instruct_50e(16, 1, 0, 30, 42, 0, 0);
+    instruct_50e(16, 1, 0, 30, 40, 100, 0);
+    instruct_50e(3, 0, 0, 10, 10, 1, 0);
+    instruct_50e(4, 0, 5, 10, 7, 0, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(16, 0, 0, 324, 34, 1, 0);
 instruct_50e(16, 0, 0, 324, 82, 0, 0);
 instruct_50e(16, 0, 0, 324, 42, 0, 0);
@@ -63,8 +65,7 @@ ModifyEvent(-2, 40, 1, -2, 0, 0, 0, 6800, 6800, 6800, 0, -2, -2);
 SetTowards(3);
 LightScene();
 LightScene();
-if TryBattle(241) then goto label483 end;
-label483:
+TryBattle(241);
 Talk("跟我來．", 93, 1);
 DarkScene();
 ModifyEvent(-2, 30, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -102,14 +103,15 @@ instruct_50e(1, 10, 0, 100, 5, 4, 0);
 instruct_50e(1, 10, 0, 100, 6, 5, 0);
 instruct_50e(1, 10, 0, 100, 7, 6, 0);
 instruct_50e(0, 10, 1, 0, 0, 0, 0);
-label881:
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(16, 1, 0, 30, 42, 100, 0);
-instruct_50e(16, 1, 0, 30, 40, 0, 0);
-instruct_50e(16, 1, 0, 30, 38, 0, 0);
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label881 end;
+do
+{
+    instruct_50e(2, 1, 0, 100, 10, 30, 0);
+    instruct_50e(16, 1, 0, 30, 42, 100, 0);
+    instruct_50e(16, 1, 0, 30, 40, 0, 0);
+    instruct_50e(16, 1, 0, 30, 38, 0, 0);
+    instruct_50e(3, 0, 0, 10, 10, 1, 0);
+    instruct_50e(4, 0, 5, 10, 7, 0, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(16, 0, 0, 324, 42, 100, 0);
 instruct_50e(16, 0, 0, 324, 40, 0, 0);
 instruct_50e(16, 0, 0, 324, 38, 0, 0);
@@ -130,7 +132,7 @@ DarkScene();
 LightScene();
 Talk("哇，這套刀法要是二人同時使用，威力真是了得．", 216, 4);
 Talk("多謝前輩指點．不知此刀法可有名字？", 215, 1);
-Talk("這套刀法名叫”夫妻刀法”好了，老乞丐要先走了．", 93, 0);
+Talk("這套刀法名叫夫妻刀法好了，老乞丐要先走了．", 93, 0);
 DarkScene();
 ModifyEvent(-2, 41, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

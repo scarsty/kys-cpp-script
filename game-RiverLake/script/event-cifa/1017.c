@@ -1,25 +1,29 @@
-instruct_50e(0, 10, 126, 0, 0, 0, 0);
-label51:
-instruct_50e(4, 0, 5, 10, 144, 0, 0);
-if CheckRoleSexual(256) == false then goto label16 end;
-Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
-exit();
-label16:
-instruct_50e(17, 10, 0, 0, 10, 1, 0);
-instruct_50e(4, 0, 2, 1, 32, 0, 0);
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-if CheckRoleSexual(256) == false then goto label51 end;
+﻿instruct_50e(0, 10, 126, 0, 0, 0, 0);
+do
+{
+    instruct_50e(4, 0, 5, 10, 144, 0, 0);
+    if (CheckRoleSexual(256))
+    {
+        Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
+        exit();
+    }
+    instruct_50e(17, 10, 0, 0, 10, 1, 0);
+    instruct_50e(4, 0, 2, 1, 32, 0, 0);
+    instruct_50e(3, 0, 0, 10, 10, 2, 0);
+} while (!CheckRoleSexual(256));
 instruct_50e(3, 0, 0, 10, 10, 18, 0);
 instruct_50e(17, 10, 0, 0, 10, 30, 0);
 instruct_50e(4, 0, 4, 30, 900, 0, 0);
-if CheckRoleSexual(256) then goto label79 end;
-Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
-exit();
-label79:
-if HaveItemBool(151) then goto label91 end;
-Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
-exit();
-label91:
+if (!CheckRoleSexual(256))
+{
+    Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
+    exit();
+}
+if (!HaveItemBool(151))
+{
+    Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
+    exit();
+}
 Talk("師父．", 0, 1);
 Talk("五岳劍派并派大會就要在嵩山舉行了．你收拾一下就可以去了．", 19, 0);
 Talk("是，師父．", 0, 1);
