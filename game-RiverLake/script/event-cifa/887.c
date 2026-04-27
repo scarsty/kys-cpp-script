@@ -97,7 +97,7 @@ SetRoleMagic(49, 6, 0, 0);
 SetRoleMagic(49, 7, 0, 0);
 SetRoleMagic(49, 8, 0, 0);
 SetRoleMagic(49, 9, 0, 0);
-instruct_50e(16, 0, 0, 49, 110, 100, 0);
+SetRole(49, 110 / 2, 100);
 LightScene();
 SubMapViewFromTo(23, 25, 16, 30);
 Talk("星宿老怪，這次我們應該算算剛才的帳了吧？", 114, 1);

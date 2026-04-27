@@ -11,10 +11,10 @@ Talk("文泰來，快叫你夫人交出鴛刀來吧．", 75, 0);
 Talk("張召重，你這狗賊．想要刀就先殺了我夫婦二人吧．", 163, 0);
 Talk("住手！文四爺，我來幫你！", 0, 0);
 WalkFromTo(20, 47, 20, 41);
-if TryBattle(52) then goto label115 end;
+if TryBattle(52) == false then
 Dead();
 exit();
-::label115::
+end;
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -37,11 +37,11 @@ ModifyEvent(17, 3, 1, -2, 368, 0, 0, 6108, 6108, 6108, 0, -2, -2);
 ModifyEvent(17, 4, 1, -2, 370, 0, 0, 6086, 6086, 6086, 0, -2, -2);
 ModifyEvent(17, 5, 1, -2, 371, 0, 0, 5204, 5204, 5204, 0, -2, -2);
 LightScene();
-if HaveItemBool(188) == false then goto label315 end;
+if HaveItemBool(188) then
 Talk("我現在鴛刀和鴦刀都有了，不知道里面有什么秘密呢．．．．”仁者無敵”？這就是鴛鴦刀所藏有的秘密嗎？", 0, 0);
 Talk("將兩柄刀合在一起，突然從刀殼中掉出一本書來，上面寫著”鴛鴦刀”！", 0, 3);
 DarkScene();
 LightScene();
 AddItem(157, 1);
 exit();
-::label315::
+end;

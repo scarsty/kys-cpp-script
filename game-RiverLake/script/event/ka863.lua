@@ -1,9 +1,9 @@
-if HaveItemBool(98) then goto label0 end;
+if HaveItemBool(98) == false then
 exit();
-::label0::
-if CheckRoleMorality(0, 0, 10) then goto label6 end;
+end;
+if CheckRoleMorality(0, 0, 10) == false then
 exit();
-::label6::
+end;
 DarkScene();
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

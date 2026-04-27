@@ -1,5 +1,5 @@
-if HaveItemBool(80) == false then goto label0 end;
-if InTeam(77) == false then goto label0 end;
+if HaveItemBool(80) then
+if InTeam(77) then
 Talk("師父，我們回來了．", 206, 1);
 Talk("見到你左師伯了嗎？", 19, 0);
 Talk("稟師父，見到了．", 206, 1);
@@ -18,5 +18,6 @@ ModifyEvent(57, 1, -2, -2, 991, -2, -2, -2, -2, -2, -2, -2, -2);
 Add3EventNum(60, 23, 0, 0, 1);
 Add3EventNum(60, 24, 0, 0, 1);
 exit();
-::label0::
+end;
+end;
 Talk("勞德諾呢？", 19, 0);

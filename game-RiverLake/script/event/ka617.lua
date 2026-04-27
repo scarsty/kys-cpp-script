@@ -23,10 +23,10 @@ ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(21, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("是否去看看？", 0, 3);
-if AskRest() == false then goto  label202 end;
+if AskRest() then
 ModifyEvent(-2, 22, 0, -2, 0, 0, 618, 0, 0, 0, 0, -2, -2);
 exit();
-::label202::
+end;
 Talk("人家的事，還是少管為妙．", 0, 0);
 WalkFromTo(28, 24, 28, 30);
 AddMorality(-1);
@@ -35,6 +35,6 @@ SetSubMapLayerData(-2, 1, 28, 25, 1528);
 SetSubMapLayerData(-2, 1, 29, 25, 1530);
 SetSubMapLayerData(-2, 1, 27, 24, 0);
 SetSubMapLayerData(-2, 1, 29, 24, 0);
-if InTeam(98) then goto label268 end;
+if InTeam(98) == false then
 Talk("你不管我自己就走了？", 124, 0);
-::label268::
+end;

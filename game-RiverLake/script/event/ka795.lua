@@ -1,13 +1,13 @@
 Talk("這位客觀，再往前走就是豺狼谷了，里面有很多豺狼，走夜路不安全，不如在本店休息一夜再行上路？本店每晚收費３００兩．", 219, 0);
 Talk("是否住宿？", 0, 3);
-if AskRest() then goto  label9 end;
+if AskRest() == false then
 Talk("不了，我還要趕路．", 0, 1);
 exit();
-::label9::
-if CheckEnoughMoney(300) then goto label20 end;
+end;
+if CheckEnoughMoney(300) == false then
 Talk("對不起，您的錢好像不夠．", 219, 0);
 exit();
-::label20::
+end;
 Talk("好啊，我正想休息一宿呢！", 0, 1);
 AddItemWithoutHint(174, -300);
 DarkScene();
@@ -47,7 +47,7 @@ ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("是否要作弄一下那兩個人？", 0, 3);
-if AskRest() == false then goto  label283 end;
+if AskRest() then
 OldSetScenePosition(47, 47);
 SetTowards(2);
 Talk("床上有包東西？", 0, 1);
@@ -72,16 +72,16 @@ ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("＜嘻嘻．＞", 0, 0);
-::label283::
+end;
 SubMapViewFromTo(48, 49, 42, 49);
 DarkScene();
 LightScene();
 Talk("一覺醒來感覺真的很不錯．", 0, 1);
 Talk("＜我是否應該去幫幫那女子呢？＞", 0, 1);
-if AskRest() == false then goto  label445 end;
+if AskRest() then
 Talk("＜路見不平，拔刀相助．＞", 0, 1);
 ModifyEvent(-2, 3, 0, -2, 0, 0, 796, 0, 0, 0, 0, -2, -2);
 AddMorality(3);
 exit();
-::label445::
+end;
 Talk("算了，有很多事還沒做呢．", 0, 1);

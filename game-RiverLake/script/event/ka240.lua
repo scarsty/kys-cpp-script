@@ -1,10 +1,10 @@
-if isUsingItem(174) then goto label0 end;
+if isUsingItem(174) == false then
 exit();
-::label0::
-if CheckEnoughMoney(3500) then goto label5 end;
+end;
+if CheckEnoughMoney(3500) == false then
 Talk("哦，他一共欠我三千五百兩這是欠條．", 226, 0);
 exit();
-::label5::
+end;
 Talk("這是錢．＜大出血啊．＞", 0, 0);
 Talk("謝謝，欠條給你．", 226, 0);
 AddItemWithoutHint(174, -3500);

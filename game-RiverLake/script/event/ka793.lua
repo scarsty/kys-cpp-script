@@ -1,7 +1,7 @@
-if CheckSubMapPic(-2, 5, 8302) == false then goto label0 end;
-if CheckSubMapPic(-2, 6, 8304) == false then goto label0 end;
-if CheckSubMapPic(-2, 7, 8302) == false then goto label0 end;
-if CheckSubMapPic(-2, 8, 8302) == false then goto label0 end;
+if CheckSubMapPic(-2, 5, 8302) then
+if CheckSubMapPic(-2, 6, 8304) then
+if CheckSubMapPic(-2, 7, 8302) then
+if CheckSubMapPic(-2, 8, 8302) then
 Talk("！！！", 0, 0);
 DarkScene();
 ModifyEvent(-2, 0, 0, -2, 0, 0, 275, 0, 0, 0, 0, -2, -2);
@@ -13,7 +13,10 @@ ModifyEvent(-2, 8, -2, -2, 0, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(-2, 9, -2, -2, 0, 0, 0, 8304, 8304, 8304, 0, -2, -2);
 LightScene();
 exit();
-::label0::
+end;
+end;
+end;
+end;
 Talk("啊！有暗器！", 0, 0);
 AddAttack(0, -5);
 DarkScene();

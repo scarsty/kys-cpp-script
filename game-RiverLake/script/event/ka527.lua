@@ -17,11 +17,11 @@ DarkScene();
 OldSetScenePosition(28, 21);
 SetTowards(1);
 LightScene();
-if TryBattle(75) then goto label140 end;
-if InTeam(107) then goto label145 end;
+if TryBattle(75) == false then
+if InTeam(107) == false then
 Dead();
 exit();
-::label145::
+end;
 ModifyEvent(-2, 6, 1, -2, 530, 0, 0, 8228, 8228, 8228, 0, -2, -2);
 LightScene();
 Talk("．．．．．．", 132, 0);
@@ -42,7 +42,7 @@ LeaveTeam(107);
 Talk("你怎么也來了？", 0, 0);
 Talk("要你管！", 130, 1);
 exit();
-::label140::
+end;
 ModifyEvent(-2, 6, 1, -2, 530, 0, 0, 8228, 8228, 8228, 0, -2, -2);
 LightScene();
 AddItem(190, 1);

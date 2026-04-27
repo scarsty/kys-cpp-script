@@ -1,5 +1,5 @@
-if HaveItemBool(80) == false then goto label0 end;
-if InTeam(77) == false then goto label0 end;
+if HaveItemBool(80) then
+if InTeam(77) then
 Talk("華山弟子勞德諾拜見五岳盟主左師伯．", 206, 1);
 Talk("你旁邊的就是岳掌門新收的徒弟？", 22, 0);
 Talk("拜見左師伯，晚輩就是師父新收的徒弟．", 0, 1);
@@ -11,5 +11,6 @@ ModifyEvent(-2, -2, -2, -2, 988, -2, -2, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 989, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 989, 0, 0, 0, 0, -2, -2);
 exit();
-::label0::
+end;
+end;
 Talk("小子，你是混哪里的，敢來嵩山亂闖？", 22, 0);

@@ -1,11 +1,9 @@
 ﻿Talk("在這么冰冷的床上修煉內功一定會事半功倍吧？", 0, 0);
-instruct_50e(17, 0, 0, 0, 86, 1, 0);
-instruct_50e(4, 0, 1, 1, 200, 0, 0);
-if (!CheckRoleSexual(256))
+x[1] = GetRole(0, 86 / 2);
+if (!(x[1] <= 200))
 {
-    instruct_50e(17, 0, 0, 0, 36, 1, 0);
-    instruct_50e(4, 0, 0, 1, 10, 0, 0);
-    if (CheckRoleSexual(256))
+x[1] = GetRole(0, 36 / 2);
+    if (x[1] < 10)
     {
         Dead();
         exit();
@@ -15,9 +13,8 @@ if (!CheckRoleSexual(256))
     AddAttack(0, 1);
     exit();
 }
-instruct_50e(17, 0, 0, 0, 36, 1, 0);
-instruct_50e(4, 0, 0, 1, 5, 0, 0);
-if (CheckRoleSexual(256))
+x[1] = GetRole(0, 36 / 2);
+if (x[1] < 5)
 {
     Dead();
     exit();

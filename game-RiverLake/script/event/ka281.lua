@@ -17,10 +17,10 @@ Talk("計爺爺，計爺爺，你別死．", 119, 0);
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("你快放了阿曼．", 0, 0);
 Talk("又一個送死的．", 152, 0);
-if TryBattle(34) then goto label106 end;
+if TryBattle(34) == false then
 Dead();
 exit();
-::label106::
+end;
 OldSetScenePosition(36, 16);
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

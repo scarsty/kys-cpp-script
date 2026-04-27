@@ -1,6 +1,6 @@
-if isUsingItem(65) then goto label0 end;
+if isUsingItem(65) == false then
 exit();
-::label0::
+end;
 AddItemWithoutHint(65, -1);
 Talk("恩，不錯．", 46, 0);
 AddItem(58, 1);

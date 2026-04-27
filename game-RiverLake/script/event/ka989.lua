@@ -1,5 +1,5 @@
-if HaveItemBool(80) == false then goto label0 end;
-if InTeam(77) == false then goto label0 end;
+if HaveItemBool(80) then
+if InTeam(77) then
 DarkScene();
 LightScene();
 Talk("師弟，我們今天就住在嵩山上，明天一早再回華山．", 206, 1);
@@ -26,4 +26,5 @@ ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(57, 1, -2, -2, 990, -2, -2, -2, -2, -2, -2, -2, -2);
 exit();
-::label0::
+end;
+end;

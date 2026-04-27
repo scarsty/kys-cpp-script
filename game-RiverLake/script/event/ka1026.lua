@@ -1,20 +1,20 @@
-if HaveItemBool(80) == false then goto label0 end;
+if HaveItemBool(80) then
 Talk("在下華山派新進弟子，特來向天門師叔請安．", 0, 1);
 Talk("師父在里面，請進吧．", 85, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label0::
+end;
 Talk("泰山派豈容你亂闖．還不速速離去．", 85, 0);
-if AskBattle() then goto label40 end;
+if AskBattle() == false then
 Talk("離去就離去，說話那么沖干什么．", 0, 1);
 exit();
-::label40::
+end;
 Talk("泰山派？說話不要那么沖好不好．", 0, 1);
-if TryBattle(201) then goto label56 end;
+if TryBattle(201) == false then
 Dead();
 exit();
-::label56::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

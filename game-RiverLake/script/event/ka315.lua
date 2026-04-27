@@ -1,16 +1,16 @@
-if InTeam(92) then goto label0 end;
+if InTeam(92) == false then
 exit();
-::label0::
+end;
 ModifyEvent(-2, 3, 1, -2, 0, 0, 0, 8306, 8306, 8306, 0, -2, -2);
 ModifyEvent(-2, 4, 1, -2, 0, 0, 0, 8308, 8308, 8308, 0, -2, -2);
 WalkFromTo(29, 44, 29, 33);
 Talk("馮錫范！我們大家都是為國姓爺辦事的，你干嗎要處處于我為敵？", 120, 0);
 Talk("姓陳的，你自視江湖地位高在江湖上從不把二公子放在眼里，一心集聚自己的勢力你不是想造反是什么？", 153, 0);
 Talk("師父，我們來幫你．", 111, 0);
-if TryBattle(40) then goto label57 end;
+if TryBattle(40) == false then
 Dead();
 exit();
-::label57::
+end;
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("總舵主，你受傷了？", 0, 0);

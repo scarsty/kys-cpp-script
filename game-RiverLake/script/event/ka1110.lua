@@ -13,7 +13,7 @@ DarkScene();
 LightScene();
 Talk("張志光獲勝．哪一個愿意來跟張志光比試一下？", 68, 0);
 Talk("我來．", 0, 0);
-if TryBattle(222) then goto label58 end;
+if TryBattle(222) == false then
 LightScene();
 Talk("張志光獲勝，下面誰來向張志光挑戰？", 68, 0);
 DarkScene();
@@ -44,10 +44,10 @@ ModifyEvent(-2, 0, -2, -2, 1116, -2, -2, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 AddAttack(0, 10);
 exit();
-::label58::
+end;
 LightScene();
 Talk("我崔志方向你請教．", 95, 0);
-if TryBattle(223) then goto label391 end;
+if TryBattle(223) == false then
 LightScene();
 Talk("崔志方獲勝，下面誰來向崔志方挑戰？", 68, 0);
 DarkScene();
@@ -78,10 +78,10 @@ ModifyEvent(-2, 0, -2, -2, 1116, -2, -2, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 AddAttack(0, 15);
 exit();
-::label391::
+end;
 LightScene();
 Talk("我申志凡向你請教．", 95, 0);
-if TryBattle(224) then goto label724 end;
+if TryBattle(224) == false then
 LightScene();
 Talk("申志凡獲勝，下面誰來向申志凡方挑戰？", 68, 0);
 DarkScene();
@@ -112,10 +112,10 @@ ModifyEvent(-2, 0, -2, -2, 1116, -2, -2, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 AddAttack(0, 20);
 exit();
-::label724::
+end;
 LightScene();
 Talk("我王志坦向你請教．", 95, 0);
-if TryBattle(225) then goto label1057 end;
+if TryBattle(225) == false then
 LightScene();
 Talk("王志坦獲勝，下面誰來向王志坦方挑戰？", 68, 0);
 DarkScene();
@@ -146,10 +146,10 @@ ModifyEvent(-2, 0, -2, -2, 1116, -2, -2, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 AddAttack(0, 25);
 exit();
-::label1057::
+end;
 LightScene();
 Talk("我尹志平向你請教．", 95, 0);
-if TryBattle(226) then goto label1390 end;
+if TryBattle(226) == false then
 LightScene();
 Talk("今年的獲勝者是尹志平．大家以后也要多多加油了．", 68, 0);
 DarkScene();
@@ -177,7 +177,7 @@ ModifyEvent(-2, 0, -2, -2, 1116, -2, -2, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 AddAttack(0, 30);
 exit();
-::label1390::
+end;
 LightScene();
 Talk("沒人向我挑戰了嗎？看來我成為了今年的獲勝者．", 0, 0);
 Talk("很好，沒想到你剛入門不就就成為大較的第一名．看來你可以修煉新的武功了．", 68, 0);

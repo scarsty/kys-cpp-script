@@ -1,10 +1,10 @@
-if isUsingItem(174) then goto label0 end;
+if isUsingItem(174) == false then
 exit();
-::label0::
-if CheckEnoughMoney(2000) then goto label5 end;
+end;
+if CheckEnoughMoney(2000) == false then
 Talk("聽故事二千兩．", 225, 0);
 exit();
-::label5::
+end;
 AddItemWithoutHint(174, -2000);
 Talk("說吧，我聽聽你的故事怎么樣．", 0, 0);
 Talk("話說有一位俠客，我不知這位俠客的姓名，只是見他少了一條右臂，他騎一匹馬，牽一匹馬，另外那匹馬上帶著一頭模樣稀奇古怪的大鳥這便是江湖上赫赫有名的”神雕俠”！這位大俠行俠仗義，好打抱不平，可是從來不肯說自己姓名，江湖上朋友見他和一頭怪鳥形影不離便送了一個外號，叫作”神雕大俠”．他說”大俠”兩字決不敢當，旁人只好叫他作”神雕俠”，其實憑他的所作所為，稱一聲”大俠”又有甚么當不起呢？他要是當不起，誰還當得起？", 225, 0);

@@ -5,10 +5,10 @@ SetRoleUsePoison(108, 100);
 ZeroAllMP();
 Talk("啊，怎么一下全身使不上力氣了．難道．．．戚長發．．．", 0, 0);
 Talk("我當是多么了不起的人物，萬圭對你已經用過一次的東西，你還能中第二次．呵呵也不怎么樣嗎．", 133, 0);
-if TryBattle(18) then goto label30 end;
+if TryBattle(18) == false then
 Dead();
 exit();
-::label30::
+end;
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(62, 10, 1, -2, 188, 0, 0, 5092, 5092, 5092, 0, -2, -2);
 ModifyEvent(62, 11, 1, -2, 188, 0, 0, 5090, 5090, 5090, 0, -2, -2);

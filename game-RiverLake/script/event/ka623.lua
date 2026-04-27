@@ -1,10 +1,10 @@
-if isUsingItem(174) then goto label0 end;
+if isUsingItem(174) == false then
 exit();
-::label0::
-if CheckEnoughMoney(2000) then goto label7 end;
+end;
+if CheckEnoughMoney(2000) == false then
 Talk("你的錢好像不夠啊！", 93, 1);
 exit();
-::label7::
+end;
 Talk("＜大出血！兩千兩，我得保多少次鏢啊！＞", 0, 1);
 AddItemWithoutHint(174, -2000);
 DarkScene();

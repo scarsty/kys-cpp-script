@@ -1,9 +1,9 @@
 Talk("段譽！", 0, 0);
 Talk("我動不了．．．", 53, 0);
-if TryBattle(22) then goto label10 end;
+if TryBattle(22) == false then
 Dead();
 exit();
-::label10::
+end;
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("＜糟了，那東西跳到段譽的嘴里去了．＞", 0, 0);

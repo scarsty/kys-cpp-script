@@ -1,14 +1,14 @@
 Talk("請問你知道何師我在什么地方嗎？", 0, 1);
 Talk("在下就是何師我！", 93, 1);
 Talk("那太好了，何師我，交出打狗棒！", 0, 1);
-if TryBattle(94) then goto label15 end;
+if TryBattle(94) == false then
 LightScene();
 Talk("我真的沒拿打狗棒！你怎么不信啊！不跟你說了，我走了！", 93, 1);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label15::
+end;
 LightScene();
 Talk("快交出打狗棒！", 0, 1);
 Talk("你看我的武功，哪有本領偷打狗棒啊！", 93, 1);

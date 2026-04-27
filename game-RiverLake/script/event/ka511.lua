@@ -1,9 +1,9 @@
 SubMapViewFromTo(44, 26, 41, 20);
 Talk("魔頭！你竟然污我清白！", 6, 0);
-if TryBattle(72) then goto label11 end;
+if TryBattle(72) == false then
 Dead();
 exit();
-::label11::
+end;
 ModifyEvent(-2, 7, 1, -2, 0, 0, 0, 5468, 5468, 5468, 0, -2, -2);
 OldSetScenePosition(41, 22);
 LightScene();

@@ -4,10 +4,10 @@ ModifyEvent(-2, 4, 0, -2, 0, 0, 634, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 634, 0, 0, 0, 0, -2, -2);
 Talk("哇～這個洞好臭，你怎么會在這個洞中呆著？", 0, 1);
 Talk("來來，很久沒人陪我過兩招了，快，我的手好癢！", 64, 0);
-if TryBattle(90) == false then goto label60 end;
-::label60::
+if TryBattle(90) then
+end;
 LightScene();
-if HaveItemBool(76) == false then goto label68 end;
+if HaveItemBool(76) then
 Talk("原來你是牛鼻子老道的徒弟", 64, 0);
 Talk("晚輩拜見師叔祖！", 0, 1);
 Talk("不好玩，不好玩．你自己在這呆著吧，我走了！", 64, 0);
@@ -16,26 +16,28 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 6, 0, -2, 0, 0, 635, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label68::
+end;
 Talk("好玩！好玩！來，再過兩招！", 64, 0);
-if TryBattle(90) == false then goto label127 end;
-::label127::
+if TryBattle(90) then
+end;
 LightScene();
 Talk("過癮！過癮！來，給你將個故事聽！", 64, 0);
 Talk("是否聽故事？", 0, 3);
-if AskRest() then goto  label144 end;
+if AskRest() == false then
 Talk("我很忙，哪有什么聽你將故事！", 0, 1);
 Talk("聽吧！很好聽的！", 64, 0);
 Talk("是否聽故事？", 0, 3);
-if AskRest() then goto  label144 end;
+if AskRest() == false then
 Talk("不聽！", 0, 1);
 Talk("好！算我吃虧點！聽完故事給你好處！", 64, 0);
 Talk("是否聽故事？", 0, 3);
-if AskRest() then goto  label144 end;
+if AskRest() == false then
 Talk("還是不要了，聽完你講故事少活好幾年！你給什么也不如我的命值錢！", 0, 1);
 Talk("．．．．．．氣死我了！！好，這個給你這回聽了吧？", 64, 0);
 AddItem(53, 1);
-::label144::
+end;
+end;
+end;
 Talk("話說徽宗皇帝于政和年間，遍搜普天下道家之書，雕版印行，一共有五千四百八十一卷，稱為”萬壽道藏”．皇帝委派刻書之人，叫做黃裳．．．", 64, 0);
 Talk("黃裳？是東邪的什么人嗎？", 0, 1);
 Talk("呸！這跟黃老邪黃藥師全不相干，你可別想歪了。天下姓黃之人多得緊，黃狗也姓黃，黃貓也姓黃．", 64, 0);

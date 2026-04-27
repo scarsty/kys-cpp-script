@@ -1,10 +1,10 @@
-if HaveItemBool(174) then goto label0 end;
+if HaveItemBool(174) == false then
 exit();
-::label0::
-if CheckEnoughMoney(100) then goto label5 end;
+end;
+if CheckEnoughMoney(100) == false then
 Talk("這么點錢就想讓我說嗎？", 93, 0);
 exit();
-::label5::
+end;
 Talk("這位小哥，這點錢給你買點酒喝，我找田歸農真的有事你要是知道他去哪了，還請告訴在下，在下感激不盡．", 0, 0);
 AddItemWithoutHint(174, -100);
 Talk("看你這么有誠意就告訴你吧但你要聽仔細，我只說一遍田歸農好像去了荊州南面的地方．", 93, 0);

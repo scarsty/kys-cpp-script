@@ -1,12 +1,11 @@
-instruct_50e(38, 0, 100, 1, 0, 0, 0);
-instruct_50e(4, 0, 0, 1, 10, 0, 0);
-if CheckRoleSexual(256) then goto label16 end;
+﻿x[1] = math.random(100);
+if x[1] >= 10 then
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 0, 0, -2, 0, 0, 1132, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 1132, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 0, -2, 0, 0, 1132, 0, 0, 0, 0, -2, -2);
 exit();
-::label16::
+end;
 DarkScene();
 SetSubMapLayerData(55, 1, 29, 47, 2048);
 SetSubMapLayerData(55, 1, 29, 46, 2050);

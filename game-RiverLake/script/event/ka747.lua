@@ -1,6 +1,6 @@
-if isUsingItem(162) then goto label0 end;
+if isUsingItem(162) == false then
 exit();
-::label0::
+end;
 Talk("大和尚，你把這個喝了，也許能減輕你身上的毒．", 0, 1);
 AddItemWithoutHint(162, -1);
 DarkScene();

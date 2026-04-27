@@ -1,8 +1,8 @@
 Talk("大膽小賊，受死吧．", 92, 0);
-if TryBattle(14) then goto label5 end;
+if TryBattle(14) == false then
 Dead();
 exit();
-::label5::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(54, 1, 13, 24, 0);
 LightScene();

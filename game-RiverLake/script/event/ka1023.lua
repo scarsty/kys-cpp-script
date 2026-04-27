@@ -1,4 +1,4 @@
-ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SubMapViewFromTo(26, 29, 15, 29);
 Talk("封兄，你們二位早已跟華山派沒有瓜葛，又上華山來作甚？", 19, 0);
 Talk("華山是你岳師兄買下來的？就不許旁人上山？是皇帝老子封給你的？", 185, 1);
@@ -13,53 +13,49 @@ WalkFromTo(26, 29, 19, 29);
 Talk("邪魔外道，豈能同桌而坐．", 19, 0);
 Talk("氣宗是華山弟子，劍宗也是華山弟子，既然大家是一家人，為什么不能好好談談．", 0, 1);
 Talk("想不到岳某人竟然收了你這樣一個狼子野心的徒弟．", 19, 0);
-if TryBattle(196) then goto label87 end;
+if TryBattle(196) == false then
 Dead();
 exit();
-::label87::
+end;
 LightScene();
 Talk("我道你怎么如此，原來你背地里練劍不練氣，以后岳某再沒有你這樣的徒弟．", 19, 0);
 AddItem(198, 1);
 AddItemWithoutHint(80, -1);
-instruct_50e(17, 0, 0, 0, 122, 1, 0);
-instruct_50e(4, 0, 2, 1, 80, 0, 0);
-if CheckRoleSexual(256) == false then goto label127 end;
-instruct_50e(16, 0, 0, 0, 122, -1, 0);
-::label127::
-instruct_50e(0, 10, 126, 0, 0, 0, 0);
+x[1] = GetRole(0, 122 / 2);
+if x[1] == 80 then
+SetRole(0, 122 / 2, -1);
+end;
+x[10] = 126;
 ::label311::
-instruct_50e(17, 10, 0, 0, 10, 1, 0);
-instruct_50e(4, 0, 2, 1, 32, 0, 0);
-if CheckRoleSexual(256) == false then goto label164 end;
-instruct_50e(3, 0, 0, 2, 10, 0, 0);
-instruct_50e(3, 0, 0, 3, 10, 0, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 5, 2, 20, 0);
-instruct_50e(3, 0, 0, 6, 3, 20, 0);
+x[1] = GetRole(0, x[10] / 2);
+if x[1] == 32 then
+x[2] = x[10] + 0;
+x[3] = x[10] + 0;
+x[2] = x[2] + 2;
+x[5] = x[2] + 20;
+x[6] = x[3] + 20;
 ::label282::
-instruct_50e(17, 10, 0, 0, 2, 4, 0);
-instruct_50e(16, 110, 0, 0, 3, 4, 0);
-instruct_50e(17, 10, 0, 0, 5, 7, 0);
-instruct_50e(16, 110, 0, 0, 6, 7, 0);
-instruct_50e(3, 0, 0, 3, 3, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 6, 6, 2, 0);
-instruct_50e(3, 0, 0, 5, 5, 2, 0);
-instruct_50e(4, 0, 4, 2, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label282 end;
-instruct_50e(16, 10, 0, 0, 3, 0, 0);
-::label164::
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-instruct_50e(4, 0, 4, 10, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label311 end;
+x[4] = GetRole(0, x[2] / 2);
+SetRole(0, x[3] / 2, x[4]);
+x[7] = GetRole(0, x[5] / 2);
+SetRole(0, x[6] / 2, x[7]);
+x[3] = x[3] + 2;
+x[2] = x[2] + 2;
+x[6] = x[6] + 2;
+x[5] = x[5] + 2;
+if x[2] < 146 then goto label282 end;
+SetRole(0, x[3] / 2, 0);
+end;
+x[10] = x[10] + 2;
+if x[10] < 146 then goto label311 end;
 Talk("岳兄，你連你徒弟都打不過還有什么臉呆在華山，還是快快走吧．", 185, 1);
 Talk("哼，岳某誓死保衛華山．", 19, 0);
 AddAttack(19, 150);
 Talk("岳不群大怒，攻擊力上升！", 0, 3);
-if TryBattle(202) then goto label336 end;
+if TryBattle(202) == false then
 Dead();
 exit();
-::label336::
+end;
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

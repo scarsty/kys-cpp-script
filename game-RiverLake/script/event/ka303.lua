@@ -1,12 +1,12 @@
 Talk("站住！皇宮豈容你亂闖！", 92, 0);
-if AskBattle() then goto label5 end;
+if AskBattle() == false then
 exit();
-::label5::
-if TeamIsFull() == false then goto label11 end;
-if TryBattle(38) then goto label14 end;
+end;
+if TeamIsFull() then
+if TryBattle(38) == false then
 Dead();
 exit();
-::label14::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(46, 1, 29, 36, 4502);
 SetSubMapLayerData(46, 1, 29, 35, 4504);
@@ -15,12 +15,12 @@ SetSubMapLayerData(46, 1, 31, 36, 4506);
 SetSubMapLayerData(46, 1, 31, 35, 4508);
 LightScene();
 exit();
-::label11::
+end;
 Talk("我來幫你！", 120, 0);
-if TryBattle(39) then goto label78 end;
+if TryBattle(39) == false then
 Dead();
 exit();
-::label78::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(46, 1, 29, 36, 4502);
 SetSubMapLayerData(46, 1, 29, 35, 4504);

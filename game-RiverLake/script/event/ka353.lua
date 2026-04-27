@@ -1,8 +1,8 @@
 Talk("福康安！", 0, 0);
 Talk("你認錯人了．", 123, 0);
 Talk("你明明就是福康安，我哪里會認錯！你去死吧．", 0, 0);
-if TryBattle(51) == false then goto label15 end;
-::label15::
+if TryBattle(51) then
+end;
 LightScene();
 Talk("你不是福康安？＜福康安的武功怎會這么高的．＞", 0, 0);
 Talk("在下陳家洛．", 123, 0);

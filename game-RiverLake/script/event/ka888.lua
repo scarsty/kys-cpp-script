@@ -109,17 +109,17 @@ LightScene();
 Talk("哇，師父的武功真是厲害啊星宿老仙，法力無邊！", 0, 1);
 Talk("星宿老仙，法力無邊．", 92, 0);
 Talk("一群不知死活的小妖．", 114, 1);
-if TryBattle(176) then goto label737 end;
+if TryBattle(176) == false then
 Dead();
 exit();
-::label737::
+end;
 ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("星宿老怪，我要為我師叔祖報仇．", 49, 1);
-if TryBattle(177) then goto label768 end;
+if TryBattle(177) == false then
 Dead();
 exit();
-::label768::
+end;
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, 14, 29);
 LightScene();
 Talk("哈哈，沒想到我星宿派的弟子也都變得這么厲害了．", 46, 1);

@@ -1,12 +1,12 @@
 Talk("怎么樣？休息好了嗎？", 29, 0);
-if AskBattle() then goto label5 end;
+if AskBattle() == false then
 Talk("再等等．", 0, 1);
 Talk("你們也真夠慢的，有那時間連孩子都生出來了．", 29, 0);
 exit();
-::label5::
+end;
 Talk("休息好了，田伯光，我跟師兄再來跟你較量．", 0, 1);
 Talk("無名小卒，我跟令狐少俠的事要你在這插嘴．", 29, 0);
-if TryBattle(192) == false then goto label31 end;
+if TryBattle(192) then
 ModifyEvent(-2, 1, 1, -2, 1003, 0, 0, 7656, 7656, 7656, 0, -2, -2);
 LightScene();
 Talk("田某沒本事求令狐兄幫忙，田某告辭．", 29, 5);
@@ -46,7 +46,7 @@ ModifyEvent(57, 33, 1, -2, 0, 0, 0, 5184, 5184, 5184, 0, -2, -2);
 ModifyEvent(57, 34, 1, -2, 0, 0, 0, 5184, 5184, 5184, 0, -2, -2);
 LightScene();
 exit();
-::label31::
+end;
 ModifyEvent(-2, 1, 1, -2, 0, 0, 0, 7624, 7624, 7624, 0, -2, -2);
 LightScene();
 Talk("你們打不過我，令狐兄，這回可以跟我走了吧？", 29, 5);

@@ -1,16 +1,16 @@
 Talk("裘千仞，今天我就要為一燈大師報仇！", 0, 1);
 Talk("手下敗將，看招！", 67, 0);
-if TryBattle(88) then goto label10 end;
+if TryBattle(88) == false then
 Dead();
 exit();
-::label10::
+end;
 ModifyEvent(-2, 20, 1, -2, 0, 0, 0, 6158, 6158, 6158, 0, -2, -2);
 LightScene();
 Talk("裘幫主，我來幫你！", 66, 0);
-if TryBattle(93) then goto label41 end;
+if TryBattle(93) == false then
 Dead();
 exit();
-::label41::
+end;
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 20, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

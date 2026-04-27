@@ -1,11 +1,11 @@
-if CheckRoleMorality(0, 0, 35) then goto label0 end;
+﻿if CheckRoleMorality(0, 0, 35) == false then
 Talk("不知師父什么時候能收我為正式弟子？", 0, 1);
 Talk("你現在還不是時候．", 72, 0);
 exit();
-::label0::
+end;
 Talk("徒兒，你來了．", 72, 0);
 Talk("師父看上去有心事，難道是又看上哪家姑娘不成？", 0, 1);
-if InTeam(81) == false then goto label29 end;
+if InTeam(81) then
 Talk("不錯，師父見你身邊的這個小丫頭心里就癢癢的．", 72, 0);
 Talk("．．．．．．", 106, 1);
 Talk("師父既然喜歡，那徒兒就將她送給師父．", 0, 1);
@@ -25,12 +25,12 @@ Talk("多謝師父．", 0, 1);
 DarkScene();
 LightScene();
 AddItem(98, 1);
-instruct_50e(17, 0, 0, 0, 104, 1, 0);
-instruct_50e(3, 0, 0, 1, 1, 1, 0);
-instruct_50e(16, 100, 0, 0, 104, 1, 0);
+x[1] = GetRole(0, 104 / 2);
+x[1] = x[1] + 1;
+SetRole(0, 104 / 2, x[1]);
 ModifyEvent(-2, -2, -2, -2, 847, 0, 0, -2, -2, -2, 0, -2, -2);
 exit();
-::label29::
+end;
 Talk("幾天前我見到一個小姑娘長得十分好看，她好像叫什么水笙的．", 72, 0);
 Talk("既然這樣，徒兒去把她抓來", 0, 1);
 ModifyEvent(-2, -2, -2, -2, 848, 0, 0, -2, -2, -2, 0, -2, -2);

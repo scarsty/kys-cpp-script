@@ -10,10 +10,10 @@ Talk("幫他是我的事，你管不著，我就是愿意幫他．", 73, 0);
 Talk("那殺他為小三報仇就是我的事了，你也管不著．", 0, 0);
 Talk("要殺他，行，但你得先打敗我再說．", 73, 0);
 Talk("其實你根本就不是我的對手", 0, 0);
-if TryBattle(5) then goto label60 end;
+if TryBattle(5) == false then
 Dead();
 exit();
-::label60::
+end;
 ModifyEvent(-2, -2, 1, -2, 0, 0, 0, 6374, 6374, 6374, 0, -2, -2);
 LightScene();
 Talk("不打了，又讓鳳天南跑了．姑娘，他到底給了你什么好處你要三番四次的幫他？", 0, 0);

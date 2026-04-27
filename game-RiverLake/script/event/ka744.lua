@@ -8,15 +8,15 @@ Talk("黃幫主，人多欺負人少好像是你的拿手好戲吧？", 0, 1);
 Talk("怎么又是你，你小小年紀就如此之壞，將來長大了可怎么辦？", 56, 0);
 Talk("念在你是一個孕婦的分上，你還是快回去叫郭靖吧！", 0, 1);
 Talk("師娘，我們來救師妹！", 154, 0);
-if TryBattle(128) then goto label50 end;
+if TryBattle(128) == false then
 Dead();
 exit();
-::label50::
+end;
 LightScene();
 Talk("郭伯母，我們來幫你！", 58, 0);
 Talk("小兄弟，我們一起會會這古墓的二位朋友！", 62, 0);
-if TryBattle(129) == false then goto label71 end;
-::label71::
+if TryBattle(129) then
+end;
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

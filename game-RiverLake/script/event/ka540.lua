@@ -11,10 +11,10 @@ Talk("你怎么知道貧僧俗家時的姓名？", 18, 1);
 Talk("你殺你徒弟全家，天理不容今天我就替天行道！", 131, 0);
 Talk("替天行道？呵呵，這不過是你想殺我滅口的理由而已．其實你只要把九陰真經借我一觀，我可以發誓永遠替你保守秘密．但我身后的那個小子能不能不把你偷倚天劍屠龍刀陷害趙敏的事說出來就不一定了！", 18, 1);
 SubMapViewFromTo(32, 35, 32, 48);
-if TryBattle(77) then goto label97 end;
+if TryBattle(77) == false then
 Dead();
 exit();
-::label97::
+end;
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(31, 36);
 LightScene();
@@ -23,13 +23,13 @@ Talk("周姑娘，麻煩你把屠龍刀交出來．", 0, 1);
 Talk("倚天劍，屠龍刀，刀劍相擊早已毀了！", 131, 0);
 Talk("難怪周姑娘的武功如此了得", 0, 1);
 Talk("是否借此事敲詐周芷若一本武功秘籍？", 0, 3);
-if AskRest() then goto  label151 end;
+if AskRest() == false then
 Talk("算了．既然成昆已死，我想謝前輩要屠龍刀也沒用了．你走吧，希望今后把武功用在正地方！", 0, 1);
 DarkScene();
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label151::
+end;
 Talk("周掌門，既然屠龍刀毀了，那么請你交出其中藏有的武功秘籍吧！否則我就把你的事公諸于眾，讓你峨嵋從此無法在武林立足！", 0, 1);
 DarkScene();
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

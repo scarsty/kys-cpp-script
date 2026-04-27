@@ -1,8 +1,8 @@
-if HaveItemBool(184) then goto label0 end;
+if HaveItemBool(184) == false then
 Talk("不行，我不能拋下她們二人不管．", 0, 1);
 WalkFromTo(16, 16, 16, 14);
 exit();
-::label0::
+end;
 DarkScene();
 ModifyEvent(-2, 17, 1, -2, 0, 0, 0, 6066, 6066, 6066, 0, -2, -2);
 ModifyEvent(-2, 18, 1, -2, 0, 0, 0, 6120, 6120, 6120, 0, -2, -2);
@@ -33,7 +33,7 @@ DarkScene();
 ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 7992, 7992, 7992, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
-if InTeam(98) == false then goto label230 end;
+if InTeam(98) then
 Talk("外公．", 124, 4);
 Talk("你也在這．", 57, 5);
 Talk("是啊，我隨這位大哥在江湖上磨練磨練．", 124, 4);
@@ -50,7 +50,7 @@ Talk("師父！", 0, 4);
 Talk("你與那魔頭動手之際，是我弟子，除此之外，卻是我的朋友．你明白么？", 57, 5);
 Talk("得能交上你這位朋友，真是莫大快事．", 0, 4);
 Talk("我和你相遇，也是三生有幸", 57, 5);
-::label230::
+end;
 DarkScene();
 ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
@@ -61,10 +61,10 @@ ModifyEvent(-2, 22, 1, -2, 0, 0, 0, 8444, 8444, 8444, 0, -2, -2);
 LightScene();
 Talk("＜原來李莫愁一直沒走遠．看來這次真的得動手了．＞", 0, 4);
 ZeroAllMP();
-if TryBattle(145) then goto label361 end;
+if TryBattle(145) == false then
 Dead();
 exit();
-::label361::
+end;
 ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 18, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 20, 1, -2, 802, 0, 0, 6066, 6066, 6066, 0, -2, -2);

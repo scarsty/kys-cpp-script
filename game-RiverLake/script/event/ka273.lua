@@ -1,4 +1,4 @@
-if CheckSubMapPic(14, 5, 8302) then goto label0 end;
+if CheckSubMapPic(14, 5, 8302) == false then
 Talk("一", 0, 1);
 Talk("啊！有暗器！", 0, 0);
 AddAttack(0, -5);
@@ -9,8 +9,8 @@ ModifyEvent(-2, 7, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 ModifyEvent(-2, 8, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 LightScene();
 exit();
-::label0::
-if CheckSubMapPic(14, 7, 8302) then goto label82 end;
+end;
+if CheckSubMapPic(14, 7, 8302) == false then
 Talk("二", 0, 1);
 Talk("啊！有暗器！", 0, 0);
 AddAttack(0, -5);
@@ -21,8 +21,8 @@ ModifyEvent(-2, 7, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 ModifyEvent(-2, 8, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 LightScene();
 exit();
-::label82::
-if CheckSubMapPic(14, 8, 8302) then goto label164 end;
+end;
+if CheckSubMapPic(14, 8, 8302) == false then
 Talk("三", 0, 1);
 Talk("啊！有暗器！", 0, 0);
 AddAttack(0, -5);
@@ -33,8 +33,8 @@ ModifyEvent(-2, 7, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 ModifyEvent(-2, 8, -2, -2, 271, 0, 0, 8302, 8302, 8302, 0, -2, -2);
 LightScene();
 exit();
-::label164::
-if CheckSubMapPic(14, 6, 8302) then goto label246 end;
+end;
+if CheckSubMapPic(14, 6, 8302) == false then
 Talk("！！！", 0, 0);
 DarkScene();
 ModifyEvent(-2, 0, 0, -2, 0, 0, 275, 0, 0, 0, 0, -2, -2);
@@ -46,7 +46,7 @@ ModifyEvent(-2, 8, -2, -2, 0, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(-2, 9, -2, -2, 0, 0, 0, 8304, 8304, 8304, 0, -2, -2);
 LightScene();
 exit();
-::label246::
+end;
 Talk("四", 0, 1);
 Talk("啊！有暗器！", 0, 0);
 AddAttack(0, -5);

@@ -1,6 +1,5 @@
-﻿instruct_50e(17, 0, 0, 0, 86, 1, 0);
-instruct_50e(4, 0, 1, 1, 200, 0, 0);
-if (!CheckRoleSexual(256))
+﻿x[1] = GetRole(0, 86 / 2);
+if (!(x[1] <= 200))
 {
     Talk("小兄弟武功不錯，不知道愿不愿意跟苗某切磋切磋？", 3, 0);
     if (!AskBattle())

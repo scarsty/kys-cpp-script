@@ -2,17 +2,17 @@ ModifyEvent(48, 21, 1, -2, 0, 0, 0, 2612, 2612, 2612, 0, -2, -2);
 AddItem(69, 1);
 Talk("你得到武穆遺書了？那就給我吧．", 60, 1);
 Talk("是否將武穆遺書交給歐陽鋒", 0, 3);
-if AskRest() then goto  label28 end;
+if AskRest() == false then
 Talk("你找死．", 60, 1);
-if TryBattle(152) then goto label37 end;
+if TryBattle(152) == false then
 Dead();
 exit();
-::label37::
+end;
 LightScene();
 Talk("我連郭靖、黃蓉、洪七公聯手都不怕還怕你啊．笑話．", 0, 0);
 AddMorality(-3);
 exit();
-::label28::
+end;
 AddItemWithoutHint(69, -1);
 Talk("很好．哈哈哈．", 60, 1);
 Talk("前輩，你之前答應我．．．", 0, 1);

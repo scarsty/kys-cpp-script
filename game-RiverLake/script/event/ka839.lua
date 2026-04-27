@@ -1,7 +1,7 @@
-if InTeam(81) then goto label0 end;
+if InTeam(81) == false then
 Talk("醫一人，殺一人殺一人，醫一人醫人殺人一樣多蝕本生意決不做", 28, 0);
 exit();
-::label0::
+end;
 Talk("你們走了．", 28, 0);
 Talk("平大夫，冒昧的問您一句，為什么你要殺血刀老祖啊？", 0, 1);
 Talk("這個你就不要問了．", 28, 0);

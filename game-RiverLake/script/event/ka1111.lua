@@ -1,49 +1,46 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 26, 1, -2, 0, 0, 0, 6116, 6116, 6116, 0, -2, -2);
 LightScene();
 Talk("師父？", 0, 1);
 Talk("哼！你跟金輪法王合謀害你師叔祖，還有臉回來？今天我就要清理門戶．", 68, 0);
-if TryBattle(227) then goto label28 end;
+if TryBattle(227) == false then
 Dead();
 exit();
 ::label28::
+end;
 ModifyEvent(-2, 25, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("．．．．．．", 0, 1);
 AddItemWithoutHint(76, -1);
 AddItem(198, 1);
-instruct_50e(17, 0, 0, 0, 122, 1, 0);
-instruct_50e(4, 0, 2, 1, 76, 0, 0);
-if CheckRoleSexual(256) == false then goto label97 end;
-instruct_50e(16, 0, 0, 0, 122, -1, 0);
-::label97::
-instruct_50e(0, 10, 126, 0, 0, 0, 0);
+x[1] = GetRole(0, 122 / 2);
+if x[1] == 76 then
+SetRole(0, 122 / 2, -1);
+end;
+x[10] = 126;
 ::label281::
-instruct_50e(17, 10, 0, 0, 10, 1, 0);
-instruct_50e(4, 0, 2, 1, 30, 0, 0);
-if CheckRoleSexual(256) == false then goto label134 end;
-instruct_50e(3, 0, 0, 2, 10, 0, 0);
-instruct_50e(3, 0, 0, 3, 10, 0, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 5, 2, 20, 0);
-instruct_50e(3, 0, 0, 6, 3, 20, 0);
+x[1] = GetRole(0, x[10] / 2);
+if x[1] == 30 then
+x[2] = x[10] + 0;
+x[3] = x[10] + 0;
+x[2] = x[2] + 2;
+x[5] = x[2] + 20;
+x[6] = x[3] + 20;
 ::label252::
-instruct_50e(17, 10, 0, 0, 2, 4, 0);
-instruct_50e(16, 110, 0, 0, 3, 4, 0);
-instruct_50e(17, 10, 0, 0, 5, 7, 0);
-instruct_50e(16, 110, 0, 0, 6, 7, 0);
-instruct_50e(3, 0, 0, 3, 3, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(3, 0, 0, 6, 6, 2, 0);
-instruct_50e(3, 0, 0, 5, 5, 2, 0);
-instruct_50e(4, 0, 4, 2, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label252 end;
-instruct_50e(16, 10, 0, 0, 3, 0, 0);
-::label134::
-instruct_50e(3, 0, 0, 10, 10, 2, 0);
-instruct_50e(4, 0, 4, 10, 146, 0, 0);
-if CheckRoleSexual(256) == false then goto label281 end;
+x[4] = GetRole(0, x[2] / 2);
+SetRole(0, x[3] / 2, x[4]);
+x[7] = GetRole(0, x[5] / 2);
+SetRole(0, x[6] / 2, x[7]);
+x[3] = x[3] + 2;
+x[2] = x[2] + 2;
+x[6] = x[6] + 2;
+x[5] = x[5] + 2;
+if x[2] < 146 then goto label252 end;
+SetRole(0, x[3] / 2, 0);
+end;
+x[10] = x[10] + 2;
+if x[10] < 146 then goto label281 end;
 OldSetScenePosition(32, 56);
-instruct_50e(16, 0, 2, 19, 18, 1, 0);
+SetSubmapInfo(19, 18 / 2, 1);
 ModifyEvent(80, 83, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

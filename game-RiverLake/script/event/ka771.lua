@@ -1,165 +1,157 @@
-if CheckEnoughMoney(500) then goto label0 end;
+﻿if CheckEnoughMoney(500) == false then
 Talk("剛才忘了說，升級一次武器無論好壞，都要收手工費５００兩．", 220, 0);
 exit();
-::label0::
-if HaveItemBool(172) then goto label11 end;
+end;
+if HaveItemBool(172) == false then
 Talk("只要你滿足升級武器的條件我就會問你是否要升級武器", 220, 0);
 exit();
-::label11::
-if HaveItemBool(124) == false then goto label23 end;
+end;
+if HaveItemBool(124) then
 Talk("鳳鳴劍升級成龍吟劍．", 220, 1);
-if AskRest() then goto  label32 end;
+if AskRest() == false then
 Talk("先不用，謝謝．", 0, 1);
 exit();
-::label32::
+end;
 Talk("好啊．", 0, 1);
 DarkScene();
 AddItemWithoutHint(174, -500);
 AddItemWithoutHint(172, -1);
 AddItemWithoutHint(124, -1);
-instruct_50e(19, 0, 0, 1, 0, 0, 0);
-instruct_50e(19, 0, 1, 2, 0, 0, 0);
-instruct_50e(19, 0, 2, 3, 0, 0, 0);
-instruct_50e(19, 0, 3, 4, 0, 0, 0);
-instruct_50e(19, 0, 4, 5, 0, 0, 0);
-instruct_50e(19, 0, 5, 6, 0, 0, 0);
-instruct_50e(1, 0, 0, 100, 1, 0, 0);
-instruct_50e(1, 10, 0, 100, 2, 1, 0);
-instruct_50e(1, 10, 0, 100, 3, 2, 0);
-instruct_50e(1, 10, 0, 100, 4, 3, 0);
-instruct_50e(1, 10, 0, 100, 5, 4, 0);
-instruct_50e(1, 10, 0, 100, 6, 5, 0);
-instruct_50e(1, 10, 0, 100, 7, 6, 0);
-instruct_50e(0, 10, 1, 0, 0, 0, 0);
+x[1] = GetTeam(0);
+x[2] = GetTeam(1);
+x[3] = GetTeam(2);
+x[4] = GetTeam(3);
+x[5] = GetTeam(4);
+x[6] = GetTeam(5);
+x[100 + 1] = 0;
+x[100 + 2] = x[1];
+x[100 + 3] = x[2];
+x[100 + 4] = x[3];
+x[100 + 5] = x[4];
+x[100 + 6] = x[5];
+x[100 + 7] = x[6];
+x[10] = 1;
 ::label225::
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(17, 1, 0, 30, 46, 20, 0);
-instruct_50e(4, 0, 2, 20, 124, 0, 0);
-if CheckRoleSexual(256) == false then goto label196 end;
-instruct_50e(16, 1, 0, 30, 46, -1, 0);
-::label196::
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label225 end;
+x[30] = x[100+ x[10]];
+x[20] = GetRole(x[30], 46 / 2);
+if x[20] == 124 then
+SetRole(x[30], 46 / 2, -1);
+end;
+x[10] = x[10] + 1;
+if x[10] <= 7 then goto label225 end;
 LightScene();
 AddItem(123, 1);
 exit();
-::label23::
-if HaveItemBool(125) == false then goto label239 end;
+end;
+if HaveItemBool(125) then
 Talk("紫云劍升級成鳳鳴劍．", 220, 1);
-if AskRest() then goto  label248 end;
+if AskRest() == false then
 Talk("先不用，謝謝．", 0, 1);
 exit();
-::label248::
+end;
 Talk("好啊．", 0, 1);
 DarkScene();
 AddItemWithoutHint(174, -500);
 AddItemWithoutHint(172, -1);
 AddItemWithoutHint(125, -1);
-instruct_50e(19, 0, 0, 1, 0, 0, 0);
-instruct_50e(19, 0, 1, 2, 0, 0, 0);
-instruct_50e(19, 0, 2, 3, 0, 0, 0);
-instruct_50e(19, 0, 3, 4, 0, 0, 0);
-instruct_50e(19, 0, 4, 5, 0, 0, 0);
-instruct_50e(19, 0, 5, 6, 0, 0, 0);
-instruct_50e(1, 0, 0, 100, 1, 0, 0);
-instruct_50e(1, 10, 0, 100, 2, 1, 0);
-instruct_50e(1, 10, 0, 100, 3, 2, 0);
-instruct_50e(1, 10, 0, 100, 4, 3, 0);
-instruct_50e(1, 10, 0, 100, 5, 4, 0);
-instruct_50e(1, 10, 0, 100, 6, 5, 0);
-instruct_50e(1, 10, 0, 100, 7, 6, 0);
-instruct_50e(0, 10, 1, 0, 0, 0, 0);
+x[1] = GetTeam(0);
+x[2] = GetTeam(1);
+x[3] = GetTeam(2);
+x[4] = GetTeam(3);
+x[5] = GetTeam(4);
+x[6] = GetTeam(5);
+x[100 + 1] = 0;
+x[100 + 2] = x[1];
+x[100 + 3] = x[2];
+x[100 + 4] = x[3];
+x[100 + 5] = x[4];
+x[100 + 6] = x[5];
+x[100 + 7] = x[6];
+x[10] = 1;
 ::label441::
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(17, 1, 0, 30, 46, 20, 0);
-instruct_50e(4, 0, 2, 20, 125, 0, 0);
-if CheckRoleSexual(256) == false then goto label412 end;
-instruct_50e(16, 1, 0, 30, 46, -1, 0);
-::label412::
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label441 end;
+x[30] = x[100+ x[10]];
+x[20] = GetRole(x[30], 46 / 2);
+if x[20] == 125 then
+SetRole(x[30], 46 / 2, -1);
+end;
+x[10] = x[10] + 1;
+if x[10] <= 7 then goto label441 end;
 LightScene();
 AddItem(124, 1);
 exit();
-::label239::
-if HaveItemBool(126) == false then goto label455 end;
+end;
+if HaveItemBool(126) then
 Talk("紅霞劍升級成紫云劍．", 220, 1);
-if AskRest() then goto  label464 end;
+if AskRest() == false then
 Talk("先不用，謝謝．", 0, 1);
 exit();
-::label464::
+end;
 Talk("好啊．", 0, 1);
 DarkScene();
 AddItemWithoutHint(174, -500);
 AddItemWithoutHint(172, -1);
 AddItemWithoutHint(126, -1);
-instruct_50e(19, 0, 0, 1, 0, 0, 0);
-instruct_50e(19, 0, 1, 2, 0, 0, 0);
-instruct_50e(19, 0, 2, 3, 0, 0, 0);
-instruct_50e(19, 0, 3, 4, 0, 0, 0);
-instruct_50e(19, 0, 4, 5, 0, 0, 0);
-instruct_50e(19, 0, 5, 6, 0, 0, 0);
-instruct_50e(1, 0, 0, 100, 1, 0, 0);
-instruct_50e(1, 10, 0, 100, 2, 1, 0);
-instruct_50e(1, 10, 0, 100, 3, 2, 0);
-instruct_50e(1, 10, 0, 100, 4, 3, 0);
-instruct_50e(1, 10, 0, 100, 5, 4, 0);
-instruct_50e(1, 10, 0, 100, 6, 5, 0);
-instruct_50e(1, 10, 0, 100, 7, 6, 0);
-instruct_50e(0, 10, 1, 0, 0, 0, 0);
+x[1] = GetTeam(0);
+x[2] = GetTeam(1);
+x[3] = GetTeam(2);
+x[4] = GetTeam(3);
+x[5] = GetTeam(4);
+x[6] = GetTeam(5);
+x[100 + 1] = 0;
+x[100 + 2] = x[1];
+x[100 + 3] = x[2];
+x[100 + 4] = x[3];
+x[100 + 5] = x[4];
+x[100 + 6] = x[5];
+x[100 + 7] = x[6];
+x[10] = 1;
 ::label657::
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(17, 1, 0, 30, 46, 20, 0);
-instruct_50e(4, 0, 2, 20, 126, 0, 0);
-if CheckRoleSexual(256) == false then goto label628 end;
-instruct_50e(16, 1, 0, 30, 46, -1, 0);
-::label628::
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label657 end;
+x[30] = x[100+ x[10]];
+x[20] = GetRole(x[30], 46 / 2);
+if x[20] == 126 then
+SetRole(x[30], 46 / 2, -1);
+end;
+x[10] = x[10] + 1;
+if x[10] <= 7 then goto label657 end;
 LightScene();
 AddItem(125, 1);
 exit();
-::label455::
-if HaveItemBool(127) == false then goto label671 end;
+end;
+if HaveItemBool(127) then
 Talk("碧水劍升級成紅霞劍．", 220, 1);
-if AskRest() then goto  label680 end;
+if AskRest() == false then
 Talk("先不用，謝謝．", 0, 1);
 exit();
-::label680::
+end;
 Talk("好啊．", 0, 1);
 DarkScene();
 AddItemWithoutHint(174, -500);
 AddItemWithoutHint(172, -1);
 AddItemWithoutHint(127, -1);
-instruct_50e(19, 0, 0, 1, 0, 0, 0);
-instruct_50e(19, 0, 1, 2, 0, 0, 0);
-instruct_50e(19, 0, 2, 3, 0, 0, 0);
-instruct_50e(19, 0, 3, 4, 0, 0, 0);
-instruct_50e(19, 0, 4, 5, 0, 0, 0);
-instruct_50e(19, 0, 5, 6, 0, 0, 0);
-instruct_50e(1, 0, 0, 100, 1, 0, 0);
-instruct_50e(1, 10, 0, 100, 2, 1, 0);
-instruct_50e(1, 10, 0, 100, 3, 2, 0);
-instruct_50e(1, 10, 0, 100, 4, 3, 0);
-instruct_50e(1, 10, 0, 100, 5, 4, 0);
-instruct_50e(1, 10, 0, 100, 6, 5, 0);
-instruct_50e(1, 10, 0, 100, 7, 6, 0);
-instruct_50e(0, 10, 1, 0, 0, 0, 0);
+x[1] = GetTeam(0);
+x[2] = GetTeam(1);
+x[3] = GetTeam(2);
+x[4] = GetTeam(3);
+x[5] = GetTeam(4);
+x[6] = GetTeam(5);
+x[100 + 1] = 0;
+x[100 + 2] = x[1];
+x[100 + 3] = x[2];
+x[100 + 4] = x[3];
+x[100 + 5] = x[4];
+x[100 + 6] = x[5];
+x[100 + 7] = x[6];
+x[10] = 1;
 ::label873::
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(17, 1, 0, 30, 46, 20, 0);
-instruct_50e(4, 0, 2, 20, 127, 0, 0);
-if CheckRoleSexual(256) == false then goto label844 end;
-instruct_50e(16, 1, 0, 30, 46, -1, 0);
-::label844::
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label873 end;
+x[30] = x[100+ x[10]];
+x[20] = GetRole(x[30], 46 / 2);
+if x[20] == 127 then
+SetRole(x[30], 46 / 2, -1);
+end;
+x[10] = x[10] + 1;
+if x[10] <= 7 then goto label873 end;
 LightScene();
 AddItem(126, 1);
 exit();
-::label671::
+end;
 Talk("剛才忘了說，升級一次武器無論好壞，都要收手工費５００兩．", 220, 0);

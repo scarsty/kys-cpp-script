@@ -1,9 +1,9 @@
-if HaveItemBool(120) then goto label0 end;
+if HaveItemBool(120) == false then
 exit();
-::label0::
-if InTeam(230) then goto label5 end;
+end;
+if InTeam(230) == false then
 exit();
-::label5::
+end;
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 11, 1, -2, 0, 0, 0, 6748, 6748, 6748, 0, -2, -2);
@@ -19,7 +19,7 @@ WalkFromTo(49, 24, 49, 30);
 WalkFromTo(49, 30, 46, 30);
 Talk("．．．．．．", 0, 1);
 Talk("正好拿來練功．", 210, 0);
-if TryBattle(218) then goto label110 end;
+if TryBattle(218) == false then
 ModifyEvent(-2, 11, 1, -2, 0, 0, 0, 6744, 6744, 6744, 0, -2, -2);
 ModifyEvent(-2, 12, 1, -2, 0, 0, 0, 6744, 6744, 6744, 0, -2, -2);
 ModifyEvent(-2, 13, 1, -2, 0, 0, 0, 7014, 7014, 7014, 0, -2, -2);
@@ -45,7 +45,7 @@ LightScene();
 Talk("他們去西夏了．我要回去找太師父嗎．", 0, 1);
 LeaveTeam(230);
 exit();
-::label110::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();

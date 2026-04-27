@@ -2,9 +2,8 @@
 {
     exit();
 }
-instruct_50e(17, 0, 0, 320, 36, 1, 0);
-instruct_50e(4, 0, 4, 1, 2, 0, 0);
-if (!CheckRoleSexual(256))
+x[1] = GetRole(320, 36 / 2);
+if (!(x[1] >= 2))
 {
     exit();
 }

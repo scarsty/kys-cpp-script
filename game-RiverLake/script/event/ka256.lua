@@ -13,9 +13,9 @@ WalkFromTo(33, 36, 33, 31);
 Talk("這位兄弟，到底發生什么事了？", 0, 0);
 Talk("我們這次大會是為了選出一個盟主，帶領大家共同抵抗蒙古，哪知這蒙古國師金輪法王也來湊熱鬧，說好跟我們比三場，哪方先贏兩場就由哪方當盟主，第一場沒想到這金輪法王的弟子霍都用暗器偷襲，剩下兩場我們必須得勝，可是黃幫主身懷有孕，我們唯一只剩下郭大俠有必勝的把握，如果郭大俠這場上，那我們沒人能對付得了金輪法王，而除了郭大俠又沒人有十足的把握勝過達爾巴．", 93, 0);
 Talk("＜難怪郭大俠不讓黃幫主上呢．＞", 0, 0);
-if CheckSubMapPic(60, 2, 8560) == false then goto label78 end;
+if CheckSubMapPic(60, 2, 8560) then
 Talk("幫郭靖按”Ｙ”幫霍都按”Ｎ”", 0, 3);
-if AskRest() then goto  label78 end;
+if AskRest() == false then
 SetRoleMagic(55, 0, 2, 500);
 SetRoleMagic(58, 0, 40, 500);
 SetRoleMagic(58, 1, 18, 500);
@@ -36,25 +36,25 @@ Talk("他們是外族，想入侵我們中原，你怎么反而幫他們？", 56
 Talk("黃幫主，這就是你的不是了就他們這幾個人怎么入侵中原，明明是你們想找這位大師和他的徒弟們麻煩，我實在看不下去了，不是說比三場嗎？好，就由我一人單獨會你們那邊的三人！", 0, 1);
 Talk("靖哥哥，這小子看來是非幫金輪法王不可了！", 56, 0);
 Talk("好，那我就去會會他！", 55, 0);
-if TryBattle(125) then goto label212 end;
+if TryBattle(125) == false then
 Dead();
 exit();
-::label212::
+end;
 LightScene();
 Talk("看來郭大俠也不過如此！", 0, 1);
 Talk("郭伯伯，我來會他！", 58, 0);
 Talk("過兒？你怎么來了，你要小心啊！", 55, 0);
-if TryBattle(126) then goto label238 end;
+if TryBattle(126) == false then
 Dead();
 exit();
-::label238::
+end;
 LightScene();
 Talk("我已經勝利兩場了，第三場不用比了把？", 0, 1);
 Talk("過兒，你怎么受傷了？是誰干的？", 59, 0);
 Talk("姑姑，我終于又見到你了．", 58, 0);
 Talk("過兒，是他打的你嗎？", 59, 0);
-if TryBattle(127) == false then goto label269 end;
-::label269::
+if TryBattle(127) then
+end;
 LightScene();
 Talk("小朋友，他們中原人只會人多欺負人少，我們走！", 62, 1);
 DarkScene();
@@ -126,11 +126,12 @@ SetRoleMagic(58, 4, 55, 900);
 SetRoleMagic(58, 3, 66, 900);
 SetRoleMagic(59, 0, 41, 900);
 AddMorality(-5);
-if CheckSubMapPic(5, 4, 8216) == false then goto label1118 end;
+if CheckSubMapPic(5, 4, 8216) then
 ModifyEvent(5, 8, 0, -2, 0, 0, 749, 0, 0, 0, 0, -2, -2);
-::label1118::
+end;
 exit();
-::label78::
+end;
+end;
 Add3EventNum(57, 18, 0, 0, 3);
 Talk("郭大俠，我去會會這惡僧．", 0, 0);
 DarkScene();
@@ -146,10 +147,10 @@ Talk("這個．．．", 55, 0);
 Talk("不錯，就是這位小兄弟出場小兄弟，你要小心．", 56, 0);
 Talk("放心吧．", 0, 0);
 Talk("好！既然你們不怕輸，誰上都無所謂．", 183, 0);
-if TryBattle(28) then goto label1209 end;
+if TryBattle(28) == false then
 Dead();
 exit();
-::label1209::
+end;
 ModifyEvent(-2, 43, -2, -2, 0, 0, 0, -2, -2, -2, 0, 33, 26);
 ModifyEvent(-2, 45, -2, -2, 0, 0, 0, -2, -2, -2, 0, 31, 27);
 LightScene();
@@ -157,10 +158,10 @@ Talk("現在是平局，勝負就看最后一場了．", 56, 0);
 Talk("好，那最后一場就由我來上不知那位英雄跟老衲一較高下？", 62, 0);
 Talk("靖哥哥小心．", 56, 0);
 Talk("金輪法王，我來會會你．", 55, 0);
-if TryBattle(29) then goto label1269 end;
+if TryBattle(29) == false then
 Dead();
 exit();
-::label1269::
+end;
 LightScene();
 Talk("算你們厲害．", 62, 0);
 Talk("各位慢走．", 56, 0);

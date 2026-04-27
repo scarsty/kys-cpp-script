@@ -1,6 +1,6 @@
-if isUsingItem(194) then goto label0 end;
+if isUsingItem(194) == false then
 exit();
-::label0::
+end;
 Talk("您就是馬四哥吧？", 0, 0);
 Talk("不錯．大家都叫我馬老四．", 92, 0);
 Talk("是這樣的．酒館里有位朋友叫我給您送一瓶酒來．", 0, 0);

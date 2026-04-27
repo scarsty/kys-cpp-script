@@ -5,10 +5,10 @@ WalkFromTo(37, 15, 38, 15);
 WalkFromTo(38, 15, 38, 14);
 Talk("二師兄，你為什么偷我的秘笈？", 0, 1);
 Talk("哼哼，被你發現了嗎？", 206, 0);
-if TryBattle(204) then goto label36 end;
+if TryBattle(204) == false then
 Dead();
 exit();
-::label36::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(27, 2, 1, -2, 1036, -2, -2, 5706, 5706, 5706, -2, -2, -2);

@@ -10,8 +10,8 @@ WalkFromTo(32, 48, 32, 35);
 WalkFromTo(32, 35, 31, 35);
 WalkFromTo(31, 35, 31, 36);
 SetTowards(3);
-if TryBattle(68) == false then goto label63 end;
-::label63::
+if TryBattle(68) then
+end;
 LightScene();
 Talk("小兄弟，他們人多，我們撤！", 14, 0);
 ModifyEvent(-2, 2, 1, -2, 0, 0, 0, -2, -2, -2, 0, -2, -2);

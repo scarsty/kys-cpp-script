@@ -1,20 +1,18 @@
-﻿instruct_50e(0, 10, 126, 0, 0, 0, 0);
+﻿x[10] = 126;
 do
 {
-    instruct_50e(4, 0, 5, 10, 144, 0, 0);
-    if (CheckRoleSexual(256))
+    if (x[10] > 144)
     {
         Talk("東海疏狂猶目斷，西京留守未心開．去年奉敕三冬往，今夏齋書九月來．北地官榮何日罷，南山道隱幾時回．直須早作彭城??計，燕國家風自不隤．", 68, 0);
         exit();
     }
-    instruct_50e(17, 10, 0, 0, 10, 1, 0);
-    instruct_50e(4, 0, 2, 1, 30, 0, 0);
-    instruct_50e(3, 0, 0, 10, 10, 2, 0);
-} while (!CheckRoleSexual(256));
-instruct_50e(3, 0, 0, 10, 10, 18, 0);
-instruct_50e(17, 10, 0, 0, 10, 30, 0);
-instruct_50e(4, 0, 4, 30, 600, 0, 0);
-if (!CheckRoleSexual(256))
+x[1] = GetRole(0, x[10] / 2);
+jump_flag = (x[1] == 30);
+x[10] = x[10] + 2;
+} while (!jump_flag);
+x[10] = x[10] + 18;
+x[30] = GetRole(0, x[10] / 2);
+if (!(x[30] >= 600))
 {
     Talk("記得要勤加練功．", 68, 0);
     exit();

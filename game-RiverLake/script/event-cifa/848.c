@@ -1,4 +1,4 @@
-if (InTeam(81))
+﻿if (InTeam(81))
 {
     Talk("師父說的是不是她？", 0, 1);
     Talk("不錯，就是這個小丫頭．", 72, 0);
@@ -20,9 +20,9 @@ if (InTeam(81))
     DarkScene();
     LightScene();
     AddItem(98, 1);
-    instruct_50e(17, 0, 0, 0, 104, 1, 0);
-    instruct_50e(3, 0, 0, 1, 1, 1, 0);
-    instruct_50e(16, 100, 0, 0, 104, 1, 0);
+x[1] = GetRole(0, 104 / 2);
+x[1] = x[1] + 1;
+SetRole(0, 104 / 2, x[1]);
     ModifyEvent(-2, -2, -2, -2, 847, 0, 0, -2, -2, -2, 0, -2, -2);
     exit();
 }

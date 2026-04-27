@@ -14,18 +14,18 @@ Talk("你比武輸了就用這種方法，還配稱一代宗師嗎？", 56, 0);
 Talk("我只是想見識見識黃幫主的武功而已．", 62, 0);
 Talk("＜黃幫主懷有身孕，看來我的幫幫她，再說好像有本書在她手里．＞大和尚，你搶人孩子，我打抱不平，你先勝過我再說別的吧．", 0, 0);
 Talk("臭小子，先過了我們這關再說吧．", 183, 0);
-if TryBattle(30) then goto label83 end;
+if TryBattle(30) == false then
 Dead();
 exit();
-::label83::
+end;
 LightScene();
 Talk("這是你逼我出手的．", 62, 0);
 Talk("大和尚，你要是輸給我就放了黃幫主的女兒．", 0, 0);
 Talk("好！你要輸了就永遠別再跟我搗亂．", 62, 0);
-if TryBattle(31) then goto label109 end;
+if TryBattle(31) == false then
 Dead();
 exit();
-::label109::
+end;
 LightScene();
 Talk("你的武功這么爛還配跟黃幫主比試嗎？還是快走吧．", 0, 0);
 Talk("哼！", 62, 0);

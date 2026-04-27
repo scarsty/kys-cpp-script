@@ -1,22 +1,20 @@
-﻿instruct_50e(17, 0, 0, 320, 30, 1, 0);
-instruct_50e(4, 0, 0, 1, 100, 0, 0);
-if (!CheckRoleSexual(256))
+﻿x[1] = GetRole(320, 30 / 2);
+if (!(x[1] < 100))
 {
     ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
     exit();
 }
-instruct_50e(17, 0, 0, 320, 32, 2, 0);
-instruct_50e(4, 0, 2, 2, 10, 0, 0);
-if (!CheckRoleSexual(256))
+x[2] = GetRole(320, 32 / 2);
+if (!(x[2] == 10))
 {
-    instruct_50e(3, 0, 0, 1, 1, 1, 0);
-    instruct_50e(3, 0, 0, 2, 2, 1, 0);
-    instruct_50e(16, 100, 0, 320, 30, 1, 0);
-    instruct_50e(16, 100, 0, 320, 32, 2, 0);
+x[1] = x[1] + 1;
+x[2] = x[2] + 1;
+SetRole(320, 30 / 2, x[1]);
+SetRole(320, 32 / 2, x[2]);
     exit();
 }
-instruct_50e(3, 0, 0, 1, 1, 1, 0);
-instruct_50e(0, 2, 0, 0, 0, 0, 0);
-instruct_50e(16, 100, 0, 320, 30, 1, 0);
-instruct_50e(16, 100, 0, 320, 32, 2, 0);
+x[1] = x[1] + 1;
+x[2] = 0;
+SetRole(320, 30 / 2, x[1]);
+SetRole(320, 32 / 2, x[2]);
 AddItem(36, 1);

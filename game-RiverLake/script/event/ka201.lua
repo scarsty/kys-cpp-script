@@ -2,7 +2,7 @@ Talk("原來是你抓了段譽．", 0, 0);
 Talk("你放心吧，我是不會傷害他的，只要他同意拜我為師，我不但放了他，還會把我會的全教給他．", 44, 0);
 Talk("世上哪有你這樣收徒弟的．", 0, 0);
 Talk("我岳老二辦事哪容你這小鬼搗亂？", 44, 0);
-if AskBattle() then goto label20 end;
+if AskBattle() == false then
 Talk("前輩別生氣嗎，其實我的意思是段譽不識好歹，不如你把他放了，收我為徒啊．", 0, 0);
 Talk("你？我岳老二收徒是要看資質的我看看你的后腦不錯，卻是很想我，比段譽那個小子還像，那為師就把生平絕學全教給你．", 44, 0);
 DarkScene();
@@ -23,12 +23,12 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(-2, 1, 48, 17, 0);
 LightScene();
 exit();
-::label20::
+end;
 Talk("岳老二？沒聽說過，我只聽說過岳老三．", 0, 0);
-if TryBattle(21) then goto label124 end;
+if TryBattle(21) == false then
 Dead();
 exit();
-::label124::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(-2, 1, 48, 17, 0);
 LightScene();

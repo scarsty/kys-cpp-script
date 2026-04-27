@@ -5,12 +5,12 @@ Talk("．．．．．．", 195, 0);
 Talk("快把金蛇錐和秘籍放回去！", 25, 1);
 Talk("．．．．．．", 195, 0);
 Talk("幫夏雪宜請按”Ｙ”幫五毒教女子按”Ｎ”", 0, 3);
-if AskRest() then goto  label33 end;
+if AskRest() == false then
 Talk("兄臺，你這樣做恐怕有些不應該吧？", 0, 1);
-if TryBattle(122) then goto label42 end;
+if TryBattle(122) == false then
 Dead();
 exit();
-::label42::
+end;
 ModifyEvent(-2, 0, 1, -2, 736, 0, 0, 4734, 4734, 4734, 0, -2, -2);
 ModifyEvent(-2, 1, 1, -2, 737, 0, 0, 3498, 3498, 3498, 0, -2, -2);
 ModifyEvent(-2, 2, 1, -2, 738, 0, 0, 2606, 2606, 2606, 0, -2, -2);
@@ -27,12 +27,12 @@ ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(37, 5, 1, -2, 739, 0, 0, 6804, 6804, 6804, 0, -2, -2);
 LightScene();
 exit();
-::label33::
+end;
 Talk("兄臺，我來幫你．", 0, 1);
-if TryBattle(121) then goto label185 end;
+if TryBattle(121) == false then
 Dead();
 exit();
-::label185::
+end;
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

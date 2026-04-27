@@ -1,11 +1,11 @@
-if InTeam(28) then goto label0 end;
+﻿if InTeam(28) == false then
 exit();
-::label0::
+end;
 Talk("用麥冬、當歸、茯苓、甘草羌活可以配出鎮心理氣丸！", 28, 0);
-if AskRest() then goto  label11 end;
+if AskRest() == false then
 exit();
-::label11::
-instruct_50e(1, 3, 5, 9, 10, 7, 0);
+end;
+x[9 + x[10]] = x[7];
 Talk("原料好像不夠！", 0, 0);
 exit();
 Talk("我看看，這個應該加一錢，這個應該加．．．．．．", 28, 1);

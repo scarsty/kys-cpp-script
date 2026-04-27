@@ -1,7 +1,7 @@
 Talk("這是五毒教的鎮教之寶，是否要拿？", 0, 3);
-if AskRest() then goto  label4 end;
+if AskRest() == false then
 exit();
-::label4::
+end;
 ModifyEvent(-2, -2, 1, -2, 0, 0, 0, 4736, 4736, 4736, 0, -2, -2);
 PlayAnimation(-1, 7864, 7964);
 DarkScene();

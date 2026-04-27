@@ -1,7 +1,7 @@
 Talk("是否住宿？", 0, 3);
-if AskRest() then goto  label4 end;
+if AskRest() == false then
 exit();
-::label4::
+end;
 Talk("大較？到底是什么東西啊．", 0, 1);
 DarkScene();
 Rest();

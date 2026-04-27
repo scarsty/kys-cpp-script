@@ -5,7 +5,7 @@ LightScene();
 Talk("小子！快把你保的鏢交出來！", 207, 0);
 Talk("我既然選擇了保這趟鏢，就要把鏢送到目的地！", 0, 1);
 Talk("那就讓你看看我的厲害！", 207, 0);
-if TryBattle(217) == false then goto label47 end;
+if TryBattle(217) then
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("這些是什么人啊？怎么還有這么厲害的劫道的？", 0, 1);
@@ -23,7 +23,7 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(40, 29, -2, -2, 1051, -2, -2, -2, -2, -2, 0, 47, 30);
 LightScene();
 exit();
-::label47::
+end;
 LightScene();
 Talk("哼，不知天高地厚的小子，快把那個人交出來．", 207, 0);
 Talk("那邊護送的人可是老三？", 5, 0);

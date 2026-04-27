@@ -35,10 +35,10 @@ Talk("云．．．云兒，是你？", 133, 0);
 Talk("是，師父，正是云兒．", 37, 0);
 Talk("云兒，幸虧你及時趕到，救了師父的性命．咦，那邊有誰來了？是芳兒嗎？", 133, 0);
 Talk("狄云，小心．", 0, 0);
-if TryBattle(18) then goto label242 end;
+if TryBattle(18) == false then
 Dead();
 exit();
-::label242::
+end;
 OldSetScenePosition(12, 13);
 LightScene();
 Talk("師．．．師父．．．弟子犯了什么罪，你要殺我？", 37, 0);

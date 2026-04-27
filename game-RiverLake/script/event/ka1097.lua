@@ -1,16 +1,16 @@
-if HaveItemBool(120) then goto label0 end;
+﻿if HaveItemBool(120) == false then
 exit();
-::label0::
-if HaveItemBool(66) then goto label5 end;
+end;
+if HaveItemBool(66) == false then
 exit();
-::label5::
+end;
 DarkScene();
 ModifyEvent(-2, 28, 1, -2, 0, 0, 0, 7020, 7020, 7020, 0, -2, -2);
 LightScene();
 Talk("站住！", 212, 0);
 Talk("又是你．．．", 0, 1);
 Talk("這次我不會輸了．", 212, 0);
-if TryBattle(220) then goto label44 end;
+if TryBattle(220) == false then
 LightScene();
 Talk("看來武當派的弟子也不怎么樣啊．", 212, 0);
 Talk("．．．．．．", 0, 1);
@@ -19,18 +19,18 @@ ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label44::
+end;
 LightScene();
 Talk("又輸了．", 212, 0);
 Talk("．．．．．．", 0, 1);
 Talk("您的武功真是太厲害了．我還是打不過你．", 212, 0);
-if CheckRoleMorality(0, 80, 100) then goto label113 end;
+if CheckRoleMorality(0, 80, 100) == false then
 DarkScene();
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label113::
+end;
 Talk("你為什么要三番五次的找我麻煩？", 0, 1);
 Talk("其實我一直想拜入武當門下可惜沒有機會．", 212, 0);
 Talk("那你找我做什么？", 0, 1);
@@ -54,21 +54,20 @@ Talk("那應該叫什么名字啊？", 212, 0);
 Talk("我的太師父叫三”峰”，那我師父沒我太師父厲害，應該叫”二”，我應該叫”一”，那你．．．就叫”半”吧．", 0, 1);
 Talk("趙半山？趙半山！這名字真的不錯．以后我就叫趙半山了．", 212, 0);
 Talk("很好，我再教你一套武當派最頂級的拳法，你看好了．", 0, 1);
-instruct_50e(0, 1, 8, 0, 0, 0, 0);
-instruct_50e(0, 2, 18, 0, 0, 0, 0);
-instruct_50e(17, 10, 0, 268, 2, 2000, 0);
+x[1] = 8;
+x[2] = 18;
+x[2000] = GetRole(268, x[2] / 2);
 ::label333::
-instruct_50e(16, 110, 0, 268, 1, 2000, 0);
-instruct_50e(3, 0, 0, 1, 1, 2, 0);
-instruct_50e(3, 0, 0, 2, 2, 2, 0);
-instruct_50e(17, 10, 0, 268, 2, 2000, 0);
-instruct_50e(4, 0, 2, 2000, 0, 0, 0);
-if CheckRoleSexual(256) == false then goto label333 end;
+SetRole(268, x[1] / 2, x[2000]);
+x[1] = x[1] + 2;
+x[2] = x[2] + 2;
+x[2000] = GetRole(268, x[2] / 2);
+if x[2000] ~= 0 then goto label333 end;
 DarkScene();
 LightScene();
 Talk("以柔克剛．．．", 212, 0);
 SetRoleMagic(268, 0, 20, 0);
-if TeamIsFull() == false then goto label353 end;
+if TeamIsFull() then
 Talk("師父，你的隊伍滿了，那我先回武當派了．", 212, 0);
 DarkScene();
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -76,7 +75,7 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(43, 46, 1, -2, 68, 0, 0, 7020, 7020, 7020, 0, -2, -2);
 LightScene();
 exit();
-::label353::
+end;
 Join(268);
 DarkScene();
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

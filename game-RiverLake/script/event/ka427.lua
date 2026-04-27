@@ -6,10 +6,10 @@ Talk("想抓住我？沒那么容易！", 127, 0);
 ZeroAllMP();
 SetRoleUsePoison(102, 100);
 Talk("臭小子，竟然暗算我？", 0, 0);
-if TryBattle(59) then goto label46 end;
+if TryBattle(59) == false then
 Dead();
 exit();
-::label46::
+end;
 LightScene();
 Talk("走！跟我回雪山派！", 0, 0);
 Talk("不要啊．大俠饒命啊．回去師父會殺了我的．", 127, 0);

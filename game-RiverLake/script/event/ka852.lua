@@ -1,6 +1,6 @@
-if CheckRoleMorality(0, 60, 100) then goto label0 end;
+if CheckRoleMorality(0, 60, 100) == false then
 exit();
-::label0::
+end;
 DarkScene();
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -17,17 +17,17 @@ OldSetScenePosition(13, 15);
 SetTowards(3);
 LightScene();
 Talk("喂，你們怎么兩個欺負一個", 0, 4);
-if TryBattle(162) then goto label117 end;
+if TryBattle(162) == false then
 Dead();
 exit();
-::label117::
+end;
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(13, 16);
 SetTowards(0);
 LightScene();
 Talk("這位前輩，你的傷怎么樣？我來給你包好了傷口．", 0, 5);
-if CheckRoleMorality(0, 85, 100) then goto label168 end;
+if CheckRoleMorality(0, 85, 100) == false then
 Talk("不．．．不用了多謝．．．", 231, 4);
 Talk("前輩．．．＜他死了．＞", 0, 5);
 DarkScene();
@@ -39,7 +39,7 @@ SetTowards(2);
 LightScene();
 AddMorality(1);
 exit();
-::label168::
+end;
 Talk("不．．．不用了！我袋里．．．有些泥人兒．．．給了你．．．你罷．．．", 231, 4);
 Talk("前輩．．．＜他死了．＞", 0, 5);
 AddItem(41, 1);

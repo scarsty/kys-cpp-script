@@ -1,13 +1,13 @@
-SubMapViewFromTo(28, 28, 13, 28);
+﻿SubMapViewFromTo(28, 28, 13, 28);
 Talk("東方教主，我玄素莊跟貴教素無瓜葛，不知道今日把我的玉兒請來貴教做客是何用意？", 213, 1);
 Talk("．．．．．．", 27, 0);
 Talk("你以為不說話就行了嗎？", 214, 1);
 Talk("大膽狂徒，竟敢如此跟教主說話，看來是不想獲了．", 88, 0);
 Talk("二位大俠，我來幫你．", 0, 1);
-if TryBattle(234) then goto label31 end;
+if TryBattle(234) == false then
 Dead();
 exit();
-::label31::
+end;
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 OldSetScenePosition(14, 26);
@@ -18,10 +18,10 @@ ModifyEvent(-2, 46, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 47, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("保護東方教主！", 34, 0);
-if TryBattle(235) then goto label117 end;
+if TryBattle(235) == false then
 Dead();
 exit();
-::label117::
+end;
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 5, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -30,14 +30,14 @@ ModifyEvent(-2, 49, 1, -2, 0, 0, 0, 7046, 7046, 7046, 0, -2, -2);
 ModifyEvent(-2, 50, 1, -2, 0, 0, 0, 7046, 7046, 7046, 0, -2, -2);
 ModifyEvent(-2, 51, 1, -2, 0, 0, 0, 7040, 7040, 7040, 0, -2, -2);
 ModifyEvent(-2, 52, 1, -2, 0, 0, 0, 7030, 7030, 7030, 0, -2, -2);
-instruct_50e(16, 0, 0, 27, 34, 1130, 0);
-instruct_50e(16, 0, 0, 27, 36, 1130, 0);
-instruct_50e(16, 0, 0, 27, 82, 1098, 0);
-instruct_50e(16, 0, 0, 27, 84, 1098, 0);
-instruct_50e(16, 0, 0, 27, 86, 453, 0);
-instruct_50e(16, 0, 0, 27, 88, 194, 0);
-instruct_50e(16, 0, 0, 27, 90, 473, 0);
-instruct_50e(16, 0, 0, 27, 110, 95, 0);
+SetRole(27, 34 / 2, 1130);
+SetRole(27, 36 / 2, 1130);
+SetRole(27, 82 / 2, 1098);
+SetRole(27, 84 / 2, 1098);
+SetRole(27, 86 / 2, 453);
+SetRole(27, 88 / 2, 194);
+SetRole(27, 90 / 2, 473);
+SetRole(27, 110 / 2, 95);
 SetRoleMagic(27, 0, 67, 900);
 LightScene();
 Talk("好像往臥房那邊去了，我也跟上去看看．", 0, 1);

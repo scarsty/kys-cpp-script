@@ -1,6 +1,6 @@
-if isUsingItem(192) then goto label0 end;
+if isUsingItem(192) == false then
 exit();
-::label0::
+end;
 Talk("驗證通過，請您進入．", 88, 0);
 DarkScene();
 ModifyEvent(-2, -2, -2, -2, 1136, 0, 0, 5890, 5890, 5890, 0, 46, 27);

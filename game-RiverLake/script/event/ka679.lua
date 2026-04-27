@@ -48,19 +48,19 @@ Talk("這個．．．（眼睛瞟著教主夫人）", 111, 1);
 Talk("好！只要你殺了這些叛徒，我就把蘇荃賞給你！", 71, 0);
 Talk("什么．．．", 159, 0);
 Talk("現在怎么辦？（Ｙ）幫神龍教清理叛徒（Ｎ）坐視不理", 0, 3);
-if AskRest() then goto  label243 end;
+if AskRest() == false then
 Talk("小寶，我看這件事還是不管的為好，神龍教在江湖上不是什么正派幫教，壞事做了很多，我們沒理由參與邪教的內部糾紛．", 0, 1);
 Talk("可是阿珂怎么辦？我不能不要我的漂亮老婆啊！", 111, 1);
 Talk("阿珂？她被我抓回來還沒來得及享受呢，呵呵．．．", 97, 1);
 Talk("你敢動我漂亮老婆一下，老子跟你拼了！", 111, 1);
-if TryBattle(105) == false then goto label267 end;
-::label267::
+if TryBattle(105) then
+end;
 LightScene();
 Talk("小寶，讓我來！", 0, 0);
-if TryBattle(106) then goto label280 end;
+if TryBattle(106) == false then
 Dead();
 exit();
-::label280::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -89,10 +89,10 @@ DarkScene();
 ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("擋我者死！", 71, 0);
-if TryBattle(107) then goto label518 end;
+if TryBattle(107) == false then
 Dead();
 exit();
-::label518::
+end;
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -102,13 +102,13 @@ ModifyEvent(-2, 20, 1, -2, 687, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(32, 21, 1, -2, 681, 0, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(32, 30, 1, -2, 680, 0, 0, 8228, 8228, 8228, 0, -2, -2);
 exit();
-::label243::
+end;
 AddMorality(-3);
 Talk("＜為了小寶再得到一個老婆我就管管這邪教的事吧！＞", 0, 1);
-if TryBattle(106) then goto label639 end;
+if TryBattle(106) == false then
 Dead();
 exit();
-::label639::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

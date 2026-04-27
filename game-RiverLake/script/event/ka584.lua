@@ -1,10 +1,10 @@
-if InTeam(17) then goto label0 end;
+﻿if InTeam(17) == false then
 exit();
-::label0::
+end;
 Talk("用防風、白術、甘草、羌活熟地黃可以配出九轉熊蛇丸", 17, 0);
-if AskRest() then goto  label11 end;
+if AskRest() == false then
 exit();
-::label11::
+end;
 instruct_50e(6, 7, 8, 9, 10, 7, 0);
 Talk("原料好像不夠！", 0, 0);
 exit();

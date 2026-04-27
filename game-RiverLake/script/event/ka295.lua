@@ -1,13 +1,13 @@
 Talk("找姑娘里面請．", 92, 0);
-if AskBattle() then goto label5 end;
+if AskBattle() == false then
 exit();
-::label5::
+end;
 Talk("我要找莊家的人．", 0, 0);
 Talk("臭小子，找死！", 92, 0);
-if TryBattle(35) then goto label21 end;
+if TryBattle(35) == false then
 Dead();
 exit();
-::label21::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(32, 1, 33, 36, 0);
 LightScene();

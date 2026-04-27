@@ -1,20 +1,33 @@
-if HaveItemBool(144) then goto label0 end;
-if HaveItemBool(145) then goto label0 end;
-if HaveItemBool(146) then goto label0 end;
-if HaveItemBool(147) then goto label0 end;
-if HaveItemBool(148) then goto label0 end;
-if HaveItemBool(149) then goto label0 end;
-if HaveItemBool(150) then goto label0 end;
-if HaveItemBool(151) then goto label0 end;
-if HaveItemBool(152) then goto label0 end;
-if HaveItemBool(153) then goto label0 end;
-if HaveItemBool(154) then goto label0 end;
-if HaveItemBool(155) then goto label0 end;
-if HaveItemBool(156) then goto label0 end;
-if HaveItemBool(157) then goto label0 end;
+if HaveItemBool(144) == false then
+if HaveItemBool(145) == false then
+if HaveItemBool(146) == false then
+if HaveItemBool(147) == false then
+if HaveItemBool(148) == false then
+if HaveItemBool(149) == false then
+if HaveItemBool(150) == false then
+if HaveItemBool(151) == false then
+if HaveItemBool(152) == false then
+if HaveItemBool(153) == false then
+if HaveItemBool(154) == false then
+if HaveItemBool(155) == false then
+if HaveItemBool(156) == false then
+if HaveItemBool(157) == false then
 Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
 exit();
-::label0::
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
 Talk("袁某在島上居住這些年來，你是第一個找到這的．", 54, 0);
 Talk("先生怎么會一個人住在島上？", 0, 0);
 Talk("我在這里等你啊．", 54, 0);

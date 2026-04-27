@@ -1,9 +1,8 @@
-instruct_50e(20, 0, 177, 1, 0, 0, 0);
-instruct_50e(4, 0, 2, 1, 8, 0, 0);
-if CheckRoleSexual(256) then goto label16 end;
+﻿x[1] = GetItemAmount(177);
+if x[1] ~= 8 then
 Talk("還沒找齊八本四十二章經嗎", 71, 0);
 exit();
-::label16::
+end;
 Talk("你竟然能找到全部八本四十二章經？真是不錯．", 71, 0);
 Talk("為了洪教主，刀山我上，火海我闖，只要洪教主一句話指哪打哪．", 0, 1);
 Talk("哈哈，說得好．", 71, 0);

@@ -1,15 +1,15 @@
 Talk("咕咕．．．咕咕．．．", 104, 0);
-if AskBattle() then goto label5 end;
+if AskBattle() == false then
 Talk("雕兄，我還有事，不能陪你練劍．", 0, 1);
 exit();
-::label5::
+end;
 Talk("好，我就陪雕兄玩玩．", 0, 1);
-if TryBattle(117) then goto label21 end;
+if TryBattle(117) == false then
 LightScene();
 Talk("雕兄的武功依然如此厲害，在下佩服．", 0, 1);
 Talk("咕咕", 104, 0);
 exit();
-::label21::
+end;
 LightScene();
 Talk("雕兄，你輸嘍～", 0, 1);
 Talk("咕咕", 104, 0);

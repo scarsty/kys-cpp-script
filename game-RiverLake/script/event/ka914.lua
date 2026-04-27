@@ -1,4 +1,4 @@
-ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("店家，店家，拿酒來！", 47, 0);
 Talk("咦？怎么大師兄他們也在這", 0, 1);
@@ -60,7 +60,7 @@ Talk("那我也不回去．", 47, 0);
 Talk("你不走也得走！", 92, 1);
 Talk("＜不行，不能神木王鼎可是個好東西，要是得到，無論是自己用還是還給老仙都有好處的．＞", 0, 1);
 Talk("幫阿紫請按”Ｙ”幫四位師兄請按”Ｎ”", 0, 3);
-if AskRest() then goto  label349 end;
+if AskRest() == false then
 Talk("幾位師兄，我來幫你們．", 0, 1);
 DarkScene();
 ModifyEvent(9, 11, 1, -2, 0, 0, 0, 6374, 6374, 6374, 0, 9, 36);
@@ -70,20 +70,20 @@ ModifyEvent(9, 14, 1, -2, 0, 0, 0, 6370, 6370, 6370, 0, 9, 37);
 ModifyEvent(9, 15, 1, -2, 0, 0, 0, 6372, 6372, 6372, 0, 10, 36);
 OldSetScenePosition(11, 36);
 LightScene();
-if InTeam(48) == false then goto label436 end;
+if InTeam(48) then
 Talk("師父，你們怎么能這么多人欺負一個呢．", 48, 1);
 LeaveTeam(48);
-if TryBattle(184) then goto label449 end;
+if TryBattle(184) == false then
 Dead();
 exit();
-::label449::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddMorality(-3);
 AddItem(65, 1);
 Talk("該死，讓她跑了．不過還要搶回了神木王鼎．快把鼎給我．", 92, 1);
 Talk("是否交出神木王鼎？", 0, 3);
-if AskRest() == false then goto  label491 end;
+if AskRest() then
 Talk("給，大師兄．", 0, 1);
 Talk("恩，很好，你很乖，師兄以后會多多照顧你的．", 92, 1);
 AddItemWithoutHint(65, -1);
@@ -95,13 +95,13 @@ ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("．．．．．．好像最后什么都沒得到啊．我真是蠢啊．", 0, 1);
 exit();
-::label491::
+end;
 Talk("這是我得到的，我會親自還給師父的．", 0, 1);
 Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-if TryBattle(185) then goto label586 end;
+if TryBattle(185) == false then
 Dead();
 exit();
-::label586::
+end;
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -109,19 +109,19 @@ ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("算你們跑得快．", 0, 1);
 exit();
-::label436::
+end;
 Talk("怎么又多了一個？", 47, 0);
-if TryBattle(186) then goto label666 end;
+if TryBattle(186) == false then
 Dead();
 exit();
-::label666::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddMorality(-3);
 AddItem(65, 1);
 Talk("該死，讓她跑了．不過還要搶回了神木王鼎．快把鼎給我．", 92, 1);
 Talk("是否交出神木王鼎？", 0, 3);
-if AskRest() == false then goto  label708 end;
+if AskRest() then
 Talk("給，大師兄．", 0, 1);
 Talk("恩，很好，你很乖，師兄以后會多多照顧你的．", 92, 1);
 AddItemWithoutHint(65, -1);
@@ -133,13 +133,13 @@ ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("．．．．．．好像最后什么都沒得到啊．我真是蠢啊．", 0, 1);
 exit();
-::label708::
+end;
 Talk("這是我得到的，我會親自還給師父的．", 0, 1);
 Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-if TryBattle(185) then goto label803 end;
+if TryBattle(185) == false then
 Dead();
 exit();
-::label803::
+end;
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -147,7 +147,7 @@ ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("算你們跑得快．", 0, 1);
 exit();
-::label349::
+end;
 Talk("雖然跟你們是一個門派的，但這么多人欺負一個，我真的是忍無可忍了．", 0, 1);
 DarkScene();
 ModifyEvent(9, 11, 1, -2, 0, 0, 0, 6374, 6374, 6374, 0, 9, 36);
@@ -158,10 +158,10 @@ ModifyEvent(9, 15, 1, -2, 0, 0, 0, 6372, 6372, 6372, 0, 10, 36);
 OldSetScenePosition(11, 36);
 LightScene();
 Talk("看來你跟阿紫那個小丫頭一樣，就是想找死！", 92, 1);
-if TryBattle(187) then goto label967 end;
+if TryBattle(187) == false then
 Dead();
 exit();
-::label967::
+end;
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -170,33 +170,33 @@ LightScene();
 Talk("算你們跑得快．", 0, 1);
 Talk("好了，我也走了．", 47, 0);
 Talk("是否搶阿紫手中的神木王鼎", 0, 3);
-if AskRest() then goto  label1049 end;
+if AskRest() == false then
 exit();
-::label1049::
+end;
 Talk("不放下神木王鼎休想從這離開．", 0, 1);
 Talk("好了，我也走了．", 47, 0);
-if InTeam(48) == false then goto label1066 end;
+if InTeam(48) then
 Talk("師父啊，就讓她走吧．", 48, 1);
 Talk("你想跟師父作對？", 0, 1);
 LeaveTeam(48);
-if TryBattle(188) then goto label1084 end;
+if TryBattle(188) == false then
 Dead();
 exit();
-::label1084::
+end;
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddMorality(-5);
 AddItem(65, 1);
-instruct_50e(16, 0, 1, 65, 82, 2, 0);
+SetItem(65, 82 / 2, 2);
 exit();
-::label1066::
+end;
 Talk("．．．．．．", 0, 1);
 DarkScene();
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(35, 0, -2, -2, 916, -2, -2, -2, -2, -2, -2, -2, -2);
 LightScene();
 AddMorality(3);
-if InTeam(48) == false then goto label1168 end;
+if InTeam(48) then
 Talk("師父，對不起，我走了．", 48, 1);
 Talk("？？？", 0, 1);
 DarkScene();
@@ -204,5 +204,5 @@ LightScene();
 LeaveTeam(48);
 Talk("他怎么跑了？看他平時傻乎乎的，今天怎么．．．", 0, 1);
 exit();
-::label1168::
+end;
 Talk("我就這么眼睜睜看著她走了那回去怎么跟師父交代？", 0, 1);

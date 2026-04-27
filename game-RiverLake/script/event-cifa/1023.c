@@ -22,41 +22,37 @@ LightScene();
 Talk("我道你怎么如此，原來你背地里練劍不練氣，以后岳某再沒有你這樣的徒弟．", 19, 0);
 AddItem(198, 1);
 AddItemWithoutHint(80, -1);
-instruct_50e(17, 0, 0, 0, 122, 1, 0);
-instruct_50e(4, 0, 2, 1, 80, 0, 0);
-if (CheckRoleSexual(256))
+x[1] = GetRole(0, 122 / 2);
+if (x[1] == 80)
 {
-    instruct_50e(16, 0, 0, 0, 122, -1, 0);
+SetRole(0, 122 / 2, -1);
 }
-instruct_50e(0, 10, 126, 0, 0, 0, 0);
+x[10] = 126;
 do
 {
-    instruct_50e(17, 10, 0, 0, 10, 1, 0);
-    instruct_50e(4, 0, 2, 1, 32, 0, 0);
-    if (CheckRoleSexual(256))
+x[1] = GetRole(0, x[10] / 2);
+    if (x[1] == 32)
     {
-        instruct_50e(3, 0, 0, 2, 10, 0, 0);
-        instruct_50e(3, 0, 0, 3, 10, 0, 0);
-        instruct_50e(3, 0, 0, 2, 2, 2, 0);
-        instruct_50e(3, 0, 0, 5, 2, 20, 0);
-        instruct_50e(3, 0, 0, 6, 3, 20, 0);
+x[2] = x[10] + 0;
+x[3] = x[10] + 0;
+x[2] = x[2] + 2;
+x[5] = x[2] + 20;
+x[6] = x[3] + 20;
         do
         {
-            instruct_50e(17, 10, 0, 0, 2, 4, 0);
-            instruct_50e(16, 110, 0, 0, 3, 4, 0);
-            instruct_50e(17, 10, 0, 0, 5, 7, 0);
-            instruct_50e(16, 110, 0, 0, 6, 7, 0);
-            instruct_50e(3, 0, 0, 3, 3, 2, 0);
-            instruct_50e(3, 0, 0, 2, 2, 2, 0);
-            instruct_50e(3, 0, 0, 6, 6, 2, 0);
-            instruct_50e(3, 0, 0, 5, 5, 2, 0);
-            instruct_50e(4, 0, 4, 2, 146, 0, 0);
-        } while (!CheckRoleSexual(256));
-        instruct_50e(16, 10, 0, 0, 3, 0, 0);
+x[4] = GetRole(0, x[2] / 2);
+SetRole(0, x[3] / 2, x[4]);
+x[7] = GetRole(0, x[5] / 2);
+SetRole(0, x[6] / 2, x[7]);
+x[3] = x[3] + 2;
+x[2] = x[2] + 2;
+x[6] = x[6] + 2;
+x[5] = x[5] + 2;
+        } while (!(x[2] >= 146));
+SetRole(0, x[3] / 2, 0);
     }
-    instruct_50e(3, 0, 0, 10, 10, 2, 0);
-    instruct_50e(4, 0, 4, 10, 146, 0, 0);
-} while (!CheckRoleSexual(256));
+x[10] = x[10] + 2;
+} while (!(x[10] >= 146));
 Talk("岳兄，你連你徒弟都打不過還有什么臉呆在華山，還是快快走吧．", 185, 1);
 Talk("哼，岳某誓死保衛華山．", 19, 0);
 AddAttack(19, 150);

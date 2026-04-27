@@ -1,4 +1,4 @@
-DarkScene();
+﻿DarkScene();
 ModifyEvent(-2, 21, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 22, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 23, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -97,7 +97,7 @@ SetRoleMagic(49, 6, 0, 0);
 SetRoleMagic(49, 7, 0, 0);
 SetRoleMagic(49, 8, 0, 0);
 SetRoleMagic(49, 9, 0, 0);
-instruct_50e(16, 0, 0, 49, 110, 100, 0);
+SetRole(49, 110 / 2, 100);
 LightScene();
 SubMapViewFromTo(23, 25, 16, 30);
 Talk("星宿老怪，這次我們應該算算剛才的帳了吧？", 114, 1);
@@ -107,15 +107,15 @@ DarkScene();
 ModifyEvent(-2, 6, 1, -2, 0, 0, 0, 6226, 6226, 6226, 0, 18, 29);
 LightScene();
 Talk("玄難師叔！", 0, 0);
-if TryBattle(172) == false then goto label703 end;
-::label703::
+if TryBattle(172) then
+end;
 ModifyEvent(-2, 19, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("師叔，我來幫你．", 49, 1);
-if TryBattle(175) then goto label731 end;
+if TryBattle(175) == false then
 Dead();
 exit();
-::label731::
+end;
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -136,9 +136,9 @@ Talk("聰辯先生呢？", 0, 0);
 Talk("唉，一言難盡啊．", 49, 1);
 Talk("＜算了，他不愿意說就不說了．＞", 0, 0);
 ModifyEvent(28, 13, -2, -2, 896, 0, 0, -2, -2, -2, 0, -2, -2);
-if HaveItemBool(189) == false then goto label941 end;
+if HaveItemBool(189) then
 ModifyEvent(28, 13, -2, -2, 960, 0, 0, -2, -2, -2, 0, -2, -2);
-::label941::
+end;
 ModifyEvent(28, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(35, 0, -2, -2, -2, 0, 0, -2, -2, -2, 0, -2, -2);
 Talk("師叔，我想．．．我想先走一步．", 49, 1);

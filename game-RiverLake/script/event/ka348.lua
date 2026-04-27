@@ -14,7 +14,7 @@ LightScene();
 Talk("我說過了，劉某已經退出江湖，既非衡山之人，你嵩山哪門子管得著我？", 140, 0);
 Talk("嵩山派向來都是仗勢欺人，跟他講那么多廢話干嗎？我們聯手還怕他幾個嵩山弟子不成？", 0, 0);
 Talk("小子口氣不小嗎，那就讓你見識見識嵩山派的武功．", 84, 0);
-if TryBattle(46) then goto label110 end;
+if TryBattle(46) == false then
 ModifyEvent(59, 2, 1, -2, 349, 0, 0, 5890, 5890, 5890, 0, -2, -2);
 ModifyEvent(59, 3, 1, -2, 349, 0, 0, 5414, 5414, 5414, 0, -2, -2);
 LightScene();
@@ -24,11 +24,11 @@ Talk("我與嵩山無仇，他們不至于難為我．", 0, 0);
 Talk("．．．", 140, 0);
 Talk("誰都別想跑！", 84, 0);
 Talk("前輩，你們快走！", 0, 0);
-if TeamIsFull() then goto label175 end;
-if TryBattle(47) then goto label178 end;
+if TeamIsFull() == false then
+if TryBattle(47) == false then
 Dead();
 exit();
-::label178::
+end;
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -40,11 +40,11 @@ Talk("多謝莫大先生幫忙．", 0, 0);
 Talk("．．．．．．", 20, 0);
 Talk("＜原來莫大先生早就知道劉正風與魔教中人來往了，看來莫大先生并非是迂腐之人．＞", 0, 0);
 exit();
-::label175::
-if TryBattle(48) then goto label289 end;
+end;
+if TryBattle(48) == false then
 Dead();
 exit();
-::label289::
+end;
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 9, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -53,7 +53,7 @@ ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label110::
+end;
 ModifyEvent(-2, 10, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 11, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 12, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

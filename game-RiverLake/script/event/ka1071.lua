@@ -1,9 +1,7 @@
-instruct_50e(20, 0, 3, 1, 0, 0, 0);
-instruct_50e(20, 0, 5, 2, 0, 0, 0);
-instruct_50e(4, 0, 4, 1, 5, 0, 0);
-if CheckRoleSexual(256) == false then goto label24 end;
-instruct_50e(4, 0, 4, 2, 5, 0, 0);
-if CheckRoleSexual(256) == false then goto label24 end;
+﻿x[1] = GetItemAmount(3);
+x[2] = GetItemAmount(5);
+if x[1] >= 5 then
+if x[2] >= 5 then
 AddMorality(-2);
 Talk("太師父，我把藥買回來了．", 0, 1);
 AddItemWithoutHint(3, -5);
@@ -17,5 +15,6 @@ AddItem(118, 1);
 Talk("多謝師父．", 0, 1);
 ModifyEvent(-2, 4, 1, -2, 1063, 0, 0, 5380, 5380, 5380, 0, -2, -2);
 exit();
-::label24::
+end;
+end;
 Talk("去開封的藥店買當歸跟茯苓", 5, 0);

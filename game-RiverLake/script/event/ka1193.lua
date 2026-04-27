@@ -1,54 +1,52 @@
-Talk("是否休息？", 0, 3);
-if AskRest() then goto  label4 end;
+﻿Talk("是否休息？", 0, 3);
+if AskRest() == false then
 exit();
-::label4::
+end;
 DarkScene();
 Rest();
 LightScene();
-if HaveItemBool(70) == false then goto label15 end;
-if HaveItemBool(100) == false then goto label15 end;
-if HaveItemBool(104) == false then goto label15 end;
+if HaveItemBool(70) then
+if HaveItemBool(100) then
+if HaveItemBool(104) then
 Talk("如果要是能把基本相似的武功合而為一的話，應該能發揮更大的功效．", 0, 1);
 DarkScene();
 LightScene();
 AddItemWithoutHint(70, -1);
 AddItemWithoutHint(100, -1);
 AddItemWithoutHint(104, -1);
-instruct_50e(19, 0, 0, 1, 0, 0, 0);
-instruct_50e(19, 0, 1, 2, 0, 0, 0);
-instruct_50e(19, 0, 2, 3, 0, 0, 0);
-instruct_50e(19, 0, 3, 4, 0, 0, 0);
-instruct_50e(19, 0, 4, 5, 0, 0, 0);
-instruct_50e(19, 0, 5, 6, 0, 0, 0);
-instruct_50e(1, 0, 0, 100, 1, 0, 0);
-instruct_50e(1, 10, 0, 100, 2, 1, 0);
-instruct_50e(1, 10, 0, 100, 3, 2, 0);
-instruct_50e(1, 10, 0, 100, 4, 3, 0);
-instruct_50e(1, 10, 0, 100, 5, 4, 0);
-instruct_50e(1, 10, 0, 100, 6, 5, 0);
-instruct_50e(1, 10, 0, 100, 7, 6, 0);
-instruct_50e(0, 10, 1, 0, 0, 0, 0);
+x[1] = GetTeam(0);
+x[2] = GetTeam(1);
+x[3] = GetTeam(2);
+x[4] = GetTeam(3);
+x[5] = GetTeam(4);
+x[6] = GetTeam(5);
+x[100 + 1] = 0;
+x[100 + 2] = x[1];
+x[100 + 3] = x[2];
+x[100 + 4] = x[3];
+x[100 + 5] = x[4];
+x[100 + 6] = x[5];
+x[100 + 7] = x[6];
+x[10] = 1;
 ::label277::
-instruct_50e(2, 1, 0, 100, 10, 30, 0);
-instruct_50e(17, 1, 0, 30, 122, 1111, 0);
-instruct_50e(4, 0, 2, 1111, 70, 0, 0);
-if CheckRoleSexual(256) == false then goto label185 end;
-instruct_50e(16, 1, 0, 30, 122, -1, 0);
-instruct_50e(16, 1, 0, 30, 124, 0, 0);
-::label185::
-instruct_50e(4, 0, 2, 1111, 100, 0, 0);
-if CheckRoleSexual(256) == false then goto label213 end;
-instruct_50e(16, 1, 0, 30, 122, -1, 0);
-instruct_50e(16, 1, 0, 30, 124, 0, 0);
-::label213::
-instruct_50e(4, 0, 2, 1111, 104, 0, 0);
-if CheckRoleSexual(256) == false then goto label241 end;
-instruct_50e(16, 1, 0, 30, 122, -1, 0);
-instruct_50e(16, 1, 0, 30, 124, 0, 0);
-::label241::
-instruct_50e(3, 0, 0, 10, 10, 1, 0);
-instruct_50e(4, 0, 5, 10, 7, 0, 0);
-if CheckRoleSexual(256) == false then goto label277 end;
+x[30] = x[100+ x[10]];
+x[1111] = GetRole(x[30], 122 / 2);
+if x[1111] == 70 then
+SetRole(x[30], 122 / 2, -1);
+SetRole(x[30], 124 / 2, 0);
+end;
+if x[1111] == 100 then
+SetRole(x[30], 122 / 2, -1);
+SetRole(x[30], 124 / 2, 0);
+end;
+if x[1111] == 104 then
+SetRole(x[30], 122 / 2, -1);
+SetRole(x[30], 124 / 2, 0);
+end;
+x[10] = x[10] + 1;
+if x[10] <= 7 then goto label277 end;
 ModifyEvent(-2, -2, -2, -2, 547, -2, -2, -2, -2, -2, -2, -2, -2);
 AddItem(95, 1);
-::label15::
+end;
+end;
+end;

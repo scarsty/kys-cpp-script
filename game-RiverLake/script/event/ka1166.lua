@@ -4,8 +4,8 @@ Talk("我的鐵匠鋪剛剛倒閉．現在還欠別人好多錢．", 227, 0);
 Talk("原來是因為欠債才很這么多酒的．", 0, 1);
 Talk("２００兩，你叫我怎么還啊", 227, 0);
 Talk("是否幫忙還錢？", 0, 3);
-if AskRest() == false then goto  label29 end;
-if CheckEnoughMoney(200) == false then goto label29 end;
+if AskRest() then
+if CheckEnoughMoney(200) then
 Talk("老人家，這些錢你拿著去還債吧．", 0, 1);
 AddItemWithoutHint(174, -200);
 Talk("這．．．這叫我．．．", 227, 0);
@@ -23,7 +23,8 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(70, 22, -2, -2, 1163, 0, 0, -2, -2, -2, -2, -2, -2);
 LightScene();
 exit();
-::label29::
+end;
+end;
 Talk("唉！回家了，看還有什么辦法．", 227, 0);
 DarkScene();
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

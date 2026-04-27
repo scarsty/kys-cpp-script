@@ -1,6 +1,6 @@
-if isUsingItem(166) then goto label0 end;
+if isUsingItem(166) == false then
 exit();
-::label0::
+end;
 AddItemWithoutHint(166, -1);
 ModifyEvent(49, 2, 1, -2, 130, 0, 0, -2, -2, -2, 0, -2, -2);
 DarkScene();

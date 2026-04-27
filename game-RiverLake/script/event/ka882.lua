@@ -1,21 +1,21 @@
-if isUsingItem(198) then goto label0 end;
+﻿if isUsingItem(198) == false then
 exit();
-::label0::
+end;
 Talk("老仙息怒．其實晚輩是一心仰慕老仙大名，想拜老仙為師，每天只要能看上老仙一眼，晚輩就心滿意足了．", 0, 1);
-if CheckRoleMorality(0, 0, 40) then goto label11 end;
+if CheckRoleMorality(0, 0, 40) == false then
 Talk("真是活得不耐煩了．膽敢戲耍本仙．", 46, 0);
 Talk("啊！", 0, 1);
 ZeroAllMP();
-if TryBattle(171) then goto label30 end;
+if TryBattle(171) == false then
 Dead();
 exit();
-::label30::
+end;
 Talk("小子，有兩下子嗎．", 46, 0);
 ZeroAllMP();
-if TryBattle(172) then goto label46 end;
+if TryBattle(172) == false then
 Dead();
 exit();
-::label46::
+end;
 ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -36,18 +36,18 @@ LightScene();
 Talk("娘啊，想拜師，原來是一群膿包．", 0, 1);
 AddMorality(-2);
 exit();
-::label11::
+end;
 Talk("恩，見你的根骨不錯，就收下你了．", 46, 0);
 Talk("多謝老仙．．．啊，不，師父．星宿老仙，法力無邊．", 0, 1);
 AddItemWithoutHint(198, -1);
 AddItem(51, 1);
 AddItem(38, 10);
-instruct_50e(17, 0, 0, 0, 100, 1, 0);
-instruct_50e(3, 0, 0, 1, 1, 1, 0);
-instruct_50e(16, 100, 0, 0, 100, 1, 0);
-instruct_50e(17, 0, 0, 320, 38, 2, 0);
-instruct_50e(17, 0, 0, 0, 94, 3, 0);
-instruct_50e(3, 1, 0, 2, 2, 3, 0);
-instruct_50e(16, 100, 0, 0, 94, 2, 0);
+x[1] = GetRole(0, 100 / 2);
+x[1] = x[1] + 1;
+SetRole(0, 100 / 2, x[1]);
+x[2] = GetRole(320, 38 / 2);
+x[3] = GetRole(0, 94 / 2);
+x[2] = x[2] + x[3];
+SetRole(0, 94 / 2, x[2]);
 ModifyEvent(-2, -2, -2, -2, 883, 915, 0, -2, -2, -2, 0, -2, -2);
 ModifyEvent(-2, 15, 1, -2, 913, 0, 0, 6368, 6368, 6368, 0, -2, -2);

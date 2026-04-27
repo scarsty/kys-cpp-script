@@ -1,6 +1,6 @@
-if CheckSubMapPic(43, 4, 5380) then goto label0 end;
+if CheckSubMapPic(43, 4, 5380) == false then
 exit();
-::label0::
+end;
 Talk("太師父，不好了．", 0, 1);
 Talk("遇事不慌，有事慢說．", 5, 0);
 Talk("我跟宋師兄出去磨練，在江陵遇到兩個人，那兩個人上來就跟我動手，見我們是武當派的，就把宋師兄抓住，說要用武當九陽功來換．", 0, 1);

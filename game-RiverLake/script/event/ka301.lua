@@ -1,13 +1,13 @@
 ModifyEvent(3, 26, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Talk("站住！皇宮豈容你亂闖！", 92, 0);
-if AskBattle() then goto label21 end;
+if AskBattle() == false then
 exit();
-::label21::
-if TeamIsFull() == false then goto label27 end;
-if TryBattle(38) then goto label30 end;
+end;
+if TeamIsFull() then
+if TryBattle(38) == false then
 Dead();
 exit();
-::label30::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(46, 1, 29, 47, 4502);
 SetSubMapLayerData(46, 1, 29, 46, 4504);
@@ -16,12 +16,12 @@ SetSubMapLayerData(46, 1, 31, 47, 4506);
 SetSubMapLayerData(46, 1, 31, 46, 4508);
 LightScene();
 exit();
-::label27::
-if HaveItemBool(150) == false then goto label88 end;
-if TryBattle(38) then goto label93 end;
+end;
+if HaveItemBool(150) then
+if TryBattle(38) == false then
 Dead();
 exit();
-::label93::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(46, 1, 29, 47, 4502);
 SetSubMapLayerData(46, 1, 29, 46, 4504);
@@ -30,12 +30,12 @@ SetSubMapLayerData(46, 1, 31, 47, 4506);
 SetSubMapLayerData(46, 1, 31, 46, 4508);
 LightScene();
 exit();
-::label88::
+end;
 Talk("我來幫你！", 120, 0);
-if TryBattle(39) then goto label158 end;
+if TryBattle(39) == false then
 Dead();
 exit();
-::label158::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetSubMapLayerData(46, 1, 29, 47, 4502);
 SetSubMapLayerData(46, 1, 29, 46, 4504);

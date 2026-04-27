@@ -1,9 +1,9 @@
 Talk("這個就是馬賊們的寶藏了吧", 142, 1);
 Talk("我猜想也是，打開看看．", 0, 1);
-if TryBattle(214) then goto label10 end;
+if TryBattle(214) == false then
 Dead();
 exit();
-::label10::
+end;
 LightScene();
 ModifyEvent(-2, -2, -2, -2, 0, 0, 0, 2612, 2612, 2612, 0, -2, -2);
 AddItem(61, 1);

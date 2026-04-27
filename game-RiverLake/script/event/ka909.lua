@@ -5,10 +5,10 @@ ModifyEvent(-2, 2, 1, -2, 910, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 ModifyEvent(-2, 3, 1, -2, 911, 0, 0, 6806, 6806, 6806, 0, -2, -2);
 LightScene();
 Talk("什么人這么大膽，竟敢闖進靈鷲宮．", 177, 1);
-if TryBattle(178) then goto label65 end;
+if TryBattle(178) == false then
 Dead();
 exit();
-::label65::
+end;
 ModifyEvent(-2, 4, 1, -2, 0, 0, 0, 8792, 8792, 8792, 0, -2, -2);
 LightScene();
 Talk("住手！", 49, 1);

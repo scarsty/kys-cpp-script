@@ -1,14 +1,14 @@
 Talk("想要比試嗎？", 59, 0);
-if AskBattle() then goto label5 end;
+if AskBattle() == false then
 Talk("別扯了．我見過神雕俠的武功，我跟他根本沒法比．等我練好一點的吧．", 0, 0);
 exit();
-::label5::
+end;
 Talk("那在下只好向二位請教．", 0, 0);
-if TryBattle(56) then goto label21 end;
+if TryBattle(56) == false then
 LightScene();
 Talk("在下學藝不精，他日定當再次求教．", 0, 0);
 exit();
-::label21::
+end;
 LightScene();
 Talk("你的武功很好．", 59, 0);
 AddItem(153, 1);

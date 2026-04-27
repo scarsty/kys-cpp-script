@@ -1,8 +1,8 @@
 Talk("你就是鳳天南嗎？去死吧．", 0, 0);
-if TryBattle(1) then goto label5 end;
+if TryBattle(1) == false then
 Dead();
 exit();
-::label5::
+end;
 LightScene();
 Talk("閣下是哪一位老師的門下？鳳某什么地方得罪了閣下，卻要請教．", 4, 0);
 Talk("好說，大名鼎鼎的”拔鳳毛”就是我了．我看不慣你姓鳳．", 0, 0);
@@ -11,10 +11,10 @@ Talk("你這么說是讓我找你祖宗算帳是吧？", 0, 0);
 Talk("這位朋友，其實你也不用兜圈子，我知道你是為鐘阿四的事來的，既然我敗在你的手下，要殺要剮隨便吧．", 4, 0);
 Talk("住手！", 73, 0);
 Talk("原來你有幫手．那就一起上吧．", 0, 0);
-if TryBattle(2) then goto label51 end;
+if TryBattle(2) == false then
 Dead();
 exit();
-::label51::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("該死，讓鳳天南跑了．那個女的是誰？鳳天南好像并不認識她啊．", 0, 0);

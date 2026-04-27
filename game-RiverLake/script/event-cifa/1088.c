@@ -46,5 +46,5 @@ ModifyEvent(43, 37, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Add3EventNum(43, 40, 0, 0, 1);
 Add3EventNum(43, 41, 0, 0, 1);
 Add3EventNum(43, 42, 0, 0, 1);
-instruct_50e(16, 0, 1, 70, 82, 2, 0);
+SetItem(70, 82 / 2, 2);
 AddMorality(-2);

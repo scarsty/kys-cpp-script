@@ -1,11 +1,11 @@
-if HaveItemBool(161) then goto label0 end;
+if HaveItemBool(161) == false then
 Talk("這位朋友，我有金盆洗手的請貼，要不要買一張？", 93, 0);
 Talk("＜黃牛黨？＞多少錢？", 0, 0);
 Talk("好說，五千兩！", 93, 0);
 Talk("餓滴神啊！這么貴！", 0, 0);
 Talk("但能見到劉正風金盆洗手也物超所值啊！", 93, 0);
 exit();
-::label0::
+end;
 Talk("這位朋友，我有金盆洗手的請貼，要不要買一張？", 93, 0);
 Talk("＜黃牛黨？＞多少錢？", 0, 0);
 Talk("好說，五千兩！", 93, 0);

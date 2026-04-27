@@ -1,7 +1,7 @@
 SubMapViewFromTo(47, 11, 38, 7);
 Talk("你們以為用兩個假墳就能騙過我嗎？今天我就給我丈夫報仇！", 15, 1);
 Talk("是否幫胡青牛夫婦？", 0, 3);
-if AskRest() then goto  label15 end;
+if AskRest() == false then
 AddMorality(-1);
 Talk("＜金花婆婆太厲害了，我打不過她！還是少管閑事為好！＞", 0, 1);
 OldSetScenePosition(54, 20);
@@ -10,16 +10,16 @@ ModifyEvent(51, 41, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(51, 42, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(51, 43, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 exit();
-::label15::
+end;
 AddMorality(3);
 OldSetScenePosition(38, 7);
 SetTowards(1);
 Talk("喂，光天化日之下殺人，還有王法嗎？", 0, 1);
 Talk("找死！", 15, 1);
-if TryBattle(109) then goto label110 end;
+if TryBattle(109) == false then
 Dead();
 exit();
-::label110::
+end;
 ModifyEvent(-2, 42, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 SetTowards(2);
 LightScene();

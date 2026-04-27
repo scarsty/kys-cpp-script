@@ -199,7 +199,7 @@ if (InTeam(48))
     LightScene();
     AddMorality(-5);
     AddItem(65, 1);
-    instruct_50e(16, 0, 1, 65, 82, 2, 0);
+SetItem(65, 82 / 2, 2);
     exit();
 }
 Talk("．．．．．．", 0, 1);

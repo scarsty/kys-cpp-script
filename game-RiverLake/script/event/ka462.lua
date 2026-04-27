@@ -1,4 +1,4 @@
-ModifyEvent(44, 3, 0, -2, 0, 0, 467, 0, 0, 0, 0, -2, -2);
+﻿ModifyEvent(44, 3, 0, -2, 0, 0, 467, 0, 0, 0, 0, -2, -2);
 ModifyEvent(44, 4, 1, -2, 0, 0, 0, 5402, 5402, 5402, 0, -2, -2);
 ModifyEvent(44, 5, 1, -2, 0, 0, 0, 5396, 5396, 5396, 0, -2, -2);
 Talk("這間客棧怎么這么熱鬧？", 0, 0);
@@ -34,7 +34,7 @@ DarkScene();
 LightScene();
 Talk("在他頭上涂這個藥膏．砍下他的右臂，接在他左腳上．", 219, 0);
 Talk("老太婆，你太狠了吧．看小爺教訓你．", 0, 0);
-if TryBattle(65) == false then goto label244 end;
+if TryBattle(65) then
 LightScene();
 Talk("小朋友，你的武功不錯．但好像晚了．哈哈哈．", 15, 0);
 LightScene();
@@ -68,10 +68,10 @@ ModifyEvent(-2, 27, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 28, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label244::
+end;
 LightScene();
-instruct_50e(16, 0, 0, 0, 82, 1, 0);
-instruct_50e(16, 0, 0, 0, 84, 1, 0);
+SetRole(0, 82 / 2, 1);
+SetRole(0, 84 / 2, 1);
 Talk("混蛋．根本不是她的對手！啊！＜好像受了內傷！＞", 0, 0);
 DarkScene();
 ModifyEvent(-2, 27, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

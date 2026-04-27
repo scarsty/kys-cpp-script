@@ -1,7 +1,7 @@
 Talk("＜見這乞丐面色紅潤，中氣十足，好像是個內功高手．哦，他的右手食指斷了，難道是北丐洪七公？＞請問您可是洪七公前輩？", 0, 0);
 Talk("叫我七公或者老乞丐就行了什么前輩不前輩的．", 69, 4);
 Talk("＜原來他真是北丐．＞”Ｙ”老家伙，是你，我正想找你呢！”Ｎ”老前輩你好啊！", 0, 1);
-if AskRest() then goto  label15 end;
+if AskRest() == false then
 ModifyEvent(32, 32, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(32, 33, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(32, 34, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -30,10 +30,10 @@ Talk("南蕩！", 167, 4);
 Talk("北色！", 187, 5);
 Talk("小朋友，我來收拾這幾個，你躲遠點．", 69, 4);
 Talk("七公，我來幫你．", 0, 0);
-if TryBattle(134) then goto label244 end;
+if TryBattle(134) == false then
 Dead();
 exit();
-::label244::
+end;
 ModifyEvent(-2, 13, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 14, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 15, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
@@ -49,12 +49,12 @@ AddMorality(5);
 AddItem(56, 1);
 Talk("七公，你的書忘了！咦？上面有字：送小友！啊，原來是七公故意留給我的．", 0, 0);
 exit();
-::label15::
+end;
 Talk("老家伙，原來是你啊，我正想找你呢！", 0, 0);
-if TryBattle(133) then goto label366 end;
+if TryBattle(133) == false then
 Dead();
 exit();
-::label366::
+end;
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddMorality(-5);

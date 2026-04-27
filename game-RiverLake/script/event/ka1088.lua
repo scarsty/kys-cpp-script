@@ -1,7 +1,7 @@
-Talk("我們要的東西帶來了嗎？", 210, 0);
+﻿Talk("我們要的東西帶來了嗎？", 210, 0);
 Talk("師弟，我就知道你不會棄我不顧的．", 209, 0);
 Talk("是否交出武當九陽功", 0, 3);
-if AskRest() == false then goto  label14 end;
+if AskRest() then
 Talk("帶來了．", 0, 1);
 AddItemWithoutHint(70, -1);
 Talk("不錯，拿了東西閃人．", 211, 4);
@@ -18,17 +18,17 @@ Add3EventNum(43, 42, 0, 0, 1);
 LightScene();
 AddAttack(0, -5);
 exit();
-::label14::
-if AskBattle() then goto label117 end;
+end;
+if AskBattle() == false then
 Talk("我這就回去拿．", 0, 1);
 exit();
-::label117::
+end;
 Talk("東西？當然沒帶．", 0, 1);
 Talk("看來你真是不到黃河心不死啊．", 211, 4);
-if TryBattle(218) then goto label138 end;
+if TryBattle(218) == false then
 Dead();
 exit();
-::label138::
+end;
 ModifyEvent(-2, 16, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 17, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
@@ -43,5 +43,5 @@ ModifyEvent(43, 37, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 Add3EventNum(43, 40, 0, 0, 1);
 Add3EventNum(43, 41, 0, 0, 1);
 Add3EventNum(43, 42, 0, 0, 1);
-instruct_50e(16, 0, 1, 70, 82, 2, 0);
+SetItem(70, 82 / 2, 2);
 AddMorality(-2);

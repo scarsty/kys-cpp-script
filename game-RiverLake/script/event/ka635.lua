@@ -13,12 +13,12 @@ ModifyEvent(-2, 8, 1, -2, 0, 0, 0, 8546, 8546, 8546, 0, -2, -2);
 Talk("師叔祖，我來幫你！", 0, 1);
 WalkFromTo(46, 43, 42, 43);
 WalkFromTo(42, 43, 42, 41);
-if TryBattle(91) then goto label127 end;
+if TryBattle(91) == false then
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("混蛋小子！放跑了老頑童，就由你來給我失去的妻子抵命！", 57, 0);
-if HaveItemBool(94) then goto label155 end;
-if InTeam(98) == false then goto label160 end;
+if HaveItemBool(94) == false then
+if InTeam(98) then
 Talk("外公．", 124, 0);
 Talk("看在我外孫的面子上，就繞了你一次．", 57, 0);
 Talk("多謝前輩！", 0, 1);
@@ -26,10 +26,10 @@ DarkScene();
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label160::
+end;
 Dead();
 exit();
-::label155::
+end;
 Talk("九陰真經！你有九陰真經？難道是我妻子的靈魂讓你送來的？", 57, 0);
 Talk("＜為了活命，就把九陰真經給他吧！＞黃島主，幾日前我做了一個夢，夢中一位天仙告訴我這九陰真經的位置還說要我得了真經后就到桃花島來．", 0, 1);
 AddItemWithoutHint(94, -1);
@@ -46,7 +46,7 @@ DarkScene();
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 exit();
-::label127::
+end;
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 Talk("想不到那些牛鼻子教出來的武功還有兩下子！", 64, 0);

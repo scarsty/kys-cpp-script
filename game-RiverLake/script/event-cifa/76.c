@@ -15,7 +15,7 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 if (InTeam(323))
 {
-    instruct_50e(16, 0, 0, 323, 126, 93, 0);
-    instruct_50e(16, 0, 0, 324, 126, 93, 0);
+SetRole(323, 126 / 2, 93);
+SetRole(324, 126 / 2, 93);
 }
 Join(324);

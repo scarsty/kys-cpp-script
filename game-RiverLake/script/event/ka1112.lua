@@ -1,14 +1,14 @@
-if HaveItemBool(76) then goto label0 end;
+if HaveItemBool(76) == false then
 Talk("看什么看，全真教可是你亂闖亂看的地方？", 142, 0);
 exit();
-::label0::
+end;
 Talk("師兄你好．", 0, 1);
-if CheckRoleMorality(0, 0, 70) then goto label17 end;
+if CheckRoleMorality(0, 0, 70) == false then
 Talk("本身蠻好，你一來，就不好了．", 142, 0);
 Talk("師兄這話從何說起？", 0, 1);
 Talk("你管從何說起干什么？總之看到你我就頭痛，你快些離開這．", 142, 0);
 exit();
-::label17::
+end;
 Talk("好，好．新來的師弟，你也好啊．", 142, 0);
 Talk("還未請教師兄是．．．", 0, 1);
 Talk("哈哈，原來你還不知道我是誰．我叫趙志敬，聽說過沒有？", 142, 0);

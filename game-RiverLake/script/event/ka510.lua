@@ -1,8 +1,8 @@
 Talk("是否摘下倚天劍？", 0, 3);
-if AskRest() == false then goto  label4 end;
+if AskRest() then
 Talk("想不到我會在這得到倚天劍啊．．．！！！", 0, 0);
 ZeroAllMP();
-::label4::
+end;
 DarkScene();
 ModifyEvent(-2, 5, 1, -2, 0, 0, 0, 8228, 8228, 8228, 0, -2, -2);
 LightScene();

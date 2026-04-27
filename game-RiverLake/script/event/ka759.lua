@@ -1,9 +1,9 @@
 Talk("楊過，小龍女，聽說”神雕俠侶”這本書在你們手里，快交出來．", 0, 1);
 Talk("你竟然敢到我古墓派來撒野打擾我跟龍兒的生活！你今天休想從這里出去！", 58, 0);
-if TryBattle(57) then goto label10 end;
+if TryBattle(57) == false then
 Dead();
 exit();
-::label10::
+end;
 LightScene();
 Talk("你的武功很厲害，我和過兒不是你的對手，這本書你拿去吧．", 59, 0);
 AddItem(153, 1);

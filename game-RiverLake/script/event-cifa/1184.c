@@ -1,6 +1,5 @@
-﻿instruct_50e(17, 0, 0, 0, 30, 1, 0);
-instruct_50e(4, 0, 4, 1, 13, 0, 0);
-if (!CheckRoleSexual(256))
+﻿x[1] = GetRole(0, 30 / 2);
+if (!(x[1] >= 13))
 {
     Talk("爹爹也真是的．．．", 215, 0);
     exit();

@@ -1,10 +1,8 @@
-instruct_50e(20, 0, 3, 1, 0, 0, 0);
-instruct_50e(20, 0, 5, 2, 0, 0, 0);
-instruct_50e(4, 0, 4, 1, 5, 0, 0);
-if (CheckRoleSexual(256))
+﻿x[1] = GetItemAmount(3);
+x[2] = GetItemAmount(5);
+if (x[1] >= 5)
 {
-    instruct_50e(4, 0, 4, 2, 5, 0, 0);
-    if (CheckRoleSexual(256))
+    if (x[2] >= 5)
     {
         AddMorality(2);
         Talk("太師父，我把藥買回來了．", 0, 1);

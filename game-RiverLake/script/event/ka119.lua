@@ -10,10 +10,10 @@ WalkFromTo(35, 32, 35, 30);
 SetTowards(1);
 Talk("原來是你，你還真愛多管閑事．", 74, 0);
 Talk("苗大俠，我幫你對付這個奸徒，你先歇歇．", 0, 0);
-if TryBattle(10) then goto label60 end;
+if TryBattle(10) == false then
 Dead();
 exit();
-::label60::
+end;
 ModifyEvent(-2, 6, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 7, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 8, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
