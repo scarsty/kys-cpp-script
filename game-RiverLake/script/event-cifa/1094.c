@@ -12,16 +12,14 @@ if (AskRest())
     AddItem(198, 1);
     AddMorality(-10);
     AddItemWithoutHint(120, -1);
-x[1] = GetRole(0, 122 / 2);
-    if (x[1] == 120)
+    if (GetRole(0, 122 / 2) == 120)
     {
 SetRole(0, 122 / 2, -1);
     }
 x[10] = 126;
     do
     {
-x[1] = GetRole(0, x[10] / 2);
-        if (x[1] == 86)
+        if (GetRole(0, x[10] / 2) == 86)
         {
 x[2] = x[10] + 0;
 x[3] = x[10] + 0;

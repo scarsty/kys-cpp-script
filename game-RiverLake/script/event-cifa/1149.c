@@ -1,5 +1,4 @@
-﻿x[1] = GetItemAmount(177);
-if (!(x[1] == 8))
+﻿if (GetItemAmount(177) != 8)
 {
     Talk("還沒找齊八本四十二章經嗎", 71, 0);
     exit();

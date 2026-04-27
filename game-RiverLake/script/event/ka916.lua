@@ -34,14 +34,12 @@ LightScene();
 Talk("．．．．．．", 0, 1);
 AddItemWithoutHint(51, -1);
 AddItem(198, 1);
-x[1] = GetRole(0, 122 / 2);
-if x[1] == 51 then
+if GetRole(0, 122 / 2) == 51 then
 SetRole(0, 122 / 2, -1);
 end;
 x[10] = 126;
 ::label477::
-x[1] = GetRole(0, x[10] / 2);
-if x[1] == 5 then
+if GetRole(0, x[10] / 2) == 5 then
 x[2] = x[10] + 0;
 x[3] = x[10] + 0;
 x[2] = x[2] + 2;

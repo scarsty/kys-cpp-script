@@ -2,8 +2,7 @@
 Talk("武當山風景秀麗，武當派絕學甚多．", 249, 0);
 exit();
 end;
-x[1] = math.random(100);
-if x[1] >= 30 then
+if math.random(100) >= 30 then
 Talk("．．．．．．", 249, 0);
 Talk("＜成天在這里耍酷．．．＞", 0, 1);
 exit();

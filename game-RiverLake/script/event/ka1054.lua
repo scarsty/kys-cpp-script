@@ -10,8 +10,7 @@ if x[1] == 86 then jump_flag = true; else jump_flag = false; end;
 x[10] = x[10] + 2;
 if jump_flag == false then goto label56 end;
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if x[30] < 600 then
+if GetRole(0, x[10] / 2) < 600 then
 exit();
 end;
 Talk("太師父，師父的傷就沒辦法醫治了嗎？", 0, 1);

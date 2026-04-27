@@ -43,8 +43,7 @@ AddItemWithoutHint(1, -1);
 AddItemWithoutHint(8, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(40);
-if x[51] <= x[50] then
+if math.random(40) <= x[50] then
 AddItem(11, 1);
 exit();
 end;
@@ -71,8 +70,7 @@ AddItemWithoutHint(3, -1);
 AddItemWithoutHint(7, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(30);
-if x[51] <= x[50] then
+if math.random(30) <= x[50] then
 AddItem(12, 1);
 exit();
 end;
@@ -99,8 +97,7 @@ AddItemWithoutHint(3, -1);
 AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(20);
-if x[51] <= x[50] then
+if math.random(20) <= x[50] then
 AddItem(13, 1);
 exit();
 end;
@@ -127,8 +124,7 @@ AddItemWithoutHint(2, -1);
 AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(10);
-if x[51] <= x[50] then
+if math.random(10) <= x[50] then
 AddItem(14, 1);
 exit();
 end;
@@ -155,8 +151,7 @@ AddItemWithoutHint(10, -1);
 AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(40);
-if x[51] <= x[50] then
+if math.random(40) <= x[50] then
 AddItem(15, 1);
 exit();
 end;
@@ -183,8 +178,7 @@ AddItemWithoutHint(10, -1);
 AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(30);
-if x[51] <= x[50] then
+if math.random(30) <= x[50] then
 AddItem(16, 1);
 exit();
 end;
@@ -211,8 +205,7 @@ AddItemWithoutHint(9, -1);
 AddItemWithoutHint(10, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(20);
-if x[51] <= x[50] then
+if math.random(20) <= x[50] then
 AddItem(17, 1);
 exit();
 end;
@@ -239,8 +232,7 @@ AddItemWithoutHint(8, -1);
 AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(10);
-if x[51] <= x[50] then
+if math.random(10) <= x[50] then
 AddItem(18, 1);
 exit();
 end;
@@ -267,8 +259,7 @@ AddItemWithoutHint(6, -1);
 AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(15);
-if x[51] <= x[50] then
+if math.random(15) <= x[50] then
 AddItem(19, 1);
 exit();
 end;

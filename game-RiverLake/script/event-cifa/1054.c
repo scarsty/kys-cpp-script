@@ -12,8 +12,7 @@ jump_flag = (x[1] == 86);
 x[10] = x[10] + 2;
 } while (!jump_flag);
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if (!(x[30] >= 600))
+if (GetRole(0, x[10] / 2) < 600)
 {
     exit();
 }

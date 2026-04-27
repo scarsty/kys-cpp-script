@@ -1,7 +1,6 @@
 ﻿x[1] = GetRole(0, 110 / 2);
 x[2] = math.random(100);
-x[1] = x[1] + x[2];
-if x[1] <= 130 then
+if x[1] + x[2] <= 130 then
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 3, 0, -2, 0, 0, 1146, 0, 0, 0, 0, -2, -2);
 exit();

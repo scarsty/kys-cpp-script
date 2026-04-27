@@ -10,8 +10,7 @@ if x[1] == 31 then jump_flag = true; else jump_flag = false; end;
 x[10] = x[10] + 2;
 if jump_flag == false then goto label54 end;
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if x[30] < 600 then
+if GetRole(0, x[10] / 2) < 600 then
 Talk("全真的武學，講求循序漸進", 68, 0);
 exit();
 end;

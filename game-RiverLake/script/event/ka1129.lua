@@ -1,7 +1,6 @@
 ﻿ModifyEvent(55, 8, 0, -2, 0, 0, 1133, 0, 0, 0, 0, -2, -2);
 Talk("哇！哈！哈！哈！哈！哈！", 26, 0);
-x[10] = GetRole(0, 82 / 2);
-if x[10] >= 850 then
+if GetRole(0, 82 / 2) >= 850 then
 if TryBattle(232) then
 ModifyEvent(-2, 1, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 3, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

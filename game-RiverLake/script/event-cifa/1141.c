@@ -24,33 +24,27 @@ x[3] = GetTeam(2);
 x[4] = GetTeam(3);
 x[5] = GetTeam(4);
 x[6] = GetTeam(5);
-x[10] = GetRole(x[6], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[6], 112 / 2) < 50)
     {
 LeaveTeam(x[6]);
     }
-x[10] = GetRole(x[5], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[5], 112 / 2) < 50)
     {
 LeaveTeam(x[5]);
     }
-x[10] = GetRole(x[4], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[4], 112 / 2) < 50)
     {
 LeaveTeam(x[4]);
     }
-x[10] = GetRole(x[3], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[3], 112 / 2) < 50)
     {
 LeaveTeam(x[3]);
     }
-x[10] = GetRole(x[2], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[2], 112 / 2) < 50)
     {
 LeaveTeam(x[2]);
     }
-x[10] = GetRole(x[1], 112 / 2);
-    if (x[10] < 50)
+    if (GetRole(x[1], 112 / 2) < 50)
     {
 LeaveTeam(x[1]);
     }
@@ -62,33 +56,27 @@ x[3] = GetTeam(2);
 x[4] = GetTeam(3);
 x[5] = GetTeam(4);
 x[6] = GetTeam(5);
-x[10] = GetRole(x[6], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[6], 112 / 2) >= 50)
 {
 LeaveTeam(x[6]);
 }
-x[10] = GetRole(x[5], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[5], 112 / 2) >= 50)
 {
 LeaveTeam(x[5]);
 }
-x[10] = GetRole(x[4], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[4], 112 / 2) >= 50)
 {
 LeaveTeam(x[4]);
 }
-x[10] = GetRole(x[3], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[3], 112 / 2) >= 50)
 {
 LeaveTeam(x[3]);
 }
-x[10] = GetRole(x[2], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[2], 112 / 2) >= 50)
 {
 LeaveTeam(x[2]);
 }
-x[10] = GetRole(x[1], 112 / 2);
-if (x[10] >= 50)
+if (GetRole(x[1], 112 / 2) >= 50)
 {
 LeaveTeam(x[1]);
 }

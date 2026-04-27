@@ -1,8 +1,7 @@
 ﻿if HaveItemBool(80) == false then
 exit();
 end;
-x[1] = GetRole(320, 36 / 2);
-if x[1] < 2 then
+if GetRole(320, 36 / 2) < 2 then
 exit();
 end;
 DarkScene();

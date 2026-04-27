@@ -1,5 +1,4 @@
-﻿x[200] = math.random(150);
-if x[200] ~= 1 then
+﻿if math.random(150) ~= 1 then
 exit();
 end;
 x[4] = GetRole(0, 30 / 2);

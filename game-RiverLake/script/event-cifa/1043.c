@@ -24,7 +24,7 @@ for i=1, 9 do
 strs[i] = x[x[1100 + i - 1]];
 end
 x[100] = menu(100, 15, strs, #strs);
-if (!(x[100] > 0))
+if (x[100] <= 0)
 {
     Talk("還是算了，萬一是個炸彈怎么辦．", 0, 1);
     exit();
@@ -70,8 +70,7 @@ if (x[100] == 1)
     AddItemWithoutHint(8, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(40);
-    if (x[51] <= x[50])
+    if (math.random(40) <= x[50])
     {
         AddItem(11, 1);
         exit();
@@ -112,8 +111,7 @@ if (x[100] == 2)
     AddItemWithoutHint(7, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(30);
-    if (x[51] <= x[50])
+    if (math.random(30) <= x[50])
     {
         AddItem(12, 1);
         exit();
@@ -154,8 +152,7 @@ if (x[100] == 3)
     AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(20);
-    if (x[51] <= x[50])
+    if (math.random(20) <= x[50])
     {
         AddItem(13, 1);
         exit();
@@ -196,8 +193,7 @@ if (x[100] == 4)
     AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(10);
-    if (x[51] <= x[50])
+    if (math.random(10) <= x[50])
     {
         AddItem(14, 1);
         exit();
@@ -238,8 +234,7 @@ if (x[100] == 5)
     AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(40);
-    if (x[51] <= x[50])
+    if (math.random(40) <= x[50])
     {
         AddItem(15, 1);
         exit();
@@ -280,8 +275,7 @@ if (x[100] == 6)
     AddItemWithoutHint(6, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(30);
-    if (x[51] <= x[50])
+    if (math.random(30) <= x[50])
     {
         AddItem(16, 1);
         exit();
@@ -322,8 +316,7 @@ if (x[100] == 7)
     AddItemWithoutHint(10, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(20);
-    if (x[51] <= x[50])
+    if (math.random(20) <= x[50])
     {
         AddItem(17, 1);
         exit();
@@ -364,8 +357,7 @@ if (x[100] == 8)
     AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(10);
-    if (x[51] <= x[50])
+    if (math.random(10) <= x[50])
     {
         AddItem(18, 1);
         exit();
@@ -406,8 +398,7 @@ if (x[100] == 9)
     AddItemWithoutHint(4, -1);
 x[50] = GetRole(0, 92 / 2);
 x[50] = x[50] / 10;
-x[51] = math.random(15);
-    if (x[51] <= x[50])
+    if (math.random(15) <= x[50])
     {
         AddItem(19, 1);
         exit();

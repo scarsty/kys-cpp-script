@@ -9,8 +9,7 @@ if x[1] == 32 then jump_flag = true; else jump_flag = false; end;
 x[10] = x[10] + 2;
 if jump_flag == false then goto label51 end;
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if x[30] < 900 then
+if GetRole(0, x[10] / 2) < 900 then
 Talk("恩，不錯，你是應該好好練練武功．幾日后左盟主要舉辦五岳劍派并派大會，到時候我想帶你去．", 19, 0);
 exit();
 end;

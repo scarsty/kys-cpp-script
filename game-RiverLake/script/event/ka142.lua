@@ -1,5 +1,4 @@
-﻿x[1] = GetRole(0, 86 / 2);
-if x[1] > 200 then
+﻿if GetRole(0, 86 / 2) > 200 then
 Talk("小兄弟武功不錯，不知道愿不愿意跟苗某切磋切磋？", 3, 0);
 if AskBattle() == false then
 Talk("別開玩笑了，苗大俠號稱打遍天下無敵手，晚輩怎敢跟苗大俠過招呢！", 0, 1);

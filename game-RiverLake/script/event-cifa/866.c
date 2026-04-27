@@ -3,8 +3,7 @@ Talk("是否交出血刀？", 0, 3);
 if (AskRest())
 {
     AddItemWithoutHint(131, -1);
-x[1] = GetRole(0, 46 / 2);
-    if (x[1] == 131)
+    if (GetRole(0, 46 / 2) == 131)
     {
 SetRole(0, 46 / 2, -1);
     }
@@ -27,16 +26,14 @@ ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddItemWithoutHint(98, -1);
 AddItem(198, 1);
-x[1] = GetRole(0, 122 / 2);
-if (x[1] == 98)
+if (GetRole(0, 122 / 2) == 98)
 {
 SetRole(0, 122 / 2, -1);
 }
 x[10] = 126;
 do
 {
-x[1] = GetRole(0, x[10] / 2);
-    if (x[1] == 52)
+    if (GetRole(0, x[10] / 2) == 52)
     {
 x[2] = x[10] + 0;
 x[3] = x[10] + 0;

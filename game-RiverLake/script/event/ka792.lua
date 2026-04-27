@@ -1,8 +1,7 @@
 ﻿if HaveItemBool(153) then
 exit();
 end;
-x[1] = math.random(100);
-if x[1] >= 25 then
+if math.random(100) >= 25 then
 ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 25, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);
 ModifyEvent(-2, 26, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);

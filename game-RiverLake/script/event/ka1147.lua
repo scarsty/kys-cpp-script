@@ -25,8 +25,7 @@ Talk("．．．．．．為什么他們能創出武功，我就不能．．．",
 DarkScene();
 LightScene();
 Talk("．．．．．．這樣．．．然后這樣．．．", 0, 1);
-x[250] = GetRole(0, 144 / 2);
-if x[250] > 0 then
+if GetRole(0, 144 / 2) > 0 then
 Talk("完全不行．．．可能是會的東西太雜了．", 0, 1);
 Talk("唉！好可惜，就差一點．", 189, 0);
 DarkScene();

@@ -3,8 +3,7 @@ Talk("阿彌陀佛", 96, 0);
 exit();
 end;
 if CheckRoleMorality(0, 85, 100) then
-x[1] = GetRole(0, 86 / 2);
-if x[1] > 200 then
+if GetRole(0, 86 / 2) > 200 then
 Talk("不錯，看你的修為是可以修習更高一層的武學的時候了", 96, 0);
 AddItem(117, 1);
 ModifyEvent(-2, -2, -2, -2, 920, -2, -2, -2, -2, -2, -2, -2, -2);

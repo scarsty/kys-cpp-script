@@ -1,5 +1,4 @@
-﻿x[1] = GetItemAmount(37);
-if x[1] >= 10 then
+﻿if GetItemAmount(37) >= 10 then
 Talk("柯大俠，在中原還好吧？", 0, 0);
 Talk("多謝你替我還錢．", 148, 0);
 exit();

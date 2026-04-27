@@ -21,14 +21,12 @@ LightScene();
 Talk("我道你怎么如此，原來你背地里練劍不練氣，以后岳某再沒有你這樣的徒弟．", 19, 0);
 AddItem(198, 1);
 AddItemWithoutHint(80, -1);
-x[1] = GetRole(0, 122 / 2);
-if x[1] == 80 then
+if GetRole(0, 122 / 2) == 80 then
 SetRole(0, 122 / 2, -1);
 end;
 x[10] = 126;
 ::label311::
-x[1] = GetRole(0, x[10] / 2);
-if x[1] == 32 then
+if GetRole(0, x[10] / 2) == 32 then
 x[2] = x[10] + 0;
 x[3] = x[10] + 0;
 x[2] = x[2] + 2;

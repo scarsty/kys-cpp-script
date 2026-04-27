@@ -13,8 +13,7 @@ if x[1] == 30 then jump_flag = true; else jump_flag = false; end;
 x[10] = x[10] + 2;
 if jump_flag == false then goto label61 end;
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if x[30] < 300 then
+if GetRole(0, x[10] / 2) < 300 then
 Talk("好，好．以后有好事一定想著你．", 142, 0);
 exit();
 end;

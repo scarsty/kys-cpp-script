@@ -9,8 +9,7 @@ if x[1] == 5 then jump_flag = true; else jump_flag = false; end;
 x[10] = x[10] + 2;
 if jump_flag == false then goto label50 end;
 x[10] = x[10] + 18;
-x[30] = GetRole(0, x[10] / 2);
-if x[30] < 600 then
+if GetRole(0, x[10] / 2) < 600 then
 Talk("．．．．．．", 92, 0);
 Talk("做什么，愁眉苦臉的？", 0, 1);
 Talk("唉！可惜你現在幫不了我．", 92, 0);

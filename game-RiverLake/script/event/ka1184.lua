@@ -1,5 +1,4 @@
-﻿x[1] = GetRole(0, 30 / 2);
-if x[1] < 13 then
+﻿if GetRole(0, 30 / 2) < 13 then
 Talk("爹爹也真是的．．．", 215, 0);
 exit();
 end;

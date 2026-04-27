@@ -2,8 +2,7 @@
 Talk("是否交出血刀？", 0, 3);
 if AskRest() then
 AddItemWithoutHint(131, -1);
-x[1] = GetRole(0, 46 / 2);
-if x[1] == 131 then
+if GetRole(0, 46 / 2) == 131 then
 SetRole(0, 46 / 2, -1);
 end;
 Talk("哈哈，好，很好．就讓我指點你一下吧．", 72, 0);
@@ -24,14 +23,12 @@ ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 AddItemWithoutHint(98, -1);
 AddItem(198, 1);
-x[1] = GetRole(0, 122 / 2);
-if x[1] == 98 then
+if GetRole(0, 122 / 2) == 98 then
 SetRole(0, 122 / 2, -1);
 end;
 x[10] = 126;
 ::label325::
-x[1] = GetRole(0, x[10] / 2);
-if x[1] == 52 then
+if GetRole(0, x[10] / 2) == 52 then
 x[2] = x[10] + 0;
 x[3] = x[10] + 0;
 x[2] = x[2] + 2;

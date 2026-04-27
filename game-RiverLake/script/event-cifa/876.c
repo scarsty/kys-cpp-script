@@ -5,8 +5,7 @@
 }
 if (CheckRoleMorality(0, 85, 100))
 {
-x[1] = GetRole(0, 86 / 2);
-    if (!(x[1] <= 200))
+    if (GetRole(0, 86 / 2) > 200)
     {
         Talk("不錯，看你的修為是可以修習更高一層的武學的時候了", 96, 0);
         AddItem(117, 1);
