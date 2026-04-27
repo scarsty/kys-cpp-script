@@ -1,4 +1,4 @@
-﻿x[1] = GetRole(0, 110 / 2);
+x[1] = GetRole(0, 110 / 2);
 x[2] = math.random(100);
 if (x[1] + x[2] <= 130)
 {

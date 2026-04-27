@@ -1,12 +1,12 @@
-﻿if (!isUsingItem(171))
+if (!isUsingItem(171))
 {
     exit();
 }
 x[100] = GetRole(0, 42 / 2);
 if (x[100] < 10)
 {
-x[400] = "體力不足！";
-x[28672] = showmessage(x[400], 100, 80, 26211);
+    x[400] = "體力不足！";
+    x[28672] = showmessage(x[400], 100, 80, 26211);
     exit();
 }
 x[100] = x[100] - 5;

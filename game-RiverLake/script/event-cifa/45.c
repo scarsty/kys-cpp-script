@@ -1,4 +1,4 @@
-﻿if (!CheckSubMapPic(10, 0, 8678))
+if (!CheckSubMapPic(10, 0, 8678))
 {
     Talk("水笙，我不能帶你到處走了", 0, 1);
     Talk("原來你也不要我了．嗚嗚嗚．．．", 106, 0);

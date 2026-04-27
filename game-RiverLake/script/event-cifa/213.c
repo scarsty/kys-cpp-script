@@ -1,4 +1,4 @@
-﻿WalkFromTo(38, 27, 34, 27);
+WalkFromTo(38, 27, 34, 27);
 WalkFromTo(34, 27, 34, 26);
 WalkFromTo(34, 26, 32, 26);
 Talk("大和尚，你快把段譽放了．", 0, 0);

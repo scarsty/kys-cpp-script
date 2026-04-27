@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(80))
+if (!HaveItemBool(80))
 {
     Talk("這里是華山派．", 206, 0);
     exit();

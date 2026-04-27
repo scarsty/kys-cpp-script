@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(154))
+if (HaveItemBool(154))
 {
     Talk("幫主手里拿的可是在俠客島得到的天書？", 129, 0);
     Talk("是啊．你怎么知道的？", 0, 0);

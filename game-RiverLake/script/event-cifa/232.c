@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(108))
+if (HaveItemBool(108))
 {
     Talk("施主怎么會有我段家的一陽指？", 113, 0);
     Talk("這是晚輩在一個高人處得到的！", 0, 1);

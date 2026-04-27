@@ -1,4 +1,4 @@
-﻿SubMapViewFromTo(45, 49, 40, 51);
+SubMapViewFromTo(45, 49, 40, 51);
 PlayAnimation(16, 8284, 8296);
 ModifyEvent(57, 16, 1, -2, 0, 0, 0, 8284, 8284, 8284, 0, -2, -2);
 Talk("姓夏的，你手筋腳筋被挑我好高興啊！", 25, 0);

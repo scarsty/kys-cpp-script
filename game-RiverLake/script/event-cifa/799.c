@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(184))
+if (!HaveItemBool(184))
 {
     Talk("不行，我不能拋下她們二人不管．", 0, 1);
     WalkFromTo(16, 16, 16, 14);

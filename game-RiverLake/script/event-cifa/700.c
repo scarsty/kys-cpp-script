@@ -1,4 +1,4 @@
-﻿SubMapViewFromTo(47, 11, 38, 7);
+SubMapViewFromTo(47, 11, 38, 7);
 Talk("你們以為用兩個假墳就能騙過我嗎？今天我就給我丈夫報仇！", 15, 1);
 Talk("是否幫胡青牛夫婦？", 0, 3);
 if (!AskRest())

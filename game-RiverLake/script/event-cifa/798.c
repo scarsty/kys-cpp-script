@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(44))
+if (!HaveItemBool(44))
 {
     Talk("我應該擺個什么樣的陣呢？", 63, 0);
     exit();

@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(76))
+if (!HaveItemBool(76))
 {
     Talk("看什么看，全真教可是你亂闖亂看的地方？", 142, 0);
     exit();

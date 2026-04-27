@@ -1,4 +1,4 @@
-﻿if (!CheckRoleMorality(0, 80, 100))
+if (!CheckRoleMorality(0, 80, 100))
 {
     Talk("咕咕", 104, 0);
     exit();

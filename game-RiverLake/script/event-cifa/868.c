@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(196))
+if (HaveItemBool(196))
 {
     Talk("．．．．．．", 96, 0);
     DarkScene();

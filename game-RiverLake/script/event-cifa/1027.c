@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(80))
+if (HaveItemBool(80))
 {
     Talk("華山弟子拜見天門師叔．", 0, 1);
     Talk("恩，你就是岳師兄新收的弟子？恩，很好．", 23, 0);

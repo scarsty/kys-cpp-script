@@ -1,4 +1,4 @@
-﻿if (!CheckSubMapPic(14, 5, 8302))
+if (!CheckSubMapPic(14, 5, 8302))
 {
     Talk("一", 0, 1);
     Talk("啊！有暗器！", 0, 0);

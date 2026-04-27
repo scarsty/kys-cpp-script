@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(189))
+if (HaveItemBool(189))
 {
     if (!InTeam(49))
     {

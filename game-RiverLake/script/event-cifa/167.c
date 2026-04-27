@@ -1,4 +1,4 @@
-﻿SetSubMapLayerData(16, 1, 15, 20, 2270);
+SetSubMapLayerData(16, 1, 15, 20, 2270);
 SetSubMapLayerData(16, 1, 14, 20, 0);
 SetSubMapLayerData(16, 1, 13, 20, 2266);
 Talk("狄云．", 0, 1);

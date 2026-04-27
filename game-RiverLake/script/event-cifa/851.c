@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(98))
+if (!HaveItemBool(98))
 {
     Talk("這里是血刀門的練功地．", 230, 0);
     exit();

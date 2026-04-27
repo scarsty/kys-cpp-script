@@ -1,4 +1,4 @@
-﻿if (InTeam(92))
+if (InTeam(92))
 {
     Talk("小寶，你要出遠門啊？用不用我跟著照顧你？", 156, 0);
     if (!AskJoin())

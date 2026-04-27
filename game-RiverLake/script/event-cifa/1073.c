@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(120))
+if (!HaveItemBool(120))
 {
     Talk("武當山風景秀麗，武當派絕學甚多．", 249, 0);
     exit();

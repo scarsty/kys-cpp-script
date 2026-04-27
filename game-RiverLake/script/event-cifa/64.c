@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(80))
+if (HaveItemBool(80))
 {
     Talk("．．．．．．酒．．．酒．．．", 35, 1);
     exit();

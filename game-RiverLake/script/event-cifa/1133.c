@@ -1,4 +1,4 @@
-﻿DarkScene();
+DarkScene();
 ModifyEvent(-2, 11, 1, -2, 0, 0, 0, 7042, 7042, 7042, 0, -2, -2);
 ModifyEvent(-2, 12, 1, -2, 0, 0, 0, 7038, 7038, 7038, 0, -2, -2);
 LightScene();

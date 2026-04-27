@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(121))
+if (!HaveItemBool(121))
 {
     Talk("哼！哼！哈！兮！", 96, 0);
     exit();

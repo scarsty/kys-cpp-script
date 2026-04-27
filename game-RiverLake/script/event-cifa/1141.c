@@ -1,4 +1,4 @@
-﻿Talk("哇，這扇門終于開了，不知道里面是什么呢．．．", 0, 1);
+Talk("哇，這扇門終于開了，不知道里面是什么呢．．．", 0, 1);
 WalkFromTo(23, 45, 19, 45);
 Talk("這間屋子也沒什么特別的啊", 0, 1);
 WalkFromTo(19, 45, 19, 47);
@@ -18,35 +18,35 @@ x[222] = GetRole(0, 112 / 2);
 SetRole(322, 112 / 2, x[222]);
 if (!CheckRoleMorality(0, 0, 49))
 {
-x[1] = GetTeam(0);
-x[2] = GetTeam(1);
-x[3] = GetTeam(2);
-x[4] = GetTeam(3);
-x[5] = GetTeam(4);
-x[6] = GetTeam(5);
+    x[1] = GetTeam(0);
+    x[2] = GetTeam(1);
+    x[3] = GetTeam(2);
+    x[4] = GetTeam(3);
+    x[5] = GetTeam(4);
+    x[6] = GetTeam(5);
     if (GetRole(x[6], 112 / 2) < 50)
     {
-LeaveTeam(x[6]);
+        LeaveTeam(x[6]);
     }
     if (GetRole(x[5], 112 / 2) < 50)
     {
-LeaveTeam(x[5]);
+        LeaveTeam(x[5]);
     }
     if (GetRole(x[4], 112 / 2) < 50)
     {
-LeaveTeam(x[4]);
+        LeaveTeam(x[4]);
     }
     if (GetRole(x[3], 112 / 2) < 50)
     {
-LeaveTeam(x[3]);
+        LeaveTeam(x[3]);
     }
     if (GetRole(x[2], 112 / 2) < 50)
     {
-LeaveTeam(x[2]);
+        LeaveTeam(x[2]);
     }
     if (GetRole(x[1], 112 / 2) < 50)
     {
-LeaveTeam(x[1]);
+        LeaveTeam(x[1]);
     }
     exit();
 }
@@ -58,25 +58,25 @@ x[5] = GetTeam(4);
 x[6] = GetTeam(5);
 if (GetRole(x[6], 112 / 2) >= 50)
 {
-LeaveTeam(x[6]);
+    LeaveTeam(x[6]);
 }
 if (GetRole(x[5], 112 / 2) >= 50)
 {
-LeaveTeam(x[5]);
+    LeaveTeam(x[5]);
 }
 if (GetRole(x[4], 112 / 2) >= 50)
 {
-LeaveTeam(x[4]);
+    LeaveTeam(x[4]);
 }
 if (GetRole(x[3], 112 / 2) >= 50)
 {
-LeaveTeam(x[3]);
+    LeaveTeam(x[3]);
 }
 if (GetRole(x[2], 112 / 2) >= 50)
 {
-LeaveTeam(x[2]);
+    LeaveTeam(x[2]);
 }
 if (GetRole(x[1], 112 / 2) >= 50)
 {
-LeaveTeam(x[1]);
+    LeaveTeam(x[1]);
 }

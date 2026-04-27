@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(120))
+if (!HaveItemBool(120))
 {
     Talk("這是武當派，沒事不要亂闖", 209, 0);
     exit();

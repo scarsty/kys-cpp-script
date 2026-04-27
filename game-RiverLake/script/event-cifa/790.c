@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(129))
+if (HaveItemBool(129))
 {
     if (HaveItemBool(140))
     {

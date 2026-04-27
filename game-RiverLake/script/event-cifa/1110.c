@@ -1,4 +1,4 @@
-﻿Talk("＜都開始了嗎？我怎么動不動就起來晚．．．＞", 0, 0);
+Talk("＜都開始了嗎？我怎么動不動就起來晚．．．＞", 0, 0);
 DarkScene();
 OldSetScenePosition(24, 33);
 SetTowards(1);

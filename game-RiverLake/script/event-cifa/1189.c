@@ -1,4 +1,4 @@
-﻿if (!InTeam(323))
+if (!InTeam(323))
 {
     exit();
 }

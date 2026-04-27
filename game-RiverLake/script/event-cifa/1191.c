@@ -1,4 +1,4 @@
-﻿if (!AskJoin())
+if (!AskJoin())
 {
     Talk("．．．．．．", 0, 1);
     exit();
@@ -15,7 +15,7 @@ ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
 LightScene();
 if (InTeam(323))
 {
-SetRole(323, 126 / 2, 93);
-SetRole(324, 126 / 2, 93);
+    SetRole(323, 126 / 2, 93);
+    SetRole(324, 126 / 2, 93);
 }
 Join(324);

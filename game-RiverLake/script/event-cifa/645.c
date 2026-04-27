@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(76))
+if (HaveItemBool(76))
 {
     Talk("＜師叔祖不喜歡別人規規矩矩，看來只好放下各自身份了．＞", 0, 1);
 }

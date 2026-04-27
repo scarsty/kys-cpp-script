@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(194))
+if (!HaveItemBool(194))
 {
     exit();
 }

@@ -1,4 +1,4 @@
-﻿Talk("不許哭！", 149, 0);
+Talk("不許哭！", 149, 0);
 SubMapViewFromTo(46, 28, 37, 20);
 PlayAnimation(1, 8284, 8296);
 PlayAnimation(1, 8284, 8296);

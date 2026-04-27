@@ -1,4 +1,4 @@
-﻿if (!CheckRoleSexual(0))
+if (!CheckRoleSexual(0))
 {
     Talk("恭喜少俠連城神功，希望你回家老媽不會罵你．", 26, 0);
     exit();

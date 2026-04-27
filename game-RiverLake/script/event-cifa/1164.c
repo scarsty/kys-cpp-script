@@ -1,4 +1,4 @@
-﻿x[1] = math.random(200);
+x[1] = math.random(200);
 x[2] = GetRole(0, 86 / 2);
 if (x[1] >= x[2])
 {

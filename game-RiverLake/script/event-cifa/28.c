@@ -1,4 +1,4 @@
-﻿if (InTeam(92))
+if (InTeam(92))
 {
     Talk("出去啊？注意安全！", 159, 0);
     if (!AskJoin())

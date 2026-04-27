@@ -1,4 +1,4 @@
-﻿if (InTeam(51))
+if (InTeam(51))
 {
     Talk("表哥，你要出去啊，能不能帶我一起？", 109, 0);
     if (!AskJoin())

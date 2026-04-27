@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(76))
+if (HaveItemBool(76))
 {
     Talk("參見師叔祖！", 0, 1);
 }

@@ -1,4 +1,4 @@
-﻿if (CheckRoleMorality(0, 55, 100))
+if (CheckRoleMorality(0, 55, 100))
 {
     if (!HaveItemBool(74))
     {

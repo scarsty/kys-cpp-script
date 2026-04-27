@@ -1,4 +1,4 @@
-﻿if (HaveItemBool(76))
+if (HaveItemBool(76))
 {
     ModifyEvent(19, 25, 0, -2, 0, 0, 1111, 0, 0, 0, 0, -2, -2);
 }

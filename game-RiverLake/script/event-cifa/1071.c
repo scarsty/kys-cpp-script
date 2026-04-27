@@ -1,4 +1,4 @@
-﻿x[1] = GetItemAmount(3);
+x[1] = GetItemAmount(3);
 x[2] = GetItemAmount(5);
 if (x[1] >= 5)
 {

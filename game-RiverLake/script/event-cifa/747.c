@@ -1,4 +1,4 @@
-﻿if (!isUsingItem(162))
+if (!isUsingItem(162))
 {
     exit();
 }

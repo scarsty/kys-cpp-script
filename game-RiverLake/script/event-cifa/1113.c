@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(76))
+if (!HaveItemBool(76))
 {
     Talk("看什么看，全真教可是你亂闖亂看的地方？", 142, 0);
     exit();
@@ -11,10 +11,9 @@ do
         Talk("好，好．以后有好事一定想著你．", 142, 0);
         exit();
     }
-x[1] = GetRole(0, x[10] / 2);
-jump_flag = (x[1] == 30);
-x[10] = x[10] + 2;
-} while (!jump_flag);
+    x[1] = GetRole(0, x[10] / 2);
+    x[10] = x[10] + 2;
+} while (x[1] != 30);
 x[10] = x[10] + 18;
 if (GetRole(0, x[10] / 2) < 300)
 {

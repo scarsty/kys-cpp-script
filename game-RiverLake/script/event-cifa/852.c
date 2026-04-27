@@ -1,4 +1,4 @@
-﻿if (!CheckRoleMorality(0, 60, 100))
+if (!CheckRoleMorality(0, 60, 100))
 {
     exit();
 }

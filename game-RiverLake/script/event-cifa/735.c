@@ -1,4 +1,4 @@
-﻿AddMorality(2);
+AddMorality(2);
 SubMapViewFromTo(24, 21, 19, 17);
 Talk("你說你只拿金蛇劍的，怎么連金蛇錐和秘籍也拿？", 25, 1);
 Talk("．．．．．．", 195, 0);

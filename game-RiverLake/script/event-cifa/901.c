@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(51))
+if (!HaveItemBool(51))
 {
     Talk("靈鷲宮怎么變空了，難道真的是被星宿滅門？", 0, 1);
     ModifyEvent(-2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);

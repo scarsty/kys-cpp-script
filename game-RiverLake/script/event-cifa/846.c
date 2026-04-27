@@ -1,4 +1,4 @@
-﻿if (!CheckRoleMorality(0, 0, 35))
+if (!CheckRoleMorality(0, 0, 35))
 {
     Talk("不知師父什么時候能收我為正式弟子？", 0, 1);
     Talk("你現在還不是時候．", 72, 0);
@@ -27,9 +27,9 @@ if (InTeam(81))
     DarkScene();
     LightScene();
     AddItem(98, 1);
-x[1] = GetRole(0, 104 / 2);
-x[1] = x[1] + 1;
-SetRole(0, 104 / 2, x[1]);
+    x[1] = GetRole(0, 104 / 2);
+    x[1] = x[1] + 1;
+    SetRole(0, 104 / 2, x[1]);
     ModifyEvent(-2, -2, -2, -2, 847, 0, 0, -2, -2, -2, 0, -2, -2);
     exit();
 }

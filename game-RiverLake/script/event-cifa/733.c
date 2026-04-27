@@ -1,4 +1,4 @@
-﻿SubMapViewFromTo(41, 21, 36, 16);
+SubMapViewFromTo(41, 21, 36, 16);
 Talk("原來如此．", 195, 1);
 PlayAnimation(12, 8596, 8610);
 ModifyEvent(37, 12, 1, -2, 0, 0, 0, 8596, 8596, 8596, 0, -2, -2);

@@ -1,4 +1,4 @@
-﻿if (InTeam(92))
+if (InTeam(92))
 {
     Talk("．．．．．．", 158, 1);
     if (!AskJoin())

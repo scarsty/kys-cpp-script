@@ -1,4 +1,4 @@
-﻿if (!HaveItemBool(80))
+if (!HaveItemBool(80))
 {
     Talk("．．．．．．", 186, 0);
     ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
