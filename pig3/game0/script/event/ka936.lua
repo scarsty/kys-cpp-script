@@ -7,5 +7,5 @@ SceneFromTo(21, 26, 33, 26);
 Talk(0, "好，那就我先來！", 0, 1);
 WalkFromTo(33, 26, 25, 26);
 Talk(0, "不知那位英雄願下場賜教？", 0, 1);
-FightForTop();
+instruct_58();
 exit();

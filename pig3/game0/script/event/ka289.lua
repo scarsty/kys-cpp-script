@@ -16,6 +16,6 @@ ModifyEvent(-2, 2, -2, -2, -1, -1, 313, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, -2, -2, -2, 314, -1, -1, -2, -2, -2, -2, -2, -2);
 SetOneMagic(36, 0, 60, 100);
 NPCGetItem(36, 78, 1);
-SetSexual(36, 2);
+instruct_63(36, 2);
 AddEthics(2);
 exit();
