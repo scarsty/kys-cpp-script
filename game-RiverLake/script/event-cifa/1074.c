@@ -3,7 +3,7 @@ if (!HaveItemBool(120))
     Talk("武當山風景秀麗，武當派絕學甚多．", 249, 0);
     exit();
 }
-if (math.random(100) >= 30)
+if (random(100) >= 30)
 {
     Talk("．．．．．．", 249, 0);
     Talk("＜成天在這里耍酷．．．＞", 0, 1);

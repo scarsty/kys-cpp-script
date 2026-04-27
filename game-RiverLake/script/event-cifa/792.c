@@ -2,7 +2,7 @@ if (HaveItemBool(153))
 {
     exit();
 }
-if (math.random(100) >= 25)
+if (random(100) >= 25)
 {
     ModifyEvent(-2, -2, 0, -2, 0, 0, 0, 0, 0, 0, 0, -2, -2);
     ModifyEvent(-2, 25, 0, -2, 0, 0, 1098, 0, 0, 0, 0, -2, -2);

@@ -19,22 +19,22 @@ PlayAnimation(-1, 7050, 7058);
 DarkScene();
 PlayAnimation(-1, 5974, 5974);
 LightScene();
-if (math.random(100) < 10)
+if (random(100) < 10)
 {
     Talk("什么都沒挖到．", 0, 1);
     exit();
 }
-if (math.random(100) < 60)
+if (random(100) < 60)
 {
     AddItem(202, 1);
     exit();
 }
-if (math.random(100) < 70)
+if (random(100) < 70)
 {
     AddItem(201, 1);
     exit();
 }
-if (math.random(90) < 80)
+if (random(90) < 80)
 {
     AddItem(200, 1);
     exit();

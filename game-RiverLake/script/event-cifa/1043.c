@@ -54,7 +54,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(8, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(40) <= x[50])
+                            if (random(40) <= x[50])
                             {
                                 AddItem(11, 1);
                                 exit();
@@ -88,7 +88,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(7, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(30) <= x[50])
+                            if (random(30) <= x[50])
                             {
                                 AddItem(12, 1);
                                 exit();
@@ -122,7 +122,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(6, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(20) <= x[50])
+                            if (random(20) <= x[50])
                             {
                                 AddItem(13, 1);
                                 exit();
@@ -156,7 +156,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(4, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(10) <= x[50])
+                            if (random(10) <= x[50])
                             {
                                 AddItem(14, 1);
                                 exit();
@@ -190,7 +190,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(6, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(40) <= x[50])
+                            if (random(40) <= x[50])
                             {
                                 AddItem(15, 1);
                                 exit();
@@ -224,7 +224,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(6, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(30) <= x[50])
+                            if (random(30) <= x[50])
                             {
                                 AddItem(16, 1);
                                 exit();
@@ -258,7 +258,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(10, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(20) <= x[50])
+                            if (random(20) <= x[50])
                             {
                                 AddItem(17, 1);
                                 exit();
@@ -292,7 +292,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(4, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(10) <= x[50])
+                            if (random(10) <= x[50])
                             {
                                 AddItem(18, 1);
                                 exit();
@@ -326,7 +326,7 @@ if (x[100] > 0)
                             AddItemWithoutHint(4, -1);
                             x[50] = GetRole(0, 92 / 2);
                             x[50] = x[50] / 10;
-                            if (math.random(15) <= x[50])
+                            if (random(15) <= x[50])
                             {
                                 AddItem(19, 1);
                                 exit();
