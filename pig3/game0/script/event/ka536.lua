@@ -36,7 +36,7 @@ if TeamIsFull() == false then goto label0 end;
     AddAttack(49, 30);
     AddSpeed(49, 20);
     LearnMagic2(49, 15, 0);
-    SetPersonMPPro(person(49),2);
+    SetPersonMPPro(49, 2);
     Join(49);
     ModifyEvent(28, 0, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     ModifyEvent(28, 1, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
