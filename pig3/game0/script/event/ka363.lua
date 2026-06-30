@@ -66,6 +66,6 @@ if InTeam(38) == true then goto label0 end;
     ModifyEvent(-2, 14, 1, 1, 366, -1, -1, 5148, 5148, 5148, -2, -2, -2);
     ModifyEvent(-2, 15, 1, 1, 367, -1, -1, 5142, 5142, 5142, -2, -2, -2);
     LightScene();
-    LearnMagic2(38, 23, 0);
+    LearnMagic2(38, 32, 0);
     AddAttack(38, 10);
 exit();
