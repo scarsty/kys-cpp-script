@@ -8,7 +8,7 @@ if TryBattle(42) == true then goto label0 end;
     ModifyEvent(-2, 15, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     ModifyEvent(-2, 16, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     LightScene();
-    Add3EventNum(27, 0, 0, 0, 37)
+    Add3EventNum(27,0,0,0,1);
     AddEthics(3);
     AddRepute(1);
 exit();

@@ -12,6 +12,6 @@ if TryBattle(26) == true then goto label0 end;
     Talk(23, "今日不殺我，我五嶽劍派同氣連枝，改日我們再上黑木崖向閣下及東方不敗討教．", 23, 0);
     GetItem(68, 1);
     ModifyEvent(-2, -2, -2, -2, 177, -1, -1, -2, -2, -2, -2, -2, -2);
-    Add3EventNum(27, 0, 0, 0, 56)
+    Add3EventNum(27,0,0,0,1);
     AddRepute(3);
 exit();

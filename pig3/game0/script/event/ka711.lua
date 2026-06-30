@@ -3,5 +3,5 @@ if UseItem(186) == true then goto label0 end;
 ::label0::
     AddItem(186, -1);
     Talk(73, "製造藥丸非常簡單，只要你隊伍中有人修練醫書，又有藥材的話就可製造出來．", 73, 0);
-    Add3EventNum(-2, 0, 0, 1, -1)
+    Add3EventNum(-2,0,0,1,0);
 exit();

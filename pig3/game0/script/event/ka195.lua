@@ -26,5 +26,5 @@ if InTeam(35) == false then goto label0 end;
         Talk(35, "兄弟，下月十五，我們一定要到嵩山去阻止左冷禪的陰謀！", 35, 1);
 ::label1::
         ModifyEvent(-2, -2, -2, -2, 196, -1, -1, -2, -2, -2, -2, -2, -2);
-        Add3EventNum(27, 0, 0, 0, -1)
+        Add3EventNum(27,0,0,0,1);
 exit();

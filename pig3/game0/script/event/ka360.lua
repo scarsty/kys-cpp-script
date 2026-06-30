@@ -3,8 +3,8 @@ if InTeam(38) == true then goto label0 end;
     exit();
 ::label0::
     Talk(38, "大哥，我的”巨骨穴”好熱．．．", 38, 1);
-    Add3EventNum(-2, 4, 0, 0, 26)
-    Add3EventNum(-2, 5, 0, 0, 26)
-    Add3EventNum(-2, 6, 0, 0, 3)
+    Add3EventNum(-2,4,0,0,1);
+    Add3EventNum(-2,5,0,0,1);
+    Add3EventNum(-2,6,0,0,1);
     ModifyEvent(-2, -2, -2, -2, 385, -1, -1, -2, -2, -2, -2, -2, -2);
 exit();
