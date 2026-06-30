@@ -5,3 +5,4 @@ call spreadtitle.bat game-dragon
 call spreadtitle.bat game-ptt
 call spreadtitle.bat game-awaken
 call spreadtitle.bat game-RiverLake
+call spreadtitle.bat game2x-png-dragon

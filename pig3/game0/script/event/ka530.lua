@@ -10,7 +10,7 @@ if InTeam(51) == false then goto label0 end;
         ModifyEvent(-2, 22, 1, 1, -1, -1, -1, 6306, 6306, 6306, -2, -2, -2);
         if InTeam(51) == true then goto label2 end;
             ModifyEvent(-2, 23, 1, 1, -1, -1, -1, 6298, 6298, 6298, -2, -2, -2);
-            JudgeScenePic(52, 3, 6310, 0, 14);
+            if JudgeScenePic(52, 3, 6310, 0, 14) == true then goto label2 end;
                 ModifyEvent(-2, 24, 1, 1, -1, -1, -1, 6314, 6314, 6314, -2, -2, -2);
 ::label2::
 ::label3::
@@ -42,14 +42,14 @@ if InTeam(51) == false then goto label0 end;
                                 ModifyEvent(-2, 22, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
                                 ModifyEvent(52, 1, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
                                 LightScene();
-                                JudgeScenePic(-2, 23, 6298, 1, 0);
+                                if JudgeScenePic(-2, 23, 6298, 1, 0) == true then goto label8 end;
                                     exit();
 ::label8::
                                     Talk(0, "王姑娘，妳怎麼還在這，妳表哥已經走了．", 0, 1);
                                     Talk(109, "唉！我表哥為了大燕復國之事，已經發瘋了．在他一生之中，便是夢想要做大燕皇帝．這也難怪，因為他慕容氏世世代代，做的便是這個夢．他祖宗幾十代做下來的夢，傳到他身上，怎又能盼他覺醒呢？我表哥他本性並不壞，只不　過為了想做大燕皇帝，行事　才會變得如此不擇手段．．", 109, 0);
                                     Talk(0, "可是妳不是一直都喜歡著他嗎．．．", 0, 1);
                                     Talk(109, "在我表哥心中，復興大業一直都是他心中最重要的事，兒女私情只不過．．．．．", 109, 0);
-                                    JudgeScenePic(-2, 24, 6314, 46, 0);
+                                    if JudgeScenePic(-2, 24, 6314, 46, 0) == true then goto label9 end;
                                         Talk(0, "王姑娘，你別煩惱，或許過陣子你表哥就會想通了．", 0, 1);
                                         Talk(109, "希望如此．那我先回燕子塢了．公子，告辭！", 109, 0);
                                         DarkScene();
