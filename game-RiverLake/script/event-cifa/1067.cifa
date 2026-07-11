@@ -48,7 +48,7 @@ for (int i = 1; i <= x[7]; i++)
 {
     strs[i] = x[x[500 + i - 1]];
 }
-x[10] = menu(105, 90, strs, #strs);
+x[10] = menu(105, 90, strs);
 if (x[10] >= 1)
 {
     x[10] = x[10] - 1;

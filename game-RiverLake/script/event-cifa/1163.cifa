@@ -46,7 +46,7 @@ for (int i = 1; i <= 3; i++)
 {
     strs[i] = x[x[1100 + i - 1]];
 }
-x[100] = menu(85, 100, strs, #strs);
+x[100] = menu(85, 100, strs);
 if (x[100] == 0)
 {
     exit();
@@ -86,7 +86,7 @@ do
     {
         strs[i] = x[x[1100 + i - 1]];
     }
-    x[100] = menu(200, 10, strs, #strs);
+    x[100] = menu(200, 10, strs);
 } while (x[100] == 0);
 x[601] = x[100] + 0;
 x[1002] = 0;
@@ -118,7 +118,7 @@ do
     {
         strs[i] = x[x[1100 + i - 1]];
     }
-    x[100] = menu(200, 10, strs, #strs);
+    x[100] = menu(200, 10, strs);
 } while (x[100] == 0);
 x[602] = x[100] + 0;
 x[1002] = 0;
@@ -150,7 +150,7 @@ do
     {
         strs[i] = x[x[1100 + i - 1]];
     }
-    x[100] = menu(200, 10, strs, #strs);
+    x[100] = menu(200, 10, strs);
 } while (x[100] == 0);
 x[603] = x[100] + 0;
 x[4403] = GetItemAmount(200);
