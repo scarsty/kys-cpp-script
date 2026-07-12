@@ -1,1 +1,0 @@
-OldSetScenePosition(51, 43);
