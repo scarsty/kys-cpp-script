@@ -261,5 +261,5 @@ exit();
     instruct_50(43, 0, 1317, 0, 0, 0, 0);
     instruct_50(43, 0, 244, 27, 2, 0, 0);
     LightScene();
-    putscenepro(61,95,7);
+    setscenepro(61,95,7);
 exit();

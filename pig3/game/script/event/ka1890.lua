@@ -1,10 +1,10 @@
 function f1()
-	putbattlepro(-1,b,33);
-	putbattlepro(-1,b,34);
-	putbattlepro(-1,b,35);
-	putbattlepro(-1,b,36);
-	putbattlepro(-1,b,37);
-	putbattlepro(-1,b,38);
+	setbattlepro(-1,b,33);
+	setbattlepro(-1,b,34);
+	setbattlepro(-1,b,35);
+	setbattlepro(-1,b,36);
+	setbattlepro(-1,b,37);
+	setbattlepro(-1,b,38);
 end
 
 clear();
@@ -21,7 +21,7 @@ if a==0 then
 	xwd=930;
     f1();
     setbattlename(b, "虛僞帝");
-    putbattlepro(xwd,b,33);
+    setbattlepro(xwd,b,33);
 	talk(456, '……', '虛僞帝', 1);
 	rest();
 	if trybattle(b) then
@@ -40,7 +40,7 @@ if a==1 then
 	Talk(0, "一聽就不是什麽正經人。", -2, 0, 0, 0);
 	f1();
     setbattlename(b, "無恥帝");
-    putbattlepro(wcd,b,33);
+    setbattlepro(wcd,b,33);
 	talk(454, '……', '無恥帝', 1);
 	rest();
 	if trybattle(b) then
@@ -57,7 +57,7 @@ if a== 2 then
 	Talk(47, "我也搞不清楚，這些人一窩一窩的。", -2, 1, 0, 0);
 	f1();
 	setbattlename(b, "光頭強");
-	putbattlepro(gtd,b,33);
+	setbattlepro(gtd,b,33);
 	talk(455, '是兄弟就來砍我！', '光頭強', 1);
 	Talk(0, "？？？", -2, 0, 0, 0);
 	rest();

@@ -22,7 +22,7 @@ if a==2 then
     for i=0,5 do
         b=getmember(i);
         if b>=0 then
-            putrolepro(getrolepro(b, 44) + 10, b, 44);
+            setrolepro(getrolepro(b, 44) + 10, b, 44);
         end
     end
 else

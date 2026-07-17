@@ -15,7 +15,7 @@ if b==0 then
 		getitem(223,2);
 		getitem(224,2);
 		getitem(225,2);
-		putsceneeventpro(1,105,91,4);
+		setsceneeventpro(1,105,91,4);
 	end
 	exit();
 else

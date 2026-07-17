@@ -5,7 +5,7 @@ if InTeam(14) == false then
 		m=math.random(1,100);
 		if m<=20 then
 			DarkScene();
-			putsceneeventpro(-1,16,19,4);
+			setsceneeventpro(-1,16,19,4);
 			LightScene();
 			Talk(8, "哈哈，沒想到盈盈你也會彈奏這種殺氣騰騰的曲子，若不是知道你是鼎鼎大名的任大小姐，我還以為是京城裡的監市到出來巡查了呢。", -2, 0, 0, 0);
 			Talk(14, "什麼殺氣騰騰，沒文化。怎麼，我們令狐大什麼的，也佔道經營被監市查過嗎？不然怎麼如此印象深刻呢？", -2, 1, 0, 0);
@@ -21,18 +21,18 @@ if InTeam(14) == false then
 			b=math.random(2,5);
 			b=b*10
 			c=math.random(5,10);
-			putrolepro(getrolepro(8, 51) + a, 8, 51);
-			putrolepro(getrolepro(8, 18) + b, 8, 18);
-			putrolepro(getrolepro(8, 42) + b, 8, 42);
-			putrolepro(getrolepro(8, 43) + c, 8, 43);
-			putrolepro(getrolepro(8, 44) + c, 8, 44);
-			putrolepro(getrolepro(8, 45) + c, 8, 45);
-			putrolepro(getrolepro(14, 53) + a, 14, 53);
-			putrolepro(getrolepro(14, 18) + b, 14, 18);
-			putrolepro(getrolepro(14, 42) + b, 14, 42);
-			putrolepro(getrolepro(14, 43) + c, 14, 43);
-			putrolepro(getrolepro(14, 44) + c, 14, 44);
-			putrolepro(getrolepro(14, 45) + c, 14, 45);
+			setrolepro(getrolepro(8, 51) + a, 8, 51);
+			setrolepro(getrolepro(8, 18) + b, 8, 18);
+			setrolepro(getrolepro(8, 42) + b, 8, 42);
+			setrolepro(getrolepro(8, 43) + c, 8, 43);
+			setrolepro(getrolepro(8, 44) + c, 8, 44);
+			setrolepro(getrolepro(8, 45) + c, 8, 45);
+			setrolepro(getrolepro(14, 53) + a, 14, 53);
+			setrolepro(getrolepro(14, 18) + b, 14, 18);
+			setrolepro(getrolepro(14, 42) + b, 14, 42);
+			setrolepro(getrolepro(14, 43) + c, 14, 43);
+			setrolepro(getrolepro(14, 44) + c, 14, 44);
+			setrolepro(getrolepro(14, 45) + c, 14, 45);
 			ShowTitle("令狐冲御劍增加"..a, 1);
 			ShowTitle("令狐冲生命增加"..b, 1);
 			ShowTitle("令狐冲內力增加"..b, 1);
