@@ -333,7 +333,7 @@ if CheckJumpFlag() == true then goto label0 end;
                                             Talk(0, "不。", -2, 1, 0, 0);
                                             Talk(422, "現在，才是一切的開始。", -2, 0, 0, 0);
                                             ShowTitle("武林，由璀璨歸於平淡**而平淡**正好孕育另一個絢爛。", 28421);
-                                            EndAmination(0, 0, 0, 0, 0, 0, 7);
+                                            EndAnimation(0, 0, 0, 0, 0, 0, 7);
                                             exit();
 ::label10::
                                             instruct_50(43, 0, 1750, 0, 0, 0, 0);
@@ -341,7 +341,7 @@ if CheckJumpFlag() == true then goto label0 end;
                                             Talk(0, "不。", -2, 1, 0, 28515);
                                             Talk(422, "現在，才是一切的開始。", -2, 0, 0, 28515);
                                             ShowTitle("武林，由璀璨歸於平淡**而平淡**正好孕育另一個絢爛。", 28421);
-                                            EndAmination(0, 0, 0, 0, 0, 0, 7);
+                                            EndAnimation(0, 0, 0, 0, 0, 0, 7);
                                             exit();
 ::label9::
                                             instruct_50(43, 0, 1749, 0, 0, 0, 0);
@@ -350,5 +350,5 @@ if CheckJumpFlag() == true then goto label0 end;
                                             Talk(0, "不。", -2, 1, 0, 28515);
                                             Talk(422, "現在，才是一切的開始。", -2, 0, 0, 28515);
                                             ShowTitle("武林，由璀璨歸於平淡**而平淡**正好孕育另一個絢爛。", 28421);
-                                            EndAmination(0, 0, 0, 0, 0, 0, -1);
+                                            EndAnimation(0, 0, 0, 0, 0, 0, -1);
 exit();
